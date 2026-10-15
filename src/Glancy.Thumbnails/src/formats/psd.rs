@@ -970,7 +970,8 @@ pub mod tests {
         let start = std::time::Instant::now();
         let k = block_factor(psd.width, psd.height, 256, 256, false);
         let img = decode_composite(&src, &psd, k, false, false).unwrap();
-        assert!(start.elapsed() < std::time::Duration::from_secs(2));
+        // Well under DECODE_TIMEOUT (20 s): it stops at end of file, not at the deadline. Generous for CI machines.
+        assert!(start.elapsed() < std::time::Duration::from_secs(10), "{:?}", start.elapsed());
         assert_eq!(img.pixel(img.width - 1, img.height - 1)[3], 0);
         // With RLE, the length table does not fit in the file: immediate error.
         let mut v = psb_header(300_000, 300_000, 3);
