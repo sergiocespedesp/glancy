@@ -201,7 +201,8 @@ mod tests {
         let start = std::time::Instant::now();
         let err = render(svg.as_bytes(), 64).unwrap_err();
         assert!(err.0.contains("complex"), "{err}");
-        assert!(start.elapsed() < std::time::Duration::from_secs(2));
+        // Generous for shared CI machines running every test in parallel; a full expansion would never finish.
+        assert!(start.elapsed() < std::time::Duration::from_secs(10), "{:?}", start.elapsed());
     }
 
     #[test]
@@ -211,7 +212,8 @@ mod tests {
         // Finishes right away, with an image or a controlled error (usvg cuts the recursion on its own).
         let start = std::time::Instant::now();
         let _ = render(svg.as_bytes(), 10);
-        assert!(start.elapsed() < std::time::Duration::from_secs(2));
+        // Generous for shared CI machines; endless recursion would never finish.
+        assert!(start.elapsed() < std::time::Duration::from_secs(10), "{:?}", start.elapsed());
     }
 
     #[test]

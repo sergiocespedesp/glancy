@@ -263,7 +263,9 @@ mod tests {
         placeable.extend_from_slice(&[0; 6]);
         placeable.extend_from_slice(&wmf);
         let img = run(".wmf", placeable, 200).unwrap().image;
-        assert_eq!((img.width, img.height), (200, 100));
+        // GDI may round the 2:1 box by a pixel (Windows Server gives 200×99).
+        assert_eq!(img.width, 200);
+        assert!((99..=101).contains(&img.height), "{}", img.height);
         check(&img);
         // Compressed.
         let mut z = flate2::write::GzEncoder::new(Vec::new(), flate2::Compression::default());
