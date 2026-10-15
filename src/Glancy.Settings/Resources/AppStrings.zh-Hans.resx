@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="About_Credits" xml:space="preserve"><value>第三方鸣谢和许可证</value></data>
+  <data name="About_FreeSoftware" xml:space="preserve"><value>自由软件</value></data>
+  <data name="About_FreeSoftware_Text" xml:space="preserve"><value>Glancy 是自由软件：你可以依据 GNU 通用公共许可证第 3 版或任何更高版本的条款重新分发和修改它。本软件不提供任何担保。</value></data>
+  <data name="About_HowItWorks" xml:space="preserve"><value>工作原理</value></data>
+  <data name="About_HowItWorks_Extensions" xml:space="preserve"><value>每种格式都有自己的设置。如果某种格式有多个扩展名（例如 .psd 和 .psb），你可以只自定义其中一个；其余扩展名继承该格式的设置。</value></data>
+  <data name="About_HowItWorks_Pending" xml:space="preserve"><value>你对格式和文件资源管理器设置所做的更改会作为待应用的更改累积起来。在你选择“应用”之前，文件资源管理器中不会有任何变化；你可以先查看或放弃这些更改。</value></data>
+  <data name="About_HowItWorks_Preferences" xml:space="preserve"><value>此窗口的首选项（主题、置顶）会立即生效，并且不会影响缩略图。</value></data>
+  <data name="About_LicenseLink" xml:space="preserve"><value>许可证 (GPL-3.0)</value></data>
+  <data name="About_Shortcuts" xml:space="preserve"><value>键盘快捷方式</value></data>
+  <data name="About_SourceCode" xml:space="preserve"><value>源代码</value></data>
+  <data name="About_Support" xml:space="preserve"><value>支持 Glancy</value></data>
+  <data name="About_Support_Text" xml:space="preserve"><value>Glancy 免费且无广告。如果它对你有帮助，捐赠可以支持它持续维护。</value></data>
+  <data name="About_Tech_Clsid" xml:space="preserve"><value>引擎 CLSID：{0}</value></data>
+  <data name="About_Tech_ExportFile" xml:space="preserve"><value>导出文件：{0}</value></data>
+  <data name="About_Tech_Logs" xml:space="preserve"><value>日志：{0}</value></data>
+  <data name="About_Tech_Settings" xml:space="preserve"><value>设置：{0}</value></data>
+  <data name="About_TechInfo" xml:space="preserve"><value>技术信息</value></data>
+  <data name="About_Title" xml:space="preserve"><value>关于 Glancy</value></data>
+  <data name="About_Version" xml:space="preserve"><value>版本 {0} · {1}</value></data>
+  <data name="AllFormats_Counts" xml:space="preserve"><value>{0} 种格式 · {1} 个扩展名</value></data>
+  <data name="AllFormats_Description" xml:space="preserve"><value>在此处更改设置，即可一次性应用到所有格式。不支持该设置的格式会将其忽略。</value></data>
+  <data name="Apply_Applied_NoRefresh" xml:space="preserve"><value>打开文件夹或按 F5 时，文件夹将显示新的缩略图。</value></data>
+  <data name="Apply_Applied_Refreshed" xml:space="preserve"><value>已刷新打开的文件资源管理器窗口。</value></data>
+  <data name="Apply_Applied_Title" xml:space="preserve"><value>已应用更改</value></data>
+  <data name="Apply_Failed_Message" xml:space="preserve"><value>{0}你的更改仍处于待应用状态。</value></data>
+  <data name="Apply_Failed_Title" xml:space="preserve"><value>无法应用更改</value></data>
+  <data name="Apply_Saved_EngineMissing" xml:space="preserve"><value>安装 Glancy 缩略图引擎后即会使用这些更改。</value></data>
+  <data name="Apply_Saved_Title" xml:space="preserve"><value>已保存更改</value></data>
+  <data name="Cache_Cleared_Title" xml:space="preserve"><value>已清除缩略图缓存</value></data>
+  <data name="Cache_Failed_Title" xml:space="preserve"><value>无法清除缓存</value></data>
+  <data name="Cache_Freed" xml:space="preserve"><value>已释放 {0:0.#} MB。</value></data>
+  <data name="Checker_Customize" xml:space="preserve"><value>自定义</value></data>
+  <data name="Checker_DarkColor" xml:space="preserve"><value>深色</value></data>
+  <data name="Checker_DarkGrays" xml:space="preserve"><value>深灰色</value></data>
+  <data name="Checker_Library" xml:space="preserve"><value>库</value></data>
+  <data name="Checker_LightColor" xml:space="preserve"><value>浅色</value></data>
+  <data name="Checker_MidGrays" xml:space="preserve"><value>中灰色</value></data>
+  <data name="Checker_Pair" xml:space="preserve"><value>{0} 和 {1}</value></data>
+  <data name="Checker_Random" xml:space="preserve"><value>随机</value></data>
+  <data name="Checker_SaveToLibrary" xml:space="preserve"><value>保存到库</value></data>
+  <data name="Checker_Swap" xml:space="preserve"><value>交换颜色</value></data>
+  <data name="Checker_WhiteLightGray" xml:space="preserve"><value>白色和浅灰色</value></data>
+  <data name="Close_ApplyAndClose" xml:space="preserve"><value>应用并关闭</value></data>
+  <data name="Close_DialogOpen_Message" xml:space="preserve"><value>然后即可关闭 Glancy。</value></data>
+  <data name="Close_DialogOpen_Title" xml:space="preserve"><value>请先关闭打开的对话框</value></data>
+  <data name="Close_Pending_Many" xml:space="preserve"><value>你有 {0} 个更改尚未应用</value></data>
+  <data name="Close_Pending_Message" xml:space="preserve"><value>如果不应用就关闭，文件资源管理器将继续使用以前的设置。</value></data>
+  <data name="Close_Pending_One" xml:space="preserve"><value>你有 1 个更改尚未应用</value></data>
+  <data name="Close_WithoutApplying" xml:space="preserve"><value>不应用并关闭</value></data>
+  <data name="Color_Quick" xml:space="preserve"><value>快速颜色</value></data>
+  <data name="Color_Use" xml:space="preserve"><value>使用此颜色</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Common_CheckAgain" xml:space="preserve"><value>再次检查</value></data>
+  <data name="Common_Checking" xml:space="preserve"><value>正在检查…</value></data>
+  <data name="Common_Failed" xml:space="preserve"><value>失败</value></data>
+  <data name="Common_MultipleValues" xml:space="preserve"><value>多个值</value></data>
+  <data name="Common_Off" xml:space="preserve"><value>关</value></data>
+  <data name="Common_On" xml:space="preserve"><value>开</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>打开</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="Common_Selected" xml:space="preserve"><value>已选择</value></data>
+  <data name="Common_Succeeded" xml:space="preserve"><value>成功</value></data>
+  <data name="Count_Extension_Many" xml:space="preserve"><value>{0} 个扩展名</value></data>
+  <data name="Count_Extension_One" xml:space="preserve"><value>1 个扩展名</value></data>
+  <data name="Count_Format_Many" xml:space="preserve"><value>{0} 种格式</value></data>
+  <data name="Count_Format_One" xml:space="preserve"><value>1 种格式</value></data>
+  <data name="Credit_Cfb" xml:space="preserve"><value>© Matthew D. Steele · MIT 许可证 · 包含在引擎中</value></data>
+  <data name="Credit_DotNet" xml:space="preserve"><value>© .NET Foundation 及贡献者 · MIT 许可证 · 包含在应用中</value></data>
+  <data name="Credit_Fax" xml:space="preserve"><value>© pdf-rs 贡献者 · MIT 许可证 · 包含在引擎中</value></data>
+  <data name="Credit_Flate2" xml:space="preserve"><value>© Alex Crichton 及贡献者 · MIT 或 Apache 2.0 · 包含在引擎中</value></data>
+  <data name="Credit_Ghostscript" xml:space="preserve"><value>© Artifex Software · GNU AGPL 3.0 · 未包含也不分发；如果电脑上已安装，引擎会将其用于 EPS 和旧版 AI 文件</value></data>
+  <data name="Credit_Ghostscript_Name" xml:space="preserve"><value>Ghostscript（可选）</value></data>
+  <data name="Credit_Hayro" xml:space="preserve"><value>© The Hayro Authors · Apache 2.0 或 MIT · 包含在引擎中（JPEG 2000）</value></data>
+  <data name="Credit_Image" xml:space="preserve"><value>© The image-rs Developers · MIT 或 Apache 2.0 · 包含在引擎中（PNG、JPEG、TIFF、WebP、GIF、BMP、DDS、EXR、HDR…）</value></data>
+  <data name="Credit_JxlOxide" xml:space="preserve"><value>© Wonwoo Choi · MIT 或 Apache 2.0 · 包含在引擎中（JPEG XL）</value></data>
+  <data name="Credit_OtherRust" xml:space="preserve"><value>tiny-skia、usvg、zune-jpeg、exr、zlib-rs、rayon 以及上述项目使用的其他 crate · 宽松许可证（MIT、Apache 2.0、BSD、Zlib）· 包含在引擎中</value></data>
+  <data name="Credit_OtherRust_Name" xml:space="preserve"><value>其他 Rust 依赖项</value></data>
+  <data name="Credit_Pdfium" xml:space="preserve"><value>© The PDFium Authors · 3 条款 BSD 许可证 · 包含在引擎中（pdfium.dll；PDF 和 AI）</value></data>
+  <data name="Credit_PdfiumLibs" xml:space="preserve"><value>FreeType（FreeType 许可证）、HarfBuzz（MIT）、ICU（Unicode 许可证 v3）、libjpeg-turbo（IJG 和 BSD）、libpng（PNG 许可证 v2）、zlib（zlib 许可证）、OpenJPEG（2 条款 BSD）、Little CMS（MIT）、Abseil（Apache 2.0）、Anti-Grain Geometry 2.3、fast_float 和 simdutf（MIT）、Dragonbox 和 LLVM libc（Apache 2.0，含 LLVM 例外）· 包含在 pdfium.dll 中；完整文本位于引擎的 licenses 文件夹中</value></data>
+  <data name="Credit_PdfiumLibs_Name" xml:space="preserve"><value>PDFium 中包含的库</value></data>
+  <data name="Credit_QuickXml" xml:space="preserve"><value>© Johann Tuffe · MIT 许可证 · 包含在引擎中</value></data>
+  <data name="Credit_Resvg" xml:space="preserve"><value>© The Resvg Authors · Apache 2.0 或 MIT · 包含在引擎中（SVG）</value></data>
+  <data name="Credit_Ruzstd" xml:space="preserve"><value>© Moritz Borcherding · MIT 许可证 · 包含在引擎中</value></data>
+  <data name="Credit_Segoe" xml:space="preserve"><value>© Microsoft · Windows 系统字体；不重新分发</value></data>
+  <data name="Credit_Segoe_Name" xml:space="preserve"><value>Segoe UI Variable 和 Segoe Fluent Icons</value></data>
+  <data name="Credit_Serde" xml:space="preserve"><value>© Erick Tryzelaar 和 David Tolnay · MIT 或 Apache 2.0 · 包含在引擎中</value></data>
+  <data name="Credit_Serde_Name" xml:space="preserve"><value>serde 和 serde_json</value></data>
+  <data name="Credit_Sora" xml:space="preserve"><value>© The Sora Project Authors · SIL Open Font License 1.1 · 包含在应用中（主页标题）</value></data>
+  <data name="Credit_Texture2d" xml:space="preserve"><value>© Rudolf Kolbe · MIT 或 Apache 2.0 · 包含在引擎中（压缩纹理）</value></data>
+  <data name="Credit_WinAppSdk" xml:space="preserve"><value>© Microsoft Corporation · MIT 许可证 · 包含在应用中</value></data>
+  <data name="Credit_WinAppSdk_Name" xml:space="preserve"><value>Windows App SDK 和 WinUI 3</value></data>
+  <data name="Credit_WindowsRs" xml:space="preserve"><value>© Microsoft Corporation · MIT 或 Apache 2.0 · 包含在引擎中</value></data>
+  <data name="Credit_Zip" xml:space="preserve"><value>© Mathijs van de Nes 及贡献者 · MIT 许可证 · 包含在引擎中</value></data>
+  <data name="Discard_Confirm_Many" xml:space="preserve"><value>要放弃 {0} 个更改吗？</value></data>
+  <data name="Discard_Confirm_Message" xml:space="preserve"><value>设置将恢复为你上次应用时的状态。</value></data>
+  <data name="Discard_Confirm_One" xml:space="preserve"><value>要放弃 1 个更改吗？</value></data>
+  <data name="DiskCleanup_Failed_Title" xml:space="preserve"><value>无法打开磁盘清理</value></data>
+  <data name="Error_Unexpected_Message" xml:space="preserve"><value>操作未完成。待应用的更改已保留。详细信息请参阅 Glancy 日志。</value></data>
+  <data name="Error_Unexpected_Title" xml:space="preserve"><value>出现问题</value></data>
+  <data name="Explorer_AddFolder" xml:space="preserve"><value>添加文件夹</value></data>
+  <data name="Explorer_AlreadyExcluded" xml:space="preserve"><value>该文件夹已被排除</value></data>
+  <data name="Explorer_Checkerboard" xml:space="preserve"><value>透明棋盘格</value></data>
+  <data name="Explorer_Checkerboard_Help" xml:space="preserve"><value>在每种格式的页面上选择一种组合。若要添加新组合，请在该页面上自定义，然后选择“保存到库”。</value></data>
+  <data name="Explorer_ContextMenu" xml:space="preserve"><value>上下文菜单</value></data>
+  <data name="Explorer_General" xml:space="preserve"><value>常规</value></data>
+  <data name="Explorer_Library_Name" xml:space="preserve"><value>棋盘格库</value></data>
+  <data name="Explorer_NoExcludedFolders" xml:space="preserve"><value>没有排除的文件夹。</value></data>
+  <data name="Explorer_Privacy" xml:space="preserve"><value>隐私</value></data>
+  <data name="Explorer_RemoveFolder_Name" xml:space="preserve"><value>移除 {0}</value></data>
+  <data name="Explorer_RemoveFromList" xml:space="preserve"><value>从列表中移除</value></data>
+  <data name="Explorer_RemoveSelected" xml:space="preserve"><value>移除所选项</value></data>
+  <data name="Explorer_Restore" xml:space="preserve"><value>还原</value></data>
+  <data name="Explorer_Restore_Tooltip" xml:space="preserve"><value>恢复为三种默认棋盘格</value></data>
+  <data name="Explorer_Subtitle" xml:space="preserve"><value>Glancy 如何与文件资源管理器和桌面集成。影响所有格式。</value></data>
+  <data name="Export_Done_Title" xml:space="preserve"><value>已导出设置</value></data>
+  <data name="Export_Failed_Title" xml:space="preserve"><value>无法保存文件</value></data>
+  <data name="Format_Advanced" xml:space="preserve"><value>高级选项</value></data>
+  <data name="Format_AllExtensions" xml:space="preserve"><value>所有扩展名</value></data>
+  <data name="Format_AllExtensions_Count" xml:space="preserve"><value>所有扩展名（{0}）</value></data>
+  <data name="Format_ApplyTo" xml:space="preserve"><value>将设置应用到</value></data>
+  <data name="Format_ChooseIcon" xml:space="preserve"><value>选择图标…</value></data>
+  <data name="Format_Copied_Message" xml:space="preserve"><value>打开另一种格式，然后选择“更多 › 粘贴设置”（Ctrl+Shift+V）。</value></data>
+  <data name="Format_Copied_Title" xml:space="preserve"><value>已复制设置</value></data>
+  <data name="Format_CopySettings" xml:space="preserve"><value>复制设置</value></data>
+  <data name="Format_Customized" xml:space="preserve"><value>已自定义</value></data>
+  <data name="Format_Extension_Customized" xml:space="preserve"><value>{0}（已自定义）</value></data>
+  <data name="Format_Extension_Customized_Tooltip" xml:space="preserve"><value>{0} 有自己的设置，会替代该格式的设置</value></data>
+  <data name="Format_ExtensionScope_Help" xml:space="preserve"><value>在此处更改的设置仅影响 {0} 文件，并替代 {1} 的设置。其余设置均为继承。</value></data>
+  <data name="Format_Inactive_Disabled" xml:space="preserve"><value>此格式的缩略图已关闭：将显示文件类型图标。</value></data>
+  <data name="Format_Inactive_Fallback" xml:space="preserve"><value>选择“系统提供程序”时，由 Windows 或关联的应用绘制缩略图，不会使用这些设置（除非没有其他提供程序）。</value></data>
+  <data name="Format_More" xml:space="preserve"><value>更多</value></data>
+  <data name="Format_MoreActions_Name" xml:space="preserve"><value>更多操作</value></data>
+  <data name="Format_Pasted_Message" xml:space="preserve"><value>已将 {1} 的 {0} 项设置复制到 {2}。请查看这些设置，然后选择“应用”。</value></data>
+  <data name="Format_Pasted_Title" xml:space="preserve"><value>已粘贴设置</value></data>
+  <data name="Format_PasteFrom" xml:space="preserve"><value>从 {0} 粘贴设置</value></data>
+  <data name="Format_PasteSettings" xml:space="preserve"><value>粘贴设置</value></data>
+  <data name="Format_RemoveCustomization" xml:space="preserve"><value>移除自定义</value></data>
+  <data name="Format_RemoveCustomizationOf" xml:space="preserve"><value>移除 {0} 的自定义</value></data>
+  <data name="Format_RemoveExtensionCustomization" xml:space="preserve"><value>移除扩展名自定义</value></data>
+  <data name="Format_Reset" xml:space="preserve"><value>重置</value></data>
+  <data name="Format_Reset_Confirm" xml:space="preserve"><value>要重置 {0} 吗？</value></data>
+  <data name="Format_Reset_Confirm_Message" xml:space="preserve"><value>此页面上的所有设置都将恢复为默认值。你可以在应用之前查看。</value></data>
+  <data name="Format_ResetAll" xml:space="preserve"><value>重置所有格式</value></data>
+  <data name="Format_ResetDefaults" xml:space="preserve"><value>重置为默认值</value></data>
+  <data name="Format_ResetScope" xml:space="preserve"><value>重置 {0}</value></data>
+  <data name="Format_WindowsStatus" xml:space="preserve"><value>在 Windows 中的状态</value></data>
+  <data name="Format_WindowsStatus_Help" xml:space="preserve"><value>文件资源管理器目前对每个扩展名使用的缩略图提供程序。只读。</value></data>
+  <data name="Group_Appearance" xml:space="preserve"><value>外观</value></data>
+  <data name="Group_Generation" xml:space="preserve"><value>生成</value></data>
+  <data name="Group_OverlayIcon" xml:space="preserve"><value>叠加图标</value></data>
+  <data name="Group_Performance" xml:space="preserve"><value>性能</value></data>
+  <data name="Home_ActiveIn" xml:space="preserve"><value>已在 {0} 个扩展名中启用（共 {1} 个）</value></data>
+  <data name="Home_EnableToggle" xml:space="preserve"><value>使用 Glancy 生成缩略图</value></data>
+  <data name="Home_EngineMissing_Message" xml:space="preserve"><value>你可以更改设置；安装 Glancy 缩略图引擎后即会使用这些设置。</value></data>
+  <data name="Home_EngineMissing_Title" xml:space="preserve"><value>未安装引擎</value></data>
+  <data name="Home_FormatsCaption" xml:space="preserve"><value>{0} 种格式和 {1} 个扩展名，按类别排列。选择一种格式以调整其缩略图的外观。</value></data>
+  <data name="Home_OpenMaintenance" xml:space="preserve"><value>打开“维护”</value></data>
+  <data name="Home_QuickActions" xml:space="preserve"><value>快速操作</value></data>
+  <data name="Home_RefreshExplorer" xml:space="preserve"><value>刷新文件资源管理器窗口</value></data>
+  <data name="Home_RefreshExplorer_Desc" xml:space="preserve"><value>使用已应用的设置重新生成已打开文件夹的缩略图。</value></data>
+  <data name="Home_Status_Checking" xml:space="preserve"><value>正在检查缩略图引擎…</value></data>
+  <data name="Home_Status_EngineMissing" xml:space="preserve"><value>未安装引擎 · 设置已就绪</value></data>
+  <data name="Home_Status_EngineMissingPaused" xml:space="preserve"><value>未安装引擎 · 生成已暂停</value></data>
+  <data name="Home_Status_Paused" xml:space="preserve"><value>缩略图生成已暂停</value></data>
+  <data name="Home_Subtitle" xml:space="preserve"><value>在 Windows 文件资源管理器中为 {0} 种格式生成清晰的缩略图：设计、相机 RAW、3D、文档等。</value></data>
+  <data name="Home_ThumbnailCache" xml:space="preserve"><value>缩略图缓存</value></data>
+  <data name="Home_ThumbnailCache_Desc" xml:space="preserve"><value>如果看到旧的或错误的缩略图，请在“维护”中清除 Windows 缓存。</value></data>
+  <data name="Home_Tile_Checking" xml:space="preserve"><value>正在检查文件资源管理器的提供程序…</value></data>
+  <data name="Home_Tile_Customized" xml:space="preserve"><value>已自定义：{0}。</value></data>
+  <data name="Home_Tile_Name" xml:space="preserve"><value>{0}。已配置：{1}。{2}。</value></data>
+  <data name="Home_Tile_NoProvider" xml:space="preserve"><value>文件资源管理器没有提供程序</value></data>
+  <data name="Home_Tile_NotApplied" xml:space="preserve"><value>未应用</value></data>
+  <data name="Home_Tile_Pending" xml:space="preserve"><value>更改未应用。</value></data>
+  <data name="Home_Tile_UsesGlancy" xml:space="preserve"><value>文件资源管理器使用 Glancy</value></data>
+  <data name="Home_Tile_UsesOther" xml:space="preserve"><value>文件资源管理器使用 {0}</value></data>
+  <data name="IconPicker_Available" xml:space="preserve"><value>可用图标</value></data>
+  <data name="IconPicker_Browse" xml:space="preserve"><value>浏览…</value></data>
+  <data name="IconPicker_Count" xml:space="preserve"><value>{0} 个图标。双击即可选择。</value></data>
+  <data name="IconPicker_File" xml:space="preserve"><value>文件</value></data>
+  <data name="IconPicker_Item" xml:space="preserve"><value>图标 {0}</value></data>
+  <data name="IconPicker_Loading" xml:space="preserve"><value>正在加载图标…</value></data>
+  <data name="IconPicker_None" xml:space="preserve"><value>此文件不包含图标。</value></data>
+  <data name="IconPicker_Title" xml:space="preserve"><value>选择图标</value></data>
+  <data name="IconPicker_Use" xml:space="preserve"><value>使用图标</value></data>
+  <data name="Icons_Failed_Title" xml:space="preserve"><value>无法刷新图标</value></data>
+  <data name="Icons_Refreshed_Title" xml:space="preserve"><value>已刷新图标</value></data>
+  <data name="Import_Button" xml:space="preserve"><value>导入</value></data>
+  <data name="Import_Confirm" xml:space="preserve"><value>要导入这些设置吗？</value></data>
+  <data name="Import_Confirm_Message" xml:space="preserve"><value>“{0}”中的设置将作为待应用的更改加载。{1}在你选择“应用”之前，文件资源管理器中不会有任何变化。</value></data>
+  <data name="Import_Done_Message" xml:space="preserve"><value>请查看待应用的更改，然后选择“应用”。</value></data>
+  <data name="Import_Done_Title" xml:space="preserve"><value>已导入设置</value></data>
+  <data name="Import_Failed_Title" xml:space="preserve"><value>无法导入</value></data>
+  <data name="Import_Ignored" xml:space="preserve"><value>已跳过 {0} 个无法识别的值。</value></data>
+  <data name="Import_ReplacesPending" xml:space="preserve"><value>当前待应用的更改将被替换。</value></data>
+  <data name="Import_Unreadable_Message" xml:space="preserve"><value>该文件不是 Glancy 设置文档，或者已损坏。</value></data>
+  <data name="Import_Unreadable_Title" xml:space="preserve"><value>无法读取文件</value></data>
+  <data name="JumpList_ClearCache" xml:space="preserve"><value>清除缩略图缓存</value></data>
+  <data name="JumpList_ClearCache_Desc" xml:space="preserve"><value>打开每个文件夹时，Windows 会重新生成缩略图。</value></data>
+  <data name="JumpList_Disable" xml:space="preserve"><value>关闭 Glancy 缩略图</value></data>
+  <data name="JumpList_Disable_Desc" xml:space="preserve"><value>文件资源管理器将恢复使用 Windows 的图标和缩略图。</value></data>
+  <data name="JumpList_Enable" xml:space="preserve"><value>打开 Glancy 缩略图</value></data>
+  <data name="JumpList_Enable_Desc" xml:space="preserve"><value>文件资源管理器将再次使用 Glancy 的缩略图。</value></data>
+  <data name="JumpList_ExplorerOptions" xml:space="preserve"><value>文件资源管理器选项</value></data>
+  <data name="JumpList_Refresh" xml:space="preserve"><value>刷新文件资源管理器</value></data>
+  <data name="JumpList_Refresh_Desc" xml:space="preserve"><value>重新绘制已打开文件夹的缩略图。</value></data>
+  <data name="List_End" xml:space="preserve"><value>。</value></data>
+  <data name="List_LastSeparator" xml:space="preserve"><value>和</value></data>
+  <data name="List_LowercaseFollowingItems" xml:space="preserve"><value>false</value></data>
+  <data name="List_Separator" xml:space="preserve"><value>、</value></data>
+  <data name="Maintenance_Backup" xml:space="preserve"><value>备份</value></data>
+  <data name="Maintenance_ClearCache" xml:space="preserve"><value>清除缓存</value></data>
+  <data name="Maintenance_ClearThumbs" xml:space="preserve"><value>清除缩略图缓存</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm" xml:space="preserve"><value>要清除缩略图缓存吗？</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm_Message" xml:space="preserve"><value>下次打开每个文件夹时，Windows 将重新生成所有文件（不仅是设计文件）的缩略图。在大型文件夹中，这可能需要一些时间。你的文件不会被更改。</value></data>
+  <data name="Maintenance_ClearThumbs_Desc" xml:space="preserve"><value>Windows 会保留它生成的缩略图。如果看到旧的、损坏的或不断重新生成的缩略图，请清除缓存。</value></data>
+  <data name="Maintenance_Diagnostics" xml:space="preserve"><value>诊断</value></data>
+  <data name="Maintenance_DiskCleanup" xml:space="preserve"><value>磁盘清理</value></data>
+  <data name="Maintenance_DiskCleanup_Desc" xml:space="preserve"><value>打开 Windows 工具以选择要清理的内容，包括缩略图。</value></data>
+  <data name="Maintenance_Engine" xml:space="preserve"><value>缩略图引擎</value></data>
+  <data name="Maintenance_Engine_Installed" xml:space="preserve"><value>已安装（{0}）。已在 {1} 个扩展名中启用（共 {2} 个）。</value></data>
+  <data name="Maintenance_Engine_Missing" xml:space="preserve"><value>未安装。设置仍会保存，并将在安装引擎后使用。</value></data>
+  <data name="Maintenance_Export" xml:space="preserve"><value>导出设置</value></data>
+  <data name="Maintenance_Export_Button" xml:space="preserve"><value>导出…</value></data>
+  <data name="Maintenance_Export_Desc" xml:space="preserve"><value>将所有设置（包括待应用的更改）保存到 .glancysettings 文件，你可以将其复制到另一台电脑。</value></data>
+  <data name="Maintenance_History" xml:space="preserve"><value>最近处理的文件</value></data>
+  <data name="Maintenance_History_Desc" xml:space="preserve"><value>引擎最近生成的缩略图，以及结果和耗时。</value></data>
+  <data name="Maintenance_History_Empty" xml:space="preserve"><value>尚未记录任何活动。引擎生成缩略图后，活动会显示在这里。</value></data>
+  <data name="Maintenance_History_ItemName" xml:space="preserve"><value>{0}，{1}，{2} 毫秒</value></data>
+  <data name="Maintenance_Import" xml:space="preserve"><value>导入设置</value></data>
+  <data name="Maintenance_Import_Button" xml:space="preserve"><value>导入…</value></data>
+  <data name="Maintenance_Import_Desc" xml:space="preserve"><value>加载 .glancysettings 文件。其中的值将成为待应用的更改，以便你在应用之前查看。</value></data>
+  <data name="Maintenance_LogsFolder" xml:space="preserve"><value>日志文件夹</value></data>
+  <data name="Maintenance_OpenFolder" xml:space="preserve"><value>打开文件夹</value></data>
+  <data name="Maintenance_RefreshIcons" xml:space="preserve"><value>刷新图标缓存</value></data>
+  <data name="Maintenance_RefreshIcons_Button" xml:space="preserve"><value>刷新图标</value></data>
+  <data name="Maintenance_RefreshIcons_Desc" xml:space="preserve"><value>如果小图标（“详细信息”或“列表”视图）没有更新，此操作很有用。</value></data>
+  <data name="Maintenance_Reset" xml:space="preserve"><value>恢复默认值</value></data>
+  <data name="Maintenance_Reset_Button" xml:space="preserve"><value>恢复…</value></data>
+  <data name="Maintenance_Reset_Desc" xml:space="preserve"><value>将所有格式和文件资源管理器选项恢复为出厂设置。你可以在应用之前查看。</value></data>
+  <data name="Maintenance_Subtitle" xml:space="preserve"><value>Windows 缓存、设置备份和诊断。</value></data>
+  <data name="Maintenance_WindowsCache" xml:space="preserve"><value>Windows 缓存</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>关于</value></data>
+  <data name="Nav_AllFormats" xml:space="preserve"><value>所有格式</value></data>
+  <data name="Nav_AllFormats_Tooltip" xml:space="preserve"><value>所有格式 (Ctrl+0)</value></data>
+  <data name="Nav_Category_Tooltip_Many" xml:space="preserve"><value>{0}：{1} 种格式</value></data>
+  <data name="Nav_Category_Tooltip_One" xml:space="preserve"><value>{0}：1 种格式</value></data>
+  <data name="Nav_Explorer" xml:space="preserve"><value>文件资源管理器</value></data>
+  <data name="Nav_Explorer_Tooltip" xml:space="preserve"><value>文件资源管理器 (Ctrl+E)</value></data>
+  <data name="Nav_Formats" xml:space="preserve"><value>格式</value></data>
+  <data name="Nav_Home" xml:space="preserve"><value>主页</value></data>
+  <data name="Nav_Maintenance" xml:space="preserve"><value>维护</value></data>
+  <data name="Nav_Preferences" xml:space="preserve"><value>首选项</value></data>
+  <data name="Nav_Preferences_Tooltip" xml:space="preserve"><value>首选项 (Ctrl+,)</value></data>
+  <data name="Pending_Apply" xml:space="preserve"><value>应用</value></data>
+  <data name="Pending_Apply_Name" xml:space="preserve"><value>应用更改</value></data>
+  <data name="Pending_Apply_Tooltip" xml:space="preserve"><value>保存并使用这些更改 (Ctrl+S)</value></data>
+  <data name="Pending_Applying" xml:space="preserve"><value>正在应用…</value></data>
+  <data name="Pending_Count_Many" xml:space="preserve"><value>{0} 个待应用的更改</value></data>
+  <data name="Pending_Count_One" xml:space="preserve"><value>1 个待应用的更改</value></data>
+  <data name="Pending_Discard" xml:space="preserve"><value>放弃</value></data>
+  <data name="Pending_Discard_Tooltip" xml:space="preserve"><value>放弃所有待应用的更改</value></data>
+  <data name="Pending_Review" xml:space="preserve"><value>查看</value></data>
+  <data name="Pending_Review_Name" xml:space="preserve"><value>查看待应用的更改</value></data>
+  <data name="Pending_Subtitle" xml:space="preserve"><value>在你应用之前，文件资源管理器中不会有任何变化。</value></data>
+  <data name="Pending_Tip_Subtitle" xml:space="preserve"><value>按照自己的节奏调整多个格式。准备好让文件资源管理器使用这些更改时，查看列表并选择“应用”（Ctrl+S）。</value></data>
+  <data name="Pending_Tip_Title" xml:space="preserve"><value>你的更改会在这里等待</value></data>
+  <data name="Pending_Title" xml:space="preserve"><value>待应用的更改</value></data>
+  <data name="Pending_Undo_Name" xml:space="preserve"><value>撤消上一个更改</value></data>
+  <data name="Pending_Undo_Tooltip" xml:space="preserve"><value>撤消上一个更改 (Ctrl+Z)</value></data>
+  <data name="Preferences_Language" xml:space="preserve"><value>语言</value></data>
+  <data name="Preferences_Language_Auto" xml:space="preserve"><value>Windows 语言（{0}）</value></data>
+  <data name="Preferences_Language_Desc" xml:space="preserve"><value>此窗口、跳转列表和通知所用的语言。默认使用 Windows 的语言。</value></data>
+  <data name="Preferences_Language_RestartMessage" xml:space="preserve"><value>待应用的更改会一直保留，直到你决定如何处理它们。</value></data>
+  <data name="Preferences_Language_RestartNow" xml:space="preserve"><value>立即重新启动</value></data>
+  <data name="Preferences_Language_RestartTitle" xml:space="preserve"><value>重新启动 Glancy 以更改语言</value></data>
+  <data name="Preferences_Subtitle" xml:space="preserve"><value>此窗口的设置。这些设置会立即生效，并且不会影响缩略图。</value></data>
+  <data name="Preferences_Theme" xml:space="preserve"><value>主题</value></data>
+  <data name="Preferences_Theme_Dark" xml:space="preserve"><value>深色</value></data>
+  <data name="Preferences_Theme_Desc" xml:space="preserve"><value>使用 Windows 模式，或为此应用选择一种模式。</value></data>
+  <data name="Preferences_Theme_Light" xml:space="preserve"><value>浅色</value></data>
+  <data name="Preferences_Theme_System" xml:space="preserve"><value>使用 Windows 设置</value></data>
+  <data name="Preferences_Tips" xml:space="preserve"><value>显示提示</value></data>
+  <data name="Preferences_Tips_Desc" xml:space="preserve"><value>功能首次出现时显示简短说明，例如待应用的更改栏。</value></data>
+  <data name="Preferences_TopMost" xml:space="preserve"><value>保持在其他窗口之上</value></data>
+  <data name="Preferences_TopMost_Desc" xml:space="preserve"><value>便于在文件资源管理器中查看文件夹时调整缩略图。快捷键：Ctrl+T。</value></data>
+  <data name="Preferences_Window" xml:space="preserve"><value>窗口</value></data>
+  <data name="Preview_Dark" xml:space="preserve"><value>深色</value></data>
+  <data name="Preview_Dark_Name" xml:space="preserve"><value>深色模式下的文件资源管理器</value></data>
+  <data name="Preview_Dark_Tooltip" xml:space="preserve"><value>查看深色模式下文件资源管理器中的模拟效果</value></data>
+  <data name="Preview_ExtraLarge" xml:space="preserve"><value>{0} · 超大图标</value></data>
+  <data name="Preview_Large" xml:space="preserve"><value>大</value></data>
+  <data name="Preview_Medium" xml:space="preserve"><value>中</value></data>
+  <data name="Preview_Note" xml:space="preserve"><value>使用带有透明区域的示例图像进行模拟。实际效果因文件而异。</value></data>
+  <data name="Preview_Simulation_Name" xml:space="preserve"><value>文件资源管理器中的缩略图模拟</value></data>
+  <data name="Preview_Title" xml:space="preserve"><value>预览</value></data>
+  <data name="QuickAction_EngineMissing" xml:space="preserve"><value>安装 Glancy 缩略图引擎后即会生效。</value></data>
+  <data name="QuickAction_Failed" xml:space="preserve"><value>无法完成操作</value></data>
+  <data name="QuickAction_NoRefresh" xml:space="preserve"><value>打开文件夹或按 F5 时，文件夹中将显示此更改。</value></data>
+  <data name="QuickAction_Off" xml:space="preserve"><value>Glancy 缩略图已关闭</value></data>
+  <data name="QuickAction_On" xml:space="preserve"><value>Glancy 缩略图已打开</value></data>
+  <data name="QuickAction_PressF5" xml:space="preserve"><value>在文件资源管理器中按 F5，即可在已打开的文件夹中看到此更改。</value></data>
+  <data name="QuickAction_RefreshStopped" xml:space="preserve"><value>耗时过长。请在文件资源管理器中按 F5。</value></data>
+  <data name="QuickAction_Unknown" xml:space="preserve"><value>未知操作</value></data>
+  <data name="Refresh_Done_Message" xml:space="preserve"><value>{1} 个打开的文件夹中的 {0} 个文件。</value></data>
+  <data name="Refresh_Done_Title" xml:space="preserve"><value>已刷新文件资源管理器</value></data>
+  <data name="Refresh_LimitReached" xml:space="preserve"><value>已达到 {0} 个文件的上限。</value></data>
+  <data name="Refresh_Partial_Message" xml:space="preserve"><value>你的更改已保存。在文件资源管理器中按 F5 可查看新的缩略图。</value></data>
+  <data name="Refresh_Partial_Title" xml:space="preserve"><value>无法刷新所有窗口</value></data>
+  <data name="Refresh_Stopped_Message" xml:space="preserve"><value>耗时过长。你的更改已保存；在文件资源管理器中按 F5 可查看新的缩略图。</value></data>
+  <data name="Refresh_Stopped_Title" xml:space="preserve"><value>已停止刷新文件资源管理器</value></data>
+  <data name="Reset_Button" xml:space="preserve"><value>恢复</value></data>
+  <data name="Reset_Confirm" xml:space="preserve"><value>要恢复出厂设置吗？</value></data>
+  <data name="Reset_Confirm_Message" xml:space="preserve"><value>所有格式、自定义的扩展名、排除的文件夹和文件资源管理器选项都将恢复为默认值。在你选择“应用”之前，这些更改将作为待应用的更改保留。</value></data>
+  <data name="Sample_Design" xml:space="preserve"><value>design</value></data>
+  <data name="Sample_Document" xml:space="preserve"><value>document</value></data>
+  <data name="Sample_File" xml:space="preserve"><value>file</value></data>
+  <data name="Sample_Image" xml:space="preserve"><value>image</value></data>
+  <data name="Sample_Model" xml:space="preserve"><value>model</value></data>
+  <data name="Sample_Photo" xml:space="preserve"><value>photo</value></data>
+  <data name="Search_AllFormats_Sub" xml:space="preserve"><value>一次性更改所有格式中的某项设置</value></data>
+  <data name="Search_Backup_Sub" xml:space="preserve"><value>维护 · 备份</value></data>
+  <data name="Search_ClearCache_Keywords" xml:space="preserve"><value>删除 清理 清除 重置 缩略图 delete clean reset thumbnails</value></data>
+  <data name="Search_Explorer_Sub" xml:space="preserve"><value>与文件资源管理器和桌面的集成</value></data>
+  <data name="Search_Export_Keywords" xml:space="preserve"><value>保存 备份 导出 save backup export</value></data>
+  <data name="Search_ExtensionOf" xml:space="preserve"><value>{0} 扩展名</value></data>
+  <data name="Search_Format" xml:space="preserve"><value>格式</value></data>
+  <data name="Search_FormatSetting" xml:space="preserve"><value>格式设置 · {0}</value></data>
+  <data name="Search_Home_Sub" xml:space="preserve"><value>状态和格式</value></data>
+  <data name="Search_Import_Keywords" xml:space="preserve"><value>加载 还原 恢复 备份 导入 load restore backup import</value></data>
+  <data name="Search_Language_Keywords" xml:space="preserve"><value>语言 翻译 英语 西班牙语 中文 简体 language translation english spanish chinese</value></data>
+  <data name="Search_Maintenance_Sub" xml:space="preserve"><value>缓存、备份和诊断</value></data>
+  <data name="Search_Name" xml:space="preserve"><value>搜索 Glancy</value></data>
+  <data name="Search_NoResults" xml:space="preserve"><value>无结果</value></data>
+  <data name="Search_NoResults_Hint" xml:space="preserve"><value>请尝试“透明度”“.psb”或“缓存”</value></data>
+  <data name="Search_Placeholder" xml:space="preserve"><value>搜索设置、格式或扩展名</value></data>
+  <data name="Search_PlaceholderShort" xml:space="preserve"><value>搜索</value></data>
+  <data name="Search_Reset_Keywords" xml:space="preserve"><value>出厂 出厂设置 重置 默认值 factory reset</value></data>
+  <data name="Search_Shortcuts_Keywords" xml:space="preserve"><value>按键 键盘 快捷键 快捷方式 keys keyboard shortcuts</value></data>
+  <data name="Search_Theme" xml:space="preserve"><value>浅色或深色主题</value></data>
+  <data name="Search_Theme_Keywords" xml:space="preserve"><value>模式 深色 浅色 暗色 亮色 外观 mode dark light appearance</value></data>
+  <data name="Search_TopMost" xml:space="preserve"><value>置顶</value></data>
+  <data name="Search_TopMost_Keywords" xml:space="preserve"><value>固定 始终 可见 置顶 最前 pin always visible</value></data>
+  <data name="Search_TopMost_Sub" xml:space="preserve"><value>首选项 · 窗口</value></data>
+  <data name="Sentence_Separator" xml:space="preserve"><value></value></data>
+  <data name="Setting_Reset_EachFormat" xml:space="preserve"><value>重置为各格式的默认值</value></data>
+  <data name="Setting_Reset_To" xml:space="preserve"><value>重置：{0}</value></data>
+  <data name="Setting_Reset_UseFormat" xml:space="preserve"><value>使用格式的值</value></data>
+  <data name="Setting_Status_CustomizedFor" xml:space="preserve"><value>已为 {0} 自定义</value></data>
+  <data name="Setting_Status_Mixed" xml:space="preserve"><value>各格式之间不同。</value></data>
+  <data name="Setting_Status_SomeExtension" xml:space="preserve"><value>某个扩展名使用了自己的值。</value></data>
+  <data name="SettingsCard_Pending_Tooltip" xml:space="preserve"><value>更改尚未应用</value></data>
+  <data name="SettingsCard_PendingName" xml:space="preserve"><value>{0}（待应用的更改）</value></data>
+  <data name="SettingsCard_Reset_Name" xml:space="preserve"><value>重置</value></data>
+  <data name="Shortcut_Apply" xml:space="preserve"><value>应用所有待应用的更改</value></data>
+  <data name="Shortcut_Back" xml:space="preserve"><value>返回上一页</value></data>
+  <data name="Shortcut_CopyPaste" xml:space="preserve"><value>复制/粘贴格式的设置</value></data>
+  <data name="Shortcut_CopyPaste_Keys" xml:space="preserve"><value>Ctrl + Shift + C / V</value></data>
+  <data name="Shortcut_Help" xml:space="preserve"><value>打开此帮助页面</value></data>
+  <data name="Status_EngineInstalled" xml:space="preserve"><value>Glancy：引擎已安装。</value></data>
+  <data name="Status_EngineMissing" xml:space="preserve"><value>Glancy：引擎仍未安装。</value></data>
+  <data name="Status_Updated_Title" xml:space="preserve"><value>状态已更新</value></data>
+  <data name="Store_RegistryUnavailable" xml:space="preserve"><value>无法访问注册表，因此无法保存设置。</value></data>
+  <data name="Tip_GotIt" xml:space="preserve"><value>知道了</value></data>
+  <data name="TopMost_Name" xml:space="preserve"><value>使窗口保持置顶</value></data>
+  <data name="TopMost_Off_Tooltip" xml:space="preserve"><value>取消置顶 (Ctrl+T)</value></data>
+  <data name="TopMost_Tooltip" xml:space="preserve"><value>置顶 (Ctrl+T)</value></data>
+  <data name="Undo_Announcement" xml:space="preserve"><value>已撤消更改</value></data>
+</root>

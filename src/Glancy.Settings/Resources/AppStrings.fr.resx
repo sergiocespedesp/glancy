@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="About_Credits" xml:space="preserve"><value>Crédits et licences tierces</value></data>
+  <data name="About_FreeSoftware" xml:space="preserve"><value>Logiciel libre</value></data>
+  <data name="About_FreeSoftware_Text" xml:space="preserve"><value>Glancy est un logiciel libre : vous pouvez le redistribuer et le modifier selon les termes de la licence publique générale GNU, version 3 ou toute version ultérieure. Il est fourni sans aucune garantie.</value></data>
+  <data name="About_HowItWorks" xml:space="preserve"><value>Fonctionnement</value></data>
+  <data name="About_HowItWorks_Extensions" xml:space="preserve"><value>Chaque format a ses propres paramètres. Si un format a plusieurs extensions (par exemple .psd et .psb), vous pouvez n’en personnaliser qu’une ; les autres héritent du format.</value></data>
+  <data name="About_HowItWorks_Pending" xml:space="preserve"><value>Les modifications apportées aux formats et aux paramètres de l’Explorateur de fichiers s’accumulent comme modifications en attente. Rien ne change dans l’Explorateur de fichiers tant que vous ne sélectionnez pas Appliquer ; vous pouvez d’abord les vérifier ou les ignorer.</value></data>
+  <data name="About_HowItWorks_Preferences" xml:space="preserve"><value>Les préférences de cette fenêtre (thème, premier plan) s’appliquent immédiatement et n’affectent pas les miniatures.</value></data>
+  <data name="About_LicenseLink" xml:space="preserve"><value>Licence (GPL-3.0)</value></data>
+  <data name="About_Shortcuts" xml:space="preserve"><value>Raccourcis clavier</value></data>
+  <data name="About_SourceCode" xml:space="preserve"><value>Code source</value></data>
+  <data name="About_Support" xml:space="preserve"><value>Soutenir Glancy</value></data>
+  <data name="About_Support_Text" xml:space="preserve"><value>Glancy est gratuit et sans publicité. S’il vous est utile, un don aide à le maintenir.</value></data>
+  <data name="About_Tech_Clsid" xml:space="preserve"><value>CLSID du moteur : {0}</value></data>
+  <data name="About_Tech_ExportFile" xml:space="preserve"><value>Fichier d’exportation : {0}</value></data>
+  <data name="About_Tech_Logs" xml:space="preserve"><value>Journaux : {0}</value></data>
+  <data name="About_Tech_Settings" xml:space="preserve"><value>Paramètres : {0}</value></data>
+  <data name="About_TechInfo" xml:space="preserve"><value>Informations techniques</value></data>
+  <data name="About_Title" xml:space="preserve"><value>À propos de Glancy</value></data>
+  <data name="About_Version" xml:space="preserve"><value>Version {0} · {1}</value></data>
+  <data name="AllFormats_Counts" xml:space="preserve"><value>{0} formats · {1} extensions</value></data>
+  <data name="AllFormats_Description" xml:space="preserve"><value>Modifiez un paramètre ici pour l’appliquer à tous les formats à la fois. Les formats qui ne prennent pas en charge un paramètre l’ignorent.</value></data>
+  <data name="Apply_Applied_NoRefresh" xml:space="preserve"><value>Les dossiers affichent les nouvelles miniatures quand vous les ouvrez ou appuyez sur F5.</value></data>
+  <data name="Apply_Applied_Refreshed" xml:space="preserve"><value>Les fenêtres ouvertes de l’Explorateur de fichiers ont été actualisées.</value></data>
+  <data name="Apply_Applied_Title" xml:space="preserve"><value>Modifications appliquées</value></data>
+  <data name="Apply_Failed_Message" xml:space="preserve"><value>{0} Vos modifications sont toujours en attente.</value></data>
+  <data name="Apply_Failed_Title" xml:space="preserve"><value>Impossible d’appliquer les modifications</value></data>
+  <data name="Apply_Saved_EngineMissing" xml:space="preserve"><value>Elles seront utilisées une fois le moteur de miniatures Glancy installé.</value></data>
+  <data name="Apply_Saved_Title" xml:space="preserve"><value>Modifications enregistrées</value></data>
+  <data name="Cache_Cleared_Title" xml:space="preserve"><value>Cache des miniatures vidé</value></data>
+  <data name="Cache_Failed_Title" xml:space="preserve"><value>Impossible de vider le cache</value></data>
+  <data name="Cache_Freed" xml:space="preserve"><value>{0:0.#} Mo libérés.</value></data>
+  <data name="Checker_Customize" xml:space="preserve"><value>Personnaliser</value></data>
+  <data name="Checker_DarkColor" xml:space="preserve"><value>Couleur foncée</value></data>
+  <data name="Checker_DarkGrays" xml:space="preserve"><value>Gris foncés</value></data>
+  <data name="Checker_Library" xml:space="preserve"><value>Bibliothèque</value></data>
+  <data name="Checker_LightColor" xml:space="preserve"><value>Couleur claire</value></data>
+  <data name="Checker_MidGrays" xml:space="preserve"><value>Gris moyens</value></data>
+  <data name="Checker_Pair" xml:space="preserve"><value>{0} et {1}</value></data>
+  <data name="Checker_Random" xml:space="preserve"><value>Aléatoire</value></data>
+  <data name="Checker_SaveToLibrary" xml:space="preserve"><value>Enregistrer dans la bibliothèque</value></data>
+  <data name="Checker_Swap" xml:space="preserve"><value>Inverser les couleurs</value></data>
+  <data name="Checker_WhiteLightGray" xml:space="preserve"><value>Blanc et gris clair</value></data>
+  <data name="Close_ApplyAndClose" xml:space="preserve"><value>Appliquer et fermer</value></data>
+  <data name="Close_DialogOpen_Message" xml:space="preserve"><value>Vous pourrez ensuite fermer Glancy.</value></data>
+  <data name="Close_DialogOpen_Title" xml:space="preserve"><value>Fermez la boîte de dialogue ouverte</value></data>
+  <data name="Close_Pending_Many" xml:space="preserve"><value>Vous avez {0} modifications non appliquées</value></data>
+  <data name="Close_Pending_Message" xml:space="preserve"><value>Si vous fermez sans appliquer, l’Explorateur de fichiers continue d’utiliser les paramètres précédents.</value></data>
+  <data name="Close_Pending_One" xml:space="preserve"><value>Vous avez 1 modification non appliquée</value></data>
+  <data name="Close_WithoutApplying" xml:space="preserve"><value>Fermer sans appliquer</value></data>
+  <data name="Color_Quick" xml:space="preserve"><value>Couleurs rapides</value></data>
+  <data name="Color_Use" xml:space="preserve"><value>Utiliser cette couleur</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Annuler</value></data>
+  <data name="Common_CheckAgain" xml:space="preserve"><value>Vérifier à nouveau</value></data>
+  <data name="Common_Checking" xml:space="preserve"><value>Vérification…</value></data>
+  <data name="Common_Failed" xml:space="preserve"><value>échec</value></data>
+  <data name="Common_MultipleValues" xml:space="preserve"><value>Plusieurs valeurs</value></data>
+  <data name="Common_Off" xml:space="preserve"><value>Désactivé</value></data>
+  <data name="Common_On" xml:space="preserve"><value>Activé</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Ouvrir</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Actualiser</value></data>
+  <data name="Common_Selected" xml:space="preserve"><value>Sélectionné</value></data>
+  <data name="Common_Succeeded" xml:space="preserve"><value>réussi</value></data>
+  <data name="Count_Extension_Many" xml:space="preserve"><value>{0} extensions</value></data>
+  <data name="Count_Extension_One" xml:space="preserve"><value>1 extension</value></data>
+  <data name="Count_Format_Many" xml:space="preserve"><value>{0} formats</value></data>
+  <data name="Count_Format_One" xml:space="preserve"><value>1 format</value></data>
+  <data name="Credit_Cfb" xml:space="preserve"><value>© Matthew D. Steele · Licence MIT · inclus dans le moteur</value></data>
+  <data name="Credit_DotNet" xml:space="preserve"><value>© .NET Foundation et contributeurs · Licence MIT · inclus dans l’application</value></data>
+  <data name="Credit_Fax" xml:space="preserve"><value>© The pdf-rs contributors · Licence MIT · inclus dans le moteur</value></data>
+  <data name="Credit_Flate2" xml:space="preserve"><value>© Alex Crichton et contributeurs · MIT ou Apache 2.0 · inclus dans le moteur</value></data>
+  <data name="Credit_Ghostscript" xml:space="preserve"><value>© Artifex Software · GNU AGPL 3.0 · ni inclus ni distribué ; s’il est installé sur le PC, le moteur l’utilise pour les fichiers EPS et les anciens fichiers AI</value></data>
+  <data name="Credit_Ghostscript_Name" xml:space="preserve"><value>Ghostscript (facultatif)</value></data>
+  <data name="Credit_Hayro" xml:space="preserve"><value>© The Hayro Authors · Apache 2.0 ou MIT · inclus dans le moteur (JPEG 2000)</value></data>
+  <data name="Credit_Image" xml:space="preserve"><value>© The image-rs Developers · MIT ou Apache 2.0 · inclus dans le moteur (PNG, JPEG, TIFF, WebP, GIF, BMP, DDS, EXR, HDR…)</value></data>
+  <data name="Credit_JxlOxide" xml:space="preserve"><value>© Wonwoo Choi · MIT ou Apache 2.0 · inclus dans le moteur (JPEG XL)</value></data>
+  <data name="Credit_OtherRust" xml:space="preserve"><value>tiny-skia, usvg, zune-jpeg, exr, zlib-rs, rayon et les autres crates utilisées par celles ci-dessus · licences permissives (MIT, Apache 2.0, BSD, Zlib) · inclus dans le moteur</value></data>
+  <data name="Credit_OtherRust_Name" xml:space="preserve"><value>Autres dépendances Rust</value></data>
+  <data name="Credit_Pdfium" xml:space="preserve"><value>© The PDFium Authors · Licence BSD à 3 clauses · inclus dans le moteur (pdfium.dll ; PDF et AI)</value></data>
+  <data name="Credit_PdfiumLibs" xml:space="preserve"><value>FreeType (licence FreeType), HarfBuzz (MIT), ICU (licence Unicode v3), libjpeg-turbo (IJG et BSD), libpng (licence PNG v2), zlib (licence zlib), OpenJPEG (BSD à 2 clauses), Little CMS (MIT), Abseil (Apache 2.0), Anti-Grain Geometry 2.3, fast_float et simdutf (MIT), Dragonbox et LLVM libc (Apache 2.0 avec exception LLVM) · inclus dans pdfium.dll ; textes complets dans le dossier des licences du moteur</value></data>
+  <data name="Credit_PdfiumLibs_Name" xml:space="preserve"><value>Bibliothèques incluses dans PDFium</value></data>
+  <data name="Credit_QuickXml" xml:space="preserve"><value>© Johann Tuffe · Licence MIT · inclus dans le moteur</value></data>
+  <data name="Credit_Resvg" xml:space="preserve"><value>© The Resvg Authors · Apache 2.0 ou MIT · inclus dans le moteur (SVG)</value></data>
+  <data name="Credit_Ruzstd" xml:space="preserve"><value>© Moritz Borcherding · Licence MIT · inclus dans le moteur</value></data>
+  <data name="Credit_Segoe" xml:space="preserve"><value>© Microsoft · polices système de Windows ; non redistribuées</value></data>
+  <data name="Credit_Segoe_Name" xml:space="preserve"><value>Segoe UI Variable et Segoe Fluent Icons</value></data>
+  <data name="Credit_Serde" xml:space="preserve"><value>© Erick Tryzelaar et David Tolnay · MIT ou Apache 2.0 · inclus dans le moteur</value></data>
+  <data name="Credit_Serde_Name" xml:space="preserve"><value>serde et serde_json</value></data>
+  <data name="Credit_Sora" xml:space="preserve"><value>© The Sora Project Authors · SIL Open Font License 1.1 · incluse dans l’application (titre de l’Accueil)</value></data>
+  <data name="Credit_Texture2d" xml:space="preserve"><value>© Rudolf Kolbe · MIT ou Apache 2.0 · inclus dans le moteur (textures compressées)</value></data>
+  <data name="Credit_WinAppSdk" xml:space="preserve"><value>© Microsoft Corporation · Licence MIT · inclus dans l’application</value></data>
+  <data name="Credit_WinAppSdk_Name" xml:space="preserve"><value>Windows App SDK et WinUI 3</value></data>
+  <data name="Credit_WindowsRs" xml:space="preserve"><value>© Microsoft Corporation · MIT ou Apache 2.0 · inclus dans le moteur</value></data>
+  <data name="Credit_Zip" xml:space="preserve"><value>© Mathijs van de Nes et contributeurs · Licence MIT · inclus dans le moteur</value></data>
+  <data name="Discard_Confirm_Many" xml:space="preserve"><value>Ignorer {0} modifications ?</value></data>
+  <data name="Discard_Confirm_Message" xml:space="preserve"><value>Les paramètres reviennent à leur état lors de la dernière application.</value></data>
+  <data name="Discard_Confirm_One" xml:space="preserve"><value>Ignorer 1 modification ?</value></data>
+  <data name="DiskCleanup_Failed_Title" xml:space="preserve"><value>Impossible d’ouvrir Nettoyage de disque</value></data>
+  <data name="Error_Unexpected_Message" xml:space="preserve"><value>L’action ne s’est pas terminée. Vos modifications en attente sont conservées. Les détails figurent dans le journal de Glancy.</value></data>
+  <data name="Error_Unexpected_Title" xml:space="preserve"><value>Un problème est survenu</value></data>
+  <data name="Explorer_AddFolder" xml:space="preserve"><value>Ajouter un dossier</value></data>
+  <data name="Explorer_AlreadyExcluded" xml:space="preserve"><value>Ce dossier est déjà exclu</value></data>
+  <data name="Explorer_Checkerboard" xml:space="preserve"><value>Damier de transparence</value></data>
+  <data name="Explorer_Checkerboard_Help" xml:space="preserve"><value>Choisissez une combinaison sur la page de chaque format. Pour en ajouter une, personnalisez-la là-bas et sélectionnez « Enregistrer dans la bibliothèque ».</value></data>
+  <data name="Explorer_ContextMenu" xml:space="preserve"><value>Menu contextuel</value></data>
+  <data name="Explorer_General" xml:space="preserve"><value>Général</value></data>
+  <data name="Explorer_Library_Name" xml:space="preserve"><value>Bibliothèque de damiers</value></data>
+  <data name="Explorer_NoExcludedFolders" xml:space="preserve"><value>Aucun dossier exclu.</value></data>
+  <data name="Explorer_Privacy" xml:space="preserve"><value>Confidentialité</value></data>
+  <data name="Explorer_RemoveFolder_Name" xml:space="preserve"><value>Supprimer {0}</value></data>
+  <data name="Explorer_RemoveFromList" xml:space="preserve"><value>Supprimer de la liste</value></data>
+  <data name="Explorer_RemoveSelected" xml:space="preserve"><value>Supprimer la sélection</value></data>
+  <data name="Explorer_Restore" xml:space="preserve"><value>Restaurer</value></data>
+  <data name="Explorer_Restore_Tooltip" xml:space="preserve"><value>Revenir aux trois damiers par défaut</value></data>
+  <data name="Explorer_Subtitle" xml:space="preserve"><value>Comment Glancy s’intègre à l’Explorateur de fichiers et au Bureau. S’applique à tous les formats.</value></data>
+  <data name="Export_Done_Title" xml:space="preserve"><value>Paramètres exportés</value></data>
+  <data name="Export_Failed_Title" xml:space="preserve"><value>Impossible d’enregistrer le fichier</value></data>
+  <data name="Format_Advanced" xml:space="preserve"><value>Options avancées</value></data>
+  <data name="Format_AllExtensions" xml:space="preserve"><value>Toutes les extensions</value></data>
+  <data name="Format_AllExtensions_Count" xml:space="preserve"><value>Toutes les extensions ({0})</value></data>
+  <data name="Format_ApplyTo" xml:space="preserve"><value>Appliquer les paramètres à</value></data>
+  <data name="Format_ChooseIcon" xml:space="preserve"><value>Choisir une icône…</value></data>
+  <data name="Format_Copied_Message" xml:space="preserve"><value>Ouvrez un autre format et choisissez Plus › Coller les paramètres (Ctrl+Maj+V).</value></data>
+  <data name="Format_Copied_Title" xml:space="preserve"><value>Paramètres copiés</value></data>
+  <data name="Format_CopySettings" xml:space="preserve"><value>Copier les paramètres</value></data>
+  <data name="Format_Customized" xml:space="preserve"><value>Personnalisé</value></data>
+  <data name="Format_Extension_Customized" xml:space="preserve"><value>{0} (personnalisée)</value></data>
+  <data name="Format_Extension_Customized_Tooltip" xml:space="preserve"><value>{0} a ses propres paramètres, qui remplacent ceux du format</value></data>
+  <data name="Format_ExtensionScope_Help" xml:space="preserve"><value>Les paramètres modifiés ici n’affectent que les fichiers {0} et remplacent ceux de {1}. Les autres sont hérités.</value></data>
+  <data name="Format_Inactive_Disabled" xml:space="preserve"><value>Les miniatures sont désactivées pour ce format : l’icône du type de fichier est affichée.</value></data>
+  <data name="Format_Inactive_Fallback" xml:space="preserve"><value>Avec « Fournisseur du système », Windows ou l’application associée dessine la miniature et ces paramètres ne sont pas utilisés (sauf s’il n’y a pas d’autre fournisseur).</value></data>
+  <data name="Format_More" xml:space="preserve"><value>Plus</value></data>
+  <data name="Format_MoreActions_Name" xml:space="preserve"><value>Plus d’actions</value></data>
+  <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} paramètres de {1} copiés vers {2}. Vérifiez-les et sélectionnez Appliquer.</value></data>
+  <data name="Format_Pasted_Title" xml:space="preserve"><value>Paramètres collés</value></data>
+  <data name="Format_PasteFrom" xml:space="preserve"><value>Coller les paramètres de {0}</value></data>
+  <data name="Format_PasteSettings" xml:space="preserve"><value>Coller les paramètres</value></data>
+  <data name="Format_RemoveCustomization" xml:space="preserve"><value>Supprimer la personnalisation</value></data>
+  <data name="Format_RemoveCustomizationOf" xml:space="preserve"><value>Supprimer la personnalisation de {0}</value></data>
+  <data name="Format_RemoveExtensionCustomization" xml:space="preserve"><value>Supprimer la personnalisation de l’extension</value></data>
+  <data name="Format_Reset" xml:space="preserve"><value>Réinitialiser</value></data>
+  <data name="Format_Reset_Confirm" xml:space="preserve"><value>Réinitialiser {0} ?</value></data>
+  <data name="Format_Reset_Confirm_Message" xml:space="preserve"><value>Chaque paramètre de cette page revient à sa valeur par défaut. Vous pourrez vérifier avant d’appliquer.</value></data>
+  <data name="Format_ResetAll" xml:space="preserve"><value>Réinitialiser tous les formats</value></data>
+  <data name="Format_ResetDefaults" xml:space="preserve"><value>Rétablir les valeurs par défaut</value></data>
+  <data name="Format_ResetScope" xml:space="preserve"><value>Réinitialiser {0}</value></data>
+  <data name="Format_WindowsStatus" xml:space="preserve"><value>État dans Windows</value></data>
+  <data name="Format_WindowsStatus_Help" xml:space="preserve"><value>Le fournisseur de miniatures utilisé actuellement par l’Explorateur de fichiers pour chaque extension. Lecture seule.</value></data>
+  <data name="Group_Appearance" xml:space="preserve"><value>Apparence</value></data>
+  <data name="Group_Generation" xml:space="preserve"><value>Génération</value></data>
+  <data name="Group_OverlayIcon" xml:space="preserve"><value>Icône superposée</value></data>
+  <data name="Group_Performance" xml:space="preserve"><value>Performances</value></data>
+  <data name="Home_ActiveIn" xml:space="preserve"><value>Actif pour {0} extensions sur {1}</value></data>
+  <data name="Home_EnableToggle" xml:space="preserve"><value>Générer les miniatures avec Glancy</value></data>
+  <data name="Home_EngineMissing_Message" xml:space="preserve"><value>Vous pouvez modifier les paramètres ; ils seront utilisés une fois le moteur de miniatures Glancy installé.</value></data>
+  <data name="Home_EngineMissing_Title" xml:space="preserve"><value>Moteur non installé</value></data>
+  <data name="Home_FormatsCaption" xml:space="preserve"><value>{0} formats et {1} extensions, par catégorie. Choisissez-en un pour régler l’aspect de ses miniatures.</value></data>
+  <data name="Home_OpenMaintenance" xml:space="preserve"><value>Ouvrir Maintenance</value></data>
+  <data name="Home_QuickActions" xml:space="preserve"><value>Actions rapides</value></data>
+  <data name="Home_RefreshExplorer" xml:space="preserve"><value>Actualiser les fenêtres de l’Explorateur de fichiers</value></data>
+  <data name="Home_RefreshExplorer_Desc" xml:space="preserve"><value>Régénère les miniatures des dossiers ouverts avec les paramètres appliqués.</value></data>
+  <data name="Home_Status_Checking" xml:space="preserve"><value>Vérification du moteur de miniatures…</value></data>
+  <data name="Home_Status_EngineMissing" xml:space="preserve"><value>Moteur non installé · paramètres prêts</value></data>
+  <data name="Home_Status_EngineMissingPaused" xml:space="preserve"><value>Moteur non installé · génération suspendue</value></data>
+  <data name="Home_Status_Paused" xml:space="preserve"><value>Génération des miniatures suspendue</value></data>
+  <data name="Home_Subtitle" xml:space="preserve"><value>Des miniatures nettes pour {0} formats dans l’Explorateur de fichiers Windows : design, RAW d’appareil photo, 3D, documents et plus encore.</value></data>
+  <data name="Home_ThumbnailCache" xml:space="preserve"><value>Cache des miniatures</value></data>
+  <data name="Home_ThumbnailCache_Desc" xml:space="preserve"><value>Si vous voyez des miniatures anciennes ou incorrectes, videz le cache Windows dans Maintenance.</value></data>
+  <data name="Home_Tile_Checking" xml:space="preserve"><value>Vérification du fournisseur de l’Explorateur de fichiers…</value></data>
+  <data name="Home_Tile_Customized" xml:space="preserve"><value>Personnalisé : {0}.</value></data>
+  <data name="Home_Tile_Name" xml:space="preserve"><value>{0}. Configuré : {1}. {2}.</value></data>
+  <data name="Home_Tile_NoProvider" xml:space="preserve"><value>L’Explorateur de fichiers n’a aucun fournisseur</value></data>
+  <data name="Home_Tile_NotApplied" xml:space="preserve"><value>Non appliqué</value></data>
+  <data name="Home_Tile_Pending" xml:space="preserve"><value>Modifications non appliquées.</value></data>
+  <data name="Home_Tile_UsesGlancy" xml:space="preserve"><value>L’Explorateur de fichiers utilise Glancy</value></data>
+  <data name="Home_Tile_UsesOther" xml:space="preserve"><value>L’Explorateur de fichiers utilise {0}</value></data>
+  <data name="IconPicker_Available" xml:space="preserve"><value>Icônes disponibles</value></data>
+  <data name="IconPicker_Browse" xml:space="preserve"><value>Parcourir…</value></data>
+  <data name="IconPicker_Count" xml:space="preserve"><value>{0} icônes. Double-cliquez pour choisir.</value></data>
+  <data name="IconPicker_File" xml:space="preserve"><value>Fichier</value></data>
+  <data name="IconPicker_Item" xml:space="preserve"><value>Icône {0}</value></data>
+  <data name="IconPicker_Loading" xml:space="preserve"><value>Chargement des icônes…</value></data>
+  <data name="IconPicker_None" xml:space="preserve"><value>Ce fichier ne contient aucune icône.</value></data>
+  <data name="IconPicker_Title" xml:space="preserve"><value>Choisir une icône</value></data>
+  <data name="IconPicker_Use" xml:space="preserve"><value>Utiliser l’icône</value></data>
+  <data name="Icons_Failed_Title" xml:space="preserve"><value>Impossible d’actualiser les icônes</value></data>
+  <data name="Icons_Refreshed_Title" xml:space="preserve"><value>Icônes actualisées</value></data>
+  <data name="Import_Button" xml:space="preserve"><value>Importer</value></data>
+  <data name="Import_Confirm" xml:space="preserve"><value>Importer ces paramètres ?</value></data>
+  <data name="Import_Confirm_Message" xml:space="preserve"><value>Les paramètres de « {0} » seront chargés comme modifications en attente.{1} Rien ne change dans l’Explorateur de fichiers tant que vous ne sélectionnez pas Appliquer.</value></data>
+  <data name="Import_Done_Message" xml:space="preserve"><value>Vérifiez les modifications en attente et sélectionnez Appliquer.</value></data>
+  <data name="Import_Done_Title" xml:space="preserve"><value>Paramètres importés</value></data>
+  <data name="Import_Failed_Title" xml:space="preserve"><value>Échec de l’importation</value></data>
+  <data name="Import_Ignored" xml:space="preserve"><value>{0} valeurs non reconnues ont été ignorées.</value></data>
+  <data name="Import_ReplacesPending" xml:space="preserve"><value>Vos modifications en attente actuelles seront remplacées.</value></data>
+  <data name="Import_Unreadable_Message" xml:space="preserve"><value>Ce fichier n’est pas un document de paramètres Glancy, ou il est endommagé.</value></data>
+  <data name="Import_Unreadable_Title" xml:space="preserve"><value>Impossible de lire le fichier</value></data>
+  <data name="JumpList_ClearCache" xml:space="preserve"><value>Vider le cache des miniatures</value></data>
+  <data name="JumpList_ClearCache_Desc" xml:space="preserve"><value>Windows régénère les miniatures à l’ouverture de chaque dossier.</value></data>
+  <data name="JumpList_Disable" xml:space="preserve"><value>Désactiver les miniatures Glancy</value></data>
+  <data name="JumpList_Disable_Desc" xml:space="preserve"><value>L’Explorateur de fichiers revient aux icônes et miniatures de Windows.</value></data>
+  <data name="JumpList_Enable" xml:space="preserve"><value>Activer les miniatures Glancy</value></data>
+  <data name="JumpList_Enable_Desc" xml:space="preserve"><value>L’Explorateur de fichiers utilise à nouveau les miniatures de Glancy.</value></data>
+  <data name="JumpList_ExplorerOptions" xml:space="preserve"><value>Options de l’Explorateur de fichiers</value></data>
+  <data name="JumpList_Refresh" xml:space="preserve"><value>Actualiser l’Explorateur de fichiers</value></data>
+  <data name="JumpList_Refresh_Desc" xml:space="preserve"><value>Redessine les miniatures des dossiers ouverts.</value></data>
+  <data name="List_End" xml:space="preserve"><value>.</value></data>
+  <data name="List_LastSeparator" xml:space="preserve"><value> et </value></data>
+  <data name="List_LowercaseFollowingItems" xml:space="preserve"><value>true</value></data>
+  <data name="List_Separator" xml:space="preserve"><value>, </value></data>
+  <data name="Maintenance_Backup" xml:space="preserve"><value>Sauvegarde</value></data>
+  <data name="Maintenance_ClearCache" xml:space="preserve"><value>Vider le cache</value></data>
+  <data name="Maintenance_ClearThumbs" xml:space="preserve"><value>Vider le cache des miniatures</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm" xml:space="preserve"><value>Vider le cache des miniatures ?</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm_Message" xml:space="preserve"><value>Windows régénérera les miniatures de tous les fichiers (pas seulement les fichiers de design) à la prochaine ouverture de chaque dossier. Cela peut prendre du temps dans les grands dossiers. Vos fichiers ne sont pas modifiés.</value></data>
+  <data name="Maintenance_ClearThumbs_Desc" xml:space="preserve"><value>Windows conserve les miniatures qu’il a générées. Videz-le si vous voyez des miniatures anciennes, endommagées ou qui se régénèrent sans cesse.</value></data>
+  <data name="Maintenance_Diagnostics" xml:space="preserve"><value>Diagnostics</value></data>
+  <data name="Maintenance_DiskCleanup" xml:space="preserve"><value>Nettoyage de disque</value></data>
+  <data name="Maintenance_DiskCleanup_Desc" xml:space="preserve"><value>Ouvre l’outil Windows pour choisir quoi nettoyer, miniatures comprises.</value></data>
+  <data name="Maintenance_Engine" xml:space="preserve"><value>Moteur de miniatures</value></data>
+  <data name="Maintenance_Engine_Installed" xml:space="preserve"><value>Installé ({0}). Actif pour {1} extensions sur {2}.</value></data>
+  <data name="Maintenance_Engine_Missing" xml:space="preserve"><value>Non installé. Les paramètres sont tout de même enregistrés et seront utilisés une fois le moteur installé.</value></data>
+  <data name="Maintenance_Export" xml:space="preserve"><value>Exporter les paramètres</value></data>
+  <data name="Maintenance_Export_Button" xml:space="preserve"><value>Exporter…</value></data>
+  <data name="Maintenance_Export_Desc" xml:space="preserve"><value>Enregistre tous les paramètres, modifications en attente comprises, dans un fichier .glancysettings que vous pouvez copier sur un autre PC.</value></data>
+  <data name="Maintenance_History" xml:space="preserve"><value>Derniers fichiers traités</value></data>
+  <data name="Maintenance_History_Desc" xml:space="preserve"><value>Les miniatures les plus récentes générées par le moteur, avec leur résultat et leur durée.</value></data>
+  <data name="Maintenance_History_Empty" xml:space="preserve"><value>Aucune activité enregistrée pour l’instant. Elle apparaît ici quand le moteur génère des miniatures.</value></data>
+  <data name="Maintenance_History_ItemName" xml:space="preserve"><value>{0}, {1}, {2} millisecondes</value></data>
+  <data name="Maintenance_Import" xml:space="preserve"><value>Importer les paramètres</value></data>
+  <data name="Maintenance_Import_Button" xml:space="preserve"><value>Importer…</value></data>
+  <data name="Maintenance_Import_Desc" xml:space="preserve"><value>Charge un fichier .glancysettings. Les valeurs deviennent des modifications en attente pour que vous puissiez les vérifier avant de les appliquer.</value></data>
+  <data name="Maintenance_LogsFolder" xml:space="preserve"><value>Dossier des journaux</value></data>
+  <data name="Maintenance_OpenFolder" xml:space="preserve"><value>Ouvrir le dossier</value></data>
+  <data name="Maintenance_RefreshIcons" xml:space="preserve"><value>Actualiser le cache des icônes</value></data>
+  <data name="Maintenance_RefreshIcons_Button" xml:space="preserve"><value>Actualiser les icônes</value></data>
+  <data name="Maintenance_RefreshIcons_Desc" xml:space="preserve"><value>Utile si les petites icônes (affichage Détails ou Liste) ne se mettent pas à jour.</value></data>
+  <data name="Maintenance_Reset" xml:space="preserve"><value>Restaurer les valeurs par défaut</value></data>
+  <data name="Maintenance_Reset_Button" xml:space="preserve"><value>Restaurer…</value></data>
+  <data name="Maintenance_Reset_Desc" xml:space="preserve"><value>Rétablit les paramètres d’usine de tous les formats et options de l’Explorateur de fichiers. Vous pouvez les vérifier avant de les appliquer.</value></data>
+  <data name="Maintenance_Subtitle" xml:space="preserve"><value>Caches Windows, sauvegardes des paramètres et diagnostics.</value></data>
+  <data name="Maintenance_WindowsCache" xml:space="preserve"><value>Cache Windows</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>À propos</value></data>
+  <data name="Nav_AllFormats" xml:space="preserve"><value>Tous les formats</value></data>
+  <data name="Nav_AllFormats_Tooltip" xml:space="preserve"><value>Tous les formats (Ctrl+0)</value></data>
+  <data name="Nav_Category_Tooltip_Many" xml:space="preserve"><value>{0} : {1} formats</value></data>
+  <data name="Nav_Category_Tooltip_One" xml:space="preserve"><value>{0} : 1 format</value></data>
+  <data name="Nav_Explorer" xml:space="preserve"><value>Explorateur de fichiers</value></data>
+  <data name="Nav_Explorer_Tooltip" xml:space="preserve"><value>Explorateur de fichiers (Ctrl+E)</value></data>
+  <data name="Nav_Formats" xml:space="preserve"><value>Formats</value></data>
+  <data name="Nav_Home" xml:space="preserve"><value>Accueil</value></data>
+  <data name="Nav_Maintenance" xml:space="preserve"><value>Maintenance</value></data>
+  <data name="Nav_Preferences" xml:space="preserve"><value>Préférences</value></data>
+  <data name="Nav_Preferences_Tooltip" xml:space="preserve"><value>Préférences (Ctrl+,)</value></data>
+  <data name="Pending_Apply" xml:space="preserve"><value>Appliquer</value></data>
+  <data name="Pending_Apply_Name" xml:space="preserve"><value>Appliquer les modifications</value></data>
+  <data name="Pending_Apply_Tooltip" xml:space="preserve"><value>Enregistrer et utiliser les modifications (Ctrl+S)</value></data>
+  <data name="Pending_Applying" xml:space="preserve"><value>Application…</value></data>
+  <data name="Pending_Count_Many" xml:space="preserve"><value>{0} modifications en attente</value></data>
+  <data name="Pending_Count_One" xml:space="preserve"><value>1 modification en attente</value></data>
+  <data name="Pending_Discard" xml:space="preserve"><value>Ignorer</value></data>
+  <data name="Pending_Discard_Tooltip" xml:space="preserve"><value>Ignorer toutes les modifications en attente</value></data>
+  <data name="Pending_Review" xml:space="preserve"><value>Vérifier</value></data>
+  <data name="Pending_Review_Name" xml:space="preserve"><value>Vérifier les modifications en attente</value></data>
+  <data name="Pending_Subtitle" xml:space="preserve"><value>Rien ne change dans l’Explorateur de fichiers tant que vous ne les appliquez pas.</value></data>
+  <data name="Pending_Tip_Subtitle" xml:space="preserve"><value>Réglez plusieurs formats à votre rythme. Vérifiez la liste et sélectionnez Appliquer (Ctrl+S) quand vous voulez que l’Explorateur de fichiers les utilise.</value></data>
+  <data name="Pending_Tip_Title" xml:space="preserve"><value>Vos modifications attendent ici</value></data>
+  <data name="Pending_Title" xml:space="preserve"><value>Modifications en attente</value></data>
+  <data name="Pending_Undo_Name" xml:space="preserve"><value>Annuler la dernière modification</value></data>
+  <data name="Pending_Undo_Tooltip" xml:space="preserve"><value>Annuler la dernière modification (Ctrl+Z)</value></data>
+  <data name="Preferences_Language" xml:space="preserve"><value>Langue</value></data>
+  <data name="Preferences_Language_Auto" xml:space="preserve"><value>Langue de Windows ({0})</value></data>
+  <data name="Preferences_Language_Desc" xml:space="preserve"><value>La langue de cette fenêtre, de la liste de raccourcis et des notifications. Par défaut, celle de Windows.</value></data>
+  <data name="Preferences_Language_RestartMessage" xml:space="preserve"><value>Les modifications en attente sont conservées jusqu’à ce que vous décidiez quoi en faire.</value></data>
+  <data name="Preferences_Language_RestartNow" xml:space="preserve"><value>Redémarrer maintenant</value></data>
+  <data name="Preferences_Language_RestartTitle" xml:space="preserve"><value>Redémarrez Glancy pour changer de langue</value></data>
+  <data name="Preferences_Subtitle" xml:space="preserve"><value>Paramètres de cette fenêtre. Ils s’appliquent immédiatement et n’affectent pas les miniatures.</value></data>
+  <data name="Preferences_Theme" xml:space="preserve"><value>Thème</value></data>
+  <data name="Preferences_Theme_Dark" xml:space="preserve"><value>Sombre</value></data>
+  <data name="Preferences_Theme_Desc" xml:space="preserve"><value>Utilisez le mode de Windows ou choisissez-en un pour cette application.</value></data>
+  <data name="Preferences_Theme_Light" xml:space="preserve"><value>Clair</value></data>
+  <data name="Preferences_Theme_System" xml:space="preserve"><value>Utiliser le paramètre Windows</value></data>
+  <data name="Preferences_Tips" xml:space="preserve"><value>Afficher les conseils</value></data>
+  <data name="Preferences_Tips_Desc" xml:space="preserve"><value>Courtes explications la première fois qu’une fonctionnalité apparaît, comme la barre des modifications en attente.</value></data>
+  <data name="Preferences_TopMost" xml:space="preserve"><value>Garder au-dessus des autres fenêtres</value></data>
+  <data name="Preferences_TopMost_Desc" xml:space="preserve"><value>Pratique pour régler les miniatures tout en regardant un dossier dans l’Explorateur de fichiers. Raccourci : Ctrl+T.</value></data>
+  <data name="Preferences_Window" xml:space="preserve"><value>Fenêtre</value></data>
+  <data name="Preview_Dark" xml:space="preserve"><value>Sombre</value></data>
+  <data name="Preview_Dark_Name" xml:space="preserve"><value>Explorateur de fichiers en mode sombre</value></data>
+  <data name="Preview_Dark_Tooltip" xml:space="preserve"><value>Voir la simulation dans l’Explorateur de fichiers en mode sombre</value></data>
+  <data name="Preview_ExtraLarge" xml:space="preserve"><value>{0} · Très grandes icônes</value></data>
+  <data name="Preview_Large" xml:space="preserve"><value>Grandes</value></data>
+  <data name="Preview_Medium" xml:space="preserve"><value>Moyennes</value></data>
+  <data name="Preview_Note" xml:space="preserve"><value>Simulation avec un exemple d’image comportant des zones transparentes. Le résultat exact dépend de chaque fichier.</value></data>
+  <data name="Preview_Simulation_Name" xml:space="preserve"><value>Simulation des miniatures dans l’Explorateur de fichiers</value></data>
+  <data name="Preview_Title" xml:space="preserve"><value>Aperçu</value></data>
+  <data name="QuickAction_EngineMissing" xml:space="preserve"><value>Prendra effet une fois le moteur de miniatures Glancy installé.</value></data>
+  <data name="QuickAction_Failed" xml:space="preserve"><value>Impossible de terminer l’action</value></data>
+  <data name="QuickAction_NoRefresh" xml:space="preserve"><value>Les dossiers l’affichent quand vous les ouvrez ou appuyez sur F5.</value></data>
+  <data name="QuickAction_Off" xml:space="preserve"><value>Miniatures Glancy désactivées</value></data>
+  <data name="QuickAction_On" xml:space="preserve"><value>Miniatures Glancy activées</value></data>
+  <data name="QuickAction_PressF5" xml:space="preserve"><value>Appuyez sur F5 dans l’Explorateur de fichiers pour le voir dans les dossiers ouverts.</value></data>
+  <data name="QuickAction_RefreshStopped" xml:space="preserve"><value>Cela prenait trop de temps. Appuyez sur F5 dans l’Explorateur de fichiers.</value></data>
+  <data name="QuickAction_Unknown" xml:space="preserve"><value>Action inconnue</value></data>
+  <data name="Refresh_Done_Message" xml:space="preserve"><value>{0} fichiers dans {1} dossiers ouverts.</value></data>
+  <data name="Refresh_Done_Title" xml:space="preserve"><value>Explorateur de fichiers actualisé</value></data>
+  <data name="Refresh_LimitReached" xml:space="preserve"><value>Limite de {0} fichiers atteinte.</value></data>
+  <data name="Refresh_Partial_Message" xml:space="preserve"><value>Vos modifications sont enregistrées. Appuyez sur F5 dans l’Explorateur de fichiers pour voir les nouvelles miniatures.</value></data>
+  <data name="Refresh_Partial_Title" xml:space="preserve"><value>Impossible d’actualiser toutes les fenêtres</value></data>
+  <data name="Refresh_Stopped_Message" xml:space="preserve"><value>Cela prenait trop de temps. Vos modifications sont enregistrées ; appuyez sur F5 dans l’Explorateur de fichiers pour voir les nouvelles miniatures.</value></data>
+  <data name="Refresh_Stopped_Title" xml:space="preserve"><value>Actualisation de l’Explorateur de fichiers arrêtée</value></data>
+  <data name="Reset_Button" xml:space="preserve"><value>Restaurer</value></data>
+  <data name="Reset_Confirm" xml:space="preserve"><value>Restaurer les paramètres d’usine ?</value></data>
+  <data name="Reset_Confirm_Message" xml:space="preserve"><value>Tous les formats, extensions personnalisées, dossiers exclus et options de l’Explorateur de fichiers reviennent à leur valeur par défaut. Cela reste une modification en attente jusqu’à ce que vous sélectionniez Appliquer.</value></data>
+  <data name="Sample_Design" xml:space="preserve"><value>design</value></data>
+  <data name="Sample_Document" xml:space="preserve"><value>document</value></data>
+  <data name="Sample_File" xml:space="preserve"><value>fichier</value></data>
+  <data name="Sample_Image" xml:space="preserve"><value>image</value></data>
+  <data name="Sample_Model" xml:space="preserve"><value>modèle</value></data>
+  <data name="Sample_Photo" xml:space="preserve"><value>photo</value></data>
+  <data name="Search_AllFormats_Sub" xml:space="preserve"><value>Modifier un paramètre dans tous les formats à la fois</value></data>
+  <data name="Search_Backup_Sub" xml:space="preserve"><value>Maintenance · sauvegarde</value></data>
+  <data name="Search_ClearCache_Keywords" xml:space="preserve"><value>supprimer nettoyer vider réinitialiser miniatures delete clean reset thumbnails</value></data>
+  <data name="Search_Explorer_Sub" xml:space="preserve"><value>Intégration à l’Explorateur de fichiers et au Bureau</value></data>
+  <data name="Search_Export_Keywords" xml:space="preserve"><value>enregistrer sauvegarde exporter save backup</value></data>
+  <data name="Search_ExtensionOf" xml:space="preserve"><value>Extension {0}</value></data>
+  <data name="Search_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Search_FormatSetting" xml:space="preserve"><value>Paramètre de format · {0}</value></data>
+  <data name="Search_Home_Sub" xml:space="preserve"><value>État et formats</value></data>
+  <data name="Search_Import_Keywords" xml:space="preserve"><value>charger restaurer sauvegarde importer load restore backup</value></data>
+  <data name="Search_Language_Keywords" xml:space="preserve"><value>langue traduction anglais espagnol français language</value></data>
+  <data name="Search_Maintenance_Sub" xml:space="preserve"><value>Cache, sauvegarde et diagnostics</value></data>
+  <data name="Search_Name" xml:space="preserve"><value>Rechercher dans Glancy</value></data>
+  <data name="Search_NoResults" xml:space="preserve"><value>Aucun résultat</value></data>
+  <data name="Search_NoResults_Hint" xml:space="preserve"><value>Essayez « transparence », « .psb » ou « cache »</value></data>
+  <data name="Search_Placeholder" xml:space="preserve"><value>Rechercher des paramètres, formats ou extensions</value></data>
+  <data name="Search_PlaceholderShort" xml:space="preserve"><value>Rechercher</value></data>
+  <data name="Search_Reset_Keywords" xml:space="preserve"><value>usine réinitialiser rétablir défaut factory reset</value></data>
+  <data name="Search_Shortcuts_Keywords" xml:space="preserve"><value>touches clavier raccourcis keys keyboard</value></data>
+  <data name="Search_Theme" xml:space="preserve"><value>Thème clair ou sombre</value></data>
+  <data name="Search_Theme_Keywords" xml:space="preserve"><value>mode sombre clair apparence dark light</value></data>
+  <data name="Search_TopMost" xml:space="preserve"><value>Garder au premier plan</value></data>
+  <data name="Search_TopMost_Keywords" xml:space="preserve"><value>épingler toujours visible premier plan pin</value></data>
+  <data name="Search_TopMost_Sub" xml:space="preserve"><value>Préférences · fenêtre</value></data>
+  <data name="Sentence_Separator" xml:space="preserve"><value> </value></data>
+  <data name="Setting_Reset_EachFormat" xml:space="preserve"><value>Rétablir la valeur par défaut de chaque format</value></data>
+  <data name="Setting_Reset_To" xml:space="preserve"><value>Réinitialiser : {0}</value></data>
+  <data name="Setting_Reset_UseFormat" xml:space="preserve"><value>Utiliser la valeur du format</value></data>
+  <data name="Setting_Status_CustomizedFor" xml:space="preserve"><value>Personnalisé pour {0}</value></data>
+  <data name="Setting_Status_Mixed" xml:space="preserve"><value>Diffère selon les formats.</value></data>
+  <data name="Setting_Status_SomeExtension" xml:space="preserve"><value>Une extension utilise sa propre valeur.</value></data>
+  <data name="SettingsCard_Pending_Tooltip" xml:space="preserve"><value>Modification pas encore appliquée</value></data>
+  <data name="SettingsCard_PendingName" xml:space="preserve"><value>{0} (modification en attente)</value></data>
+  <data name="SettingsCard_Reset_Name" xml:space="preserve"><value>Réinitialiser</value></data>
+  <data name="Shortcut_Apply" xml:space="preserve"><value>Appliquer les modifications en attente</value></data>
+  <data name="Shortcut_Back" xml:space="preserve"><value>Revenir à la page précédente</value></data>
+  <data name="Shortcut_CopyPaste" xml:space="preserve"><value>Copier/coller les paramètres d’un format</value></data>
+  <data name="Shortcut_CopyPaste_Keys" xml:space="preserve"><value>Ctrl + Maj + C / V</value></data>
+  <data name="Shortcut_Help" xml:space="preserve"><value>Ouvrir cette page d’aide</value></data>
+  <data name="Status_EngineInstalled" xml:space="preserve"><value>Glancy : moteur installé.</value></data>
+  <data name="Status_EngineMissing" xml:space="preserve"><value>Glancy : le moteur n’est toujours pas installé.</value></data>
+  <data name="Status_Updated_Title" xml:space="preserve"><value>État mis à jour</value></data>
+  <data name="Store_RegistryUnavailable" xml:space="preserve"><value>Impossible d’enregistrer les paramètres, car le Registre n’est pas accessible.</value></data>
+  <data name="Tip_GotIt" xml:space="preserve"><value>J’ai compris</value></data>
+  <data name="TopMost_Name" xml:space="preserve"><value>Garder la fenêtre au premier plan</value></data>
+  <data name="TopMost_Off_Tooltip" xml:space="preserve"><value>Ne plus garder au premier plan (Ctrl+T)</value></data>
+  <data name="TopMost_Tooltip" xml:space="preserve"><value>Garder au premier plan (Ctrl+T)</value></data>
+  <data name="Undo_Announcement" xml:space="preserve"><value>Modification annulée</value></data>
+</root>

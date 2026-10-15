@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="About_Credits" xml:space="preserve"><value>サードパーティのクレジットとライセンス</value></data>
+  <data name="About_FreeSoftware" xml:space="preserve"><value>フリー ソフトウェア</value></data>
+  <data name="About_FreeSoftware_Text" xml:space="preserve"><value>Glancy はフリー ソフトウェアです。GNU 一般公衆利用許諾書 (バージョン 3 またはそれ以降の任意のバージョン) の条件に従って、再配布や変更ができます。保証は一切ありません。</value></data>
+  <data name="About_HowItWorks" xml:space="preserve"><value>しくみ</value></data>
+  <data name="About_HowItWorks_Extensions" xml:space="preserve"><value>形式ごとに独自の設定があります。形式に複数の拡張子がある場合 (たとえば .psd と .psb)、1 つだけをカスタマイズできます。残りの拡張子は形式の設定を継承します。</value></data>
+  <data name="About_HowItWorks_Pending" xml:space="preserve"><value>形式とエクスプローラーの設定に加えた変更は、保留中の変更としてまとめられます。「適用」を選ぶまで、エクスプローラーには何も反映されません。その前に変更を確認したり破棄したりできます。</value></data>
+  <data name="About_HowItWorks_Preferences" xml:space="preserve"><value>このウィンドウの基本設定 (テーマ、最前面に表示) はすぐに適用され、縮小版には影響しません。</value></data>
+  <data name="About_LicenseLink" xml:space="preserve"><value>ライセンス (GPL-3.0)</value></data>
+  <data name="About_Shortcuts" xml:space="preserve"><value>キーボード ショートカット</value></data>
+  <data name="About_SourceCode" xml:space="preserve"><value>ソース コード</value></data>
+  <data name="About_Support" xml:space="preserve"><value>Glancy を支援</value></data>
+  <data name="About_Support_Text" xml:space="preserve"><value>Glancy は無料で、広告もありません。役に立った場合は、寄付で開発の継続を支えてください。</value></data>
+  <data name="About_Tech_Clsid" xml:space="preserve"><value>エンジンの CLSID: {0}</value></data>
+  <data name="About_Tech_ExportFile" xml:space="preserve"><value>エクスポート ファイル: {0}</value></data>
+  <data name="About_Tech_Logs" xml:space="preserve"><value>ログ: {0}</value></data>
+  <data name="About_Tech_Settings" xml:space="preserve"><value>設定: {0}</value></data>
+  <data name="About_TechInfo" xml:space="preserve"><value>技術情報</value></data>
+  <data name="About_Title" xml:space="preserve"><value>Glancy のバージョン情報</value></data>
+  <data name="About_Version" xml:space="preserve"><value>バージョン {0} · {1}</value></data>
+  <data name="AllFormats_Counts" xml:space="preserve"><value>{0} 個の形式 · {1} 個の拡張子</value></data>
+  <data name="AllFormats_Description" xml:space="preserve"><value>ここで設定を変更すると、すべての形式に一度に適用されます。その設定に対応していない形式では無視されます。</value></data>
+  <data name="Apply_Applied_NoRefresh" xml:space="preserve"><value>フォルダーを開くか F5 キーを押すと、新しい縮小版が表示されます。</value></data>
+  <data name="Apply_Applied_Refreshed" xml:space="preserve"><value>開いているエクスプローラーのウィンドウを更新しました。</value></data>
+  <data name="Apply_Applied_Title" xml:space="preserve"><value>変更を適用しました</value></data>
+  <data name="Apply_Failed_Message" xml:space="preserve"><value>{0} 変更はまだ保留中です。</value></data>
+  <data name="Apply_Failed_Title" xml:space="preserve"><value>変更を適用できませんでした</value></data>
+  <data name="Apply_Saved_EngineMissing" xml:space="preserve"><value>Glancy の縮小版エンジンをインストールすると使われます。</value></data>
+  <data name="Apply_Saved_Title" xml:space="preserve"><value>変更を保存しました</value></data>
+  <data name="Cache_Cleared_Title" xml:space="preserve"><value>縮小版のキャッシュをクリアしました</value></data>
+  <data name="Cache_Failed_Title" xml:space="preserve"><value>キャッシュをクリアできませんでした</value></data>
+  <data name="Cache_Freed" xml:space="preserve"><value>{0:0.#} MB を解放しました。</value></data>
+  <data name="Checker_Customize" xml:space="preserve"><value>カスタマイズ</value></data>
+  <data name="Checker_DarkColor" xml:space="preserve"><value>暗い色</value></data>
+  <data name="Checker_DarkGrays" xml:space="preserve"><value>濃い灰色</value></data>
+  <data name="Checker_Library" xml:space="preserve"><value>ライブラリ</value></data>
+  <data name="Checker_LightColor" xml:space="preserve"><value>明るい色</value></data>
+  <data name="Checker_MidGrays" xml:space="preserve"><value>中間の灰色</value></data>
+  <data name="Checker_Pair" xml:space="preserve"><value>{0} と {1}</value></data>
+  <data name="Checker_Random" xml:space="preserve"><value>ランダム</value></data>
+  <data name="Checker_SaveToLibrary" xml:space="preserve"><value>ライブラリに保存</value></data>
+  <data name="Checker_Swap" xml:space="preserve"><value>色を入れ替え</value></data>
+  <data name="Checker_WhiteLightGray" xml:space="preserve"><value>白と明るい灰色</value></data>
+  <data name="Close_ApplyAndClose" xml:space="preserve"><value>適用して閉じる</value></data>
+  <data name="Close_DialogOpen_Message" xml:space="preserve"><value>その後、Glancy を閉じることができます。</value></data>
+  <data name="Close_DialogOpen_Title" xml:space="preserve"><value>開いているダイアログを閉じてください</value></data>
+  <data name="Close_Pending_Many" xml:space="preserve"><value>適用されていない変更が {0} 件あります</value></data>
+  <data name="Close_Pending_Message" xml:space="preserve"><value>適用せずに閉じると、エクスプローラーでは以前の設定が引き続き使われます。</value></data>
+  <data name="Close_Pending_One" xml:space="preserve"><value>適用されていない変更が 1 件あります</value></data>
+  <data name="Close_WithoutApplying" xml:space="preserve"><value>適用せずに閉じる</value></data>
+  <data name="Color_Quick" xml:space="preserve"><value>クイック カラー</value></data>
+  <data name="Color_Use" xml:space="preserve"><value>この色を使用</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>キャンセル</value></data>
+  <data name="Common_CheckAgain" xml:space="preserve"><value>再確認</value></data>
+  <data name="Common_Checking" xml:space="preserve"><value>確認しています…</value></data>
+  <data name="Common_Failed" xml:space="preserve"><value>失敗</value></data>
+  <data name="Common_MultipleValues" xml:space="preserve"><value>複数の値</value></data>
+  <data name="Common_Off" xml:space="preserve"><value>オフ</value></data>
+  <data name="Common_On" xml:space="preserve"><value>オン</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>開く</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>更新</value></data>
+  <data name="Common_Selected" xml:space="preserve"><value>選択済み</value></data>
+  <data name="Common_Succeeded" xml:space="preserve"><value>成功</value></data>
+  <data name="Count_Extension_Many" xml:space="preserve"><value>{0} 個の拡張子</value></data>
+  <data name="Count_Extension_One" xml:space="preserve"><value>1 個の拡張子</value></data>
+  <data name="Count_Format_Many" xml:space="preserve"><value>{0} 個の形式</value></data>
+  <data name="Count_Format_One" xml:space="preserve"><value>1 個の形式</value></data>
+  <data name="Credit_Cfb" xml:space="preserve"><value>© Matthew D. Steele · MIT ライセンス · エンジンに同梱</value></data>
+  <data name="Credit_DotNet" xml:space="preserve"><value>© .NET Foundation およびコントリビューター · MIT ライセンス · アプリに同梱</value></data>
+  <data name="Credit_Fax" xml:space="preserve"><value>© pdf-rs のコントリビューター · MIT ライセンス · エンジンに同梱</value></data>
+  <data name="Credit_Flate2" xml:space="preserve"><value>© Alex Crichton およびコントリビューター · MIT または Apache 2.0 · エンジンに同梱</value></data>
+  <data name="Credit_Ghostscript" xml:space="preserve"><value>© Artifex Software · GNU AGPL 3.0 · 同梱および配布はしていません。PC にインストールされている場合、エンジンは EPS と古い AI ファイルにこれを使います</value></data>
+  <data name="Credit_Ghostscript_Name" xml:space="preserve"><value>Ghostscript (オプション)</value></data>
+  <data name="Credit_Hayro" xml:space="preserve"><value>© The Hayro Authors · Apache 2.0 または MIT · エンジンに同梱 (JPEG 2000)</value></data>
+  <data name="Credit_Image" xml:space="preserve"><value>© The image-rs Developers · MIT または Apache 2.0 · エンジンに同梱 (PNG、JPEG、TIFF、WebP、GIF、BMP、DDS、EXR、HDR…)</value></data>
+  <data name="Credit_JxlOxide" xml:space="preserve"><value>© Wonwoo Choi · MIT または Apache 2.0 · エンジンに同梱 (JPEG XL)</value></data>
+  <data name="Credit_OtherRust" xml:space="preserve"><value>tiny-skia、usvg、zune-jpeg、exr、zlib-rs、rayon、および上記が使用するその他のクレート · 寛容なライセンス (MIT、Apache 2.0、BSD、Zlib) · エンジンに同梱</value></data>
+  <data name="Credit_OtherRust_Name" xml:space="preserve"><value>その他の Rust 依存関係</value></data>
+  <data name="Credit_Pdfium" xml:space="preserve"><value>© The PDFium Authors · 3 条項 BSD ライセンス · エンジンに同梱 (pdfium.dll、PDF と AI)</value></data>
+  <data name="Credit_PdfiumLibs" xml:space="preserve"><value>FreeType (FreeType License)、HarfBuzz (MIT)、ICU (Unicode License v3)、libjpeg-turbo (IJG および BSD)、libpng (PNG License v2)、zlib (zlib License)、OpenJPEG (2 条項 BSD)、Little CMS (MIT)、Abseil (Apache 2.0)、Anti-Grain Geometry 2.3、fast_float と simdutf (MIT)、Dragonbox と LLVM libc (Apache 2.0、LLVM 例外付き) · pdfium.dll に同梱。全文はエンジンの licenses フォルダーにあります</value></data>
+  <data name="Credit_PdfiumLibs_Name" xml:space="preserve"><value>PDFium に含まれるライブラリ</value></data>
+  <data name="Credit_QuickXml" xml:space="preserve"><value>© Johann Tuffe · MIT ライセンス · エンジンに同梱</value></data>
+  <data name="Credit_Resvg" xml:space="preserve"><value>© The Resvg Authors · Apache 2.0 または MIT · エンジンに同梱 (SVG)</value></data>
+  <data name="Credit_Ruzstd" xml:space="preserve"><value>© Moritz Borcherding · MIT ライセンス · エンジンに同梱</value></data>
+  <data name="Credit_Segoe" xml:space="preserve"><value>© Microsoft · Windows のシステム フォント。再頒布していません</value></data>
+  <data name="Credit_Segoe_Name" xml:space="preserve"><value>Segoe UI Variable と Segoe Fluent Icons</value></data>
+  <data name="Credit_Serde" xml:space="preserve"><value>© Erick Tryzelaar と David Tolnay · MIT または Apache 2.0 · エンジンに同梱</value></data>
+  <data name="Credit_Serde_Name" xml:space="preserve"><value>serde と serde_json</value></data>
+  <data name="Credit_Sora" xml:space="preserve"><value>© The Sora Project Authors · SIL Open Font License 1.1 · アプリに同梱 (ホームのタイトル)</value></data>
+  <data name="Credit_Texture2d" xml:space="preserve"><value>© Rudolf Kolbe · MIT または Apache 2.0 · エンジンに同梱 (圧縮テクスチャ)</value></data>
+  <data name="Credit_WinAppSdk" xml:space="preserve"><value>© Microsoft Corporation · MIT ライセンス · アプリに同梱</value></data>
+  <data name="Credit_WinAppSdk_Name" xml:space="preserve"><value>Windows App SDK と WinUI 3</value></data>
+  <data name="Credit_WindowsRs" xml:space="preserve"><value>© Microsoft Corporation · MIT または Apache 2.0 · エンジンに同梱</value></data>
+  <data name="Credit_Zip" xml:space="preserve"><value>© Mathijs van de Nes およびコントリビューター · MIT ライセンス · エンジンに同梱</value></data>
+  <data name="Discard_Confirm_Many" xml:space="preserve"><value>{0} 件の変更を破棄しますか?</value></data>
+  <data name="Discard_Confirm_Message" xml:space="preserve"><value>設定は前回適用したときの状態に戻ります。</value></data>
+  <data name="Discard_Confirm_One" xml:space="preserve"><value>1 件の変更を破棄しますか?</value></data>
+  <data name="DiskCleanup_Failed_Title" xml:space="preserve"><value>ディスク クリーンアップを開けませんでした</value></data>
+  <data name="Error_Unexpected_Message" xml:space="preserve"><value>操作が完了しませんでした。保留中の変更は保持されています。詳細は Glancy のログに記録されています。</value></data>
+  <data name="Error_Unexpected_Title" xml:space="preserve"><value>問題が発生しました</value></data>
+  <data name="Explorer_AddFolder" xml:space="preserve"><value>フォルダーの追加</value></data>
+  <data name="Explorer_AlreadyExcluded" xml:space="preserve"><value>そのフォルダーは既に除外されています</value></data>
+  <data name="Explorer_Checkerboard" xml:space="preserve"><value>透過の市松模様</value></data>
+  <data name="Explorer_Checkerboard_Help" xml:space="preserve"><value>各形式のページで組み合わせを選びます。新しい組み合わせを追加するには、そのページでカスタマイズして「ライブラリに保存」を選びます。</value></data>
+  <data name="Explorer_ContextMenu" xml:space="preserve"><value>コンテキスト メニュー</value></data>
+  <data name="Explorer_General" xml:space="preserve"><value>全般</value></data>
+  <data name="Explorer_Library_Name" xml:space="preserve"><value>市松模様のライブラリ</value></data>
+  <data name="Explorer_NoExcludedFolders" xml:space="preserve"><value>除外されたフォルダーはありません。</value></data>
+  <data name="Explorer_Privacy" xml:space="preserve"><value>プライバシー</value></data>
+  <data name="Explorer_RemoveFolder_Name" xml:space="preserve"><value>{0} を削除</value></data>
+  <data name="Explorer_RemoveFromList" xml:space="preserve"><value>一覧から削除</value></data>
+  <data name="Explorer_RemoveSelected" xml:space="preserve"><value>選択項目を削除</value></data>
+  <data name="Explorer_Restore" xml:space="preserve"><value>復元</value></data>
+  <data name="Explorer_Restore_Tooltip" xml:space="preserve"><value>既定の 3 つの市松模様に戻す</value></data>
+  <data name="Explorer_Subtitle" xml:space="preserve"><value>Glancy をエクスプローラーとデスクトップに統合する方法です。すべての形式に影響します。</value></data>
+  <data name="Export_Done_Title" xml:space="preserve"><value>設定をエクスポートしました</value></data>
+  <data name="Export_Failed_Title" xml:space="preserve"><value>ファイルを保存できませんでした</value></data>
+  <data name="Format_Advanced" xml:space="preserve"><value>詳細オプション</value></data>
+  <data name="Format_AllExtensions" xml:space="preserve"><value>すべての拡張子</value></data>
+  <data name="Format_AllExtensions_Count" xml:space="preserve"><value>すべての拡張子 ({0})</value></data>
+  <data name="Format_ApplyTo" xml:space="preserve"><value>設定の適用先</value></data>
+  <data name="Format_ChooseIcon" xml:space="preserve"><value>アイコンの選択…</value></data>
+  <data name="Format_Copied_Message" xml:space="preserve"><value>別の形式を開いて、「その他」›「設定の貼り付け」(Ctrl+Shift+V) を選びます。</value></data>
+  <data name="Format_Copied_Title" xml:space="preserve"><value>設定をコピーしました</value></data>
+  <data name="Format_CopySettings" xml:space="preserve"><value>設定のコピー</value></data>
+  <data name="Format_Customized" xml:space="preserve"><value>カスタマイズ済み</value></data>
+  <data name="Format_Extension_Customized" xml:space="preserve"><value>{0} (カスタマイズ済み)</value></data>
+  <data name="Format_Extension_Customized_Tooltip" xml:space="preserve"><value>{0} には、形式の設定に代わる独自の設定があります</value></data>
+  <data name="Format_ExtensionScope_Help" xml:space="preserve"><value>ここで変更した設定は {0} ファイルにのみ影響し、{1} の設定より優先されます。その他の設定は継承されます。</value></data>
+  <data name="Format_Inactive_Disabled" xml:space="preserve"><value>この形式の縮小版はオフになっています。ファイルの種類のアイコンが表示されます。</value></data>
+  <data name="Format_Inactive_Fallback" xml:space="preserve"><value>「システムのプロバイダー」では Windows または関連付けられたアプリが縮小版を描画するため、これらの設定は使われません (他にプロバイダーがない場合を除く)。</value></data>
+  <data name="Format_More" xml:space="preserve"><value>その他</value></data>
+  <data name="Format_MoreActions_Name" xml:space="preserve"><value>その他の操作</value></data>
+  <data name="Format_Pasted_Message" xml:space="preserve"><value>{1} の {0} 個の設定を {2} にコピーしました。確認して「適用」を選んでください。</value></data>
+  <data name="Format_Pasted_Title" xml:space="preserve"><value>設定を貼り付けました</value></data>
+  <data name="Format_PasteFrom" xml:space="preserve"><value>{0} から設定を貼り付け</value></data>
+  <data name="Format_PasteSettings" xml:space="preserve"><value>設定の貼り付け</value></data>
+  <data name="Format_RemoveCustomization" xml:space="preserve"><value>カスタマイズを削除</value></data>
+  <data name="Format_RemoveCustomizationOf" xml:space="preserve"><value>{0} のカスタマイズを削除</value></data>
+  <data name="Format_RemoveExtensionCustomization" xml:space="preserve"><value>拡張子のカスタマイズを削除</value></data>
+  <data name="Format_Reset" xml:space="preserve"><value>リセット</value></data>
+  <data name="Format_Reset_Confirm" xml:space="preserve"><value>{0} をリセットしますか?</value></data>
+  <data name="Format_Reset_Confirm_Message" xml:space="preserve"><value>このページのすべての設定が既定値に戻ります。適用する前に確認できます。</value></data>
+  <data name="Format_ResetAll" xml:space="preserve"><value>すべての形式をリセット</value></data>
+  <data name="Format_ResetDefaults" xml:space="preserve"><value>既定値に戻す</value></data>
+  <data name="Format_ResetScope" xml:space="preserve"><value>{0} をリセット</value></data>
+  <data name="Format_WindowsStatus" xml:space="preserve"><value>Windows での状態</value></data>
+  <data name="Format_WindowsStatus_Help" xml:space="preserve"><value>エクスプローラーが現在各拡張子に使っている縮小版プロバイダーです。読み取り専用です。</value></data>
+  <data name="Group_Appearance" xml:space="preserve"><value>外観</value></data>
+  <data name="Group_Generation" xml:space="preserve"><value>生成</value></data>
+  <data name="Group_OverlayIcon" xml:space="preserve"><value>オーバーレイ アイコン</value></data>
+  <data name="Group_Performance" xml:space="preserve"><value>パフォーマンス</value></data>
+  <data name="Home_ActiveIn" xml:space="preserve"><value>{1} 個の拡張子のうち {0} 個で有効</value></data>
+  <data name="Home_EnableToggle" xml:space="preserve"><value>Glancy で縮小版を生成する</value></data>
+  <data name="Home_EngineMissing_Message" xml:space="preserve"><value>設定は変更できます。Glancy の縮小版エンジンをインストールすると使われます。</value></data>
+  <data name="Home_EngineMissing_Title" xml:space="preserve"><value>エンジンがインストールされていません</value></data>
+  <data name="Home_FormatsCaption" xml:space="preserve"><value>カテゴリ別の {0} 個の形式と {1} 個の拡張子です。形式を選んで、縮小版の表示を調整します。</value></data>
+  <data name="Home_OpenMaintenance" xml:space="preserve"><value>メンテナンスを開く</value></data>
+  <data name="Home_QuickActions" xml:space="preserve"><value>クイック アクション</value></data>
+  <data name="Home_RefreshExplorer" xml:space="preserve"><value>エクスプローラーのウィンドウを更新</value></data>
+  <data name="Home_RefreshExplorer_Desc" xml:space="preserve"><value>適用済みの設定で、開いているフォルダーの縮小版を再生成します。</value></data>
+  <data name="Home_Status_Checking" xml:space="preserve"><value>縮小版エンジンを確認しています…</value></data>
+  <data name="Home_Status_EngineMissing" xml:space="preserve"><value>エンジン未インストール · 設定は準備完了</value></data>
+  <data name="Home_Status_EngineMissingPaused" xml:space="preserve"><value>エンジン未インストール · 生成は一時停止中</value></data>
+  <data name="Home_Status_Paused" xml:space="preserve"><value>縮小版の生成は一時停止中です</value></data>
+  <data name="Home_Subtitle" xml:space="preserve"><value>デザイン、カメラ RAW、3D、ドキュメントなど、{0} 個の形式の鮮明な縮小版を Windows のエクスプローラーに表示します。</value></data>
+  <data name="Home_ThumbnailCache" xml:space="preserve"><value>縮小版のキャッシュ</value></data>
+  <data name="Home_ThumbnailCache_Desc" xml:space="preserve"><value>古い縮小版や正しくない縮小版が表示される場合は、「メンテナンス」で Windows のキャッシュをクリアしてください。</value></data>
+  <data name="Home_Tile_Checking" xml:space="preserve"><value>エクスプローラーのプロバイダーを確認しています…</value></data>
+  <data name="Home_Tile_Customized" xml:space="preserve"><value>カスタマイズ済み: {0}。</value></data>
+  <data name="Home_Tile_Name" xml:space="preserve"><value>{0}。構成: {1}。{2}。</value></data>
+  <data name="Home_Tile_NoProvider" xml:space="preserve"><value>エクスプローラーにプロバイダーがありません</value></data>
+  <data name="Home_Tile_NotApplied" xml:space="preserve"><value>未適用</value></data>
+  <data name="Home_Tile_Pending" xml:space="preserve"><value>変更が適用されていません。</value></data>
+  <data name="Home_Tile_UsesGlancy" xml:space="preserve"><value>エクスプローラーは Glancy を使用しています</value></data>
+  <data name="Home_Tile_UsesOther" xml:space="preserve"><value>エクスプローラーは {0} を使用しています</value></data>
+  <data name="IconPicker_Available" xml:space="preserve"><value>使用可能なアイコン</value></data>
+  <data name="IconPicker_Browse" xml:space="preserve"><value>参照…</value></data>
+  <data name="IconPicker_Count" xml:space="preserve"><value>{0} 個のアイコン。ダブルクリックして選択します。</value></data>
+  <data name="IconPicker_File" xml:space="preserve"><value>ファイル</value></data>
+  <data name="IconPicker_Item" xml:space="preserve"><value>アイコン {0}</value></data>
+  <data name="IconPicker_Loading" xml:space="preserve"><value>アイコンを読み込んでいます…</value></data>
+  <data name="IconPicker_None" xml:space="preserve"><value>このファイルにはアイコンが含まれていません。</value></data>
+  <data name="IconPicker_Title" xml:space="preserve"><value>アイコンの選択</value></data>
+  <data name="IconPicker_Use" xml:space="preserve"><value>アイコンを使用</value></data>
+  <data name="Icons_Failed_Title" xml:space="preserve"><value>アイコンを更新できませんでした</value></data>
+  <data name="Icons_Refreshed_Title" xml:space="preserve"><value>アイコンを更新しました</value></data>
+  <data name="Import_Button" xml:space="preserve"><value>インポート</value></data>
+  <data name="Import_Confirm" xml:space="preserve"><value>これらの設定をインポートしますか?</value></data>
+  <data name="Import_Confirm_Message" xml:space="preserve"><value>「{0}」の設定が保留中の変更として読み込まれます。{1}「適用」を選ぶまで、エクスプローラーには何も反映されません。</value></data>
+  <data name="Import_Done_Message" xml:space="preserve"><value>保留中の変更を確認して「適用」を選んでください。</value></data>
+  <data name="Import_Done_Title" xml:space="preserve"><value>設定をインポートしました</value></data>
+  <data name="Import_Failed_Title" xml:space="preserve"><value>インポートできませんでした</value></data>
+  <data name="Import_Ignored" xml:space="preserve"><value>認識されない {0} 個の値をスキップしました。</value></data>
+  <data name="Import_ReplacesPending" xml:space="preserve"><value>現在の保留中の変更は置き換えられます。</value></data>
+  <data name="Import_Unreadable_Message" xml:space="preserve"><value>このファイルは Glancy の設定ドキュメントではないか、破損しています。</value></data>
+  <data name="Import_Unreadable_Title" xml:space="preserve"><value>ファイルを読み取れませんでした</value></data>
+  <data name="JumpList_ClearCache" xml:space="preserve"><value>縮小版のキャッシュをクリア</value></data>
+  <data name="JumpList_ClearCache_Desc" xml:space="preserve"><value>各フォルダーを開いたときに、Windows が縮小版を再生成します。</value></data>
+  <data name="JumpList_Disable" xml:space="preserve"><value>Glancy の縮小版をオフにする</value></data>
+  <data name="JumpList_Disable_Desc" xml:space="preserve"><value>エクスプローラーは Windows のアイコンと縮小版に戻ります。</value></data>
+  <data name="JumpList_Enable" xml:space="preserve"><value>Glancy の縮小版をオンにする</value></data>
+  <data name="JumpList_Enable_Desc" xml:space="preserve"><value>エクスプローラーで再び Glancy の縮小版を使います。</value></data>
+  <data name="JumpList_ExplorerOptions" xml:space="preserve"><value>エクスプローラーのオプション</value></data>
+  <data name="JumpList_Refresh" xml:space="preserve"><value>エクスプローラーを更新</value></data>
+  <data name="JumpList_Refresh_Desc" xml:space="preserve"><value>開いているフォルダーの縮小版を再描画します。</value></data>
+  <data name="List_End" xml:space="preserve"><value>。</value></data>
+  <data name="List_LastSeparator" xml:space="preserve"><value>、</value></data>
+  <data name="List_LowercaseFollowingItems" xml:space="preserve"><value>false</value></data>
+  <data name="List_Separator" xml:space="preserve"><value>、</value></data>
+  <data name="Maintenance_Backup" xml:space="preserve"><value>バックアップ</value></data>
+  <data name="Maintenance_ClearCache" xml:space="preserve"><value>キャッシュのクリア</value></data>
+  <data name="Maintenance_ClearThumbs" xml:space="preserve"><value>縮小版のキャッシュをクリア</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm" xml:space="preserve"><value>縮小版のキャッシュをクリアしますか?</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm_Message" xml:space="preserve"><value>次に各フォルダーを開いたときに、Windows はすべてのファイル (デザイン ファイルだけではありません) の縮小版を再生成します。大きなフォルダーでは時間がかかる場合があります。ファイル自体は変更されません。</value></data>
+  <data name="Maintenance_ClearThumbs_Desc" xml:space="preserve"><value>Windows は生成した縮小版を保存しています。古い縮小版や壊れた縮小版、再生成が繰り返される縮小版が表示される場合はクリアしてください。</value></data>
+  <data name="Maintenance_Diagnostics" xml:space="preserve"><value>診断</value></data>
+  <data name="Maintenance_DiskCleanup" xml:space="preserve"><value>ディスク クリーンアップ</value></data>
+  <data name="Maintenance_DiskCleanup_Desc" xml:space="preserve"><value>Windows のツールを開いて、クリーンアップする項目 (縮小版を含む) を選びます。</value></data>
+  <data name="Maintenance_Engine" xml:space="preserve"><value>縮小版エンジン</value></data>
+  <data name="Maintenance_Engine_Installed" xml:space="preserve"><value>インストール済み ({0})。{2} 個の拡張子のうち {1} 個で有効です。</value></data>
+  <data name="Maintenance_Engine_Missing" xml:space="preserve"><value>インストールされていません。設定はそのまま保存され、インストール後に使われます。</value></data>
+  <data name="Maintenance_Export" xml:space="preserve"><value>設定のエクスポート</value></data>
+  <data name="Maintenance_Export_Button" xml:space="preserve"><value>エクスポート…</value></data>
+  <data name="Maintenance_Export_Desc" xml:space="preserve"><value>保留中の変更を含むすべての設定を .glancysettings ファイルに保存します。このファイルは別の PC にコピーできます。</value></data>
+  <data name="Maintenance_History" xml:space="preserve"><value>最近処理したファイル</value></data>
+  <data name="Maintenance_History_Desc" xml:space="preserve"><value>エンジンが最近生成した縮小版と、その結果および所要時間です。</value></data>
+  <data name="Maintenance_History_Empty" xml:space="preserve"><value>まだアクティビティは記録されていません。エンジンが縮小版を生成すると、ここに表示されます。</value></data>
+  <data name="Maintenance_History_ItemName" xml:space="preserve"><value>{0}、{1}、{2} ミリ秒</value></data>
+  <data name="Maintenance_Import" xml:space="preserve"><value>設定のインポート</value></data>
+  <data name="Maintenance_Import_Button" xml:space="preserve"><value>インポート…</value></data>
+  <data name="Maintenance_Import_Desc" xml:space="preserve"><value>.glancysettings ファイルを読み込みます。値は保留中の変更になるため、適用する前に確認できます。</value></data>
+  <data name="Maintenance_LogsFolder" xml:space="preserve"><value>ログ フォルダー</value></data>
+  <data name="Maintenance_OpenFolder" xml:space="preserve"><value>フォルダーを開く</value></data>
+  <data name="Maintenance_RefreshIcons" xml:space="preserve"><value>アイコン キャッシュを更新</value></data>
+  <data name="Maintenance_RefreshIcons_Button" xml:space="preserve"><value>アイコンの更新</value></data>
+  <data name="Maintenance_RefreshIcons_Desc" xml:space="preserve"><value>小さいアイコン (詳細表示または一覧表示) が更新されない場合に便利です。</value></data>
+  <data name="Maintenance_Reset" xml:space="preserve"><value>既定値に戻す</value></data>
+  <data name="Maintenance_Reset_Button" xml:space="preserve"><value>復元…</value></data>
+  <data name="Maintenance_Reset_Desc" xml:space="preserve"><value>すべての形式とエクスプローラーのオプションを出荷時の設定に戻します。適用する前に確認できます。</value></data>
+  <data name="Maintenance_Subtitle" xml:space="preserve"><value>Windows のキャッシュ、設定のバックアップ、診断。</value></data>
+  <data name="Maintenance_WindowsCache" xml:space="preserve"><value>Windows のキャッシュ</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>バージョン情報</value></data>
+  <data name="Nav_AllFormats" xml:space="preserve"><value>すべての形式</value></data>
+  <data name="Nav_AllFormats_Tooltip" xml:space="preserve"><value>すべての形式 (Ctrl+0)</value></data>
+  <data name="Nav_Category_Tooltip_Many" xml:space="preserve"><value>{0}: {1} 個の形式</value></data>
+  <data name="Nav_Category_Tooltip_One" xml:space="preserve"><value>{0}: 1 個の形式</value></data>
+  <data name="Nav_Explorer" xml:space="preserve"><value>エクスプローラー</value></data>
+  <data name="Nav_Explorer_Tooltip" xml:space="preserve"><value>エクスプローラー (Ctrl+E)</value></data>
+  <data name="Nav_Formats" xml:space="preserve"><value>形式</value></data>
+  <data name="Nav_Home" xml:space="preserve"><value>ホーム</value></data>
+  <data name="Nav_Maintenance" xml:space="preserve"><value>メンテナンス</value></data>
+  <data name="Nav_Preferences" xml:space="preserve"><value>基本設定</value></data>
+  <data name="Nav_Preferences_Tooltip" xml:space="preserve"><value>基本設定 (Ctrl+,)</value></data>
+  <data name="Pending_Apply" xml:space="preserve"><value>適用</value></data>
+  <data name="Pending_Apply_Name" xml:space="preserve"><value>変更を適用</value></data>
+  <data name="Pending_Apply_Tooltip" xml:space="preserve"><value>変更を保存して使用 (Ctrl+S)</value></data>
+  <data name="Pending_Applying" xml:space="preserve"><value>適用しています…</value></data>
+  <data name="Pending_Count_Many" xml:space="preserve"><value>{0} 件の保留中の変更</value></data>
+  <data name="Pending_Count_One" xml:space="preserve"><value>1 件の保留中の変更</value></data>
+  <data name="Pending_Discard" xml:space="preserve"><value>破棄</value></data>
+  <data name="Pending_Discard_Tooltip" xml:space="preserve"><value>保留中の変更をすべて破棄</value></data>
+  <data name="Pending_Review" xml:space="preserve"><value>確認</value></data>
+  <data name="Pending_Review_Name" xml:space="preserve"><value>保留中の変更を確認</value></data>
+  <data name="Pending_Subtitle" xml:space="preserve"><value>変更を適用するまで、エクスプローラーには何も反映されません。</value></data>
+  <data name="Pending_Tip_Subtitle" xml:space="preserve"><value>複数の形式を自分のペースで調整できます。エクスプローラーで使う準備ができたら、一覧を確認して「適用」(Ctrl+S) を選びます。</value></data>
+  <data name="Pending_Tip_Title" xml:space="preserve"><value>変更はここで待機します</value></data>
+  <data name="Pending_Title" xml:space="preserve"><value>保留中の変更</value></data>
+  <data name="Pending_Undo_Name" xml:space="preserve"><value>最後の変更を元に戻す</value></data>
+  <data name="Pending_Undo_Tooltip" xml:space="preserve"><value>最後の変更を元に戻す (Ctrl+Z)</value></data>
+  <data name="Preferences_Language" xml:space="preserve"><value>言語</value></data>
+  <data name="Preferences_Language_Auto" xml:space="preserve"><value>Windows の言語 ({0})</value></data>
+  <data name="Preferences_Language_Desc" xml:space="preserve"><value>このウィンドウ、ジャンプ リスト、通知の言語です。既定では Windows の言語を使います。</value></data>
+  <data name="Preferences_Language_RestartMessage" xml:space="preserve"><value>保留中の変更は、扱いを決めるまで保持されます。</value></data>
+  <data name="Preferences_Language_RestartNow" xml:space="preserve"><value>今すぐ再起動</value></data>
+  <data name="Preferences_Language_RestartTitle" xml:space="preserve"><value>言語を変更するには Glancy を再起動してください</value></data>
+  <data name="Preferences_Subtitle" xml:space="preserve"><value>このウィンドウの設定です。すぐに適用され、縮小版には影響しません。</value></data>
+  <data name="Preferences_Theme" xml:space="preserve"><value>テーマ</value></data>
+  <data name="Preferences_Theme_Dark" xml:space="preserve"><value>ダーク</value></data>
+  <data name="Preferences_Theme_Desc" xml:space="preserve"><value>Windows のモードを使うか、このアプリ用のモードを選びます。</value></data>
+  <data name="Preferences_Theme_Light" xml:space="preserve"><value>ライト</value></data>
+  <data name="Preferences_Theme_System" xml:space="preserve"><value>Windows の設定を使用</value></data>
+  <data name="Preferences_Tips" xml:space="preserve"><value>ヒントを表示</value></data>
+  <data name="Preferences_Tips_Desc" xml:space="preserve"><value>保留中の変更バーなど、機能が初めて表示されたときの簡単な説明です。</value></data>
+  <data name="Preferences_TopMost" xml:space="preserve"><value>常に他のウィンドウの前面に表示</value></data>
+  <data name="Preferences_TopMost_Desc" xml:space="preserve"><value>エクスプローラーでフォルダーを見ながら縮小版を調整するときに便利です。ショートカット: Ctrl+T。</value></data>
+  <data name="Preferences_Window" xml:space="preserve"><value>ウィンドウ</value></data>
+  <data name="Preview_Dark" xml:space="preserve"><value>ダーク</value></data>
+  <data name="Preview_Dark_Name" xml:space="preserve"><value>ダーク モードのエクスプローラー</value></data>
+  <data name="Preview_Dark_Tooltip" xml:space="preserve"><value>ダーク モードのエクスプローラーでのシミュレーションを表示</value></data>
+  <data name="Preview_ExtraLarge" xml:space="preserve"><value>{0} · 特大アイコン</value></data>
+  <data name="Preview_Large" xml:space="preserve"><value>大アイコン</value></data>
+  <data name="Preview_Medium" xml:space="preserve"><value>中アイコン</value></data>
+  <data name="Preview_Note" xml:space="preserve"><value>透明な部分を含むサンプル画像でシミュレーションしています。実際の結果はファイルによって異なります。</value></data>
+  <data name="Preview_Simulation_Name" xml:space="preserve"><value>エクスプローラーでの縮小版のシミュレーション</value></data>
+  <data name="Preview_Title" xml:space="preserve"><value>プレビュー</value></data>
+  <data name="QuickAction_EngineMissing" xml:space="preserve"><value>Glancy の縮小版エンジンをインストールすると有効になります。</value></data>
+  <data name="QuickAction_Failed" xml:space="preserve"><value>操作を完了できませんでした</value></data>
+  <data name="QuickAction_NoRefresh" xml:space="preserve"><value>フォルダーを開くか F5 キーを押すと反映されます。</value></data>
+  <data name="QuickAction_Off" xml:space="preserve"><value>Glancy の縮小版: オフ</value></data>
+  <data name="QuickAction_On" xml:space="preserve"><value>Glancy の縮小版: オン</value></data>
+  <data name="QuickAction_PressF5" xml:space="preserve"><value>開いているフォルダーに反映するには、エクスプローラーで F5 キーを押してください。</value></data>
+  <data name="QuickAction_RefreshStopped" xml:space="preserve"><value>時間がかかりすぎています。エクスプローラーで F5 キーを押してください。</value></data>
+  <data name="QuickAction_Unknown" xml:space="preserve"><value>不明な操作</value></data>
+  <data name="Refresh_Done_Message" xml:space="preserve"><value>開いている {1} 個のフォルダー内の {0} 個のファイル。</value></data>
+  <data name="Refresh_Done_Title" xml:space="preserve"><value>エクスプローラーを更新しました</value></data>
+  <data name="Refresh_LimitReached" xml:space="preserve"><value>{0} 個のファイルの上限に達しました。</value></data>
+  <data name="Refresh_Partial_Message" xml:space="preserve"><value>変更は保存されています。新しい縮小版を表示するには、エクスプローラーで F5 キーを押してください。</value></data>
+  <data name="Refresh_Partial_Title" xml:space="preserve"><value>一部のウィンドウを更新できませんでした</value></data>
+  <data name="Refresh_Stopped_Message" xml:space="preserve"><value>時間がかかりすぎています。変更は保存されています。新しい縮小版を表示するには、エクスプローラーで F5 キーを押してください。</value></data>
+  <data name="Refresh_Stopped_Title" xml:space="preserve"><value>エクスプローラーの更新を停止しました</value></data>
+  <data name="Reset_Button" xml:space="preserve"><value>復元</value></data>
+  <data name="Reset_Confirm" xml:space="preserve"><value>出荷時の設定に戻しますか?</value></data>
+  <data name="Reset_Confirm_Message" xml:space="preserve"><value>すべての形式、カスタマイズした拡張子、除外したフォルダー、エクスプローラーのオプションが既定値に戻ります。「適用」を選ぶまで、保留中の変更として残ります。</value></data>
+  <data name="Sample_Design" xml:space="preserve"><value>design</value></data>
+  <data name="Sample_Document" xml:space="preserve"><value>document</value></data>
+  <data name="Sample_File" xml:space="preserve"><value>file</value></data>
+  <data name="Sample_Image" xml:space="preserve"><value>image</value></data>
+  <data name="Sample_Model" xml:space="preserve"><value>model</value></data>
+  <data name="Sample_Photo" xml:space="preserve"><value>photo</value></data>
+  <data name="Search_AllFormats_Sub" xml:space="preserve"><value>すべての形式の設定を一度に変更</value></data>
+  <data name="Search_Backup_Sub" xml:space="preserve"><value>メンテナンス · バックアップ</value></data>
+  <data name="Search_ClearCache_Keywords" xml:space="preserve"><value>削除 クリア クリーンアップ リセット 縮小版 サムネイル キャッシュ delete clean reset thumbnails</value></data>
+  <data name="Search_Explorer_Sub" xml:space="preserve"><value>エクスプローラーとデスクトップとの統合</value></data>
+  <data name="Search_Export_Keywords" xml:space="preserve"><value>保存 バックアップ エクスポート save backup</value></data>
+  <data name="Search_ExtensionOf" xml:space="preserve"><value>拡張子 {0}</value></data>
+  <data name="Search_Format" xml:space="preserve"><value>形式</value></data>
+  <data name="Search_FormatSetting" xml:space="preserve"><value>形式の設定 · {0}</value></data>
+  <data name="Search_Home_Sub" xml:space="preserve"><value>状態と形式</value></data>
+  <data name="Search_Import_Keywords" xml:space="preserve"><value>読み込み 復元 バックアップ インポート load restore backup</value></data>
+  <data name="Search_Language_Keywords" xml:space="preserve"><value>言語 翻訳 英語 スペイン語 日本語 language translation english spanish japanese</value></data>
+  <data name="Search_Maintenance_Sub" xml:space="preserve"><value>キャッシュ、バックアップ、診断</value></data>
+  <data name="Search_Name" xml:space="preserve"><value>Glancy を検索</value></data>
+  <data name="Search_NoResults" xml:space="preserve"><value>結果が見つかりません</value></data>
+  <data name="Search_NoResults_Hint" xml:space="preserve"><value>「透明」、「.psb」、「キャッシュ」などで検索してください</value></data>
+  <data name="Search_Placeholder" xml:space="preserve"><value>設定、形式、拡張子を検索</value></data>
+  <data name="Search_PlaceholderShort" xml:space="preserve"><value>検索</value></data>
+  <data name="Search_Reset_Keywords" xml:space="preserve"><value>出荷時 初期化 リセット 既定値 factory reset</value></data>
+  <data name="Search_Shortcuts_Keywords" xml:space="preserve"><value>キー キーボード ショートカット keys keyboard</value></data>
+  <data name="Search_Theme" xml:space="preserve"><value>ライト テーマまたはダーク テーマ</value></data>
+  <data name="Search_Theme_Keywords" xml:space="preserve"><value>モード ダーク ライト 外観 テーマ mode dark light appearance</value></data>
+  <data name="Search_TopMost" xml:space="preserve"><value>最前面に表示</value></data>
+  <data name="Search_TopMost_Keywords" xml:space="preserve"><value>固定 ピン留め 常に表示 前面 pin always visible</value></data>
+  <data name="Search_TopMost_Sub" xml:space="preserve"><value>基本設定 · ウィンドウ</value></data>
+  <data name="Sentence_Separator" xml:space="preserve"><value></value></data>
+  <data name="Setting_Reset_EachFormat" xml:space="preserve"><value>各形式の既定値に戻す</value></data>
+  <data name="Setting_Reset_To" xml:space="preserve"><value>リセット: {0}</value></data>
+  <data name="Setting_Reset_UseFormat" xml:space="preserve"><value>形式の値を使用</value></data>
+  <data name="Setting_Status_CustomizedFor" xml:space="preserve"><value>{0} 用にカスタマイズ済み</value></data>
+  <data name="Setting_Status_Mixed" xml:space="preserve"><value>形式によって異なります。</value></data>
+  <data name="Setting_Status_SomeExtension" xml:space="preserve"><value>独自の値を使っている拡張子があります。</value></data>
+  <data name="SettingsCard_Pending_Tooltip" xml:space="preserve"><value>まだ適用されていない変更</value></data>
+  <data name="SettingsCard_PendingName" xml:space="preserve"><value>{0} (保留中の変更)</value></data>
+  <data name="SettingsCard_Reset_Name" xml:space="preserve"><value>リセット</value></data>
+  <data name="Shortcut_Apply" xml:space="preserve"><value>保留中の変更を適用</value></data>
+  <data name="Shortcut_Back" xml:space="preserve"><value>前のページに戻る</value></data>
+  <data name="Shortcut_CopyPaste" xml:space="preserve"><value>形式の設定をコピー / 貼り付け</value></data>
+  <data name="Shortcut_CopyPaste_Keys" xml:space="preserve"><value>Ctrl + Shift + C / V</value></data>
+  <data name="Shortcut_Help" xml:space="preserve"><value>このヘルプ ページを開く</value></data>
+  <data name="Status_EngineInstalled" xml:space="preserve"><value>Glancy: エンジンはインストールされています。</value></data>
+  <data name="Status_EngineMissing" xml:space="preserve"><value>Glancy: エンジンはまだインストールされていません。</value></data>
+  <data name="Status_Updated_Title" xml:space="preserve"><value>状態を更新しました</value></data>
+  <data name="Store_RegistryUnavailable" xml:space="preserve"><value>レジストリにアクセスできないため、設定を保存できません。</value></data>
+  <data name="Tip_GotIt" xml:space="preserve"><value>OK</value></data>
+  <data name="TopMost_Name" xml:space="preserve"><value>ウィンドウを最前面に表示</value></data>
+  <data name="TopMost_Off_Tooltip" xml:space="preserve"><value>最前面表示を解除 (Ctrl+T)</value></data>
+  <data name="TopMost_Tooltip" xml:space="preserve"><value>最前面に表示 (Ctrl+T)</value></data>
+  <data name="Undo_Announcement" xml:space="preserve"><value>変更を元に戻しました</value></data>
+</root>

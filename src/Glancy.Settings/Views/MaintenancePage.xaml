@@ -1,0 +1,92 @@
+<Page x:Class="Glancy.Settings.Views.MaintenancePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:l="using:Glancy.Settings.Localization"
+      xmlns:c="using:Glancy.Settings.Controls">
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1000*" MaxWidth="{StaticResource GlancyContentMaxWidth}" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+    <StackPanel x:Name="ContentPanel" Padding="{StaticResource GlancyPagePadding}">
+      <StackPanel Spacing="2" Margin="0,8,0,0">
+        <TextBlock Text="{l:Str Key=Nav_Maintenance}" Style="{StaticResource GlancyPageTitleStyle}" AutomationProperties.HeadingLevel="Level1" />
+        <TextBlock Text="{l:Str Key=Maintenance_Subtitle}"
+                   Style="{StaticResource GlancySecondaryTextStyle}" Margin="0,4,0,0" />
+      </StackPanel>
+
+      <TextBlock Text="{l:Str Key=Maintenance_WindowsCache}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Header="{l:Str Key=Maintenance_ClearThumbs}" Glyph="&#xE74D;"
+                        Description="{l:Str Key=Maintenance_ClearThumbs_Desc}">
+          <Button x:Name="ClearThumbsButton" Click="OnClearThumbnails" MinWidth="160">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+              <ProgressRing x:Name="ClearThumbsProgress" Width="16" Height="16" IsActive="False" Visibility="Collapsed" />
+              <TextBlock Text="{l:Str Key=Maintenance_ClearCache}" />
+            </StackPanel>
+          </Button>
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Maintenance_RefreshIcons}" Glyph="&#xE91B;"
+                        Description="{l:Str Key=Maintenance_RefreshIcons_Desc}">
+          <Button x:Name="ClearIconsButton" Content="{l:Str Key=Maintenance_RefreshIcons_Button}" Click="OnClearIcons" MinWidth="160" />
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Maintenance_DiskCleanup}" Glyph="&#xE9F5;"
+                        Description="{l:Str Key=Maintenance_DiskCleanup_Desc}">
+          <Button Content="{l:Str Key=Common_Open}" Click="OnOpenDiskCleanup" MinWidth="160" />
+        </c:SettingsCard>
+      </StackPanel>
+
+      <TextBlock Text="{l:Str Key=Maintenance_Backup}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Header="{l:Str Key=Maintenance_Export}" Glyph="&#xEDE1;"
+                        Description="{l:Str Key=Maintenance_Export_Desc}">
+          <Button Content="{l:Str Key=Maintenance_Export_Button}" Click="OnExport" MinWidth="160" />
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Maintenance_Import}" Glyph="&#xE8B5;"
+                        Description="{l:Str Key=Maintenance_Import_Desc}">
+          <Button Content="{l:Str Key=Maintenance_Import_Button}" Click="OnImport" MinWidth="160" />
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Maintenance_Reset}" Glyph="&#xE777;"
+                        Description="{l:Str Key=Maintenance_Reset_Desc}">
+          <Button Content="{l:Str Key=Maintenance_Reset_Button}" Click="OnResetAll" MinWidth="160" />
+        </c:SettingsCard>
+      </StackPanel>
+
+      <TextBlock Text="{l:Str Key=Maintenance_Diagnostics}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Item="{x:Bind Global.DebugLog}">
+          <ToggleSwitch IsOn="{x:Bind Global.DebugLog.IsOn, Mode=TwoWay}" OnContent="{l:Str Key=Common_On}" OffContent="{l:Str Key=Common_Off}" MinWidth="0" />
+        </c:SettingsCard>
+        <Border Style="{StaticResource GlancyCardStyle}">
+          <StackPanel Spacing="10">
+            <Grid ColumnSpacing="16">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <FontIcon Glyph="&#xE81C;" FontSize="20" Margin="4,0" VerticalAlignment="Center" />
+              <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="1">
+                <TextBlock Text="{l:Str Key=Maintenance_History}" Style="{StaticResource BodyTextBlockStyle}" />
+                <TextBlock Text="{l:Str Key=Maintenance_History_Desc}"
+                           Style="{StaticResource GlancyCaptionStyle}" />
+              </StackPanel>
+              <Button Grid.Column="2" Content="{l:Str Key=Common_Refresh}" Click="OnRefreshHistory" MinWidth="160" VerticalAlignment="Center" />
+            </Grid>
+            <TextBlock x:Name="NoHistoryText" Style="{StaticResource GlancyCaptionStyle}" Margin="44,0,0,0"
+                       Text="{l:Str Key=Maintenance_History_Empty}" />
+            <ItemsControl x:Name="HistoryList" IsTabStop="False" Margin="40,0,0,0" />
+          </StackPanel>
+        </Border>
+        <c:SettingsCard Header="{l:Str Key=Maintenance_LogsFolder}" Glyph="&#xE838;" Description="{x:Bind LogDirectory}">
+          <Button Content="{l:Str Key=Maintenance_OpenFolder}" Click="OnOpenLogs" MinWidth="160" />
+        </c:SettingsCard>
+        <c:SettingsCard x:Name="EngineCard" Header="{l:Str Key=Maintenance_Engine}" Glyph="&#xE7EF;">
+          <Button Content="{l:Str Key=Common_CheckAgain}" Click="OnRecheck" MinWidth="160" />
+        </c:SettingsCard>
+      </StackPanel>
+    </StackPanel>
+    </Grid>
+  </ScrollViewer>
+</Page>

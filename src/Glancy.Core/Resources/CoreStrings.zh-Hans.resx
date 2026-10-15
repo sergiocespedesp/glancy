@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Cache_AlreadyEmpty" xml:space="preserve"><value>缩略图缓存已经是空的。</value></data>
+  <data name="Cache_Cleared" xml:space="preserve"><value>已清除缩略图缓存。打开文件夹时将重新生成缩略图。</value></data>
+  <data name="Cache_Denied" xml:space="preserve"><value>Windows 不允许清除缓存（{0}）。请尝试使用磁盘清理。</value></data>
+  <data name="Cache_IconDone" xml:space="preserve"><value>已刷新图标缓存。</value></data>
+  <data name="Cache_IconTimeout" xml:space="preserve"><value>Windows 刷新图标缓存的时间过长。</value></data>
+  <data name="Cache_IconToolMissing" xml:space="preserve"><value>找不到用于刷新图标的 Windows 工具（ie4uinit.exe）。</value></data>
+  <data name="Category_3d" xml:space="preserve"><value>3D 和 CAD</value></data>
+  <data name="Category_design" xml:space="preserve"><value>设计和编辑</value></data>
+  <data name="Category_document" xml:space="preserve"><value>文档和书籍</value></data>
+  <data name="Category_hdr" xml:space="preserve"><value>HDR、电影和科学</value></data>
+  <data name="Category_image" xml:space="preserve"><value>图像</value></data>
+  <data name="Category_other" xml:space="preserve"><value>其他</value></data>
+  <data name="Category_photo" xml:space="preserve"><value>摄影</value></data>
+  <data name="Category_retro" xml:space="preserve"><value>经典格式</value></data>
+  <data name="Category_text" xml:space="preserve"><value>文本和 Web</value></data>
+  <data name="Category_texture" xml:space="preserve"><value>纹理和游戏</value></data>
+  <data name="Category_vector" xml:space="preserve"><value>矢量和 PDF</value></data>
+  <data name="Change_Summary" xml:space="preserve"><value>{0}：{1} → {2}</value></data>
+  <data name="File_Invalid" xml:space="preserve"><value>该文件不是有效的设置文档。</value></data>
+  <data name="File_NotGlancy" xml:space="preserve"><value>该文件不包含 Glancy 设置。</value></data>
+  <data name="File_TypeName" xml:space="preserve"><value>Glancy 设置</value></data>
+  <data name="Format_3dsmax_Description" xml:space="preserve"><value>3ds Max 场景（嵌入的预览）。</value></data>
+  <data name="Format_3mf_Description" xml:space="preserve"><value>3MF 模型：嵌入的缩略图或渲染的模型。</value></data>
+  <data name="Format_3mf_Name" xml:space="preserve"><value>3D 打印（3MF）</value></data>
+  <data name="Format_aai_Description" xml:space="preserve"><value>游戏 Dune 中的 AAI 图像。</value></data>
+  <data name="Format_abr_Description" xml:space="preserve"><value>.abr 画笔集：显示画笔笔尖。</value></data>
+  <data name="Format_abr_Name" xml:space="preserve"><value>Photoshop 画笔</value></data>
+  <data name="Format_affinity_Description" xml:space="preserve"><value>Designer、Photo 和 Publisher（嵌入的预览）。</value></data>
+  <data name="Format_ai_Description" xml:space="preserve"><value>以 PDF 兼容方式保存的矢量插图。</value></data>
+  <data name="Format_amiga_Description" xml:space="preserve"><value>Amiga 和 Deluxe Paint ILBM/PBM 图像（包括 HAM 和 EHB）。</value></data>
+  <data name="Format_archive_Description" xml:space="preserve"><value>ZIP 和 RAR：其中的第一张图像。</value></data>
+  <data name="Format_archive_Name" xml:space="preserve"><value>压缩文件</value></data>
+  <data name="Format_avs_Description" xml:space="preserve"><value>AVS X 图像。</value></data>
+  <data name="Format_blender_Description" xml:space="preserve"><value>Blender 场景，包括备份（.blend1…）。</value></data>
+  <data name="Format_bmp_Description" xml:space="preserve"><value>BMP 图像。</value></data>
+  <data name="Format_bmp_Name" xml:space="preserve"><value>Windows 位图</value></data>
+  <data name="Format_c4d_Description" xml:space="preserve"><value>Cinema 4D 场景（嵌入的预览）。</value></data>
+  <data name="Format_c64_Description" xml:space="preserve"><value>Koala、FLI 和其他 Commodore 64 图像。</value></data>
+  <data name="Format_cals_Description" xml:space="preserve"><value>CALS 技术图纸（CCITT Group 4）。</value></data>
+  <data name="Format_cineon_Description" xml:space="preserve"><value>Cineon 帧。</value></data>
+  <data name="Format_comic_Description" xml:space="preserve"><value>CBZ 和 CBR 漫画（第一页）。</value></data>
+  <data name="Format_comic_Name" xml:space="preserve"><value>漫画书</value></data>
+  <data name="Format_coreldraw_Description" xml:space="preserve"><value>CorelDRAW 绘图（嵌入的预览）。</value></data>
+  <data name="Format_cursor_Description" xml:space="preserve"><value>Windows 光标。</value></data>
+  <data name="Format_cursor_Name" xml:space="preserve"><value>光标</value></data>
+  <data name="Format_dds_Description" xml:space="preserve"><value>DirectX 纹理（BC1–BC7）。</value></data>
+  <data name="Format_dib_Description" xml:space="preserve"><value>设备无关位图。</value></data>
+  <data name="Format_dib_Name" xml:space="preserve"><value>Windows DIB</value></data>
+  <data name="Format_dicom_Description" xml:space="preserve"><value>DICOM 医学图像。</value></data>
+  <data name="Format_dpx_Description" xml:space="preserve"><value>来自胶片扫描仪的 DPX 帧。</value></data>
+  <data name="Format_email_Description" xml:space="preserve"><value>.eml 邮件（主题、发件人和正文）。</value></data>
+  <data name="Format_email_Name" xml:space="preserve"><value>电子邮件</value></data>
+  <data name="Format_eps_Description" xml:space="preserve"><value>用于印刷的 EPS 和 PostScript 图形，带或不带 TIFF/WMF 预览。</value></data>
+  <data name="Format_eps_Name" xml:space="preserve"><value>封装的 PostScript</value></data>
+  <data name="Format_epub_Description" xml:space="preserve"><value>EPUB 电子书的封面。</value></data>
+  <data name="Format_epub_Name" xml:space="preserve"><value>EPUB 图书</value></data>
+  <data name="Format_exr_Description" xml:space="preserve"><value>用于电影和视觉效果的 HDR 图像。</value></data>
+  <data name="Format_firstpublisher_Description" xml:space="preserve"><value>First Publisher 剪贴画。</value></data>
+  <data name="Format_fits_Description" xml:space="preserve"><value>FITS 天文图像。</value></data>
+  <data name="Format_g3_Description" xml:space="preserve"><value>原始 Group 3 传真。</value></data>
+  <data name="Format_g3_Name" xml:space="preserve"><value>Group 3 传真</value></data>
+  <data name="Format_gif_Description" xml:space="preserve"><value>GIF 图像和动画（第一帧）。</value></data>
+  <data name="Format_gimp_Description" xml:space="preserve"><value>带图层的 GIMP 图像。</value></data>
+  <data name="Format_hdr_Description" xml:space="preserve"><value>Radiance 高动态范围图像（RGBE）。</value></data>
+  <data name="Format_heif_Description" xml:space="preserve"><value>iPhone 和 Android 照片（HEIC）以及 AVIF。需要 Windows 的 HEIF/AV1 图像扩展。</value></data>
+  <data name="Format_heif_Name" xml:space="preserve"><value>HEIF 和 AVIF</value></data>
+  <data name="Format_ico_Description" xml:space="preserve"><value>Windows 图标（最大尺寸）。</value></data>
+  <data name="Format_ico_Name" xml:space="preserve"><value>图标</value></data>
+  <data name="Format_indesign_Description" xml:space="preserve"><value>InDesign 文档和模板（嵌入的预览）。</value></data>
+  <data name="Format_ipl_Description" xml:space="preserve"><value>IPL 图像序列（第一帧）。</value></data>
+  <data name="Format_ipl_Name" xml:space="preserve"><value>IPL 序列</value></data>
+  <data name="Format_iwork_Description" xml:space="preserve"><value>Keynote、Numbers 和 Pages。</value></data>
+  <data name="Format_jbig_Description" xml:space="preserve"><value>黑白 JBIG 图像（扫描仪和传真）。</value></data>
+  <data name="Format_jpeg2000_Description" xml:space="preserve"><value>JPEG 2000 和 PGX 图像。</value></data>
+  <data name="Format_jpeg_Description" xml:space="preserve"><value>JPEG 照片。</value></data>
+  <data name="Format_jxl_Description" xml:space="preserve"><value>JPEG XL 图像。</value></data>
+  <data name="Format_jxr_Description" xml:space="preserve"><value>JPEG XR 图像（HD Photo、Windows Media Photo）。</value></data>
+  <data name="Format_krita_Description" xml:space="preserve"><value>Krita 和 OpenRaster 图像（嵌入的合并图像）。</value></data>
+  <data name="Format_krita_Name" xml:space="preserve"><value>Krita 和 OpenRaster</value></data>
+  <data name="Format_ktx_Description" xml:space="preserve"><value>KTX 和 KTX2 纹理。</value></data>
+  <data name="Format_kubotek_Description" xml:space="preserve"><value>Kubotek KeyCreator 模型（嵌入的预览）。</value></data>
+  <data name="Format_macpaint_Description" xml:space="preserve"><value>黑白 MacPaint 绘图。</value></data>
+  <data name="Format_maya_Description" xml:space="preserve"><value>Maya 场景（嵌入的预览）。</value></data>
+  <data name="Format_metafile_Description" xml:space="preserve"><value>WMF 和 EMF 绘图，包括压缩格式（.wmz、.emz）。</value></data>
+  <data name="Format_metafile_Name" xml:space="preserve"><value>Windows 图元文件</value></data>
+  <data name="Format_mhtml_Description" xml:space="preserve"><value>另存为单个文件的网页。</value></data>
+  <data name="Format_mhtml_Name" xml:space="preserve"><value>Web 存档（MHT）</value></data>
+  <data name="Format_mobi_Description" xml:space="preserve"><value>Mobi 电子书的封面。</value></data>
+  <data name="Format_mobi_Name" xml:space="preserve"><value>Mobipocket 图书</value></data>
+  <data name="Format_office_Description" xml:space="preserve"><value>与缩略图一起保存的旧版 Word、Excel、PowerPoint 和 Visio 文档。</value></data>
+  <data name="Format_officexml_Description" xml:space="preserve"><value>与缩略图一起保存的 Word、Excel、PowerPoint 和 Visio 文档。</value></data>
+  <data name="Format_pcx_Description" xml:space="preserve"><value>PCX 和 DCX 图像（多页传真）。</value></data>
+  <data name="Format_pdf_Description" xml:space="preserve"><value>PDF 文档的第一页。</value></data>
+  <data name="Format_pdf_Name" xml:space="preserve"><value>PDF 文档</value></data>
+  <data name="Format_pes_Description" xml:space="preserve"><value>PES 刺绣设计：以线的颜色显示针迹。</value></data>
+  <data name="Format_pes_Name" xml:space="preserve"><value>Brother PES 刺绣</value></data>
+  <data name="Format_pgf_Description" xml:space="preserve"><value>PGF 图像（libPGF）。</value></data>
+  <data name="Format_photocd_Description" xml:space="preserve"><value>Photo CD 图片。</value></data>
+  <data name="Format_pict_Description" xml:space="preserve"><value>经典 Mac PICT 图像。</value></data>
+  <data name="Format_png_Description" xml:space="preserve"><value>带透明度的 PNG 图像。</value></data>
+  <data name="Format_pnm_Description" xml:space="preserve"><value>PBM、PGM、PPM、PAM 和 PFM 可移植图像。</value></data>
+  <data name="Format_psd_Description" xml:space="preserve"><value>Photoshop 文档和大型文档，包含图层和透明度。</value></data>
+  <data name="Format_psp_Description" xml:space="preserve"><value>Paint Shop Pro 图像、图片喷管、相框和蒙版。</value></data>
+  <data name="Format_publisher_Description" xml:space="preserve"><value>Microsoft Publisher 出版物。</value></data>
+  <data name="Format_pulse_Description" xml:space="preserve"><value>Pulse/Tajima DG/ML 刺绣设计（嵌入的预览）。</value></data>
+  <data name="Format_pulse_Name" xml:space="preserve"><value>Pulse 刺绣</value></data>
+  <data name="Format_pvr_Description" xml:space="preserve"><value>PowerVR 纹理（PVRTC、ETC）。</value></data>
+  <data name="Format_raw_Description" xml:space="preserve"><value>相机拍摄的数字底片（Canon、Nikon、Sony、Fujifilm、DNG…）。</value></data>
+  <data name="Format_raw_Name" xml:space="preserve"><value>相机 RAW</value></data>
+  <data name="Format_rtf_Description" xml:space="preserve"><value>RTF 文档（第一页的文本）。</value></data>
+  <data name="Format_rtf_Name" xml:space="preserve"><value>多信息文本</value></data>
+  <data name="Format_sgi_Description" xml:space="preserve"><value>SGI RGB 图像。</value></data>
+  <data name="Format_sketchup_Description" xml:space="preserve"><value>SketchUp 模型（嵌入的预览）。</value></data>
+  <data name="Format_sketchupextra_Description" xml:space="preserve"><value>SketchUp LayOut 文档和材质。</value></data>
+  <data name="Format_sketchupextra_Name" xml:space="preserve"><value>SketchUp LayOut 和材质</value></data>
+  <data name="Format_smartcam_Description" xml:space="preserve"><value>SmartCAM 文件（嵌入的预览）。</value></data>
+  <data name="Format_softimage_Description" xml:space="preserve"><value>SoftImage 场景（嵌入的预览）。</value></data>
+  <data name="Format_sstv_Description" xml:space="preserve"><value>业余无线电 SSTV 图像（.hrz）。</value></data>
+  <data name="Format_svg_Description" xml:space="preserve"><value>可缩放矢量图形，包括压缩格式（.svgz）。</value></data>
+  <data name="Format_svg_Name" xml:space="preserve"><value>SVG 图形</value></data>
+  <data name="Format_text_Description" xml:space="preserve"><value>文本、日志、Markdown、JSON 和 NFO（前几行）。</value></data>
+  <data name="Format_text_Name" xml:space="preserve"><value>文本</value></data>
+  <data name="Format_tga_Description" xml:space="preserve"><value>TGA 图像，常用于纹理和视频。</value></data>
+  <data name="Format_thm_Description" xml:space="preserve"><value>某些相机在视频旁边保存的 JPEG 缩略图。</value></data>
+  <data name="Format_thm_Name" xml:space="preserve"><value>相机缩略图</value></data>
+  <data name="Format_tiff_Description" xml:space="preserve"><value>TIFF 图像（第一页）。</value></data>
+  <data name="Format_tim_Description" xml:space="preserve"><value>PlayStation 1 和 2 纹理。</value></data>
+  <data name="Format_vinylmaster_Description" xml:space="preserve"><value>VinylMaster 设计（嵌入的预览）。</value></data>
+  <data name="Format_wav_Description" xml:space="preserve"><value>WAV 声音文件的波形。</value></data>
+  <data name="Format_wav_Name" xml:space="preserve"><value>WAV 声音</value></data>
+  <data name="Format_wbmp_Description" xml:space="preserve"><value>用于 WAP 手机的黑白图像。</value></data>
+  <data name="Format_web_Description" xml:space="preserve"><value>HTML 页面（页面文本）。</value></data>
+  <data name="Format_web_Name" xml:space="preserve"><value>网页</value></data>
+  <data name="Format_webp_Description" xml:space="preserve"><value>WebP 图像。</value></data>
+  <data name="Format_xara_Description" xml:space="preserve"><value>Xara 文档（嵌入的预览）。</value></data>
+  <data name="Format_xd_Description" xml:space="preserve"><value>Adobe XD 设计（嵌入的预览）。</value></data>
+  <data name="Format_xml_Description" xml:space="preserve"><value>XML 文档（前几行）。</value></data>
+  <data name="Group_advanced" xml:space="preserve"><value>高级</value></data>
+  <data name="Group_appearance" xml:space="preserve"><value>外观</value></data>
+  <data name="Group_checkerboard" xml:space="preserve"><value>透明棋盘格</value></data>
+  <data name="Group_contextMenu" xml:space="preserve"><value>上下文菜单</value></data>
+  <data name="Group_diagnostics" xml:space="preserve"><value>诊断</value></data>
+  <data name="Group_explorer" xml:space="preserve"><value>文件资源管理器</value></data>
+  <data name="Group_generation" xml:space="preserve"><value>生成</value></data>
+  <data name="Group_icon" xml:space="preserve"><value>叠加图标</value></data>
+  <data name="Group_performance" xml:space="preserve"><value>性能</value></data>
+  <data name="Group_privacy" xml:space="preserve"><value>隐私</value></data>
+  <data name="Handler_None" xml:space="preserve"><value>无（文件类型图标）</value></data>
+  <data name="Handler_Other" xml:space="preserve"><value>其他提供程序（{0}）</value></data>
+  <data name="Product_Tagline" xml:space="preserve"><value>设计文件的缩略图</value></data>
+  <data name="Scope_AllFormats" xml:space="preserve"><value>所有格式</value></data>
+  <data name="Scope_General" xml:space="preserve"><value>常规</value></data>
+  <data name="Setting_adornment_Description" xml:space="preserve"><value>文件资源管理器在缩略图周围绘制的阴影。</value></data>
+  <data name="Setting_adornment_Option_0" xml:space="preserve"><value>无</value></data>
+  <data name="Setting_adornment_Option_0_Description" xml:space="preserve"><value>缩略图占满整个空间。</value></data>
+  <data name="Setting_adornment_Option_1" xml:space="preserve"><value>阴影（Windows 样式）</value></data>
+  <data name="Setting_adornment_Title" xml:space="preserve"><value>边框</value></data>
+  <data name="Setting_alpha_Description" xml:space="preserve"><value>如果半透明区域周围出现光晕，请尝试“预乘”。</value></data>
+  <data name="Setting_alpha_Option_0" xml:space="preserve"><value>直接</value></data>
+  <data name="Setting_alpha_Option_1" xml:space="preserve"><value>预乘</value></data>
+  <data name="Setting_alpha_Option_1_Description" xml:space="preserve"><value>常见于游戏引擎。</value></data>
+  <data name="Setting_alpha_Title" xml:space="preserve"><value>Alpha 通道</value></data>
+  <data name="Setting_blockedFolders_Description" xml:space="preserve"><value>Glancy 不会在这些文件夹及其子文件夹中生成缩略图。适用于机密内容。</value></data>
+  <data name="Setting_blockedFolders_Title" xml:space="preserve"><value>排除的文件夹</value></data>
+  <data name="Setting_canvasColor_Description" xml:space="preserve"><value>用于“画布颜色”背景和彩色方形画布。</value></data>
+  <data name="Setting_canvasColor_Title" xml:space="preserve"><value>画布颜色</value></data>
+  <data name="Setting_checkerAnchor_Description" xml:space="preserve"><value>开始绘制棋盘格的位置。</value></data>
+  <data name="Setting_checkerAnchor_Option_0" xml:space="preserve"><value>左上角</value></data>
+  <data name="Setting_checkerAnchor_Option_1" xml:space="preserve"><value>顶部</value></data>
+  <data name="Setting_checkerAnchor_Option_2" xml:space="preserve"><value>右上角</value></data>
+  <data name="Setting_checkerAnchor_Option_3" xml:space="preserve"><value>左侧</value></data>
+  <data name="Setting_checkerAnchor_Option_4" xml:space="preserve"><value>居中</value></data>
+  <data name="Setting_checkerAnchor_Option_5" xml:space="preserve"><value>右侧</value></data>
+  <data name="Setting_checkerAnchor_Option_6" xml:space="preserve"><value>左下角</value></data>
+  <data name="Setting_checkerAnchor_Option_7" xml:space="preserve"><value>底部</value></data>
+  <data name="Setting_checkerAnchor_Option_8" xml:space="preserve"><value>右下角</value></data>
+  <data name="Setting_checkerAnchor_Title" xml:space="preserve"><value>棋盘格锚点</value></data>
+  <data name="Setting_checkerColors_Description" xml:space="preserve"><value>交替出现的两种颜色。</value></data>
+  <data name="Setting_checkerColors_Title" xml:space="preserve"><value>棋盘格颜色</value></data>
+  <data name="Setting_checkerLibrary_Description" xml:space="preserve"><value>已保存的颜色组合，便于快速选取。</value></data>
+  <data name="Setting_checkerLibrary_Title" xml:space="preserve"><value>棋盘格库</value></data>
+  <data name="Setting_checkerScale_Description" xml:space="preserve"><value>每个棋盘格方块的大小。</value></data>
+  <data name="Setting_checkerScale_Option_0" xml:space="preserve"><value>小（4 px）</value></data>
+  <data name="Setting_checkerScale_Option_1" xml:space="preserve"><value>中（8 px）</value></data>
+  <data name="Setting_checkerScale_Option_2" xml:space="preserve"><value>大（16 px）</value></data>
+  <data name="Setting_checkerScale_Title" xml:space="preserve"><value>单元格大小</value></data>
+  <data name="Setting_contextMenu_Description" xml:space="preserve"><value>右键单击文件和文件夹时显示的 Glancy 操作（刷新缩略图、更改背景…）。</value></data>
+  <data name="Setting_contextMenu_Option_0" xml:space="preserve"><value>关</value></data>
+  <data name="Setting_contextMenu_Option_1" xml:space="preserve"><value>显示所有选项</value></data>
+  <data name="Setting_contextMenu_Option_1_Description" xml:space="preserve"><value>使用更快捷，但占用更多空间。</value></data>
+  <data name="Setting_contextMenu_Option_2" xml:space="preserve"><value>分组到子菜单中</value></data>
+  <data name="Setting_contextMenu_Option_2_Description" xml:space="preserve"><value>只有一个“Glancy”项，带有子菜单。</value></data>
+  <data name="Setting_contextMenu_Title" xml:space="preserve"><value>Glancy 上下文菜单</value></data>
+  <data name="Setting_contextMenuShift_Description" xml:space="preserve"><value>仅当按住 Shift 并右键单击时，才会显示 Glancy 菜单。</value></data>
+  <data name="Setting_contextMenuShift_Title" xml:space="preserve"><value>仅在按住 Shift 时显示</value></data>
+  <data name="Setting_customIcon_Description" xml:space="preserve"><value>使用你自己的图标；如果你隐藏了文件扩展名，这会很有用。</value></data>
+  <data name="Setting_customIcon_Title" xml:space="preserve"><value>自定义图标</value></data>
+  <data name="Setting_customIconPath_Description" xml:space="preserve"><value>从 .ico、.exe 或 .dll 文件中选择图标。</value></data>
+  <data name="Setting_customIconPath_Title" xml:space="preserve"><value>图标文件</value></data>
+  <data name="Setting_debugLog_Description" xml:space="preserve"><value>引擎会记录生成的每个缩略图和每个错误。除非要调查问题，否则请保持关闭。</value></data>
+  <data name="Setting_debugLog_Title" xml:space="preserve"><value>诊断日志</value></data>
+  <data name="Setting_embedded_Description" xml:space="preserve"><value>许多文件都包含一个小预览：速度更快，但不够清晰。</value></data>
+  <data name="Setting_embedded_Option_0" xml:space="preserve"><value>始终渲染文件</value></data>
+  <data name="Setting_embedded_Option_0_Description" xml:space="preserve"><value>质量最佳；预览仅作为备用。</value></data>
+  <data name="Setting_embedded_Option_1" xml:space="preserve"><value>始终使用预览</value></data>
+  <data name="Setting_embedded_Option_1_Description" xml:space="preserve"><value>速度最快；可能显得较小。</value></data>
+  <data name="Setting_embedded_Option_2" xml:space="preserve"><value>预览足够大时使用预览</value></data>
+  <data name="Setting_embedded_Option_2_Description" xml:space="preserve"><value>兼顾速度和质量。</value></data>
+  <data name="Setting_embedded_Title" xml:space="preserve"><value>嵌入的预览</value></data>
+  <data name="Setting_enabled_Description" xml:space="preserve"><value>暂时关闭以排查文件资源管理器问题。</value></data>
+  <data name="Setting_enabled_Title" xml:space="preserve"><value>使用 Glancy 生成缩略图</value></data>
+  <data name="Setting_folderRecursion_Description" xml:space="preserve"><value>对文件夹执行的操作也会应用到其中的所有文件夹。</value></data>
+  <data name="Setting_folderRecursion_Title" xml:space="preserve"><value>包括子文件夹</value></data>
+  <data name="Setting_forceDesktopTransparency_Description" xml:space="preserve"><value>无论格式设置如何，桌面上的文件始终使用透明背景。</value></data>
+  <data name="Setting_forceDesktopTransparency_Title" xml:space="preserve"><value>桌面上的透明度</value></data>
+  <data name="Setting_fullFill_Description" xml:space="preserve"><value>与缩略图同样大小的方形画布，使文件对齐以便比较。</value></data>
+  <data name="Setting_fullFill_Option_0" xml:space="preserve"><value>无画布</value></data>
+  <data name="Setting_fullFill_Option_1" xml:space="preserve"><value>透明画布</value></data>
+  <data name="Setting_fullFill_Option_2" xml:space="preserve"><value>棋盘格画布</value></data>
+  <data name="Setting_fullFill_Option_3" xml:space="preserve"><value>彩色画布</value></data>
+  <data name="Setting_fullFill_Title" xml:space="preserve"><value>完整的方形缩略图</value></data>
+  <data name="Setting_gamma_Description" xml:space="preserve"><value>适用于没有颜色配置文件的文件；摄影中常用 2.2。</value></data>
+  <data name="Setting_gamma_Option_100" xml:space="preserve"><value>不校正（1.0）</value></data>
+  <data name="Setting_gamma_Option_180" xml:space="preserve"><value>1.8</value></data>
+  <data name="Setting_gamma_Option_220" xml:space="preserve"><value>2.2</value></data>
+  <data name="Setting_gamma_Option_240" xml:space="preserve"><value>2.4</value></data>
+  <data name="Setting_gamma_Title" xml:space="preserve"><value>伽马校正</value></data>
+  <data name="Setting_maxFileSizeMB_Description" xml:space="preserve"><value>超过此大小时，如果有嵌入的预览，则使用该预览。</value></data>
+  <data name="Setting_maxFileSizeMB_Option_0" xml:space="preserve"><value>无限制</value></data>
+  <data name="Setting_maxFileSizeMB_Option_100" xml:space="preserve"><value>100 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_1024" xml:space="preserve"><value>1 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_2048" xml:space="preserve"><value>2 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_250" xml:space="preserve"><value>250 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_50" xml:space="preserve"><value>50 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_500" xml:space="preserve"><value>500 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Title" xml:space="preserve"><value>最大文件大小</value></data>
+  <data name="Setting_maxPixels_Description" xml:space="preserve"><value>最大宽度或高度；超过时使用嵌入的预览。</value></data>
+  <data name="Setting_maxPixels_Option_0" xml:space="preserve"><value>无限制</value></data>
+  <data name="Setting_maxPixels_Option_16384" xml:space="preserve"><value>16,384 px</value></data>
+  <data name="Setting_maxPixels_Option_32768" xml:space="preserve"><value>32,768 px</value></data>
+  <data name="Setting_maxPixels_Option_4096" xml:space="preserve"><value>4,096 px</value></data>
+  <data name="Setting_maxPixels_Option_8192" xml:space="preserve"><value>8,192 px</value></data>
+  <data name="Setting_maxPixels_Title" xml:space="preserve"><value>最大尺寸</value></data>
+  <data name="Setting_mode_Description" xml:space="preserve"><value>选择由谁绘制缩略图。</value></data>
+  <data name="Setting_mode_Option_0" xml:space="preserve"><value>关</value></data>
+  <data name="Setting_mode_Option_0_Description" xml:space="preserve"><value>显示文件类型图标。</value></data>
+  <data name="Setting_mode_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_mode_Option_1_Description" xml:space="preserve"><value>使用此页面上的设置。</value></data>
+  <data name="Setting_mode_Option_2" xml:space="preserve"><value>系统提供程序</value></data>
+  <data name="Setting_mode_Option_2_Description" xml:space="preserve"><value>由 Windows 或关联的应用绘制；如果没有，则使用 Glancy。</value></data>
+  <data name="Setting_mode_Title" xml:space="preserve"><value>缩略图</value></data>
+  <data name="Setting_refreshOnApply_Description" xml:space="preserve"><value>重新生成文件资源管理器中已打开文件夹的缩略图，以便立即看到更改。</value></data>
+  <data name="Setting_refreshOnApply_Title" xml:space="preserve"><value>应用时刷新打开的窗口</value></data>
+  <data name="Setting_sampling_Description" xml:space="preserve"><value>用于缩小或放大图像的算法。</value></data>
+  <data name="Setting_sampling_Option_0" xml:space="preserve"><value>最近邻</value></data>
+  <data name="Setting_sampling_Option_0_Description" xml:space="preserve"><value>像素清晰锐利，适合像素画。</value></data>
+  <data name="Setting_sampling_Option_1" xml:space="preserve"><value>双线性</value></data>
+  <data name="Setting_sampling_Option_1_Description" xml:space="preserve"><value>更柔和、更快。</value></data>
+  <data name="Setting_sampling_Option_2" xml:space="preserve"><value>双三次</value></data>
+  <data name="Setting_sampling_Option_2_Description" xml:space="preserve"><value>整体质量最佳。</value></data>
+  <data name="Setting_sampling_Title" xml:space="preserve"><value>重新采样</value></data>
+  <data name="Setting_scale_Description" xml:space="preserve"><value>当图像小于缩略图时。</value></data>
+  <data name="Setting_scale_Option_0" xml:space="preserve"><value>实际大小</value></data>
+  <data name="Setting_scale_Option_0_Description" xml:space="preserve"><value>不放大；可能显得较小。</value></data>
+  <data name="Setting_scale_Option_1" xml:space="preserve"><value>缩放以适应</value></data>
+  <data name="Setting_scale_Option_1_Description" xml:space="preserve"><value>填满缩略图且不变形。</value></data>
+  <data name="Setting_scale_Title" xml:space="preserve"><value>小图像</value></data>
+  <data name="Setting_showAssocIcon_Description" xml:space="preserve"><value>在右下角显示用于打开该文件的应用的图标。</value></data>
+  <data name="Setting_showAssocIcon_Title" xml:space="preserve"><value>显示应用图标</value></data>
+  <data name="Setting_smallIcons_Description" xml:space="preserve"><value>“列表”“详细信息”和“小图标”视图中的缩略图。</value></data>
+  <data name="Setting_smallIcons_Option_0" xml:space="preserve"><value>关</value></data>
+  <data name="Setting_smallIcons_Option_0_Description" xml:space="preserve"><value>普通的文件类型图标。</value></data>
+  <data name="Setting_smallIcons_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_smallIcons_Option_1_Description" xml:space="preserve"><value>显示图像而不是图标；速度稍慢。</value></data>
+  <data name="Setting_smallIcons_Option_2" xml:space="preserve"><value>系统提供程序</value></data>
+  <data name="Setting_smallIcons_Option_2_Description" xml:space="preserve"><value>使用 Windows 自带的提供程序；如果没有，则显示普通图标。</value></data>
+  <data name="Setting_smallIcons_Title" xml:space="preserve"><value>小图标</value></data>
+  <data name="Setting_transparency_Description" xml:space="preserve"><value>透明区域后面显示的内容。</value></data>
+  <data name="Setting_transparency_Option_0" xml:space="preserve"><value>不透明</value></data>
+  <data name="Setting_transparency_Option_0_Description" xml:space="preserve"><value>忽略 Alpha 通道。</value></data>
+  <data name="Setting_transparency_Option_1" xml:space="preserve"><value>画布颜色</value></data>
+  <data name="Setting_transparency_Option_1_Description" xml:space="preserve"><value>固定的颜色，就像 PDF 的纸张。</value></data>
+  <data name="Setting_transparency_Option_2" xml:space="preserve"><value>透明</value></data>
+  <data name="Setting_transparency_Option_2_Description" xml:space="preserve"><value>透出文件资源管理器的背景。</value></data>
+  <data name="Setting_transparency_Option_3" xml:space="preserve"><value>棋盘格</value></data>
+  <data name="Setting_transparency_Option_3_Description" xml:space="preserve"><value>显示 Alpha 通道。</value></data>
+  <data name="Setting_transparency_Title" xml:space="preserve"><value>透明区域的背景</value></data>
+  <data name="Store_ReadFailed" xml:space="preserve"><value>无法从注册表读取设置。</value></data>
+  <data name="Store_SaveFailed" xml:space="preserve"><value>无法将更改保存到 Windows 注册表。</value></data>
+  <data name="Value_EmptyList" xml:space="preserve"><value>（空）</value></data>
+  <data name="Value_Inherited" xml:space="preserve"><value>继承自格式</value></data>
+  <data name="Value_ItemCount" xml:space="preserve"><value>{0} 项</value></data>
+  <data name="Value_NoText" xml:space="preserve"><value>（无）</value></data>
+  <data name="Value_Off" xml:space="preserve"><value>关</value></data>
+  <data name="Value_On" xml:space="preserve"><value>开</value></data>
+</root>

@@ -1,0 +1,51 @@
+<UserControl x:Class="Glancy.Settings.Controls.PreviewPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:l="using:Glancy.Settings.Localization"
+             xmlns:local="using:Glancy.Settings.Controls"
+             IsTabStop="False">
+  <Border Style="{StaticResource GlancyCardStyle}" Padding="16">
+    <StackPanel Spacing="12">
+      <Grid>
+        <StackPanel Spacing="2">
+          <TextBlock Text="{l:Str Key=Preview_Title}" Style="{StaticResource BodyStrongTextBlockStyle}" />
+          <TextBlock x:Name="ScopeText" Style="{StaticResource GlancyCaptionStyle}" />
+        </StackPanel>
+        <ToggleButton x:Name="DarkSurfaceButton" HorizontalAlignment="Right" VerticalAlignment="Top" Padding="8,5" Click="OnSurfaceClick"
+                      ToolTipService.ToolTip="{l:Str Key=Preview_Dark_Tooltip}"
+                      AutomationProperties.Name="{l:Str Key=Preview_Dark_Name}">
+          <StackPanel Orientation="Horizontal" Spacing="6">
+            <FontIcon Glyph="&#xE708;" FontSize="13" FontFamily="{StaticResource GlancyIconFontFamily}" />
+            <TextBlock Text="{l:Str Key=Preview_Dark}" Style="{StaticResource CaptionTextBlockStyle}" />
+          </StackPanel>
+        </ToggleButton>
+      </Grid>
+
+      <Border x:Name="Surface" CornerRadius="6" Padding="12,16" BorderThickness="1"
+              BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+              AutomationProperties.Name="{l:Str Key=Preview_Simulation_Name}">
+        <StackPanel Spacing="16" HorizontalAlignment="Center">
+          <StackPanel Spacing="6" HorizontalAlignment="Center">
+            <Viewbox x:Name="LargeViewbox" MaxWidth="256" StretchDirection="DownOnly">
+              <local:ThumbnailTile x:Name="LargeTile" TileSize="256" />
+            </Viewbox>
+            <TextBlock x:Name="LargeCaption" HorizontalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" />
+          </StackPanel>
+          <StackPanel Orientation="Horizontal" Spacing="20" HorizontalAlignment="Center">
+            <StackPanel Spacing="6">
+              <local:ThumbnailTile x:Name="MediumTile" TileSize="96" />
+              <TextBlock x:Name="MediumCaption" HorizontalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" />
+            </StackPanel>
+            <StackPanel Spacing="6" VerticalAlignment="Bottom">
+              <local:ThumbnailTile x:Name="SmallTile" TileSize="48" />
+              <TextBlock x:Name="SmallCaption" HorizontalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" />
+            </StackPanel>
+          </StackPanel>
+        </StackPanel>
+      </Border>
+
+      <TextBlock Style="{StaticResource GlancyCaptionStyle}"
+                 Text="{l:Str Key=Preview_Note}" />
+    </StackPanel>
+  </Border>
+</UserControl>

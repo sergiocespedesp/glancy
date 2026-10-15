@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="About_Credits" xml:space="preserve"><value>Danksagungen und Lizenzen von Drittanbietern</value></data>
+  <data name="About_FreeSoftware" xml:space="preserve"><value>Freie Software</value></data>
+  <data name="About_FreeSoftware_Text" xml:space="preserve"><value>Glancy ist freie Software: Sie können es unter den Bedingungen der GNU General Public License, Version 3 oder einer späteren Version, weitergeben und verändern. Es wird ohne jede Gewährleistung bereitgestellt.</value></data>
+  <data name="About_HowItWorks" xml:space="preserve"><value>So funktioniert es</value></data>
+  <data name="About_HowItWorks_Extensions" xml:space="preserve"><value>Jedes Format hat eigene Einstellungen. Hat ein Format mehrere Erweiterungen (zum Beispiel .psd und .psb), kann nur eine angepasst werden; die übrigen erben vom Format.</value></data>
+  <data name="About_HowItWorks_Pending" xml:space="preserve"><value>Änderungen an Formaten und Datei-Explorer-Einstellungen werden als ausstehende Änderungen gesammelt. Im Datei-Explorer ändert sich nichts, bis „Übernehmen“ ausgewählt wird; vorher können sie überprüft oder verworfen werden.</value></data>
+  <data name="About_HowItWorks_Preferences" xml:space="preserve"><value>Einstellungen für dieses Fenster (Design, im Vordergrund halten) gelten sofort und wirken sich nicht auf Miniaturansichten aus.</value></data>
+  <data name="About_LicenseLink" xml:space="preserve"><value>Lizenz (GPL-3.0)</value></data>
+  <data name="About_Shortcuts" xml:space="preserve"><value>Tastenkombinationen</value></data>
+  <data name="About_SourceCode" xml:space="preserve"><value>Quellcode</value></data>
+  <data name="About_Support" xml:space="preserve"><value>Glancy unterstützen</value></data>
+  <data name="About_Support_Text" xml:space="preserve"><value>Glancy ist kostenlos und werbefrei. Wenn es Ihnen nützt, hilft eine Spende, es weiter zu pflegen.</value></data>
+  <data name="About_Tech_Clsid" xml:space="preserve"><value>Engine-CLSID: {0}</value></data>
+  <data name="About_Tech_ExportFile" xml:space="preserve"><value>Exportdatei: {0}</value></data>
+  <data name="About_Tech_Logs" xml:space="preserve"><value>Protokolle: {0}</value></data>
+  <data name="About_Tech_Settings" xml:space="preserve"><value>Einstellungen: {0}</value></data>
+  <data name="About_TechInfo" xml:space="preserve"><value>Technische Informationen</value></data>
+  <data name="About_Title" xml:space="preserve"><value>Info zu Glancy</value></data>
+  <data name="About_Version" xml:space="preserve"><value>Version {0} · {1}</value></data>
+  <data name="AllFormats_Counts" xml:space="preserve"><value>{0} Formate · {1} Erweiterungen</value></data>
+  <data name="AllFormats_Description" xml:space="preserve"><value>Eine hier geänderte Einstellung wird auf alle Formate gleichzeitig angewendet. Formate, die eine Einstellung nicht unterstützen, ignorieren sie.</value></data>
+  <data name="Apply_Applied_NoRefresh" xml:space="preserve"><value>Ordner zeigen die neuen Miniaturansichten beim Öffnen oder nach Drücken von F5.</value></data>
+  <data name="Apply_Applied_Refreshed" xml:space="preserve"><value>Geöffnete Datei-Explorer-Fenster wurden aktualisiert.</value></data>
+  <data name="Apply_Applied_Title" xml:space="preserve"><value>Änderungen übernommen</value></data>
+  <data name="Apply_Failed_Message" xml:space="preserve"><value>{0} Ihre Änderungen stehen weiterhin aus.</value></data>
+  <data name="Apply_Failed_Title" xml:space="preserve"><value>Die Änderungen konnten nicht übernommen werden</value></data>
+  <data name="Apply_Saved_EngineMissing" xml:space="preserve"><value>Sie werden verwendet, sobald die Glancy-Miniaturansichten-Engine installiert ist.</value></data>
+  <data name="Apply_Saved_Title" xml:space="preserve"><value>Änderungen gespeichert</value></data>
+  <data name="Cache_Cleared_Title" xml:space="preserve"><value>Miniaturansichtencache geleert</value></data>
+  <data name="Cache_Failed_Title" xml:space="preserve"><value>Der Cache konnte nicht geleert werden</value></data>
+  <data name="Cache_Freed" xml:space="preserve"><value>{0:0.#} MB freigegeben.</value></data>
+  <data name="Checker_Customize" xml:space="preserve"><value>Anpassen</value></data>
+  <data name="Checker_DarkColor" xml:space="preserve"><value>Dunkle Farbe</value></data>
+  <data name="Checker_DarkGrays" xml:space="preserve"><value>Dunkelgrau</value></data>
+  <data name="Checker_Library" xml:space="preserve"><value>Bibliothek</value></data>
+  <data name="Checker_LightColor" xml:space="preserve"><value>Helle Farbe</value></data>
+  <data name="Checker_MidGrays" xml:space="preserve"><value>Mittelgrau</value></data>
+  <data name="Checker_Pair" xml:space="preserve"><value>{0} und {1}</value></data>
+  <data name="Checker_Random" xml:space="preserve"><value>Zufällig</value></data>
+  <data name="Checker_SaveToLibrary" xml:space="preserve"><value>In Bibliothek speichern</value></data>
+  <data name="Checker_Swap" xml:space="preserve"><value>Farben tauschen</value></data>
+  <data name="Checker_WhiteLightGray" xml:space="preserve"><value>Weiß und Hellgrau</value></data>
+  <data name="Close_ApplyAndClose" xml:space="preserve"><value>Übernehmen und schließen</value></data>
+  <data name="Close_DialogOpen_Message" xml:space="preserve"><value>Danach kann Glancy geschlossen werden.</value></data>
+  <data name="Close_DialogOpen_Title" xml:space="preserve"><value>Geöffnetes Dialogfeld schließen</value></data>
+  <data name="Close_Pending_Many" xml:space="preserve"><value>{0} Änderungen wurden nicht übernommen</value></data>
+  <data name="Close_Pending_Message" xml:space="preserve"><value>Beim Schließen ohne Übernehmen verwendet der Datei-Explorer weiterhin die vorherigen Einstellungen.</value></data>
+  <data name="Close_Pending_One" xml:space="preserve"><value>1 Änderung wurde nicht übernommen</value></data>
+  <data name="Close_WithoutApplying" xml:space="preserve"><value>Ohne Übernehmen schließen</value></data>
+  <data name="Color_Quick" xml:space="preserve"><value>Schnellfarben</value></data>
+  <data name="Color_Use" xml:space="preserve"><value>Diese Farbe verwenden</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Abbrechen</value></data>
+  <data name="Common_CheckAgain" xml:space="preserve"><value>Erneut prüfen</value></data>
+  <data name="Common_Checking" xml:space="preserve"><value>Wird geprüft …</value></data>
+  <data name="Common_Failed" xml:space="preserve"><value>fehlgeschlagen</value></data>
+  <data name="Common_MultipleValues" xml:space="preserve"><value>Mehrere Werte</value></data>
+  <data name="Common_Off" xml:space="preserve"><value>Aus</value></data>
+  <data name="Common_On" xml:space="preserve"><value>Ein</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Öffnen</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Aktualisieren</value></data>
+  <data name="Common_Selected" xml:space="preserve"><value>Ausgewählt</value></data>
+  <data name="Common_Succeeded" xml:space="preserve"><value>erfolgreich</value></data>
+  <data name="Count_Extension_Many" xml:space="preserve"><value>{0} Erweiterungen</value></data>
+  <data name="Count_Extension_One" xml:space="preserve"><value>1 Erweiterung</value></data>
+  <data name="Count_Format_Many" xml:space="preserve"><value>{0} Formate</value></data>
+  <data name="Count_Format_One" xml:space="preserve"><value>1 Format</value></data>
+  <data name="Credit_Cfb" xml:space="preserve"><value>© Matthew D. Steele · MIT-Lizenz · in der Engine enthalten</value></data>
+  <data name="Credit_DotNet" xml:space="preserve"><value>© .NET Foundation und Mitwirkende · MIT-Lizenz · in der App enthalten</value></data>
+  <data name="Credit_Fax" xml:space="preserve"><value>© The pdf-rs contributors · MIT-Lizenz · in der Engine enthalten</value></data>
+  <data name="Credit_Flate2" xml:space="preserve"><value>© Alex Crichton und Mitwirkende · MIT oder Apache 2.0 · in der Engine enthalten</value></data>
+  <data name="Credit_Ghostscript" xml:space="preserve"><value>© Artifex Software · GNU AGPL 3.0 · weder enthalten noch verteilt; ist es auf dem PC installiert, verwendet die Engine es für EPS und alte AI-Dateien</value></data>
+  <data name="Credit_Ghostscript_Name" xml:space="preserve"><value>Ghostscript (optional)</value></data>
+  <data name="Credit_Hayro" xml:space="preserve"><value>© The Hayro Authors · Apache 2.0 oder MIT · in der Engine enthalten (JPEG 2000)</value></data>
+  <data name="Credit_Image" xml:space="preserve"><value>© The image-rs Developers · MIT oder Apache 2.0 · in der Engine enthalten (PNG, JPEG, TIFF, WebP, GIF, BMP, DDS, EXR, HDR …)</value></data>
+  <data name="Credit_JxlOxide" xml:space="preserve"><value>© Wonwoo Choi · MIT oder Apache 2.0 · in der Engine enthalten (JPEG XL)</value></data>
+  <data name="Credit_OtherRust" xml:space="preserve"><value>tiny-skia, usvg, zune-jpeg, exr, zlib-rs, rayon und die übrigen von diesen verwendeten Crates · freizügige Lizenzen (MIT, Apache 2.0, BSD, Zlib) · in der Engine enthalten</value></data>
+  <data name="Credit_OtherRust_Name" xml:space="preserve"><value>Weitere Rust-Abhängigkeiten</value></data>
+  <data name="Credit_Pdfium" xml:space="preserve"><value>© The PDFium Authors · BSD-Lizenz (3 Klauseln) · in der Engine enthalten (pdfium.dll; PDF und AI)</value></data>
+  <data name="Credit_PdfiumLibs" xml:space="preserve"><value>FreeType (FreeType License), HarfBuzz (MIT), ICU (Unicode License v3), libjpeg-turbo (IJG und BSD), libpng (PNG License v2), zlib (zlib License), OpenJPEG (BSD, 2 Klauseln), Little CMS (MIT), Abseil (Apache 2.0), Anti-Grain Geometry 2.3, fast_float und simdutf (MIT), Dragonbox und LLVM libc (Apache 2.0 mit LLVM-Ausnahme) · in pdfium.dll enthalten; vollständige Texte im Lizenzordner der Engine</value></data>
+  <data name="Credit_PdfiumLibs_Name" xml:space="preserve"><value>In PDFium enthaltene Bibliotheken</value></data>
+  <data name="Credit_QuickXml" xml:space="preserve"><value>© Johann Tuffe · MIT-Lizenz · in der Engine enthalten</value></data>
+  <data name="Credit_Resvg" xml:space="preserve"><value>© The Resvg Authors · Apache 2.0 oder MIT · in der Engine enthalten (SVG)</value></data>
+  <data name="Credit_Ruzstd" xml:space="preserve"><value>© Moritz Borcherding · MIT-Lizenz · in der Engine enthalten</value></data>
+  <data name="Credit_Segoe" xml:space="preserve"><value>© Microsoft · Windows-Systemschriftarten; nicht weiterverteilt</value></data>
+  <data name="Credit_Segoe_Name" xml:space="preserve"><value>Segoe UI Variable und Segoe Fluent Icons</value></data>
+  <data name="Credit_Serde" xml:space="preserve"><value>© Erick Tryzelaar und David Tolnay · MIT oder Apache 2.0 · in der Engine enthalten</value></data>
+  <data name="Credit_Serde_Name" xml:space="preserve"><value>serde und serde_json</value></data>
+  <data name="Credit_Sora" xml:space="preserve"><value>© The Sora Project Authors · SIL Open Font License 1.1 · in der App enthalten (Titel der Startseite)</value></data>
+  <data name="Credit_Texture2d" xml:space="preserve"><value>© Rudolf Kolbe · MIT oder Apache 2.0 · in der Engine enthalten (komprimierte Texturen)</value></data>
+  <data name="Credit_WinAppSdk" xml:space="preserve"><value>© Microsoft Corporation · MIT-Lizenz · in der App enthalten</value></data>
+  <data name="Credit_WinAppSdk_Name" xml:space="preserve"><value>Windows App SDK und WinUI 3</value></data>
+  <data name="Credit_WindowsRs" xml:space="preserve"><value>© Microsoft Corporation · MIT oder Apache 2.0 · in der Engine enthalten</value></data>
+  <data name="Credit_Zip" xml:space="preserve"><value>© Mathijs van de Nes und Mitwirkende · MIT-Lizenz · in der Engine enthalten</value></data>
+  <data name="Discard_Confirm_Many" xml:space="preserve"><value>{0} Änderungen verwerfen?</value></data>
+  <data name="Discard_Confirm_Message" xml:space="preserve"><value>Die Einstellungen kehren zum Stand der letzten Übernahme zurück.</value></data>
+  <data name="Discard_Confirm_One" xml:space="preserve"><value>1 Änderung verwerfen?</value></data>
+  <data name="DiskCleanup_Failed_Title" xml:space="preserve"><value>Die Datenträgerbereinigung konnte nicht geöffnet werden</value></data>
+  <data name="Error_Unexpected_Message" xml:space="preserve"><value>Die Aktion wurde nicht abgeschlossen. Ihre ausstehenden Änderungen bleiben erhalten. Details stehen im Glancy-Protokoll.</value></data>
+  <data name="Error_Unexpected_Title" xml:space="preserve"><value>Ein Fehler ist aufgetreten</value></data>
+  <data name="Explorer_AddFolder" xml:space="preserve"><value>Ordner hinzufügen</value></data>
+  <data name="Explorer_AlreadyExcluded" xml:space="preserve"><value>Dieser Ordner ist bereits ausgeschlossen</value></data>
+  <data name="Explorer_Checkerboard" xml:space="preserve"><value>Transparenz-Schachbrettmuster</value></data>
+  <data name="Explorer_Checkerboard_Help" xml:space="preserve"><value>Auf der Seite jedes Formats eine Kombination auswählen. Um eine neue hinzuzufügen, sie dort anpassen und „In Bibliothek speichern“ auswählen.</value></data>
+  <data name="Explorer_ContextMenu" xml:space="preserve"><value>Kontextmenü</value></data>
+  <data name="Explorer_General" xml:space="preserve"><value>Allgemein</value></data>
+  <data name="Explorer_Library_Name" xml:space="preserve"><value>Schachbrett-Bibliothek</value></data>
+  <data name="Explorer_NoExcludedFolders" xml:space="preserve"><value>Keine ausgeschlossenen Ordner.</value></data>
+  <data name="Explorer_Privacy" xml:space="preserve"><value>Datenschutz</value></data>
+  <data name="Explorer_RemoveFolder_Name" xml:space="preserve"><value>{0} entfernen</value></data>
+  <data name="Explorer_RemoveFromList" xml:space="preserve"><value>Aus der Liste entfernen</value></data>
+  <data name="Explorer_RemoveSelected" xml:space="preserve"><value>Auswahl entfernen</value></data>
+  <data name="Explorer_Restore" xml:space="preserve"><value>Wiederherstellen</value></data>
+  <data name="Explorer_Restore_Tooltip" xml:space="preserve"><value>Zu den drei Standard-Schachbrettmustern zurückkehren</value></data>
+  <data name="Explorer_Subtitle" xml:space="preserve"><value>Wie Glancy in den Datei-Explorer und den Desktop integriert ist. Gilt für alle Formate.</value></data>
+  <data name="Export_Done_Title" xml:space="preserve"><value>Einstellungen exportiert</value></data>
+  <data name="Export_Failed_Title" xml:space="preserve"><value>Die Datei konnte nicht gespeichert werden</value></data>
+  <data name="Format_Advanced" xml:space="preserve"><value>Erweiterte Optionen</value></data>
+  <data name="Format_AllExtensions" xml:space="preserve"><value>Alle Erweiterungen</value></data>
+  <data name="Format_AllExtensions_Count" xml:space="preserve"><value>Alle Erweiterungen ({0})</value></data>
+  <data name="Format_ApplyTo" xml:space="preserve"><value>Einstellungen anwenden auf</value></data>
+  <data name="Format_ChooseIcon" xml:space="preserve"><value>Symbol auswählen …</value></data>
+  <data name="Format_Copied_Message" xml:space="preserve"><value>Ein anderes Format öffnen und Mehr › Einstellungen einfügen (Strg+Umschalt+V) auswählen.</value></data>
+  <data name="Format_Copied_Title" xml:space="preserve"><value>Einstellungen kopiert</value></data>
+  <data name="Format_CopySettings" xml:space="preserve"><value>Einstellungen kopieren</value></data>
+  <data name="Format_Customized" xml:space="preserve"><value>Angepasst</value></data>
+  <data name="Format_Extension_Customized" xml:space="preserve"><value>{0} (angepasst)</value></data>
+  <data name="Format_Extension_Customized_Tooltip" xml:space="preserve"><value>{0} hat eigene Einstellungen, die die des Formats ersetzen</value></data>
+  <data name="Format_ExtensionScope_Help" xml:space="preserve"><value>Hier geänderte Einstellungen betreffen nur {0}-Dateien und ersetzen die von {1}. Der Rest wird geerbt.</value></data>
+  <data name="Format_Inactive_Disabled" xml:space="preserve"><value>Miniaturansichten sind für dieses Format ausgeschaltet: Das Dateityp-Symbol wird angezeigt.</value></data>
+  <data name="Format_Inactive_Fallback" xml:space="preserve"><value>Mit „Systemanbieter“ zeichnet Windows oder die zugeordnete App die Miniaturansicht, und diese Einstellungen werden nicht verwendet (außer es gibt keinen anderen Anbieter).</value></data>
+  <data name="Format_More" xml:space="preserve"><value>Mehr</value></data>
+  <data name="Format_MoreActions_Name" xml:space="preserve"><value>Weitere Aktionen</value></data>
+  <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} Einstellungen von {1} nach {2} kopiert. Überprüfen und „Übernehmen“ auswählen.</value></data>
+  <data name="Format_Pasted_Title" xml:space="preserve"><value>Einstellungen eingefügt</value></data>
+  <data name="Format_PasteFrom" xml:space="preserve"><value>Einstellungen von {0} einfügen</value></data>
+  <data name="Format_PasteSettings" xml:space="preserve"><value>Einstellungen einfügen</value></data>
+  <data name="Format_RemoveCustomization" xml:space="preserve"><value>Anpassung entfernen</value></data>
+  <data name="Format_RemoveCustomizationOf" xml:space="preserve"><value>Anpassung von {0} entfernen</value></data>
+  <data name="Format_RemoveExtensionCustomization" xml:space="preserve"><value>Anpassung der Erweiterung entfernen</value></data>
+  <data name="Format_Reset" xml:space="preserve"><value>Zurücksetzen</value></data>
+  <data name="Format_Reset_Confirm" xml:space="preserve"><value>{0} zurücksetzen?</value></data>
+  <data name="Format_Reset_Confirm_Message" xml:space="preserve"><value>Alle Einstellungen auf dieser Seite werden auf den Standardwert zurückgesetzt. Vor dem Übernehmen kann dies überprüft werden.</value></data>
+  <data name="Format_ResetAll" xml:space="preserve"><value>Alle Formate zurücksetzen</value></data>
+  <data name="Format_ResetDefaults" xml:space="preserve"><value>Auf Standardwerte zurücksetzen</value></data>
+  <data name="Format_ResetScope" xml:space="preserve"><value>{0} zurücksetzen</value></data>
+  <data name="Format_WindowsStatus" xml:space="preserve"><value>Status in Windows</value></data>
+  <data name="Format_WindowsStatus_Help" xml:space="preserve"><value>Der Miniaturansichtenanbieter, den der Datei-Explorer derzeit für jede Erweiterung verwendet. Schreibgeschützt.</value></data>
+  <data name="Group_Appearance" xml:space="preserve"><value>Darstellung</value></data>
+  <data name="Group_Generation" xml:space="preserve"><value>Erzeugung</value></data>
+  <data name="Group_OverlayIcon" xml:space="preserve"><value>Überlagerungssymbol</value></data>
+  <data name="Group_Performance" xml:space="preserve"><value>Leistung</value></data>
+  <data name="Home_ActiveIn" xml:space="preserve"><value>Aktiv in {0} von {1} Erweiterungen</value></data>
+  <data name="Home_EnableToggle" xml:space="preserve"><value>Miniaturansichten mit Glancy erzeugen</value></data>
+  <data name="Home_EngineMissing_Message" xml:space="preserve"><value>Einstellungen können geändert werden; sie werden verwendet, sobald die Glancy-Miniaturansichten-Engine installiert ist.</value></data>
+  <data name="Home_EngineMissing_Title" xml:space="preserve"><value>Engine nicht installiert</value></data>
+  <data name="Home_FormatsCaption" xml:space="preserve"><value>{0} Formate und {1} Erweiterungen, nach Kategorie. Eines auswählen, um das Aussehen der Miniaturansichten anzupassen.</value></data>
+  <data name="Home_OpenMaintenance" xml:space="preserve"><value>Wartung öffnen</value></data>
+  <data name="Home_QuickActions" xml:space="preserve"><value>Schnellaktionen</value></data>
+  <data name="Home_RefreshExplorer" xml:space="preserve"><value>Datei-Explorer-Fenster aktualisieren</value></data>
+  <data name="Home_RefreshExplorer_Desc" xml:space="preserve"><value>Erzeugt die Miniaturansichten geöffneter Ordner mit den übernommenen Einstellungen neu.</value></data>
+  <data name="Home_Status_Checking" xml:space="preserve"><value>Miniaturansichten-Engine wird geprüft …</value></data>
+  <data name="Home_Status_EngineMissing" xml:space="preserve"><value>Engine nicht installiert · Einstellungen bereit</value></data>
+  <data name="Home_Status_EngineMissingPaused" xml:space="preserve"><value>Engine nicht installiert · Erzeugung angehalten</value></data>
+  <data name="Home_Status_Paused" xml:space="preserve"><value>Erzeugung von Miniaturansichten angehalten</value></data>
+  <data name="Home_Subtitle" xml:space="preserve"><value>Scharfe Miniaturansichten für {0} Formate im Windows-Datei-Explorer: Design, Kamera-RAW, 3D, Dokumente und mehr.</value></data>
+  <data name="Home_ThumbnailCache" xml:space="preserve"><value>Miniaturansichtencache</value></data>
+  <data name="Home_ThumbnailCache_Desc" xml:space="preserve"><value>Bei veralteten oder falschen Miniaturansichten den Windows-Cache unter „Wartung“ leeren.</value></data>
+  <data name="Home_Tile_Checking" xml:space="preserve"><value>Anbieter des Datei-Explorers wird geprüft …</value></data>
+  <data name="Home_Tile_Customized" xml:space="preserve"><value>Angepasst: {0}.</value></data>
+  <data name="Home_Tile_Name" xml:space="preserve"><value>{0}. Konfiguriert: {1}. {2}.</value></data>
+  <data name="Home_Tile_NoProvider" xml:space="preserve"><value>Datei-Explorer hat keinen Anbieter</value></data>
+  <data name="Home_Tile_NotApplied" xml:space="preserve"><value>Nicht übernommen</value></data>
+  <data name="Home_Tile_Pending" xml:space="preserve"><value>Änderungen nicht übernommen.</value></data>
+  <data name="Home_Tile_UsesGlancy" xml:space="preserve"><value>Datei-Explorer verwendet Glancy</value></data>
+  <data name="Home_Tile_UsesOther" xml:space="preserve"><value>Datei-Explorer verwendet {0}</value></data>
+  <data name="IconPicker_Available" xml:space="preserve"><value>Verfügbare Symbole</value></data>
+  <data name="IconPicker_Browse" xml:space="preserve"><value>Durchsuchen …</value></data>
+  <data name="IconPicker_Count" xml:space="preserve"><value>{0} Symbole. Zum Auswählen doppelklicken.</value></data>
+  <data name="IconPicker_File" xml:space="preserve"><value>Datei</value></data>
+  <data name="IconPicker_Item" xml:space="preserve"><value>Symbol {0}</value></data>
+  <data name="IconPicker_Loading" xml:space="preserve"><value>Symbole werden geladen …</value></data>
+  <data name="IconPicker_None" xml:space="preserve"><value>Diese Datei enthält keine Symbole.</value></data>
+  <data name="IconPicker_Title" xml:space="preserve"><value>Symbol auswählen</value></data>
+  <data name="IconPicker_Use" xml:space="preserve"><value>Symbol verwenden</value></data>
+  <data name="Icons_Failed_Title" xml:space="preserve"><value>Die Symbole konnten nicht aktualisiert werden</value></data>
+  <data name="Icons_Refreshed_Title" xml:space="preserve"><value>Symbole aktualisiert</value></data>
+  <data name="Import_Button" xml:space="preserve"><value>Importieren</value></data>
+  <data name="Import_Confirm" xml:space="preserve"><value>Diese Einstellungen importieren?</value></data>
+  <data name="Import_Confirm_Message" xml:space="preserve"><value>Die Einstellungen in „{0}“ werden als ausstehende Änderungen geladen.{1} Im Datei-Explorer ändert sich nichts, bis „Übernehmen“ ausgewählt wird.</value></data>
+  <data name="Import_Done_Message" xml:space="preserve"><value>Die ausstehenden Änderungen überprüfen und „Übernehmen“ auswählen.</value></data>
+  <data name="Import_Done_Title" xml:space="preserve"><value>Einstellungen importiert</value></data>
+  <data name="Import_Failed_Title" xml:space="preserve"><value>Import nicht möglich</value></data>
+  <data name="Import_Ignored" xml:space="preserve"><value>{0} nicht erkannte Werte wurden übersprungen.</value></data>
+  <data name="Import_ReplacesPending" xml:space="preserve"><value>Ihre aktuellen ausstehenden Änderungen werden ersetzt.</value></data>
+  <data name="Import_Unreadable_Message" xml:space="preserve"><value>Die Datei ist kein Glancy-Einstellungsdokument oder sie ist beschädigt.</value></data>
+  <data name="Import_Unreadable_Title" xml:space="preserve"><value>Die Datei konnte nicht gelesen werden</value></data>
+  <data name="JumpList_ClearCache" xml:space="preserve"><value>Miniaturansichtencache leeren</value></data>
+  <data name="JumpList_ClearCache_Desc" xml:space="preserve"><value>Windows erzeugt die Miniaturansichten beim Öffnen jedes Ordners neu.</value></data>
+  <data name="JumpList_Disable" xml:space="preserve"><value>Glancy-Miniaturansichten ausschalten</value></data>
+  <data name="JumpList_Disable_Desc" xml:space="preserve"><value>Der Datei-Explorer verwendet wieder die Symbole und Miniaturansichten von Windows.</value></data>
+  <data name="JumpList_Enable" xml:space="preserve"><value>Glancy-Miniaturansichten einschalten</value></data>
+  <data name="JumpList_Enable_Desc" xml:space="preserve"><value>Der Datei-Explorer verwendet wieder die Miniaturansichten von Glancy.</value></data>
+  <data name="JumpList_ExplorerOptions" xml:space="preserve"><value>Datei-Explorer-Optionen</value></data>
+  <data name="JumpList_Refresh" xml:space="preserve"><value>Datei-Explorer aktualisieren</value></data>
+  <data name="JumpList_Refresh_Desc" xml:space="preserve"><value>Zeichnet die Miniaturansichten geöffneter Ordner neu.</value></data>
+  <data name="List_End" xml:space="preserve"><value>.</value></data>
+  <data name="List_LastSeparator" xml:space="preserve"><value> und </value></data>
+  <data name="List_LowercaseFollowingItems" xml:space="preserve"><value>false</value></data>
+  <data name="List_Separator" xml:space="preserve"><value>, </value></data>
+  <data name="Maintenance_Backup" xml:space="preserve"><value>Sicherung</value></data>
+  <data name="Maintenance_ClearCache" xml:space="preserve"><value>Cache leeren</value></data>
+  <data name="Maintenance_ClearThumbs" xml:space="preserve"><value>Miniaturansichtencache leeren</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm" xml:space="preserve"><value>Miniaturansichtencache leeren?</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm_Message" xml:space="preserve"><value>Windows erzeugt die Miniaturansichten aller Dateien (nicht nur von Designdateien) beim nächsten Öffnen jedes Ordners neu. In großen Ordnern kann das eine Weile dauern. Ihre Dateien werden nicht verändert.</value></data>
+  <data name="Maintenance_ClearThumbs_Desc" xml:space="preserve"><value>Windows speichert die erzeugten Miniaturansichten. Leeren, wenn veraltete oder beschädigte Miniaturansichten erscheinen oder solche, die ständig neu erzeugt werden.</value></data>
+  <data name="Maintenance_Diagnostics" xml:space="preserve"><value>Diagnose</value></data>
+  <data name="Maintenance_DiskCleanup" xml:space="preserve"><value>Datenträgerbereinigung</value></data>
+  <data name="Maintenance_DiskCleanup_Desc" xml:space="preserve"><value>Öffnet das Windows-Tool, um auszuwählen, was bereinigt werden soll, einschließlich Miniaturansichten.</value></data>
+  <data name="Maintenance_Engine" xml:space="preserve"><value>Miniaturansichten-Engine</value></data>
+  <data name="Maintenance_Engine_Installed" xml:space="preserve"><value>Installiert ({0}). Aktiv in {1} von {2} Erweiterungen.</value></data>
+  <data name="Maintenance_Engine_Missing" xml:space="preserve"><value>Nicht installiert. Die Einstellungen werden trotzdem gespeichert und nach der Installation verwendet.</value></data>
+  <data name="Maintenance_Export" xml:space="preserve"><value>Einstellungen exportieren</value></data>
+  <data name="Maintenance_Export_Button" xml:space="preserve"><value>Exportieren …</value></data>
+  <data name="Maintenance_Export_Desc" xml:space="preserve"><value>Speichert alle Einstellungen, einschließlich ausstehender Änderungen, in einer .glancysettings-Datei, die auf einen anderen PC kopiert werden kann.</value></data>
+  <data name="Maintenance_History" xml:space="preserve"><value>Zuletzt verarbeitete Dateien</value></data>
+  <data name="Maintenance_History_Desc" xml:space="preserve"><value>Die zuletzt von der Engine erzeugten Miniaturansichten, mit Ergebnis und Dauer.</value></data>
+  <data name="Maintenance_History_Empty" xml:space="preserve"><value>Noch keine Aktivität aufgezeichnet. Sie erscheint hier, sobald die Engine Miniaturansichten erzeugt.</value></data>
+  <data name="Maintenance_History_ItemName" xml:space="preserve"><value>{0}, {1}, {2} Millisekunden</value></data>
+  <data name="Maintenance_Import" xml:space="preserve"><value>Einstellungen importieren</value></data>
+  <data name="Maintenance_Import_Button" xml:space="preserve"><value>Importieren …</value></data>
+  <data name="Maintenance_Import_Desc" xml:space="preserve"><value>Lädt eine .glancysettings-Datei. Die Werte werden zu ausstehenden Änderungen, damit sie vor dem Übernehmen überprüft werden können.</value></data>
+  <data name="Maintenance_LogsFolder" xml:space="preserve"><value>Protokollordner</value></data>
+  <data name="Maintenance_OpenFolder" xml:space="preserve"><value>Ordner öffnen</value></data>
+  <data name="Maintenance_RefreshIcons" xml:space="preserve"><value>Symbolcache aktualisieren</value></data>
+  <data name="Maintenance_RefreshIcons_Button" xml:space="preserve"><value>Symbole aktualisieren</value></data>
+  <data name="Maintenance_RefreshIcons_Desc" xml:space="preserve"><value>Nützlich, wenn kleine Symbole (Ansicht „Details“ oder „Liste“) nicht aktualisiert werden.</value></data>
+  <data name="Maintenance_Reset" xml:space="preserve"><value>Standardwerte wiederherstellen</value></data>
+  <data name="Maintenance_Reset_Button" xml:space="preserve"><value>Wiederherstellen …</value></data>
+  <data name="Maintenance_Reset_Desc" xml:space="preserve"><value>Stellt die Werkseinstellungen für alle Formate und Datei-Explorer-Optionen wieder her. Vor dem Übernehmen können sie überprüft werden.</value></data>
+  <data name="Maintenance_Subtitle" xml:space="preserve"><value>Windows-Caches, Sicherungen der Einstellungen und Diagnose.</value></data>
+  <data name="Maintenance_WindowsCache" xml:space="preserve"><value>Windows-Cache</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>Info</value></data>
+  <data name="Nav_AllFormats" xml:space="preserve"><value>Alle Formate</value></data>
+  <data name="Nav_AllFormats_Tooltip" xml:space="preserve"><value>Alle Formate (Strg+0)</value></data>
+  <data name="Nav_Category_Tooltip_Many" xml:space="preserve"><value>{0}: {1} Formate</value></data>
+  <data name="Nav_Category_Tooltip_One" xml:space="preserve"><value>{0}: 1 Format</value></data>
+  <data name="Nav_Explorer" xml:space="preserve"><value>Datei-Explorer</value></data>
+  <data name="Nav_Explorer_Tooltip" xml:space="preserve"><value>Datei-Explorer (Strg+E)</value></data>
+  <data name="Nav_Formats" xml:space="preserve"><value>Formate</value></data>
+  <data name="Nav_Home" xml:space="preserve"><value>Startseite</value></data>
+  <data name="Nav_Maintenance" xml:space="preserve"><value>Wartung</value></data>
+  <data name="Nav_Preferences" xml:space="preserve"><value>Einstellungen</value></data>
+  <data name="Nav_Preferences_Tooltip" xml:space="preserve"><value>Einstellungen (Strg+,)</value></data>
+  <data name="Pending_Apply" xml:space="preserve"><value>Übernehmen</value></data>
+  <data name="Pending_Apply_Name" xml:space="preserve"><value>Änderungen übernehmen</value></data>
+  <data name="Pending_Apply_Tooltip" xml:space="preserve"><value>Änderungen speichern und verwenden (Strg+S)</value></data>
+  <data name="Pending_Applying" xml:space="preserve"><value>Wird übernommen …</value></data>
+  <data name="Pending_Count_Many" xml:space="preserve"><value>{0} ausstehende Änderungen</value></data>
+  <data name="Pending_Count_One" xml:space="preserve"><value>1 ausstehende Änderung</value></data>
+  <data name="Pending_Discard" xml:space="preserve"><value>Verwerfen</value></data>
+  <data name="Pending_Discard_Tooltip" xml:space="preserve"><value>Alle ausstehenden Änderungen verwerfen</value></data>
+  <data name="Pending_Review" xml:space="preserve"><value>Überprüfen</value></data>
+  <data name="Pending_Review_Name" xml:space="preserve"><value>Ausstehende Änderungen überprüfen</value></data>
+  <data name="Pending_Subtitle" xml:space="preserve"><value>Im Datei-Explorer ändert sich nichts, bis sie übernommen werden.</value></data>
+  <data name="Pending_Tip_Subtitle" xml:space="preserve"><value>Mehrere Formate in Ruhe anpassen. Die Liste überprüfen und „Übernehmen“ (Strg+S) auswählen, wenn der Datei-Explorer sie verwenden soll.</value></data>
+  <data name="Pending_Tip_Title" xml:space="preserve"><value>Ihre Änderungen warten hier</value></data>
+  <data name="Pending_Title" xml:space="preserve"><value>Ausstehende Änderungen</value></data>
+  <data name="Pending_Undo_Name" xml:space="preserve"><value>Letzte Änderung rückgängig machen</value></data>
+  <data name="Pending_Undo_Tooltip" xml:space="preserve"><value>Letzte Änderung rückgängig machen (Strg+Z)</value></data>
+  <data name="Preferences_Language" xml:space="preserve"><value>Sprache</value></data>
+  <data name="Preferences_Language_Auto" xml:space="preserve"><value>Windows-Sprache ({0})</value></data>
+  <data name="Preferences_Language_Desc" xml:space="preserve"><value>Die Sprache dieses Fensters, der Sprungliste und der Benachrichtigungen. Standardmäßig die von Windows verwendete.</value></data>
+  <data name="Preferences_Language_RestartMessage" xml:space="preserve"><value>Ausstehende Änderungen bleiben erhalten, bis Sie entscheiden, was damit geschehen soll.</value></data>
+  <data name="Preferences_Language_RestartNow" xml:space="preserve"><value>Jetzt neu starten</value></data>
+  <data name="Preferences_Language_RestartTitle" xml:space="preserve"><value>Glancy neu starten, um die Sprache zu ändern</value></data>
+  <data name="Preferences_Subtitle" xml:space="preserve"><value>Einstellungen für dieses Fenster. Sie gelten sofort und wirken sich nicht auf Miniaturansichten aus.</value></data>
+  <data name="Preferences_Theme" xml:space="preserve"><value>Design</value></data>
+  <data name="Preferences_Theme_Dark" xml:space="preserve"><value>Dunkel</value></data>
+  <data name="Preferences_Theme_Desc" xml:space="preserve"><value>Den Windows-Modus verwenden oder einen für diese App auswählen.</value></data>
+  <data name="Preferences_Theme_Light" xml:space="preserve"><value>Hell</value></data>
+  <data name="Preferences_Theme_System" xml:space="preserve"><value>Windows-Einstellung verwenden</value></data>
+  <data name="Preferences_Tips" xml:space="preserve"><value>Tipps anzeigen</value></data>
+  <data name="Preferences_Tips_Desc" xml:space="preserve"><value>Kurze Erklärungen, wenn eine Funktion zum ersten Mal erscheint, etwa die Leiste mit ausstehenden Änderungen.</value></data>
+  <data name="Preferences_TopMost" xml:space="preserve"><value>Vor anderen Fenstern im Vordergrund halten</value></data>
+  <data name="Preferences_TopMost_Desc" xml:space="preserve"><value>Nützlich, um Miniaturansichten anzupassen, während ein Ordner im Datei-Explorer angezeigt wird. Tastenkombination: Strg+T.</value></data>
+  <data name="Preferences_Window" xml:space="preserve"><value>Fenster</value></data>
+  <data name="Preview_Dark" xml:space="preserve"><value>Dunkel</value></data>
+  <data name="Preview_Dark_Name" xml:space="preserve"><value>Datei-Explorer im dunklen Modus</value></data>
+  <data name="Preview_Dark_Tooltip" xml:space="preserve"><value>Simulation im Datei-Explorer im dunklen Modus anzeigen</value></data>
+  <data name="Preview_ExtraLarge" xml:space="preserve"><value>{0} · Extra große Symbole</value></data>
+  <data name="Preview_Large" xml:space="preserve"><value>Groß</value></data>
+  <data name="Preview_Medium" xml:space="preserve"><value>Mittel</value></data>
+  <data name="Preview_Note" xml:space="preserve"><value>Simuliert mit einem Beispielbild mit transparenten Bereichen. Das genaue Ergebnis hängt von der jeweiligen Datei ab.</value></data>
+  <data name="Preview_Simulation_Name" xml:space="preserve"><value>Simulation der Miniaturansicht im Datei-Explorer</value></data>
+  <data name="Preview_Title" xml:space="preserve"><value>Vorschau</value></data>
+  <data name="QuickAction_EngineMissing" xml:space="preserve"><value>Wird wirksam, sobald die Glancy-Miniaturansichten-Engine installiert ist.</value></data>
+  <data name="QuickAction_Failed" xml:space="preserve"><value>Die Aktion konnte nicht abgeschlossen werden</value></data>
+  <data name="QuickAction_NoRefresh" xml:space="preserve"><value>Ordner zeigen es beim Öffnen oder nach Drücken von F5.</value></data>
+  <data name="QuickAction_Off" xml:space="preserve"><value>Glancy-Miniaturansichten aus</value></data>
+  <data name="QuickAction_On" xml:space="preserve"><value>Glancy-Miniaturansichten ein</value></data>
+  <data name="QuickAction_PressF5" xml:space="preserve"><value>Im Datei-Explorer F5 drücken, um es in geöffneten Ordnern zu sehen.</value></data>
+  <data name="QuickAction_RefreshStopped" xml:space="preserve"><value>Es hat zu lange gedauert. Im Datei-Explorer F5 drücken.</value></data>
+  <data name="QuickAction_Unknown" xml:space="preserve"><value>Unbekannte Aktion</value></data>
+  <data name="Refresh_Done_Message" xml:space="preserve"><value>{0} Dateien in {1} geöffneten Ordnern.</value></data>
+  <data name="Refresh_Done_Title" xml:space="preserve"><value>Datei-Explorer aktualisiert</value></data>
+  <data name="Refresh_LimitReached" xml:space="preserve"><value>Das Limit von {0} Dateien wurde erreicht.</value></data>
+  <data name="Refresh_Partial_Message" xml:space="preserve"><value>Ihre Änderungen sind gespeichert. Im Datei-Explorer F5 drücken, um die neuen Miniaturansichten zu sehen.</value></data>
+  <data name="Refresh_Partial_Title" xml:space="preserve"><value>Nicht alle Fenster konnten aktualisiert werden</value></data>
+  <data name="Refresh_Stopped_Message" xml:space="preserve"><value>Es hat zu lange gedauert. Ihre Änderungen sind gespeichert; im Datei-Explorer F5 drücken, um die neuen Miniaturansichten zu sehen.</value></data>
+  <data name="Refresh_Stopped_Title" xml:space="preserve"><value>Aktualisierung des Datei-Explorers angehalten</value></data>
+  <data name="Reset_Button" xml:space="preserve"><value>Wiederherstellen</value></data>
+  <data name="Reset_Confirm" xml:space="preserve"><value>Werkseinstellungen wiederherstellen?</value></data>
+  <data name="Reset_Confirm_Message" xml:space="preserve"><value>Alle Formate, angepassten Erweiterungen, ausgeschlossenen Ordner und Datei-Explorer-Optionen werden auf den Standardwert zurückgesetzt. Dies bleibt eine ausstehende Änderung, bis „Übernehmen“ ausgewählt wird.</value></data>
+  <data name="Sample_Design" xml:space="preserve"><value>entwurf</value></data>
+  <data name="Sample_Document" xml:space="preserve"><value>dokument</value></data>
+  <data name="Sample_File" xml:space="preserve"><value>datei</value></data>
+  <data name="Sample_Image" xml:space="preserve"><value>bild</value></data>
+  <data name="Sample_Model" xml:space="preserve"><value>modell</value></data>
+  <data name="Sample_Photo" xml:space="preserve"><value>foto</value></data>
+  <data name="Search_AllFormats_Sub" xml:space="preserve"><value>Eine Einstellung in allen Formaten gleichzeitig ändern</value></data>
+  <data name="Search_Backup_Sub" xml:space="preserve"><value>Wartung · Sicherung</value></data>
+  <data name="Search_ClearCache_Keywords" xml:space="preserve"><value>löschen leeren bereinigen zurücksetzen miniaturansichten thumbnails</value></data>
+  <data name="Search_Explorer_Sub" xml:space="preserve"><value>Integration in den Datei-Explorer und den Desktop</value></data>
+  <data name="Search_Export_Keywords" xml:space="preserve"><value>speichern sicherung backup</value></data>
+  <data name="Search_ExtensionOf" xml:space="preserve"><value>Erweiterung {0}</value></data>
+  <data name="Search_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Search_FormatSetting" xml:space="preserve"><value>Formateinstellung · {0}</value></data>
+  <data name="Search_Home_Sub" xml:space="preserve"><value>Status und Formate</value></data>
+  <data name="Search_Import_Keywords" xml:space="preserve"><value>laden wiederherstellen sicherung backup</value></data>
+  <data name="Search_Language_Keywords" xml:space="preserve"><value>sprache übersetzung deutsch englisch spanisch language</value></data>
+  <data name="Search_Maintenance_Sub" xml:space="preserve"><value>Cache, Sicherung und Diagnose</value></data>
+  <data name="Search_Name" xml:space="preserve"><value>Glancy durchsuchen</value></data>
+  <data name="Search_NoResults" xml:space="preserve"><value>Keine Ergebnisse</value></data>
+  <data name="Search_NoResults_Hint" xml:space="preserve"><value>„Transparenz“, „.psb“ oder „Cache“ versuchen</value></data>
+  <data name="Search_Placeholder" xml:space="preserve"><value>Einstellungen, Formate oder Erweiterungen suchen</value></data>
+  <data name="Search_PlaceholderShort" xml:space="preserve"><value>Suchen</value></data>
+  <data name="Search_Reset_Keywords" xml:space="preserve"><value>werkseinstellungen zurücksetzen standard</value></data>
+  <data name="Search_Shortcuts_Keywords" xml:space="preserve"><value>tasten tastatur tastenkombinationen</value></data>
+  <data name="Search_Theme" xml:space="preserve"><value>Helles oder dunkles Design</value></data>
+  <data name="Search_Theme_Keywords" xml:space="preserve"><value>modus dunkel hell darstellung design theme</value></data>
+  <data name="Search_TopMost" xml:space="preserve"><value>Im Vordergrund halten</value></data>
+  <data name="Search_TopMost_Keywords" xml:space="preserve"><value>anheften immer sichtbar vordergrund</value></data>
+  <data name="Search_TopMost_Sub" xml:space="preserve"><value>Einstellungen · Fenster</value></data>
+  <data name="Sentence_Separator" xml:space="preserve"><value> </value></data>
+  <data name="Setting_Reset_EachFormat" xml:space="preserve"><value>Standardwert jedes Formats wiederherstellen</value></data>
+  <data name="Setting_Reset_To" xml:space="preserve"><value>Zurücksetzen: {0}</value></data>
+  <data name="Setting_Reset_UseFormat" xml:space="preserve"><value>Wert des Formats verwenden</value></data>
+  <data name="Setting_Status_CustomizedFor" xml:space="preserve"><value>Angepasst für {0}</value></data>
+  <data name="Setting_Status_Mixed" xml:space="preserve"><value>Unterscheidet sich zwischen Formaten.</value></data>
+  <data name="Setting_Status_SomeExtension" xml:space="preserve"><value>Eine Erweiterung verwendet einen eigenen Wert.</value></data>
+  <data name="SettingsCard_Pending_Tooltip" xml:space="preserve"><value>Änderung noch nicht übernommen</value></data>
+  <data name="SettingsCard_PendingName" xml:space="preserve"><value>{0} (ausstehende Änderung)</value></data>
+  <data name="SettingsCard_Reset_Name" xml:space="preserve"><value>Zurücksetzen</value></data>
+  <data name="Shortcut_Apply" xml:space="preserve"><value>Ausstehende Änderungen übernehmen</value></data>
+  <data name="Shortcut_Back" xml:space="preserve"><value>Zur vorherigen Seite zurückkehren</value></data>
+  <data name="Shortcut_CopyPaste" xml:space="preserve"><value>Einstellungen eines Formats kopieren / einfügen</value></data>
+  <data name="Shortcut_CopyPaste_Keys" xml:space="preserve"><value>Strg + Umschalt + C / V</value></data>
+  <data name="Shortcut_Help" xml:space="preserve"><value>Diese Hilfeseite öffnen</value></data>
+  <data name="Status_EngineInstalled" xml:space="preserve"><value>Glancy: Engine installiert.</value></data>
+  <data name="Status_EngineMissing" xml:space="preserve"><value>Glancy: Die Engine ist noch nicht installiert.</value></data>
+  <data name="Status_Updated_Title" xml:space="preserve"><value>Status aktualisiert</value></data>
+  <data name="Store_RegistryUnavailable" xml:space="preserve"><value>Die Einstellungen können nicht gespeichert werden, da auf die Registrierung nicht zugegriffen werden kann.</value></data>
+  <data name="Tip_GotIt" xml:space="preserve"><value>OK</value></data>
+  <data name="TopMost_Name" xml:space="preserve"><value>Fenster im Vordergrund halten</value></data>
+  <data name="TopMost_Off_Tooltip" xml:space="preserve"><value>Nicht mehr im Vordergrund halten (Strg+T)</value></data>
+  <data name="TopMost_Tooltip" xml:space="preserve"><value>Im Vordergrund halten (Strg+T)</value></data>
+  <data name="Undo_Announcement" xml:space="preserve"><value>Änderung rückgängig gemacht</value></data>
+</root>

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Glancy.Core/Glancy.Core.csproj" />
+    <Project Path="src/Glancy.Settings/Glancy.Settings.csproj">
+      <Platform Project="x64" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Glancy.Core.Tests/Glancy.Core.Tests.csproj" />
+  </Folder>
+</Solution>

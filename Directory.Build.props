@@ -1,0 +1,16 @@
+<Project>
+  <!-- The source tree lives under a deep virtualized AppData path; keep build output
+       under a short root so WinUI/MSBuild stay below MAX_PATH. -->
+  <PropertyGroup>
+    <GlancyBuildRoot Condition="'$(GlancyBuildRoot)' == ''">$(LOCALAPPDATA)\Temp\lmb\</GlancyBuildRoot>
+    <BaseIntermediateOutputPath>$(GlancyBuildRoot)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(GlancyBuildRoot)bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**;bin\**</DefaultItemExcludes>
+    <Version>1.0.0</Version>
+    <Company>Glancy</Company>
+    <Product>Glancy</Product>
+    <Copyright>© 2026 Sergio Cespedes</Copyright>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/sergiocespedesp/glancy</RepositoryUrl>
+  </PropertyGroup>
+</Project>

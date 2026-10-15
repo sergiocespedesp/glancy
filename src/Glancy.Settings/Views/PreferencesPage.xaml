@@ -1,0 +1,54 @@
+<Page x:Class="Glancy.Settings.Views.PreferencesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:l="using:Glancy.Settings.Localization"
+      xmlns:c="using:Glancy.Settings.Controls">
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1000*" MaxWidth="{StaticResource GlancyContentMaxWidth}" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+    <StackPanel x:Name="ContentPanel" Padding="{StaticResource GlancyPagePadding}">
+      <StackPanel Spacing="2" Margin="0,8,0,0">
+        <TextBlock Text="{l:Str Key=Nav_Preferences}" Style="{StaticResource GlancyPageTitleStyle}" AutomationProperties.HeadingLevel="Level1" />
+        <TextBlock Text="{l:Str Key=Preferences_Subtitle}"
+                   Style="{StaticResource GlancySecondaryTextStyle}" Margin="0,4,0,0" />
+      </StackPanel>
+
+      <TextBlock Text="{l:Str Key=Group_Appearance}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Header="{l:Str Key=Preferences_Language}" Glyph="&#xF2B7;" Description="{l:Str Key=Preferences_Language_Desc}">
+          <ComboBox x:Name="LanguageBox" MinWidth="{StaticResource GlancyActionMinWidth}" SelectionChanged="OnLanguageChanged"
+                    AutomationProperties.Name="{l:Str Key=Preferences_Language}" />
+        </c:SettingsCard>
+        <InfoBar x:Name="RestartBar" Severity="Informational" IsClosable="False"
+                 Title="{l:Str Key=Preferences_Language_RestartTitle}" Message="{l:Str Key=Preferences_Language_RestartMessage}">
+          <InfoBar.ActionButton>
+            <Button Content="{l:Str Key=Preferences_Language_RestartNow}" Click="OnRestartNow" />
+          </InfoBar.ActionButton>
+        </InfoBar>
+        <c:SettingsCard Header="{l:Str Key=Preferences_Theme}" Glyph="&#xE790;" Description="{l:Str Key=Preferences_Theme_Desc}">
+          <ComboBox x:Name="ThemeBox" MinWidth="{StaticResource GlancyActionMinWidth}" SelectionChanged="OnThemeChanged">
+            <ComboBoxItem Content="{l:Str Key=Preferences_Theme_System}" Tag="0" />
+            <ComboBoxItem Content="{l:Str Key=Preferences_Theme_Light}" Tag="1" />
+            <ComboBoxItem Content="{l:Str Key=Preferences_Theme_Dark}" Tag="2" />
+          </ComboBox>
+        </c:SettingsCard>
+      </StackPanel>
+
+      <TextBlock Text="{l:Str Key=Preferences_Window}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Header="{l:Str Key=Preferences_TopMost}" Glyph="&#xE718;"
+                        Description="{l:Str Key=Preferences_TopMost_Desc}">
+          <ToggleSwitch x:Name="TopMostSwitch" OnContent="{l:Str Key=Common_On}" OffContent="{l:Str Key=Common_Off}" MinWidth="0" Toggled="OnTopMostToggled" />
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Preferences_Tips}" Glyph="&#xE82F;"
+                        Description="{l:Str Key=Preferences_Tips_Desc}">
+          <ToggleSwitch x:Name="TipsSwitch" OnContent="{l:Str Key=Common_On}" OffContent="{l:Str Key=Common_Off}" MinWidth="0" Toggled="OnTipsToggled" />
+        </c:SettingsCard>
+      </StackPanel>
+    </StackPanel>
+    </Grid>
+  </ScrollViewer>
+</Page>

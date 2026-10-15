@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Cache_AlreadyEmpty" xml:space="preserve"><value>縮小版のキャッシュは既に空でした。</value></data>
+  <data name="Cache_Cleared" xml:space="preserve"><value>縮小版のキャッシュをクリアしました。縮小版はフォルダーを開いたときに再生成されます。</value></data>
+  <data name="Cache_Denied" xml:space="preserve"><value>Windows でキャッシュのクリアが許可されませんでした ({0})。ディスク クリーンアップを試してください。</value></data>
+  <data name="Cache_IconDone" xml:space="preserve"><value>アイコン キャッシュを更新しました。</value></data>
+  <data name="Cache_IconTimeout" xml:space="preserve"><value>Windows によるアイコン キャッシュの更新に時間がかかりすぎました。</value></data>
+  <data name="Cache_IconToolMissing" xml:space="preserve"><value>アイコンを更新する Windows のツール (ie4uinit.exe) が見つかりませんでした。</value></data>
+  <data name="Category_3d" xml:space="preserve"><value>3D と CAD</value></data>
+  <data name="Category_design" xml:space="preserve"><value>デザインと編集</value></data>
+  <data name="Category_document" xml:space="preserve"><value>ドキュメントと書籍</value></data>
+  <data name="Category_hdr" xml:space="preserve"><value>HDR、映画、科学</value></data>
+  <data name="Category_image" xml:space="preserve"><value>画像</value></data>
+  <data name="Category_other" xml:space="preserve"><value>その他</value></data>
+  <data name="Category_photo" xml:space="preserve"><value>写真</value></data>
+  <data name="Category_retro" xml:space="preserve"><value>クラシック形式</value></data>
+  <data name="Category_text" xml:space="preserve"><value>テキストと Web</value></data>
+  <data name="Category_texture" xml:space="preserve"><value>テクスチャとゲーム</value></data>
+  <data name="Category_vector" xml:space="preserve"><value>ベクターと PDF</value></data>
+  <data name="Change_Summary" xml:space="preserve"><value>{0}: {1} → {2}</value></data>
+  <data name="File_Invalid" xml:space="preserve"><value>このファイルは有効な設定ドキュメントではありません。</value></data>
+  <data name="File_NotGlancy" xml:space="preserve"><value>このファイルには Glancy の設定が含まれていません。</value></data>
+  <data name="File_TypeName" xml:space="preserve"><value>Glancy の設定</value></data>
+  <data name="Format_3dsmax_Description" xml:space="preserve"><value>3ds Max のシーン (埋め込みプレビュー)。</value></data>
+  <data name="Format_3mf_Description" xml:space="preserve"><value>3MF モデル: 埋め込みの縮小版、またはレンダリングしたモデル。</value></data>
+  <data name="Format_3mf_Name" xml:space="preserve"><value>3D プリント (3MF)</value></data>
+  <data name="Format_aai_Description" xml:space="preserve"><value>ゲーム「Dune」の AAI 画像。</value></data>
+  <data name="Format_abr_Description" xml:space="preserve"><value>.abr ブラシ セット: ブラシ先端を表示します。</value></data>
+  <data name="Format_abr_Name" xml:space="preserve"><value>Photoshop ブラシ</value></data>
+  <data name="Format_affinity_Description" xml:space="preserve"><value>Designer、Photo、Publisher (埋め込みプレビュー)。</value></data>
+  <data name="Format_ai_Description" xml:space="preserve"><value>PDF 互換で保存されたベクター イラスト。</value></data>
+  <data name="Format_amiga_Description" xml:space="preserve"><value>Amiga および Deluxe Paint の ILBM/PBM 画像 (HAM と EHB を含む)。</value></data>
+  <data name="Format_archive_Description" xml:space="preserve"><value>ZIP と RAR: 中にある最初の画像。</value></data>
+  <data name="Format_archive_Name" xml:space="preserve"><value>圧縮アーカイブ</value></data>
+  <data name="Format_avs_Description" xml:space="preserve"><value>AVS X 画像。</value></data>
+  <data name="Format_blender_Description" xml:space="preserve"><value>Blender のシーン (バックアップの .blend1… も含む)。</value></data>
+  <data name="Format_bmp_Description" xml:space="preserve"><value>BMP 画像。</value></data>
+  <data name="Format_bmp_Name" xml:space="preserve"><value>Windows ビットマップ</value></data>
+  <data name="Format_c4d_Description" xml:space="preserve"><value>Cinema 4D のシーン (埋め込みプレビュー)。</value></data>
+  <data name="Format_c64_Description" xml:space="preserve"><value>Koala、FLI などの Commodore 64 画像。</value></data>
+  <data name="Format_cals_Description" xml:space="preserve"><value>CALS 技術図面 (CCITT Group 4)。</value></data>
+  <data name="Format_cineon_Description" xml:space="preserve"><value>Cineon フレーム。</value></data>
+  <data name="Format_comic_Description" xml:space="preserve"><value>CBZ および CBR のコミック (最初のページ)。</value></data>
+  <data name="Format_comic_Name" xml:space="preserve"><value>コミック ブック</value></data>
+  <data name="Format_coreldraw_Description" xml:space="preserve"><value>CorelDRAW の図面 (埋め込みプレビュー)。</value></data>
+  <data name="Format_cursor_Description" xml:space="preserve"><value>Windows のカーソル。</value></data>
+  <data name="Format_cursor_Name" xml:space="preserve"><value>カーソル</value></data>
+  <data name="Format_dds_Description" xml:space="preserve"><value>DirectX テクスチャ (BC1–BC7)。</value></data>
+  <data name="Format_dib_Description" xml:space="preserve"><value>デバイスに依存しないビットマップ。</value></data>
+  <data name="Format_dib_Name" xml:space="preserve"><value>Windows DIB</value></data>
+  <data name="Format_dicom_Description" xml:space="preserve"><value>DICOM 医用画像。</value></data>
+  <data name="Format_dpx_Description" xml:space="preserve"><value>フィルム スキャナーの DPX フレーム。</value></data>
+  <data name="Format_email_Description" xml:space="preserve"><value>.eml メッセージ (件名、差出人、本文)。</value></data>
+  <data name="Format_email_Name" xml:space="preserve"><value>メール</value></data>
+  <data name="Format_eps_Description" xml:space="preserve"><value>印刷用の EPS および PostScript グラフィック (TIFF/WMF プレビューの有無を問わず)。</value></data>
+  <data name="Format_eps_Name" xml:space="preserve"><value>Encapsulated PostScript</value></data>
+  <data name="Format_epub_Description" xml:space="preserve"><value>EPUB 電子書籍の表紙。</value></data>
+  <data name="Format_epub_Name" xml:space="preserve"><value>EPUB ブック</value></data>
+  <data name="Format_exr_Description" xml:space="preserve"><value>映画や視覚効果向けの HDR 画像。</value></data>
+  <data name="Format_firstpublisher_Description" xml:space="preserve"><value>First Publisher のクリップ アート。</value></data>
+  <data name="Format_fits_Description" xml:space="preserve"><value>FITS 天体画像。</value></data>
+  <data name="Format_g3_Description" xml:space="preserve"><value>未加工の G3 ファクス。</value></data>
+  <data name="Format_g3_Name" xml:space="preserve"><value>G3 ファクス</value></data>
+  <data name="Format_gif_Description" xml:space="preserve"><value>GIF 画像とアニメーション (最初のフレーム)。</value></data>
+  <data name="Format_gimp_Description" xml:space="preserve"><value>レイヤーを含む GIMP 画像。</value></data>
+  <data name="Format_hdr_Description" xml:space="preserve"><value>Radiance のハイ ダイナミック レンジ画像 (RGBE)。</value></data>
+  <data name="Format_heif_Description" xml:space="preserve"><value>iPhone と Android の写真 (HEIC) および AVIF。Windows の HEIF/AV1 画像拡張機能が必要です。</value></data>
+  <data name="Format_heif_Name" xml:space="preserve"><value>HEIF と AVIF</value></data>
+  <data name="Format_ico_Description" xml:space="preserve"><value>Windows のアイコン (最大サイズ)。</value></data>
+  <data name="Format_ico_Name" xml:space="preserve"><value>アイコン</value></data>
+  <data name="Format_indesign_Description" xml:space="preserve"><value>InDesign のドキュメントとテンプレート (埋め込みプレビュー)。</value></data>
+  <data name="Format_ipl_Description" xml:space="preserve"><value>IPL 画像シーケンス (最初のフレーム)。</value></data>
+  <data name="Format_ipl_Name" xml:space="preserve"><value>IPL シーケンス</value></data>
+  <data name="Format_iwork_Description" xml:space="preserve"><value>Keynote、Numbers、Pages。</value></data>
+  <data name="Format_jbig_Description" xml:space="preserve"><value>白黒の JBIG 画像 (スキャナーとファクス)。</value></data>
+  <data name="Format_jpeg2000_Description" xml:space="preserve"><value>JPEG 2000 および PGX 画像。</value></data>
+  <data name="Format_jpeg_Description" xml:space="preserve"><value>JPEG 写真。</value></data>
+  <data name="Format_jxl_Description" xml:space="preserve"><value>JPEG XL 画像。</value></data>
+  <data name="Format_jxr_Description" xml:space="preserve"><value>JPEG XR 画像 (HD Photo、Windows Media Photo)。</value></data>
+  <data name="Format_krita_Description" xml:space="preserve"><value>Krita および OpenRaster の画像 (埋め込みの統合画像)。</value></data>
+  <data name="Format_krita_Name" xml:space="preserve"><value>Krita と OpenRaster</value></data>
+  <data name="Format_ktx_Description" xml:space="preserve"><value>KTX および KTX2 テクスチャ。</value></data>
+  <data name="Format_kubotek_Description" xml:space="preserve"><value>Kubotek KeyCreator のモデル (埋め込みプレビュー)。</value></data>
+  <data name="Format_macpaint_Description" xml:space="preserve"><value>MacPaint の白黒画像。</value></data>
+  <data name="Format_maya_Description" xml:space="preserve"><value>Maya のシーン (埋め込みプレビュー)。</value></data>
+  <data name="Format_metafile_Description" xml:space="preserve"><value>WMF および EMF の図形 (圧縮版の .wmz、.emz も含む)。</value></data>
+  <data name="Format_metafile_Name" xml:space="preserve"><value>Windows メタファイル</value></data>
+  <data name="Format_mhtml_Description" xml:space="preserve"><value>単一ファイルとして保存された Web ページ。</value></data>
+  <data name="Format_mhtml_Name" xml:space="preserve"><value>Web アーカイブ (MHT)</value></data>
+  <data name="Format_mobi_Description" xml:space="preserve"><value>Mobi 電子書籍の表紙。</value></data>
+  <data name="Format_mobi_Name" xml:space="preserve"><value>Mobipocket ブック</value></data>
+  <data name="Format_office_Description" xml:space="preserve"><value>縮小版付きで保存された旧形式の Word、Excel、PowerPoint、Visio のドキュメント。</value></data>
+  <data name="Format_officexml_Description" xml:space="preserve"><value>縮小版付きで保存された Word、Excel、PowerPoint、Visio のドキュメント。</value></data>
+  <data name="Format_pcx_Description" xml:space="preserve"><value>PCX および DCX 画像 (複数ページのファクス)。</value></data>
+  <data name="Format_pdf_Description" xml:space="preserve"><value>PDF ドキュメントの最初のページ。</value></data>
+  <data name="Format_pdf_Name" xml:space="preserve"><value>PDF ドキュメント</value></data>
+  <data name="Format_pes_Description" xml:space="preserve"><value>PES 刺しゅうデザイン: 糸の色で表示したステッチ。</value></data>
+  <data name="Format_pes_Name" xml:space="preserve"><value>Brother PES 刺しゅう</value></data>
+  <data name="Format_pgf_Description" xml:space="preserve"><value>PGF 画像 (libPGF)。</value></data>
+  <data name="Format_photocd_Description" xml:space="preserve"><value>Photo CD の画像。</value></data>
+  <data name="Format_pict_Description" xml:space="preserve"><value>クラシック Mac の PICT 画像。</value></data>
+  <data name="Format_png_Description" xml:space="preserve"><value>透過に対応した PNG 画像。</value></data>
+  <data name="Format_pnm_Description" xml:space="preserve"><value>PBM、PGM、PPM、PAM、PFM のポータブル マップ。</value></data>
+  <data name="Format_psd_Description" xml:space="preserve"><value>Photoshop ドキュメントとラージ ドキュメント (レイヤーと透明部分を含む)。</value></data>
+  <data name="Format_psp_Description" xml:space="preserve"><value>Paint Shop Pro の画像、チューブ、フレーム、マスク。</value></data>
+  <data name="Format_publisher_Description" xml:space="preserve"><value>Microsoft Publisher の文書。</value></data>
+  <data name="Format_pulse_Description" xml:space="preserve"><value>Pulse/Tajima DG/ML 刺しゅうデザイン (埋め込みプレビュー)。</value></data>
+  <data name="Format_pulse_Name" xml:space="preserve"><value>Pulse 刺しゅう</value></data>
+  <data name="Format_pvr_Description" xml:space="preserve"><value>PowerVR テクスチャ (PVRTC、ETC)。</value></data>
+  <data name="Format_raw_Description" xml:space="preserve"><value>カメラのデジタル ネガ (Canon、Nikon、Sony、Fujifilm、DNG…)。</value></data>
+  <data name="Format_raw_Name" xml:space="preserve"><value>カメラ RAW</value></data>
+  <data name="Format_rtf_Description" xml:space="preserve"><value>RTF ドキュメント (最初のページのテキスト)。</value></data>
+  <data name="Format_rtf_Name" xml:space="preserve"><value>リッチ テキスト</value></data>
+  <data name="Format_sgi_Description" xml:space="preserve"><value>SGI RGB 画像。</value></data>
+  <data name="Format_sketchup_Description" xml:space="preserve"><value>SketchUp のモデル (埋め込みプレビュー)。</value></data>
+  <data name="Format_sketchupextra_Description" xml:space="preserve"><value>SketchUp LayOut のドキュメントとマテリアル。</value></data>
+  <data name="Format_sketchupextra_Name" xml:space="preserve"><value>SketchUp LayOut とマテリアル</value></data>
+  <data name="Format_smartcam_Description" xml:space="preserve"><value>SmartCAM ファイル (埋め込みプレビュー)。</value></data>
+  <data name="Format_softimage_Description" xml:space="preserve"><value>SoftImage のシーン (埋め込みプレビュー)。</value></data>
+  <data name="Format_sstv_Description" xml:space="preserve"><value>アマチュア無線の SSTV 画像 (.hrz)。</value></data>
+  <data name="Format_svg_Description" xml:space="preserve"><value>スケーラブル ベクター グラフィック (圧縮版の .svgz も含む)。</value></data>
+  <data name="Format_svg_Name" xml:space="preserve"><value>SVG グラフィック</value></data>
+  <data name="Format_text_Description" xml:space="preserve"><value>テキスト、ログ、Markdown、JSON、NFO (最初の数行)。</value></data>
+  <data name="Format_text_Name" xml:space="preserve"><value>テキスト</value></data>
+  <data name="Format_tga_Description" xml:space="preserve"><value>テクスチャや動画でよく使われる TGA 画像。</value></data>
+  <data name="Format_thm_Description" xml:space="preserve"><value>一部のカメラが動画と一緒に保存する JPEG の縮小版。</value></data>
+  <data name="Format_thm_Name" xml:space="preserve"><value>カメラの縮小版</value></data>
+  <data name="Format_tiff_Description" xml:space="preserve"><value>TIFF 画像 (最初のページ)。</value></data>
+  <data name="Format_tim_Description" xml:space="preserve"><value>PlayStation 1 および 2 のテクスチャ。</value></data>
+  <data name="Format_vinylmaster_Description" xml:space="preserve"><value>VinylMaster のデザイン (埋め込みプレビュー)。</value></data>
+  <data name="Format_wav_Description" xml:space="preserve"><value>WAV サウンド ファイルの波形。</value></data>
+  <data name="Format_wav_Name" xml:space="preserve"><value>WAV サウンド</value></data>
+  <data name="Format_wbmp_Description" xml:space="preserve"><value>WAP 携帯電話向けの白黒画像。</value></data>
+  <data name="Format_web_Description" xml:space="preserve"><value>HTML ページ (ページのテキスト)。</value></data>
+  <data name="Format_web_Name" xml:space="preserve"><value>Web ページ</value></data>
+  <data name="Format_webp_Description" xml:space="preserve"><value>WebP 画像。</value></data>
+  <data name="Format_xara_Description" xml:space="preserve"><value>Xara のドキュメント (埋め込みプレビュー)。</value></data>
+  <data name="Format_xd_Description" xml:space="preserve"><value>Adobe XD のデザイン (埋め込みプレビュー)。</value></data>
+  <data name="Format_xml_Description" xml:space="preserve"><value>XML ドキュメント (最初の数行)。</value></data>
+  <data name="Group_advanced" xml:space="preserve"><value>詳細設定</value></data>
+  <data name="Group_appearance" xml:space="preserve"><value>外観</value></data>
+  <data name="Group_checkerboard" xml:space="preserve"><value>透過の市松模様</value></data>
+  <data name="Group_contextMenu" xml:space="preserve"><value>コンテキスト メニュー</value></data>
+  <data name="Group_diagnostics" xml:space="preserve"><value>診断</value></data>
+  <data name="Group_explorer" xml:space="preserve"><value>エクスプローラー</value></data>
+  <data name="Group_generation" xml:space="preserve"><value>生成</value></data>
+  <data name="Group_icon" xml:space="preserve"><value>オーバーレイ アイコン</value></data>
+  <data name="Group_performance" xml:space="preserve"><value>パフォーマンス</value></data>
+  <data name="Group_privacy" xml:space="preserve"><value>プライバシー</value></data>
+  <data name="Handler_None" xml:space="preserve"><value>なし (ファイルの種類のアイコン)</value></data>
+  <data name="Handler_Other" xml:space="preserve"><value>その他のプロバイダー ({0})</value></data>
+  <data name="Product_Tagline" xml:space="preserve"><value>デザイン ファイルの縮小版</value></data>
+  <data name="Scope_AllFormats" xml:space="preserve"><value>すべての形式</value></data>
+  <data name="Scope_General" xml:space="preserve"><value>全般</value></data>
+  <data name="Setting_adornment_Description" xml:space="preserve"><value>エクスプローラーが縮小版の周りに描画する影です。</value></data>
+  <data name="Setting_adornment_Option_0" xml:space="preserve"><value>なし</value></data>
+  <data name="Setting_adornment_Option_0_Description" xml:space="preserve"><value>縮小版が領域全体を使います。</value></data>
+  <data name="Setting_adornment_Option_1" xml:space="preserve"><value>影 (Windows スタイル)</value></data>
+  <data name="Setting_adornment_Title" xml:space="preserve"><value>枠</value></data>
+  <data name="Setting_alpha_Description" xml:space="preserve"><value>半透明の部分の周りに縁が見える場合は、「乗算済み」を試してください。</value></data>
+  <data name="Setting_alpha_Option_0" xml:space="preserve"><value>ストレート</value></data>
+  <data name="Setting_alpha_Option_1" xml:space="preserve"><value>乗算済み</value></data>
+  <data name="Setting_alpha_Option_1_Description" xml:space="preserve"><value>ゲーム エンジンでよく使われます。</value></data>
+  <data name="Setting_alpha_Title" xml:space="preserve"><value>アルファ チャネル</value></data>
+  <data name="Setting_blockedFolders_Description" xml:space="preserve"><value>Glancy は、これらのフォルダーとそのサブフォルダーでは縮小版を生成しません。機密性の高いコンテンツに便利です。</value></data>
+  <data name="Setting_blockedFolders_Title" xml:space="preserve"><value>除外するフォルダー</value></data>
+  <data name="Setting_canvasColor_Description" xml:space="preserve"><value>背景の「キャンバスの色」と、色付きの正方形キャンバスで使います。</value></data>
+  <data name="Setting_canvasColor_Title" xml:space="preserve"><value>キャンバスの色</value></data>
+  <data name="Setting_checkerAnchor_Description" xml:space="preserve"><value>市松模様を描き始める位置です。</value></data>
+  <data name="Setting_checkerAnchor_Option_0" xml:space="preserve"><value>左上</value></data>
+  <data name="Setting_checkerAnchor_Option_1" xml:space="preserve"><value>上</value></data>
+  <data name="Setting_checkerAnchor_Option_2" xml:space="preserve"><value>右上</value></data>
+  <data name="Setting_checkerAnchor_Option_3" xml:space="preserve"><value>左</value></data>
+  <data name="Setting_checkerAnchor_Option_4" xml:space="preserve"><value>中央</value></data>
+  <data name="Setting_checkerAnchor_Option_5" xml:space="preserve"><value>右</value></data>
+  <data name="Setting_checkerAnchor_Option_6" xml:space="preserve"><value>左下</value></data>
+  <data name="Setting_checkerAnchor_Option_7" xml:space="preserve"><value>下</value></data>
+  <data name="Setting_checkerAnchor_Option_8" xml:space="preserve"><value>右下</value></data>
+  <data name="Setting_checkerAnchor_Title" xml:space="preserve"><value>市松模様の基準点</value></data>
+  <data name="Setting_checkerColors_Description" xml:space="preserve"><value>交互に並ぶ 2 つの色です。</value></data>
+  <data name="Setting_checkerColors_Title" xml:space="preserve"><value>市松模様の色</value></data>
+  <data name="Setting_checkerLibrary_Description" xml:space="preserve"><value>すばやく選べるように保存した色の組み合わせです。</value></data>
+  <data name="Setting_checkerLibrary_Title" xml:space="preserve"><value>市松模様のライブラリ</value></data>
+  <data name="Setting_checkerScale_Description" xml:space="preserve"><value>市松模様の各マスのサイズです。</value></data>
+  <data name="Setting_checkerScale_Option_0" xml:space="preserve"><value>小 (4 px)</value></data>
+  <data name="Setting_checkerScale_Option_1" xml:space="preserve"><value>中 (8 px)</value></data>
+  <data name="Setting_checkerScale_Option_2" xml:space="preserve"><value>大 (16 px)</value></data>
+  <data name="Setting_checkerScale_Title" xml:space="preserve"><value>セルのサイズ</value></data>
+  <data name="Setting_contextMenu_Description" xml:space="preserve"><value>ファイルやフォルダーを右クリックしたときに、Glancy の操作 (縮小版の更新、背景の変更…) を表示します。</value></data>
+  <data name="Setting_contextMenu_Option_0" xml:space="preserve"><value>オフ</value></data>
+  <data name="Setting_contextMenu_Option_1" xml:space="preserve"><value>すべてのオプションを表示</value></data>
+  <data name="Setting_contextMenu_Option_1_Description" xml:space="preserve"><value>すばやく使えますが、場所を取ります。</value></data>
+  <data name="Setting_contextMenu_Option_2" xml:space="preserve"><value>サブメニューにまとめる</value></data>
+  <data name="Setting_contextMenu_Option_2_Description" xml:space="preserve"><value>「Glancy」という 1 つの項目にサブメニューをまとめます。</value></data>
+  <data name="Setting_contextMenu_Title" xml:space="preserve"><value>Glancy のコンテキスト メニュー</value></data>
+  <data name="Setting_contextMenuShift_Description" xml:space="preserve"><value>Shift キーを押しながら右クリックした場合にのみ、Glancy のメニューを表示します。</value></data>
+  <data name="Setting_contextMenuShift_Title" xml:space="preserve"><value>Shift を押したときだけ表示</value></data>
+  <data name="Setting_customIcon_Description" xml:space="preserve"><value>独自のアイコンを使います。拡張子を表示しない設定の場合に便利です。</value></data>
+  <data name="Setting_customIcon_Title" xml:space="preserve"><value>カスタム アイコン</value></data>
+  <data name="Setting_customIconPath_Description" xml:space="preserve"><value>.ico、.exe、.dll ファイルからアイコンを選びます。</value></data>
+  <data name="Setting_customIconPath_Title" xml:space="preserve"><value>アイコン ファイル</value></data>
+  <data name="Setting_debugLog_Description" xml:space="preserve"><value>エンジンが生成したすべての縮小版とすべてのエラーを記録します。問題を調査する場合以外はオフにしておいてください。</value></data>
+  <data name="Setting_debugLog_Title" xml:space="preserve"><value>診断ログ</value></data>
+  <data name="Setting_embedded_Description" xml:space="preserve"><value>多くのファイルには小さいプレビューが含まれています。高速ですが、鮮明さは劣ります。</value></data>
+  <data name="Setting_embedded_Option_0" xml:space="preserve"><value>常にファイルをレンダリング</value></data>
+  <data name="Setting_embedded_Option_0_Description" xml:space="preserve"><value>最高の品質です。プレビューは代替としてのみ使います。</value></data>
+  <data name="Setting_embedded_Option_1" xml:space="preserve"><value>常にプレビューを使用</value></data>
+  <data name="Setting_embedded_Option_1_Description" xml:space="preserve"><value>最も高速です。小さく見えることがあります。</value></data>
+  <data name="Setting_embedded_Option_2" xml:space="preserve"><value>十分な大きさならプレビューを使用</value></data>
+  <data name="Setting_embedded_Option_2_Description" xml:space="preserve"><value>速度と品質のバランスを取ります。</value></data>
+  <data name="Setting_embedded_Title" xml:space="preserve"><value>埋め込みプレビュー</value></data>
+  <data name="Setting_enabled_Description" xml:space="preserve"><value>エクスプローラーのトラブルシューティングのために一時的にオフにします。</value></data>
+  <data name="Setting_enabled_Title" xml:space="preserve"><value>Glancy で縮小版を生成する</value></data>
+  <data name="Setting_folderRecursion_Description" xml:space="preserve"><value>フォルダーに対する操作を、その中のすべてのフォルダーにも適用します。</value></data>
+  <data name="Setting_folderRecursion_Title" xml:space="preserve"><value>サブフォルダーを含める</value></data>
+  <data name="Setting_forceDesktopTransparency_Description" xml:space="preserve"><value>デスクトップ上のファイルは、形式の設定にかかわらず常に透明な背景を使います。</value></data>
+  <data name="Setting_forceDesktopTransparency_Title" xml:space="preserve"><value>デスクトップでの透過</value></data>
+  <data name="Setting_fullFill_Description" xml:space="preserve"><value>縮小版と同じサイズの正方形キャンバスを使い、ファイルを並べて比較しやすくします。</value></data>
+  <data name="Setting_fullFill_Option_0" xml:space="preserve"><value>キャンバスなし</value></data>
+  <data name="Setting_fullFill_Option_1" xml:space="preserve"><value>透明なキャンバス</value></data>
+  <data name="Setting_fullFill_Option_2" xml:space="preserve"><value>市松模様のキャンバス</value></data>
+  <data name="Setting_fullFill_Option_3" xml:space="preserve"><value>色付きのキャンバス</value></data>
+  <data name="Setting_fullFill_Title" xml:space="preserve"><value>正方形の縮小版</value></data>
+  <data name="Setting_gamma_Description" xml:space="preserve"><value>カラー プロファイルのないファイル用です。写真では 2.2 が一般的です。</value></data>
+  <data name="Setting_gamma_Option_100" xml:space="preserve"><value>補正なし (1.0)</value></data>
+  <data name="Setting_gamma_Option_180" xml:space="preserve"><value>1.8</value></data>
+  <data name="Setting_gamma_Option_220" xml:space="preserve"><value>2.2</value></data>
+  <data name="Setting_gamma_Option_240" xml:space="preserve"><value>2.4</value></data>
+  <data name="Setting_gamma_Title" xml:space="preserve"><value>ガンマ補正</value></data>
+  <data name="Setting_maxFileSizeMB_Description" xml:space="preserve"><value>このサイズを超えると、埋め込みプレビューがあればそれを使います。</value></data>
+  <data name="Setting_maxFileSizeMB_Option_0" xml:space="preserve"><value>制限なし</value></data>
+  <data name="Setting_maxFileSizeMB_Option_100" xml:space="preserve"><value>100 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_1024" xml:space="preserve"><value>1 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_2048" xml:space="preserve"><value>2 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_250" xml:space="preserve"><value>250 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_50" xml:space="preserve"><value>50 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_500" xml:space="preserve"><value>500 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Title" xml:space="preserve"><value>最大ファイル サイズ</value></data>
+  <data name="Setting_maxPixels_Description" xml:space="preserve"><value>幅または高さの最大値です。これを超えると、埋め込みプレビューを使います。</value></data>
+  <data name="Setting_maxPixels_Option_0" xml:space="preserve"><value>制限なし</value></data>
+  <data name="Setting_maxPixels_Option_16384" xml:space="preserve"><value>16,384 px</value></data>
+  <data name="Setting_maxPixels_Option_32768" xml:space="preserve"><value>32,768 px</value></data>
+  <data name="Setting_maxPixels_Option_4096" xml:space="preserve"><value>4,096 px</value></data>
+  <data name="Setting_maxPixels_Option_8192" xml:space="preserve"><value>8,192 px</value></data>
+  <data name="Setting_maxPixels_Title" xml:space="preserve"><value>最大寸法</value></data>
+  <data name="Setting_mode_Description" xml:space="preserve"><value>縮小版を描画する方法を選びます。</value></data>
+  <data name="Setting_mode_Option_0" xml:space="preserve"><value>オフ</value></data>
+  <data name="Setting_mode_Option_0_Description" xml:space="preserve"><value>ファイルの種類のアイコンを表示します。</value></data>
+  <data name="Setting_mode_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_mode_Option_1_Description" xml:space="preserve"><value>このページの設定を使います。</value></data>
+  <data name="Setting_mode_Option_2" xml:space="preserve"><value>システムのプロバイダー</value></data>
+  <data name="Setting_mode_Option_2_Description" xml:space="preserve"><value>Windows または関連付けられたアプリが描画します。ない場合は Glancy を使います。</value></data>
+  <data name="Setting_mode_Title" xml:space="preserve"><value>縮小版</value></data>
+  <data name="Setting_refreshOnApply_Description" xml:space="preserve"><value>エクスプローラーで開いているフォルダーの縮小版を再生成し、変更をすぐに確認できるようにします。</value></data>
+  <data name="Setting_refreshOnApply_Title" xml:space="preserve"><value>適用時に開いているウィンドウを更新</value></data>
+  <data name="Setting_sampling_Description" xml:space="preserve"><value>画像の縮小や拡大に使うアルゴリズムです。</value></data>
+  <data name="Setting_sampling_Option_0" xml:space="preserve"><value>ニアレスト ネイバー</value></data>
+  <data name="Setting_sampling_Option_0_Description" xml:space="preserve"><value>ピクセルがくっきり表示されます。ピクセル アート向けです。</value></data>
+  <data name="Setting_sampling_Option_1" xml:space="preserve"><value>バイリニア</value></data>
+  <data name="Setting_sampling_Option_1_Description" xml:space="preserve"><value>より柔らかく、高速です。</value></data>
+  <data name="Setting_sampling_Option_2" xml:space="preserve"><value>バイキュービック</value></data>
+  <data name="Setting_sampling_Option_2_Description" xml:space="preserve"><value>全体的に最高の品質です。</value></data>
+  <data name="Setting_sampling_Title" xml:space="preserve"><value>リサンプリング</value></data>
+  <data name="Setting_scale_Description" xml:space="preserve"><value>画像が縮小版より小さい場合の表示方法です。</value></data>
+  <data name="Setting_scale_Option_0" xml:space="preserve"><value>実際のサイズ</value></data>
+  <data name="Setting_scale_Option_0_Description" xml:space="preserve"><value>拡大しません。小さく見えることがあります。</value></data>
+  <data name="Setting_scale_Option_1" xml:space="preserve"><value>サイズに合わせる</value></data>
+  <data name="Setting_scale_Option_1_Description" xml:space="preserve"><value>ゆがみなく縮小版いっぱいに表示します。</value></data>
+  <data name="Setting_scale_Title" xml:space="preserve"><value>小さい画像</value></data>
+  <data name="Setting_showAssocIcon_Description" xml:space="preserve"><value>ファイルを開くアプリのアイコンを右下隅に表示します。</value></data>
+  <data name="Setting_showAssocIcon_Title" xml:space="preserve"><value>アプリのアイコンを表示</value></data>
+  <data name="Setting_smallIcons_Description" xml:space="preserve"><value>一覧、詳細、小アイコンの各表示での縮小版です。</value></data>
+  <data name="Setting_smallIcons_Option_0" xml:space="preserve"><value>オフ</value></data>
+  <data name="Setting_smallIcons_Option_0_Description" xml:space="preserve"><value>通常のファイルの種類のアイコンです。</value></data>
+  <data name="Setting_smallIcons_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_smallIcons_Option_1_Description" xml:space="preserve"><value>アイコンの代わりに画像を表示します。少し遅くなります。</value></data>
+  <data name="Setting_smallIcons_Option_2" xml:space="preserve"><value>システムのプロバイダー</value></data>
+  <data name="Setting_smallIcons_Option_2_Description" xml:space="preserve"><value>Windows のプロバイダーを使います。ない場合は通常のアイコンです。</value></data>
+  <data name="Setting_smallIcons_Title" xml:space="preserve"><value>小アイコン</value></data>
+  <data name="Setting_transparency_Description" xml:space="preserve"><value>透明な部分の後ろに表示するものです。</value></data>
+  <data name="Setting_transparency_Option_0" xml:space="preserve"><value>不透明</value></data>
+  <data name="Setting_transparency_Option_0_Description" xml:space="preserve"><value>アルファ チャネルを無視します。</value></data>
+  <data name="Setting_transparency_Option_1" xml:space="preserve"><value>キャンバスの色</value></data>
+  <data name="Setting_transparency_Option_1_Description" xml:space="preserve"><value>PDF の用紙のような固定色です。</value></data>
+  <data name="Setting_transparency_Option_2" xml:space="preserve"><value>透明</value></data>
+  <data name="Setting_transparency_Option_2_Description" xml:space="preserve"><value>エクスプローラーの背景が透けて見えます。</value></data>
+  <data name="Setting_transparency_Option_3" xml:space="preserve"><value>市松模様</value></data>
+  <data name="Setting_transparency_Option_3_Description" xml:space="preserve"><value>アルファ チャネルを確認できます。</value></data>
+  <data name="Setting_transparency_Title" xml:space="preserve"><value>透明な部分の背景</value></data>
+  <data name="Store_ReadFailed" xml:space="preserve"><value>レジストリから設定を読み取れませんでした。</value></data>
+  <data name="Store_SaveFailed" xml:space="preserve"><value>変更を Windows のレジストリに保存できませんでした。</value></data>
+  <data name="Value_EmptyList" xml:space="preserve"><value>(空)</value></data>
+  <data name="Value_Inherited" xml:space="preserve"><value>形式から継承</value></data>
+  <data name="Value_ItemCount" xml:space="preserve"><value>{0} 個の項目</value></data>
+  <data name="Value_NoText" xml:space="preserve"><value>(なし)</value></data>
+  <data name="Value_Off" xml:space="preserve"><value>オフ</value></data>
+  <data name="Value_On" xml:space="preserve"><value>オン</value></data>
+</root>

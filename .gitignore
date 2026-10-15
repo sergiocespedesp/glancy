@@ -1,0 +1,14 @@
+# Private: notes for Claude, reverse-engineering material, design-process documents
+CLAUDE.md
+CLAUDE.local.md
+private/
+
+# Build outputs
+bin/
+obj/
+target/
+dist/
+TestResults/
+*.user
+.vs/
+__pycache__/

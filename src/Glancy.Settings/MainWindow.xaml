@@ -1,0 +1,184 @@
+<Window x:Class="Glancy.Settings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="using:Glancy.Settings.Localization"
+        xmlns:local="using:Glancy.Settings"
+        Title="Glancy">
+  <Window.SystemBackdrop>
+    <MicaBackdrop />
+  </Window.SystemBackdrop>
+
+  <Grid x:Name="RootGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.KeyboardAccelerators>
+      <KeyboardAccelerator Key="S" Modifiers="Control" Invoked="OnApplyAccelerator" ScopeOwner="{x:Bind RootGrid}" />
+      <KeyboardAccelerator Key="Z" Modifiers="Control" Invoked="OnUndoAccelerator" ScopeOwner="{x:Bind RootGrid}" />
+      <KeyboardAccelerator Key="F1" Invoked="OnHelpAccelerator" />
+      <KeyboardAccelerator Key="F" Modifiers="Control" Invoked="OnSearchAccelerator" />
+      <KeyboardAccelerator Key="T" Modifiers="Control" Invoked="OnTopMostAccelerator" />
+      <KeyboardAccelerator Key="E" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number0" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number1" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number2" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number3" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number4" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Number5" Modifiers="Control" Invoked="OnNavigateAccelerator" />
+      <KeyboardAccelerator Key="Left" Modifiers="Menu" Invoked="OnBackAccelerator" />
+    </Grid.KeyboardAccelerators>
+
+    <TitleBar x:Name="AppTitleBar"
+              Title="Glancy"
+              IsBackButtonVisible="True"
+              IsPaneToggleButtonVisible="True"
+              BackRequested="OnTitleBarBackRequested"
+              PaneToggleRequested="OnTitleBarPaneToggleRequested">
+      <TitleBar.IconSource>
+        <ImageIconSource ImageSource="ms-appx:///Assets/Glancy-32.png" />
+      </TitleBar.IconSource>
+      <TitleBar.Content>
+        <AutoSuggestBox x:Name="SearchBox"
+                        PlaceholderText="{l:Str Key=Search_Placeholder}"
+                        QueryIcon="Find"
+                        MinWidth="180" MaxWidth="460"
+                        VerticalAlignment="Center"
+                        AutomationProperties.Name="{l:Str Key=Search_Name}"
+                        TextChanged="OnSearchTextChanged"
+                        QuerySubmitted="OnSearchQuerySubmitted">
+          <AutoSuggestBox.ItemTemplate>
+            <DataTemplate x:DataType="local:SearchEntry">
+              <Grid ColumnSpacing="12" Padding="0,4" AutomationProperties.Name="{x:Bind Title}">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FontIcon Glyph="{x:Bind Glyph}" FontSize="16" VerticalAlignment="Center" />
+                <StackPanel Grid.Column="1">
+                  <TextBlock Text="{x:Bind Title}" TextTrimming="CharacterEllipsis" />
+                  <TextBlock Text="{x:Bind Subtitle}" Style="{StaticResource GlancyCaptionStyle}" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" />
+                </StackPanel>
+              </Grid>
+            </DataTemplate>
+          </AutoSuggestBox.ItemTemplate>
+        </AutoSuggestBox>
+      </TitleBar.Content>
+      <TitleBar.RightHeader>
+        <ToggleButton x:Name="PinButton" Margin="0,0,4,0" Padding="8,6" Background="Transparent" BorderThickness="0"
+                      Click="OnPinClick" ToolTipService.ToolTip="{l:Str Key=TopMost_Tooltip}" AutomationProperties.Name="{l:Str Key=TopMost_Name}">
+          <FontIcon Glyph="&#xE718;" FontSize="14" />
+        </ToggleButton>
+      </TitleBar.RightHeader>
+    </TitleBar>
+
+    <NavigationView x:Name="NavView" Grid.Row="1"
+                    IsBackButtonVisible="Collapsed"
+                    IsPaneToggleButtonVisible="False"
+                    IsSettingsVisible="False"
+                    IsTitleBarAutoPaddingEnabled="False"
+                    PaneDisplayMode="Auto"
+                    OpenPaneLength="264"
+                    CompactModeThresholdWidth="640"
+                    ExpandedModeThresholdWidth="1008"
+                    SelectionChanged="OnNavSelectionChanged"
+                    DisplayModeChanged="OnNavDisplayModeChanged">
+      <NavigationView.MenuItems>
+        <NavigationViewItem Content="{l:Str Key=Nav_Home}" Tag="home">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xE80F;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItemHeader Content="{l:Str Key=Nav_Formats}" />
+        <NavigationViewItem Content="{l:Str Key=Nav_AllFormats}" Tag="all" ToolTipService.ToolTip="{l:Str Key=Nav_AllFormats_Tooltip}">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xE8A9;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItemSeparator x:Name="FormatsEndSeparator" />
+        <NavigationViewItem Content="{l:Str Key=Nav_Explorer}" Tag="explorer" ToolTipService.ToolTip="{l:Str Key=Nav_Explorer_Tooltip}">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xEC50;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItem Content="{l:Str Key=Nav_Maintenance}" Tag="maintenance">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xE90F;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+      </NavigationView.MenuItems>
+      <NavigationView.FooterMenuItems>
+        <NavigationViewItem Content="{l:Str Key=Nav_Preferences}" Tag="preferences" ToolTipService.ToolTip="{l:Str Key=Nav_Preferences_Tooltip}">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xE713;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+        <NavigationViewItem Content="{l:Str Key=Nav_About}" Tag="about">
+          <NavigationViewItem.Icon><FontIcon Glyph="&#xE946;" /></NavigationViewItem.Icon>
+        </NavigationViewItem>
+      </NavigationView.FooterMenuItems>
+
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="ContentFrame" Navigated="OnFrameNavigated" IsTabStop="False" />
+
+        <!-- Transient notifications (top-right of the content area) -->
+        <StackPanel x:Name="NotificationHost" VerticalAlignment="Top" HorizontalAlignment="Right"
+                    MaxWidth="460" Margin="16,12,24,0" Spacing="8" />
+
+        <!-- Pending changes: the single place where edits reach the system -->
+        <Grid x:Name="PendingBar" Grid.Row="1" Visibility="Collapsed"
+              Background="{ThemeResource SolidBackgroundFillColorTertiaryBrush}"
+              BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="0,1,0,0"
+              Padding="24,12" ColumnSpacing="12"
+              AutomationProperties.LandmarkType="Custom"
+              AutomationProperties.LocalizedLandmarkType="Cambios pendientes">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          <InfoBadge x:Name="PendingBadge" VerticalAlignment="Center" AutomationProperties.AccessibilityView="Raw" />
+          <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="0">
+            <TextBlock x:Name="PendingTitle" Style="{StaticResource BodyStrongTextBlockStyle}" TextTrimming="CharacterEllipsis" />
+            <TextBlock x:Name="PendingCaption" Text="{l:Str Key=Pending_Subtitle}"
+                       Style="{StaticResource GlancyCaptionStyle}" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" />
+          </StackPanel>
+          <DropDownButton x:Name="ReviewButton" Grid.Column="2" Content="{l:Str Key=Pending_Review}" VerticalAlignment="Center"
+                          AutomationProperties.Name="{l:Str Key=Pending_Review_Name}">
+            <DropDownButton.Flyout>
+              <Flyout Placement="TopEdgeAlignedRight" Opening="OnReviewOpening">
+                <StackPanel Width="380" Spacing="8">
+                  <TextBlock Text="{l:Str Key=Pending_Title}" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                  <ScrollViewer MaxHeight="320" VerticalScrollBarVisibility="Auto">
+                    <ItemsControl x:Name="ChangesList" IsTabStop="False" />
+                  </ScrollViewer>
+                </StackPanel>
+              </Flyout>
+            </DropDownButton.Flyout>
+          </DropDownButton>
+          <Button x:Name="UndoButton" Grid.Column="3" VerticalAlignment="Center" Click="OnUndoClick" Padding="10,6"
+                  ToolTipService.ToolTip="{l:Str Key=Pending_Undo_Tooltip}" AutomationProperties.Name="{l:Str Key=Pending_Undo_Name}">
+            <FontIcon Glyph="&#xE7A7;" FontSize="14" />
+          </Button>
+          <Button x:Name="DiscardButton" Grid.Column="4" Content="{l:Str Key=Pending_Discard}" VerticalAlignment="Center" Click="OnDiscardClick"
+                  ToolTipService.ToolTip="{l:Str Key=Pending_Discard_Tooltip}" />
+          <Button x:Name="ApplyButton" Grid.Column="5" Style="{StaticResource AccentButtonStyle}" VerticalAlignment="Center"
+                  MinWidth="120" Click="OnApplyClick" ToolTipService.ToolTip="{l:Str Key=Pending_Apply_Tooltip}"
+                  AutomationProperties.Name="{l:Str Key=Pending_Apply_Name}">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+              <ProgressRing x:Name="ApplyProgress" Width="16" Height="16" IsActive="False" Visibility="Collapsed"
+                            Foreground="{ThemeResource TextOnAccentFillColorPrimaryBrush}" />
+              <TextBlock x:Name="ApplyText" Text="{l:Str Key=Pending_Apply}" />
+            </StackPanel>
+          </Button>
+        </Grid>
+      </Grid>
+    </NavigationView>
+
+    <TeachingTip x:Name="PendingTip" Grid.Row="1"
+                 Target="{x:Bind ApplyButton}"
+                 Title="{l:Str Key=Pending_Tip_Title}"
+                 Subtitle="{l:Str Key=Pending_Tip_Subtitle}"
+                 CloseButtonContent="{l:Str Key=Tip_GotIt}"
+                 PreferredPlacement="TopLeft"
+                 Closed="OnPendingTipClosed" />
+  </Grid>
+</Window>

@@ -1,0 +1,75 @@
+<Page x:Class="Glancy.Settings.Views.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:l="using:Glancy.Settings.Localization"
+      xmlns:c="using:Glancy.Settings.Controls">
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1000*" MaxWidth="{StaticResource GlancyContentMaxWidth}" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+    <StackPanel x:Name="ContentPanel" Padding="{StaticResource GlancyPagePadding}">
+
+      <!-- Hero: identity + the one switch that matters most -->
+      <Border Background="{ThemeResource GlancyHeroBrush}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1"
+              CornerRadius="{StaticResource GlancyTileCornerRadius}" Padding="24" Margin="0,8,0,0">
+        <Grid x:Name="HeroGrid" ColumnSpacing="20" RowSpacing="16">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Image Source="ms-appx:///Assets/Glancy-256.png" Width="72" Height="72" VerticalAlignment="Top" AutomationProperties.AccessibilityView="Raw" />
+          <StackPanel Grid.Column="1" Spacing="4" VerticalAlignment="Center">
+            <TextBlock Text="Glancy" Style="{StaticResource GlancyHeroTitleStyle}" AutomationProperties.HeadingLevel="Level1" />
+            <TextBlock x:Name="HeroSubtitle" Style="{StaticResource GlancySecondaryTextStyle}" TextWrapping="Wrap" />
+            <Grid ColumnSpacing="8" Margin="0,8,0,0">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <FontIcon x:Name="StatusIcon" FontSize="16" VerticalAlignment="Top" Margin="0,2,0,0" />
+              <TextBlock x:Name="StatusText" Grid.Column="1" Style="{StaticResource BodyStrongTextBlockStyle}" TextWrapping="Wrap" />
+            </Grid>
+          </StackPanel>
+          <StackPanel x:Name="MasterSwitchPanel" Grid.Column="2" VerticalAlignment="Center" Spacing="2">
+            <TextBlock Text="{l:Str Key=Home_EnableToggle}" Style="{StaticResource CaptionTextBlockStyle}" />
+            <ToggleSwitch IsOn="{x:Bind Global.Enabled.IsOn, Mode=TwoWay}" OnContent="{l:Str Key=Common_On}" OffContent="{l:Str Key=Common_Off}"
+                          AutomationProperties.Name="{l:Str Key=Home_EnableToggle}" />
+          </StackPanel>
+        </Grid>
+      </Border>
+
+      <InfoBar x:Name="EngineInfoBar" Margin="0,12,0,0" IsClosable="False" Severity="Warning"
+               Title="{l:Str Key=Home_EngineMissing_Title}"
+               Message="{l:Str Key=Home_EngineMissing_Message}">
+        <InfoBar.ActionButton>
+          <Button Content="{l:Str Key=Common_CheckAgain}" Click="OnRecheckEngine" />
+        </InfoBar.ActionButton>
+      </InfoBar>
+
+      <TextBlock Text="{l:Str Key=Nav_Formats}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <TextBlock x:Name="FormatsCaption" Style="{StaticResource GlancyCaptionStyle}" TextWrapping="Wrap" Margin="1,-4,0,4" />
+      <!-- One group per category (header + grid of compact tiles), built in code from the catalog -->
+      <StackPanel x:Name="CategoriesPanel" />
+
+      <TextBlock Text="{l:Str Key=Home_QuickActions}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
+        <c:SettingsCard Header="{l:Str Key=Home_RefreshExplorer}" Glyph="&#xE72C;"
+                        Description="{l:Str Key=Home_RefreshExplorer_Desc}">
+          <Button x:Name="RefreshButton" Content="{l:Str Key=Common_Refresh}" Click="OnRefreshExplorer" MinWidth="160" />
+        </c:SettingsCard>
+        <c:SettingsCard Header="{l:Str Key=Home_ThumbnailCache}" Glyph="&#xE74D;"
+                        Description="{l:Str Key=Home_ThumbnailCache_Desc}">
+          <Button Content="{l:Str Key=Home_OpenMaintenance}" Click="OnOpenMaintenance" MinWidth="160" />
+        </c:SettingsCard>
+      </StackPanel>
+    </StackPanel>
+    </Grid>
+  </ScrollViewer>
+</Page>

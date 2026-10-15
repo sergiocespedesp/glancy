@@ -1,0 +1,74 @@
+[package]
+name = "glancy-thumbnails"
+version = "1.0.0"
+edition = "2024"
+description = "Glancy thumbnail engine: an IThumbnailProvider for 87 image, design and document formats"
+authors = ["Sergio Cespedes"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/sergiocespedesp/glancy"
+publish = false
+
+[lib]
+name = "glancy_thumbnails"
+# cdylib: the COM DLL that Explorer loads. rlib: used by the command-line tool and the tests.
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "glancy-thumb"
+path = "src/bin/glancy-thumb.rs"
+
+[dependencies]
+# Every dependency is pure Rust: the GNU toolchain has no C/C++ compiler.
+cfb = "0.15"
+fax = "0.3"
+flate2 = "1.1"
+hayro-jpeg2000 = "0.4"
+image = { version = "0.25", default-features = false, features = ["bmp", "dds", "exr", "gif", "hdr", "ico", "jpeg", "png", "pnm", "tga", "tiff", "webp"] }
+jxl-oxide = "0.12"
+quick-xml = "0.42"
+resvg = "0.48"
+ruzstd = "0.9"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+texture2ddecoder = "0.1"
+windows-core = "0.58"
+zip = { version = "9", default-features = false, features = ["deflate"] }
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "implement",
+    "Win32_Foundation",
+    "Win32_Globalization",
+    "Win32_Graphics_Gdi",
+    "Win32_Graphics_Imaging",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Com",
+    "Win32_System_Com_StructuredStorage",
+    "Win32_System_DataExchange",
+    "Win32_System_JobObjects",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Ole",
+    "Win32_System_Registry",
+    "Win32_System_SystemServices",
+    "Win32_System_Threading",
+    "Win32_UI_Shell",
+    "Win32_UI_Shell_Common",
+    "Win32_UI_Shell_PropertiesSystem",
+    "Win32_UI_WindowsAndMessaging",
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+# A panic must never bring Explorer down: it is caught at every COM boundary (see com.rs).
+panic = "unwind"
+# With crafted files, an overflow must be a caught panic, not a wrong offset.
+overflow-checks = true
+
+[profile.dev]
+# The tests decode large images; unoptimized they would be very slow.
+opt-level = 2

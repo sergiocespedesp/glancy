@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="About_Credits" xml:space="preserve"><value>Third-party credits and licenses</value></data>
+  <data name="About_FreeSoftware" xml:space="preserve"><value>Free software</value></data>
+  <data name="About_FreeSoftware_Text" xml:space="preserve"><value>Glancy is free software: you can redistribute it and modify it under the terms of the GNU General Public License, version 3 or any later version. It comes with no warranty.</value></data>
+  <data name="About_HowItWorks" xml:space="preserve"><value>How it works</value></data>
+  <data name="About_HowItWorks_Extensions" xml:space="preserve"><value>Each format has its own settings. If a format has several extensions (for example .psd and .psb), you can customize just one; the rest inherit from the format.</value></data>
+  <data name="About_HowItWorks_Pending" xml:space="preserve"><value>Changes you make to formats and File Explorer settings collect as pending changes. Nothing changes in File Explorer until you select Apply; you can review or discard them first.</value></data>
+  <data name="About_HowItWorks_Preferences" xml:space="preserve"><value>Preferences for this window (theme, keep on top) apply immediately and don't affect thumbnails.</value></data>
+  <data name="About_LicenseLink" xml:space="preserve"><value>License (GPL-3.0)</value></data>
+  <data name="About_Shortcuts" xml:space="preserve"><value>Keyboard shortcuts</value></data>
+  <data name="About_SourceCode" xml:space="preserve"><value>Source code</value></data>
+  <data name="About_Support" xml:space="preserve"><value>Support Glancy</value></data>
+  <data name="About_Support_Text" xml:space="preserve"><value>Glancy is free and has no ads. If it’s useful to you, a donation helps keep it maintained.</value></data>
+  <data name="About_Tech_Clsid" xml:space="preserve"><value>Engine CLSID: {0}</value></data>
+  <data name="About_Tech_ExportFile" xml:space="preserve"><value>Export file: {0}</value></data>
+  <data name="About_Tech_Logs" xml:space="preserve"><value>Logs: {0}</value></data>
+  <data name="About_Tech_Settings" xml:space="preserve"><value>Settings: {0}</value></data>
+  <data name="About_TechInfo" xml:space="preserve"><value>Technical information</value></data>
+  <data name="About_Title" xml:space="preserve"><value>About Glancy</value></data>
+  <data name="About_Version" xml:space="preserve"><value>Version {0} · {1}</value></data>
+  <data name="AllFormats_Counts" xml:space="preserve"><value>{0} formats · {1} extensions</value></data>
+  <data name="AllFormats_Description" xml:space="preserve"><value>Change a setting here to apply it to every format at once. Formats that don’t support a setting ignore it.</value></data>
+  <data name="Apply_Applied_NoRefresh" xml:space="preserve"><value>Folders show the new thumbnails when you open them or press F5.</value></data>
+  <data name="Apply_Applied_Refreshed" xml:space="preserve"><value>Open File Explorer windows have been refreshed.</value></data>
+  <data name="Apply_Applied_Title" xml:space="preserve"><value>Changes applied</value></data>
+  <data name="Apply_Failed_Message" xml:space="preserve"><value>{0} Your changes are still pending.</value></data>
+  <data name="Apply_Failed_Title" xml:space="preserve"><value>Couldn’t apply the changes</value></data>
+  <data name="Apply_Saved_EngineMissing" xml:space="preserve"><value>They will be used once the Glancy thumbnail engine is installed.</value></data>
+  <data name="Apply_Saved_Title" xml:space="preserve"><value>Changes saved</value></data>
+  <data name="Cache_Cleared_Title" xml:space="preserve"><value>Thumbnail cache cleared</value></data>
+  <data name="Cache_Failed_Title" xml:space="preserve"><value>Couldn’t clear the cache</value></data>
+  <data name="Cache_Freed" xml:space="preserve"><value>{0:0.#} MB freed.</value></data>
+  <data name="Checker_Customize" xml:space="preserve"><value>Customize</value></data>
+  <data name="Checker_DarkColor" xml:space="preserve"><value>Dark color</value></data>
+  <data name="Checker_DarkGrays" xml:space="preserve"><value>Dark grays</value></data>
+  <data name="Checker_Library" xml:space="preserve"><value>Library</value></data>
+  <data name="Checker_LightColor" xml:space="preserve"><value>Light color</value></data>
+  <data name="Checker_MidGrays" xml:space="preserve"><value>Mid grays</value></data>
+  <data name="Checker_Pair" xml:space="preserve"><value>{0} and {1}</value></data>
+  <data name="Checker_Random" xml:space="preserve"><value>Random</value></data>
+  <data name="Checker_SaveToLibrary" xml:space="preserve"><value>Save to library</value></data>
+  <data name="Checker_Swap" xml:space="preserve"><value>Swap colors</value></data>
+  <data name="Checker_WhiteLightGray" xml:space="preserve"><value>White and light gray</value></data>
+  <data name="Close_ApplyAndClose" xml:space="preserve"><value>Apply and close</value></data>
+  <data name="Close_DialogOpen_Message" xml:space="preserve"><value>Then you can close Glancy.</value></data>
+  <data name="Close_DialogOpen_Title" xml:space="preserve"><value>Close the open dialog</value></data>
+  <data name="Close_Pending_Many" xml:space="preserve"><value>You have {0} changes that aren’t applied</value></data>
+  <data name="Close_Pending_Message" xml:space="preserve"><value>If you close without applying, File Explorer keeps using the previous settings.</value></data>
+  <data name="Close_Pending_One" xml:space="preserve"><value>You have 1 change that isn’t applied</value></data>
+  <data name="Close_WithoutApplying" xml:space="preserve"><value>Close without applying</value></data>
+  <data name="Color_Quick" xml:space="preserve"><value>Quick colors</value></data>
+  <data name="Color_Use" xml:space="preserve"><value>Use this color</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Common_CheckAgain" xml:space="preserve"><value>Check again</value></data>
+  <data name="Common_Checking" xml:space="preserve"><value>Checking…</value></data>
+  <data name="Common_Failed" xml:space="preserve"><value>failed</value></data>
+  <data name="Common_MultipleValues" xml:space="preserve"><value>Multiple values</value></data>
+  <data name="Common_Off" xml:space="preserve"><value>Off</value></data>
+  <data name="Common_On" xml:space="preserve"><value>On</value></data>
+  <data name="Common_Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Common_Refresh" xml:space="preserve"><value>Refresh</value></data>
+  <data name="Common_Selected" xml:space="preserve"><value>Selected</value></data>
+  <data name="Common_Succeeded" xml:space="preserve"><value>succeeded</value></data>
+  <data name="Count_Extension_Many" xml:space="preserve"><value>{0} extensions</value></data>
+  <data name="Count_Extension_One" xml:space="preserve"><value>1 extension</value></data>
+  <data name="Count_Format_Many" xml:space="preserve"><value>{0} formats</value></data>
+  <data name="Count_Format_One" xml:space="preserve"><value>1 format</value></data>
+  <data name="Credit_Cfb" xml:space="preserve"><value>© Matthew D. Steele · MIT License · included in the engine</value></data>
+  <data name="Credit_DotNet" xml:space="preserve"><value>© .NET Foundation and contributors · MIT License · included in the app</value></data>
+  <data name="Credit_Fax" xml:space="preserve"><value>© The pdf-rs contributors · MIT License · included in the engine</value></data>
+  <data name="Credit_Flate2" xml:space="preserve"><value>© Alex Crichton and contributors · MIT or Apache 2.0 · included in the engine</value></data>
+  <data name="Credit_Ghostscript" xml:space="preserve"><value>© Artifex Software · GNU AGPL 3.0 · not included or distributed; if it’s installed on the PC, the engine uses it for EPS and old AI files</value></data>
+  <data name="Credit_Ghostscript_Name" xml:space="preserve"><value>Ghostscript (optional)</value></data>
+  <data name="Credit_Hayro" xml:space="preserve"><value>© The Hayro Authors · Apache 2.0 or MIT · included in the engine (JPEG 2000)</value></data>
+  <data name="Credit_Image" xml:space="preserve"><value>© The image-rs Developers · MIT or Apache 2.0 · included in the engine (PNG, JPEG, TIFF, WebP, GIF, BMP, DDS, EXR, HDR…)</value></data>
+  <data name="Credit_JxlOxide" xml:space="preserve"><value>© Wonwoo Choi · MIT or Apache 2.0 · included in the engine (JPEG XL)</value></data>
+  <data name="Credit_OtherRust" xml:space="preserve"><value>tiny-skia, usvg, zune-jpeg, exr, zlib-rs, rayon and the other crates the above use · permissive licenses (MIT, Apache 2.0, BSD, Zlib) · included in the engine</value></data>
+  <data name="Credit_OtherRust_Name" xml:space="preserve"><value>Other Rust dependencies</value></data>
+  <data name="Credit_Pdfium" xml:space="preserve"><value>© The PDFium Authors · 3-clause BSD License · included in the engine (pdfium.dll; PDF and AI)</value></data>
+  <data name="Credit_PdfiumLibs" xml:space="preserve"><value>FreeType (FreeType License), HarfBuzz (MIT), ICU (Unicode License v3), libjpeg-turbo (IJG and BSD), libpng (PNG License v2), zlib (zlib License), OpenJPEG (2-clause BSD), Little CMS (MIT), Abseil (Apache 2.0), Anti-Grain Geometry 2.3, fast_float and simdutf (MIT), Dragonbox and LLVM libc (Apache 2.0 with LLVM exception) · included in pdfium.dll; full texts in the engine’s licenses folder</value></data>
+  <data name="Credit_PdfiumLibs_Name" xml:space="preserve"><value>Libraries included in PDFium</value></data>
+  <data name="Credit_QuickXml" xml:space="preserve"><value>© Johann Tuffe · MIT License · included in the engine</value></data>
+  <data name="Credit_Resvg" xml:space="preserve"><value>© The Resvg Authors · Apache 2.0 or MIT · included in the engine (SVG)</value></data>
+  <data name="Credit_Ruzstd" xml:space="preserve"><value>© Moritz Borcherding · MIT License · included in the engine</value></data>
+  <data name="Credit_Segoe" xml:space="preserve"><value>© Microsoft · Windows system fonts; not redistributed</value></data>
+  <data name="Credit_Segoe_Name" xml:space="preserve"><value>Segoe UI Variable and Segoe Fluent Icons</value></data>
+  <data name="Credit_Serde" xml:space="preserve"><value>© Erick Tryzelaar and David Tolnay · MIT or Apache 2.0 · included in the engine</value></data>
+  <data name="Credit_Serde_Name" xml:space="preserve"><value>serde and serde_json</value></data>
+  <data name="Credit_Sora" xml:space="preserve"><value>© The Sora Project Authors · SIL Open Font License 1.1 · included in the app (Home title)</value></data>
+  <data name="Credit_Texture2d" xml:space="preserve"><value>© Rudolf Kolbe · MIT or Apache 2.0 · included in the engine (compressed textures)</value></data>
+  <data name="Credit_WinAppSdk" xml:space="preserve"><value>© Microsoft Corporation · MIT License · included in the app</value></data>
+  <data name="Credit_WinAppSdk_Name" xml:space="preserve"><value>Windows App SDK and WinUI 3</value></data>
+  <data name="Credit_WindowsRs" xml:space="preserve"><value>© Microsoft Corporation · MIT or Apache 2.0 · included in the engine</value></data>
+  <data name="Credit_Zip" xml:space="preserve"><value>© Mathijs van de Nes and contributors · MIT License · included in the engine</value></data>
+  <data name="Discard_Confirm_Many" xml:space="preserve"><value>Discard {0} changes?</value></data>
+  <data name="Discard_Confirm_Message" xml:space="preserve"><value>Settings go back to how they were the last time you applied.</value></data>
+  <data name="Discard_Confirm_One" xml:space="preserve"><value>Discard 1 change?</value></data>
+  <data name="DiskCleanup_Failed_Title" xml:space="preserve"><value>Couldn’t open Disk Cleanup</value></data>
+  <data name="Error_Unexpected_Message" xml:space="preserve"><value>The action didn't finish. Your pending changes are kept. Details are in the Glancy log.</value></data>
+  <data name="Error_Unexpected_Title" xml:space="preserve"><value>Something went wrong</value></data>
+  <data name="Explorer_AddFolder" xml:space="preserve"><value>Add folder</value></data>
+  <data name="Explorer_AlreadyExcluded" xml:space="preserve"><value>That folder is already excluded</value></data>
+  <data name="Explorer_Checkerboard" xml:space="preserve"><value>Transparency checkerboard</value></data>
+  <data name="Explorer_Checkerboard_Help" xml:space="preserve"><value>Pick a combination on each format's page. To add a new one, customize it there and select “Save to library”.</value></data>
+  <data name="Explorer_ContextMenu" xml:space="preserve"><value>Context menu</value></data>
+  <data name="Explorer_General" xml:space="preserve"><value>General</value></data>
+  <data name="Explorer_Library_Name" xml:space="preserve"><value>Checkerboard library</value></data>
+  <data name="Explorer_NoExcludedFolders" xml:space="preserve"><value>No excluded folders.</value></data>
+  <data name="Explorer_Privacy" xml:space="preserve"><value>Privacy</value></data>
+  <data name="Explorer_RemoveFolder_Name" xml:space="preserve"><value>Remove {0}</value></data>
+  <data name="Explorer_RemoveFromList" xml:space="preserve"><value>Remove from the list</value></data>
+  <data name="Explorer_RemoveSelected" xml:space="preserve"><value>Remove selected</value></data>
+  <data name="Explorer_Restore" xml:space="preserve"><value>Restore</value></data>
+  <data name="Explorer_Restore_Tooltip" xml:space="preserve"><value>Go back to the three default checkerboards</value></data>
+  <data name="Explorer_Subtitle" xml:space="preserve"><value>How Glancy integrates with File Explorer and the desktop. Affects every format.</value></data>
+  <data name="Export_Done_Title" xml:space="preserve"><value>Settings exported</value></data>
+  <data name="Export_Failed_Title" xml:space="preserve"><value>Couldn’t save the file</value></data>
+  <data name="Format_Advanced" xml:space="preserve"><value>Advanced options</value></data>
+  <data name="Format_AllExtensions" xml:space="preserve"><value>All extensions</value></data>
+  <data name="Format_AllExtensions_Count" xml:space="preserve"><value>All extensions ({0})</value></data>
+  <data name="Format_ApplyTo" xml:space="preserve"><value>Apply settings to</value></data>
+  <data name="Format_ChooseIcon" xml:space="preserve"><value>Choose icon…</value></data>
+  <data name="Format_Copied_Message" xml:space="preserve"><value>Open another format and choose More › Paste settings (Ctrl+Shift+V).</value></data>
+  <data name="Format_Copied_Title" xml:space="preserve"><value>Settings copied</value></data>
+  <data name="Format_CopySettings" xml:space="preserve"><value>Copy settings</value></data>
+  <data name="Format_Customized" xml:space="preserve"><value>Customized</value></data>
+  <data name="Format_Extension_Customized" xml:space="preserve"><value>{0} (customized)</value></data>
+  <data name="Format_Extension_Customized_Tooltip" xml:space="preserve"><value>{0} has its own settings that replace the format’s</value></data>
+  <data name="Format_ExtensionScope_Help" xml:space="preserve"><value>Settings you change here only affect {0} files and replace those of {1}. The rest are inherited.</value></data>
+  <data name="Format_Inactive_Disabled" xml:space="preserve"><value>Thumbnails are off for this format: the file type icon is shown.</value></data>
+  <data name="Format_Inactive_Fallback" xml:space="preserve"><value>With “System provider”, Windows or the associated app draws the thumbnail and these settings aren’t used (unless there’s no other provider).</value></data>
+  <data name="Format_More" xml:space="preserve"><value>More</value></data>
+  <data name="Format_MoreActions_Name" xml:space="preserve"><value>More actions</value></data>
+  <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} settings from {1} copied to {2}. Review them and select Apply.</value></data>
+  <data name="Format_Pasted_Title" xml:space="preserve"><value>Settings pasted</value></data>
+  <data name="Format_PasteFrom" xml:space="preserve"><value>Paste settings from {0}</value></data>
+  <data name="Format_PasteSettings" xml:space="preserve"><value>Paste settings</value></data>
+  <data name="Format_RemoveCustomization" xml:space="preserve"><value>Remove customization</value></data>
+  <data name="Format_RemoveCustomizationOf" xml:space="preserve"><value>Remove customization of {0}</value></data>
+  <data name="Format_RemoveExtensionCustomization" xml:space="preserve"><value>Remove extension customization</value></data>
+  <data name="Format_Reset" xml:space="preserve"><value>Reset</value></data>
+  <data name="Format_Reset_Confirm" xml:space="preserve"><value>Reset {0}?</value></data>
+  <data name="Format_Reset_Confirm_Message" xml:space="preserve"><value>Every setting on this page goes back to its default. You can review it before applying.</value></data>
+  <data name="Format_ResetAll" xml:space="preserve"><value>Reset all formats</value></data>
+  <data name="Format_ResetDefaults" xml:space="preserve"><value>Reset to defaults</value></data>
+  <data name="Format_ResetScope" xml:space="preserve"><value>Reset {0}</value></data>
+  <data name="Format_WindowsStatus" xml:space="preserve"><value>Status in Windows</value></data>
+  <data name="Format_WindowsStatus_Help" xml:space="preserve"><value>The thumbnail provider File Explorer uses today for each extension. Read-only.</value></data>
+  <data name="Group_Appearance" xml:space="preserve"><value>Appearance</value></data>
+  <data name="Group_Generation" xml:space="preserve"><value>Generation</value></data>
+  <data name="Group_OverlayIcon" xml:space="preserve"><value>Overlay icon</value></data>
+  <data name="Group_Performance" xml:space="preserve"><value>Performance</value></data>
+  <data name="Home_ActiveIn" xml:space="preserve"><value>Active in {0} of {1} extensions</value></data>
+  <data name="Home_EnableToggle" xml:space="preserve"><value>Generate thumbnails with Glancy</value></data>
+  <data name="Home_EngineMissing_Message" xml:space="preserve"><value>You can change settings; they'll be used once you install the Glancy thumbnail engine.</value></data>
+  <data name="Home_EngineMissing_Title" xml:space="preserve"><value>Engine not installed</value></data>
+  <data name="Home_FormatsCaption" xml:space="preserve"><value>{0} formats and {1} extensions, by category. Pick one to adjust how its thumbnails look.</value></data>
+  <data name="Home_OpenMaintenance" xml:space="preserve"><value>Open Maintenance</value></data>
+  <data name="Home_QuickActions" xml:space="preserve"><value>Quick actions</value></data>
+  <data name="Home_RefreshExplorer" xml:space="preserve"><value>Refresh File Explorer windows</value></data>
+  <data name="Home_RefreshExplorer_Desc" xml:space="preserve"><value>Regenerates the thumbnails of open folders with the applied settings.</value></data>
+  <data name="Home_Status_Checking" xml:space="preserve"><value>Checking the thumbnail engine…</value></data>
+  <data name="Home_Status_EngineMissing" xml:space="preserve"><value>Engine not installed · settings ready</value></data>
+  <data name="Home_Status_EngineMissingPaused" xml:space="preserve"><value>Engine not installed · generation paused</value></data>
+  <data name="Home_Status_Paused" xml:space="preserve"><value>Thumbnail generation paused</value></data>
+  <data name="Home_Subtitle" xml:space="preserve"><value>Sharp thumbnails for {0} formats in Windows File Explorer: design, camera RAW, 3D, documents and more.</value></data>
+  <data name="Home_ThumbnailCache" xml:space="preserve"><value>Thumbnail cache</value></data>
+  <data name="Home_ThumbnailCache_Desc" xml:space="preserve"><value>If you see old or wrong thumbnails, clear the Windows cache in Maintenance.</value></data>
+  <data name="Home_Tile_Checking" xml:space="preserve"><value>Checking File Explorer’s provider…</value></data>
+  <data name="Home_Tile_Customized" xml:space="preserve"><value>Customized: {0}.</value></data>
+  <data name="Home_Tile_Name" xml:space="preserve"><value>{0}. Configured: {1}. {2}.</value></data>
+  <data name="Home_Tile_NoProvider" xml:space="preserve"><value>File Explorer has no provider</value></data>
+  <data name="Home_Tile_NotApplied" xml:space="preserve"><value>Not applied</value></data>
+  <data name="Home_Tile_Pending" xml:space="preserve"><value>Changes not applied.</value></data>
+  <data name="Home_Tile_UsesGlancy" xml:space="preserve"><value>File Explorer uses Glancy</value></data>
+  <data name="Home_Tile_UsesOther" xml:space="preserve"><value>File Explorer uses {0}</value></data>
+  <data name="IconPicker_Available" xml:space="preserve"><value>Available icons</value></data>
+  <data name="IconPicker_Browse" xml:space="preserve"><value>Browse…</value></data>
+  <data name="IconPicker_Count" xml:space="preserve"><value>{0} icons. Double-click to choose.</value></data>
+  <data name="IconPicker_File" xml:space="preserve"><value>File</value></data>
+  <data name="IconPicker_Item" xml:space="preserve"><value>Icon {0}</value></data>
+  <data name="IconPicker_Loading" xml:space="preserve"><value>Loading icons…</value></data>
+  <data name="IconPicker_None" xml:space="preserve"><value>This file doesn’t contain icons.</value></data>
+  <data name="IconPicker_Title" xml:space="preserve"><value>Choose icon</value></data>
+  <data name="IconPicker_Use" xml:space="preserve"><value>Use icon</value></data>
+  <data name="Icons_Failed_Title" xml:space="preserve"><value>Couldn’t refresh the icons</value></data>
+  <data name="Icons_Refreshed_Title" xml:space="preserve"><value>Icons refreshed</value></data>
+  <data name="Import_Button" xml:space="preserve"><value>Import</value></data>
+  <data name="Import_Confirm" xml:space="preserve"><value>Import these settings?</value></data>
+  <data name="Import_Confirm_Message" xml:space="preserve"><value>The settings in “{0}” will load as pending changes.{1} Nothing changes in File Explorer until you select Apply.</value></data>
+  <data name="Import_Done_Message" xml:space="preserve"><value>Review the pending changes and select Apply.</value></data>
+  <data name="Import_Done_Title" xml:space="preserve"><value>Settings imported</value></data>
+  <data name="Import_Failed_Title" xml:space="preserve"><value>Couldn’t import</value></data>
+  <data name="Import_Ignored" xml:space="preserve"><value>{0} unrecognized values were skipped.</value></data>
+  <data name="Import_ReplacesPending" xml:space="preserve"><value>Your current pending changes will be replaced.</value></data>
+  <data name="Import_Unreadable_Message" xml:space="preserve"><value>The file isn’t a Glancy settings document, or it’s damaged.</value></data>
+  <data name="Import_Unreadable_Title" xml:space="preserve"><value>Couldn’t read the file</value></data>
+  <data name="JumpList_ClearCache" xml:space="preserve"><value>Clear thumbnail cache</value></data>
+  <data name="JumpList_ClearCache_Desc" xml:space="preserve"><value>Windows regenerates thumbnails when you open each folder.</value></data>
+  <data name="JumpList_Disable" xml:space="preserve"><value>Turn off Glancy thumbnails</value></data>
+  <data name="JumpList_Disable_Desc" xml:space="preserve"><value>File Explorer goes back to Windows’ icons and thumbnails.</value></data>
+  <data name="JumpList_Enable" xml:space="preserve"><value>Turn on Glancy thumbnails</value></data>
+  <data name="JumpList_Enable_Desc" xml:space="preserve"><value>File Explorer uses Glancy’s thumbnails again.</value></data>
+  <data name="JumpList_ExplorerOptions" xml:space="preserve"><value>File Explorer options</value></data>
+  <data name="JumpList_Refresh" xml:space="preserve"><value>Refresh File Explorer</value></data>
+  <data name="JumpList_Refresh_Desc" xml:space="preserve"><value>Redraws the thumbnails of open folders.</value></data>
+  <data name="List_End" xml:space="preserve"><value>.</value></data>
+  <data name="List_LastSeparator" xml:space="preserve"><value> and </value></data>
+  <data name="List_LowercaseFollowingItems" xml:space="preserve"><value>true</value></data>
+  <data name="List_Separator" xml:space="preserve"><value>, </value></data>
+  <data name="Maintenance_Backup" xml:space="preserve"><value>Backup</value></data>
+  <data name="Maintenance_ClearCache" xml:space="preserve"><value>Clear cache</value></data>
+  <data name="Maintenance_ClearThumbs" xml:space="preserve"><value>Clear the thumbnail cache</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm" xml:space="preserve"><value>Clear the thumbnail cache?</value></data>
+  <data name="Maintenance_ClearThumbs_Confirm_Message" xml:space="preserve"><value>Windows will regenerate the thumbnails of every file (not only design files) the next time you open each folder. It can take a while in large folders. Your files aren’t changed.</value></data>
+  <data name="Maintenance_ClearThumbs_Desc" xml:space="preserve"><value>Windows keeps the thumbnails it has generated. Clear it if you see old or corrupted thumbnails, or ones that keep regenerating.</value></data>
+  <data name="Maintenance_Diagnostics" xml:space="preserve"><value>Diagnostics</value></data>
+  <data name="Maintenance_DiskCleanup" xml:space="preserve"><value>Disk Cleanup</value></data>
+  <data name="Maintenance_DiskCleanup_Desc" xml:space="preserve"><value>Opens the Windows tool to choose what to clean, thumbnails included.</value></data>
+  <data name="Maintenance_Engine" xml:space="preserve"><value>Thumbnail engine</value></data>
+  <data name="Maintenance_Engine_Installed" xml:space="preserve"><value>Installed ({0}). Active in {1} of {2} extensions.</value></data>
+  <data name="Maintenance_Engine_Missing" xml:space="preserve"><value>Not installed. Settings are saved anyway and will be used once it’s installed.</value></data>
+  <data name="Maintenance_Export" xml:space="preserve"><value>Export settings</value></data>
+  <data name="Maintenance_Export_Button" xml:space="preserve"><value>Export…</value></data>
+  <data name="Maintenance_Export_Desc" xml:space="preserve"><value>Saves all settings, pending changes included, to a .glancysettings file you can copy to another PC.</value></data>
+  <data name="Maintenance_History" xml:space="preserve"><value>Latest processed files</value></data>
+  <data name="Maintenance_History_Desc" xml:space="preserve"><value>The most recent thumbnails the engine generated, with their result and duration.</value></data>
+  <data name="Maintenance_History_Empty" xml:space="preserve"><value>No activity recorded yet. It shows up here when the engine generates thumbnails.</value></data>
+  <data name="Maintenance_History_ItemName" xml:space="preserve"><value>{0}, {1}, {2} milliseconds</value></data>
+  <data name="Maintenance_Import" xml:space="preserve"><value>Import settings</value></data>
+  <data name="Maintenance_Import_Button" xml:space="preserve"><value>Import…</value></data>
+  <data name="Maintenance_Import_Desc" xml:space="preserve"><value>Loads a .glancysettings file. The values become pending changes so you can review them before applying.</value></data>
+  <data name="Maintenance_LogsFolder" xml:space="preserve"><value>Logs folder</value></data>
+  <data name="Maintenance_OpenFolder" xml:space="preserve"><value>Open folder</value></data>
+  <data name="Maintenance_RefreshIcons" xml:space="preserve"><value>Refresh the icon cache</value></data>
+  <data name="Maintenance_RefreshIcons_Button" xml:space="preserve"><value>Refresh icons</value></data>
+  <data name="Maintenance_RefreshIcons_Desc" xml:space="preserve"><value>Useful if small icons (Details or List view) don't update.</value></data>
+  <data name="Maintenance_Reset" xml:space="preserve"><value>Restore defaults</value></data>
+  <data name="Maintenance_Reset_Button" xml:space="preserve"><value>Restore…</value></data>
+  <data name="Maintenance_Reset_Desc" xml:space="preserve"><value>Goes back to the factory settings for every format and File Explorer option. You can review them before applying.</value></data>
+  <data name="Maintenance_Subtitle" xml:space="preserve"><value>Windows caches, settings backups and diagnostics.</value></data>
+  <data name="Maintenance_WindowsCache" xml:space="preserve"><value>Windows cache</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>About</value></data>
+  <data name="Nav_AllFormats" xml:space="preserve"><value>All formats</value></data>
+  <data name="Nav_AllFormats_Tooltip" xml:space="preserve"><value>All formats (Ctrl+0)</value></data>
+  <data name="Nav_Category_Tooltip_Many" xml:space="preserve"><value>{0}: {1} formats</value></data>
+  <data name="Nav_Category_Tooltip_One" xml:space="preserve"><value>{0}: 1 format</value></data>
+  <data name="Nav_Explorer" xml:space="preserve"><value>File Explorer</value></data>
+  <data name="Nav_Explorer_Tooltip" xml:space="preserve"><value>File Explorer (Ctrl+E)</value></data>
+  <data name="Nav_Formats" xml:space="preserve"><value>Formats</value></data>
+  <data name="Nav_Home" xml:space="preserve"><value>Home</value></data>
+  <data name="Nav_Maintenance" xml:space="preserve"><value>Maintenance</value></data>
+  <data name="Nav_Preferences" xml:space="preserve"><value>Preferences</value></data>
+  <data name="Nav_Preferences_Tooltip" xml:space="preserve"><value>Preferences (Ctrl+,)</value></data>
+  <data name="Pending_Apply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Pending_Apply_Name" xml:space="preserve"><value>Apply changes</value></data>
+  <data name="Pending_Apply_Tooltip" xml:space="preserve"><value>Save and use the changes (Ctrl+S)</value></data>
+  <data name="Pending_Applying" xml:space="preserve"><value>Applying…</value></data>
+  <data name="Pending_Count_Many" xml:space="preserve"><value>{0} pending changes</value></data>
+  <data name="Pending_Count_One" xml:space="preserve"><value>1 pending change</value></data>
+  <data name="Pending_Discard" xml:space="preserve"><value>Discard</value></data>
+  <data name="Pending_Discard_Tooltip" xml:space="preserve"><value>Discard all pending changes</value></data>
+  <data name="Pending_Review" xml:space="preserve"><value>Review</value></data>
+  <data name="Pending_Review_Name" xml:space="preserve"><value>Review pending changes</value></data>
+  <data name="Pending_Subtitle" xml:space="preserve"><value>Nothing changes in File Explorer until you apply them.</value></data>
+  <data name="Pending_Tip_Subtitle" xml:space="preserve"><value>Adjust several formats at your own pace. Review the list and select Apply (Ctrl+S) when you want File Explorer to use them.</value></data>
+  <data name="Pending_Tip_Title" xml:space="preserve"><value>Your changes wait here</value></data>
+  <data name="Pending_Title" xml:space="preserve"><value>Pending changes</value></data>
+  <data name="Pending_Undo_Name" xml:space="preserve"><value>Undo the last change</value></data>
+  <data name="Pending_Undo_Tooltip" xml:space="preserve"><value>Undo the last change (Ctrl+Z)</value></data>
+  <data name="Preferences_Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Preferences_Language_Auto" xml:space="preserve"><value>Windows language ({0})</value></data>
+  <data name="Preferences_Language_Desc" xml:space="preserve"><value>The language of this window, the Jump List and notifications. By default, the one Windows uses.</value></data>
+  <data name="Preferences_Language_RestartMessage" xml:space="preserve"><value>Pending changes are kept until you decide what to do with them.</value></data>
+  <data name="Preferences_Language_RestartNow" xml:space="preserve"><value>Restart now</value></data>
+  <data name="Preferences_Language_RestartTitle" xml:space="preserve"><value>Restart Glancy to change the language</value></data>
+  <data name="Preferences_Subtitle" xml:space="preserve"><value>Settings for this window. They apply immediately and don't affect thumbnails.</value></data>
+  <data name="Preferences_Theme" xml:space="preserve"><value>Theme</value></data>
+  <data name="Preferences_Theme_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Preferences_Theme_Desc" xml:space="preserve"><value>Use the Windows mode or choose one for this app.</value></data>
+  <data name="Preferences_Theme_Light" xml:space="preserve"><value>Light</value></data>
+  <data name="Preferences_Theme_System" xml:space="preserve"><value>Use Windows setting</value></data>
+  <data name="Preferences_Tips" xml:space="preserve"><value>Show tips</value></data>
+  <data name="Preferences_Tips_Desc" xml:space="preserve"><value>Short explanations the first time a feature appears, like the pending changes bar.</value></data>
+  <data name="Preferences_TopMost" xml:space="preserve"><value>Keep on top of other windows</value></data>
+  <data name="Preferences_TopMost_Desc" xml:space="preserve"><value>Useful for adjusting thumbnails while you look at a folder in File Explorer. Shortcut: Ctrl+T.</value></data>
+  <data name="Preferences_Window" xml:space="preserve"><value>Window</value></data>
+  <data name="Preview_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Preview_Dark_Name" xml:space="preserve"><value>File Explorer in dark mode</value></data>
+  <data name="Preview_Dark_Tooltip" xml:space="preserve"><value>See the simulation on File Explorer in dark mode</value></data>
+  <data name="Preview_ExtraLarge" xml:space="preserve"><value>{0} · Extra large icons</value></data>
+  <data name="Preview_Large" xml:space="preserve"><value>Large</value></data>
+  <data name="Preview_Medium" xml:space="preserve"><value>Medium</value></data>
+  <data name="Preview_Note" xml:space="preserve"><value>Simulated with a sample image that has transparent areas. The exact result depends on each file.</value></data>
+  <data name="Preview_Simulation_Name" xml:space="preserve"><value>Thumbnail simulation in File Explorer</value></data>
+  <data name="Preview_Title" xml:space="preserve"><value>Preview</value></data>
+  <data name="QuickAction_EngineMissing" xml:space="preserve"><value>It takes effect once the Glancy thumbnail engine is installed.</value></data>
+  <data name="QuickAction_Failed" xml:space="preserve"><value>Couldn’t complete the action</value></data>
+  <data name="QuickAction_NoRefresh" xml:space="preserve"><value>Folders show it when you open them or press F5.</value></data>
+  <data name="QuickAction_Off" xml:space="preserve"><value>Glancy thumbnails off</value></data>
+  <data name="QuickAction_On" xml:space="preserve"><value>Glancy thumbnails on</value></data>
+  <data name="QuickAction_PressF5" xml:space="preserve"><value>Press F5 in File Explorer to see it in open folders.</value></data>
+  <data name="QuickAction_RefreshStopped" xml:space="preserve"><value>It was taking too long. Press F5 in File Explorer.</value></data>
+  <data name="QuickAction_Unknown" xml:space="preserve"><value>Unknown action</value></data>
+  <data name="Refresh_Done_Message" xml:space="preserve"><value>{0} files in {1} open folders.</value></data>
+  <data name="Refresh_Done_Title" xml:space="preserve"><value>File Explorer refreshed</value></data>
+  <data name="Refresh_LimitReached" xml:space="preserve"><value>Reached the limit of {0} files.</value></data>
+  <data name="Refresh_Partial_Message" xml:space="preserve"><value>Your changes are saved. Press F5 in File Explorer to see the new thumbnails.</value></data>
+  <data name="Refresh_Partial_Title" xml:space="preserve"><value>Couldn’t refresh every window</value></data>
+  <data name="Refresh_Stopped_Message" xml:space="preserve"><value>It was taking too long. Your changes are saved; press F5 in File Explorer to see the new thumbnails.</value></data>
+  <data name="Refresh_Stopped_Title" xml:space="preserve"><value>File Explorer refresh stopped</value></data>
+  <data name="Reset_Button" xml:space="preserve"><value>Restore</value></data>
+  <data name="Reset_Confirm" xml:space="preserve"><value>Restore the factory settings?</value></data>
+  <data name="Reset_Confirm_Message" xml:space="preserve"><value>Every format, customized extension, excluded folder and File Explorer option goes back to its default. It stays as a pending change until you select Apply.</value></data>
+  <data name="Sample_Design" xml:space="preserve"><value>design</value></data>
+  <data name="Sample_Document" xml:space="preserve"><value>document</value></data>
+  <data name="Sample_File" xml:space="preserve"><value>file</value></data>
+  <data name="Sample_Image" xml:space="preserve"><value>image</value></data>
+  <data name="Sample_Model" xml:space="preserve"><value>model</value></data>
+  <data name="Sample_Photo" xml:space="preserve"><value>photo</value></data>
+  <data name="Search_AllFormats_Sub" xml:space="preserve"><value>Change a setting in every format at once</value></data>
+  <data name="Search_Backup_Sub" xml:space="preserve"><value>Maintenance · backup</value></data>
+  <data name="Search_ClearCache_Keywords" xml:space="preserve"><value>delete clean reset thumbnails</value></data>
+  <data name="Search_Explorer_Sub" xml:space="preserve"><value>Integration with File Explorer and the desktop</value></data>
+  <data name="Search_Export_Keywords" xml:space="preserve"><value>save backup</value></data>
+  <data name="Search_ExtensionOf" xml:space="preserve"><value>{0} extension</value></data>
+  <data name="Search_Format" xml:space="preserve"><value>Format</value></data>
+  <data name="Search_FormatSetting" xml:space="preserve"><value>Format setting · {0}</value></data>
+  <data name="Search_Home_Sub" xml:space="preserve"><value>Status and formats</value></data>
+  <data name="Search_Import_Keywords" xml:space="preserve"><value>load restore backup</value></data>
+  <data name="Search_Language_Keywords" xml:space="preserve"><value>language translation english spanish</value></data>
+  <data name="Search_Maintenance_Sub" xml:space="preserve"><value>Cache, backup and diagnostics</value></data>
+  <data name="Search_Name" xml:space="preserve"><value>Search Glancy</value></data>
+  <data name="Search_NoResults" xml:space="preserve"><value>No results</value></data>
+  <data name="Search_NoResults_Hint" xml:space="preserve"><value>Try “transparency”, “.psb” or “cache”</value></data>
+  <data name="Search_Placeholder" xml:space="preserve"><value>Search settings, formats or extensions</value></data>
+  <data name="Search_PlaceholderShort" xml:space="preserve"><value>Search</value></data>
+  <data name="Search_Reset_Keywords" xml:space="preserve"><value>factory reset</value></data>
+  <data name="Search_Shortcuts_Keywords" xml:space="preserve"><value>keys keyboard</value></data>
+  <data name="Search_Theme" xml:space="preserve"><value>Light or dark theme</value></data>
+  <data name="Search_Theme_Keywords" xml:space="preserve"><value>mode dark light appearance</value></data>
+  <data name="Search_TopMost" xml:space="preserve"><value>Keep on top</value></data>
+  <data name="Search_TopMost_Keywords" xml:space="preserve"><value>pin always visible</value></data>
+  <data name="Search_TopMost_Sub" xml:space="preserve"><value>Preferences · window</value></data>
+  <data name="Sentence_Separator" xml:space="preserve"><value> </value></data>
+  <data name="Setting_Reset_EachFormat" xml:space="preserve"><value>Reset each format’s default</value></data>
+  <data name="Setting_Reset_To" xml:space="preserve"><value>Reset: {0}</value></data>
+  <data name="Setting_Reset_UseFormat" xml:space="preserve"><value>Use the format’s value</value></data>
+  <data name="Setting_Status_CustomizedFor" xml:space="preserve"><value>Customized for {0}</value></data>
+  <data name="Setting_Status_Mixed" xml:space="preserve"><value>Differs between formats.</value></data>
+  <data name="Setting_Status_SomeExtension" xml:space="preserve"><value>An extension uses its own value.</value></data>
+  <data name="SettingsCard_Pending_Tooltip" xml:space="preserve"><value>Change not applied yet</value></data>
+  <data name="SettingsCard_PendingName" xml:space="preserve"><value>{0} (pending change)</value></data>
+  <data name="SettingsCard_Reset_Name" xml:space="preserve"><value>Reset</value></data>
+  <data name="Shortcut_Apply" xml:space="preserve"><value>Apply pending changes</value></data>
+  <data name="Shortcut_Back" xml:space="preserve"><value>Go back to the previous page</value></data>
+  <data name="Shortcut_CopyPaste" xml:space="preserve"><value>Copy / paste a format’s settings</value></data>
+  <data name="Shortcut_CopyPaste_Keys" xml:space="preserve"><value>Ctrl + Shift + C / V</value></data>
+  <data name="Shortcut_Help" xml:space="preserve"><value>Open this help page</value></data>
+  <data name="Status_EngineInstalled" xml:space="preserve"><value>Glancy: engine installed.</value></data>
+  <data name="Status_EngineMissing" xml:space="preserve"><value>Glancy: the engine still isn’t installed.</value></data>
+  <data name="Status_Updated_Title" xml:space="preserve"><value>Status updated</value></data>
+  <data name="Store_RegistryUnavailable" xml:space="preserve"><value>Settings can’t be saved because the registry isn’t accessible.</value></data>
+  <data name="Tip_GotIt" xml:space="preserve"><value>Got it</value></data>
+  <data name="TopMost_Name" xml:space="preserve"><value>Keep the window on top</value></data>
+  <data name="TopMost_Off_Tooltip" xml:space="preserve"><value>Stop keeping on top (Ctrl+T)</value></data>
+  <data name="TopMost_Tooltip" xml:space="preserve"><value>Keep on top (Ctrl+T)</value></data>
+  <data name="Undo_Announcement" xml:space="preserve"><value>Change undone</value></data>
+</root>

@@ -1,0 +1,129 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- Type ramp (Windows 11): Display/Title use the Display optical size of Segoe UI Variable. -->
+  <Style x:Key="GlancyPageTitleStyle" TargetType="TextBlock" BasedOn="{StaticResource TitleTextBlockStyle}">
+    <Setter Property="FontFamily" Value="{StaticResource GlancyDisplayFontFamily}" />
+    <Setter Property="TextWrapping" Value="Wrap" />
+  </Style>
+
+  <Style x:Key="GlancyHeroTitleStyle" TargetType="TextBlock" BasedOn="{StaticResource TitleLargeTextBlockStyle}">
+    <Setter Property="FontFamily" Value="{StaticResource GlancyBrandFontFamily}" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+  </Style>
+
+  <Style x:Key="GlancyOverlineStyle" TargetType="TextBlock" BasedOn="{StaticResource CaptionTextBlockStyle}">
+    <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+    <Setter Property="FontWeight" Value="SemiBold" />
+    <Setter Property="CharacterSpacing" Value="60" />
+  </Style>
+
+  <Style x:Key="GlancySectionHeaderStyle" TargetType="TextBlock" BasedOn="{StaticResource BodyStrongTextBlockStyle}">
+    <Setter Property="Margin" Value="1,28,0,8" />
+  </Style>
+
+  <Style x:Key="GlancySecondaryTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BodyTextBlockStyle}">
+    <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+    <Setter Property="TextWrapping" Value="Wrap" />
+  </Style>
+
+  <Style x:Key="GlancyCaptionStyle" TargetType="TextBlock" BasedOn="{StaticResource CaptionTextBlockStyle}">
+    <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+    <Setter Property="TextWrapping" Value="Wrap" />
+  </Style>
+
+  <!-- Surfaces -->
+  <Style x:Key="GlancyCardStyle" TargetType="Border">
+    <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+    <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="{StaticResource GlancyCardCornerRadius}" />
+    <Setter Property="Padding" Value="{StaticResource GlancyCardPadding}" />
+  </Style>
+
+  <!-- Clickable tile (format cards on Home). Uses Button so it is focusable and keyboard/UIA-invokable. -->
+  <Style x:Key="GlancyTileButtonStyle" TargetType="Button" BasedOn="{StaticResource DefaultButtonStyle}">
+    <Setter Property="Background" Value="{ThemeResource CardBackgroundFillColorDefaultBrush}" />
+    <Setter Property="BorderBrush" Value="{ThemeResource CardStrokeColorDefaultBrush}" />
+    <Setter Property="CornerRadius" Value="{StaticResource GlancyTileCornerRadius}" />
+    <Setter Property="Padding" Value="16" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="VerticalAlignment" Value="Stretch" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="VerticalContentAlignment" Value="Stretch" />
+  </Style>
+
+  <Style x:Key="GlancySettingComboBoxStyle" TargetType="ComboBox" BasedOn="{StaticResource DefaultComboBoxStyle}">
+    <Setter Property="MinWidth" Value="{StaticResource GlancyActionMinWidth}" />
+    <Setter Property="HorizontalAlignment" Value="Right" />
+  </Style>
+
+  <Style x:Key="GlancySubtleIconButtonStyle" TargetType="Button" BasedOn="{StaticResource DefaultButtonStyle}">
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderThickness" Value="0" />
+    <Setter Property="Padding" Value="8" />
+    <Setter Property="MinWidth" Value="36" />
+    <Setter Property="MinHeight" Value="36" />
+    <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+  </Style>
+
+  <!--
+    Theme-aware styles for elements built in code. Brushes looked up through Application.Current.Resources
+    resolve against the *system* theme; ThemeResource setters inside a Style resolve against the element's
+    own theme, so code must use these styles instead of raw brushes.
+  -->
+  <Style x:Key="GlancyDotSuccessStyle" TargetType="Ellipse">
+    <Setter Property="Width" Value="8" />
+    <Setter Property="Height" Value="8" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+    <Setter Property="Fill" Value="{ThemeResource SystemFillColorSuccessBrush}" />
+  </Style>
+  <Style x:Key="GlancyDotNeutralStyle" TargetType="Ellipse" BasedOn="{StaticResource GlancyDotSuccessStyle}">
+    <Setter Property="Fill" Value="{ThemeResource TextFillColorTertiaryBrush}" />
+  </Style>
+  <Style x:Key="GlancyIconSecondaryStyle" TargetType="FontIcon">
+    <Setter Property="FontFamily" Value="{StaticResource GlancyIconFontFamily}" />
+    <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondaryBrush}" />
+  </Style>
+  <Style x:Key="GlancyIconSuccessStyle" TargetType="FontIcon" BasedOn="{StaticResource GlancyIconSecondaryStyle}">
+    <Setter Property="Foreground" Value="{ThemeResource SystemFillColorSuccessBrush}" />
+  </Style>
+  <Style x:Key="GlancyIconCautionStyle" TargetType="FontIcon" BasedOn="{StaticResource GlancyIconSecondaryStyle}">
+    <Setter Property="Foreground" Value="{ThemeResource SystemFillColorCautionBrush}" />
+  </Style>
+  <!-- Neutral "pill" label, e.g. "Not applied": meaning carried by text, not by color. -->
+  <Style x:Key="GlancyPillStyle" TargetType="Border">
+    <Setter Property="Background" Value="{ThemeResource ControlFillColorSecondaryBrush}" />
+    <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="10" />
+    <Setter Property="Padding" Value="8,1,8,2" />
+    <Setter Property="VerticalAlignment" Value="Center" />
+  </Style>
+  <Style x:Key="GlancyKeyCapStyle" TargetType="Border">
+    <Setter Property="Background" Value="{ThemeResource ControlFillColorSecondaryBrush}" />
+    <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="1,1,1,2" />
+    <Setter Property="CornerRadius" Value="4" />
+    <Setter Property="Padding" Value="8,2,8,3" />
+    <Setter Property="HorizontalAlignment" Value="Left" />
+  </Style>
+  <Style x:Key="GlancySwatchStyle" TargetType="Border">
+    <Setter Property="BorderBrush" Value="{ThemeResource ControlStrokeColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="CornerRadius" Value="6" />
+  </Style>
+  <Style x:Key="GlancySwatchSelectedStyle" TargetType="Border" BasedOn="{StaticResource GlancySwatchStyle}">
+    <Setter Property="BorderBrush" Value="{ThemeResource AccentFillColorDefaultBrush}" />
+    <Setter Property="BorderThickness" Value="2" />
+  </Style>
+  <Style x:Key="GlancyToastStyle" TargetType="InfoBar">
+    <Setter Property="Background" Value="{ThemeResource SolidBackgroundFillColorTertiaryBrush}" />
+  </Style>
+
+  <Style x:Key="GlancyExpanderStyle" TargetType="Expander" BasedOn="{StaticResource DefaultExpanderStyle}">
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+    <Setter Property="MinHeight" Value="{StaticResource GlancyCardMinHeight}" />
+  </Style>
+</ResourceDictionary>

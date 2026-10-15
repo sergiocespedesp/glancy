@@ -1,0 +1,72 @@
+<Page x:Class="Glancy.Settings.Views.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:l="using:Glancy.Settings.Localization">
+  <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1000*" MaxWidth="{StaticResource GlancyContentMaxWidth}" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+    <StackPanel x:Name="ContentPanel" Padding="{StaticResource GlancyPagePadding}">
+      <Grid ColumnSpacing="20" Margin="0,8,0,0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Image Source="ms-appx:///Assets/Glancy-256.png" Width="64" Height="64" AutomationProperties.AccessibilityView="Raw" />
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="2">
+          <TextBlock Text="{l:Str Key=About_Title}" Style="{StaticResource GlancyPageTitleStyle}" AutomationProperties.HeadingLevel="Level1" />
+          <TextBlock x:Name="VersionText" Style="{StaticResource GlancySecondaryTextStyle}" IsTextSelectionEnabled="True" />
+        </StackPanel>
+      </Grid>
+
+      <TextBlock Text="{l:Str Key=About_Shortcuts}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}" Padding="16,8">
+        <ItemsControl x:Name="ShortcutsList" IsTabStop="False" />
+      </Border>
+
+      <TextBlock Text="{l:Str Key=About_HowItWorks}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}">
+        <StackPanel Spacing="10">
+          <TextBlock TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}"
+                     Text="{l:Str Key=About_HowItWorks_Pending}" />
+          <TextBlock TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}"
+                     Text="{l:Str Key=About_HowItWorks_Extensions}" />
+          <TextBlock TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}"
+                     Text="{l:Str Key=About_HowItWorks_Preferences}" />
+        </StackPanel>
+      </Border>
+
+      <TextBlock Text="{l:Str Key=About_Support}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}">
+        <StackPanel Spacing="8">
+          <TextBlock TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" Text="{l:Str Key=About_Support_Text}" />
+          <StackPanel x:Name="DonationLinks" Orientation="Horizontal" Spacing="4" Margin="-12,0,0,0" />
+        </StackPanel>
+      </Border>
+
+      <TextBlock Text="{l:Str Key=About_FreeSoftware}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}">
+        <StackPanel Spacing="8">
+          <TextBlock TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" Text="{l:Str Key=About_FreeSoftware_Text}" />
+          <StackPanel Orientation="Horizontal" Spacing="4" Margin="-12,0,0,0">
+            <HyperlinkButton x:Name="SourceLink" Content="{l:Str Key=About_SourceCode}" />
+            <HyperlinkButton x:Name="LicenseLink" Content="{l:Str Key=About_LicenseLink}" />
+          </StackPanel>
+        </StackPanel>
+      </Border>
+
+      <TextBlock Text="{l:Str Key=About_TechInfo}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}">
+        <TextBlock x:Name="TechText" Style="{StaticResource GlancyCaptionStyle}" IsTextSelectionEnabled="True" />
+      </Border>
+
+      <TextBlock Text="{l:Str Key=About_Credits}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+      <Border Style="{StaticResource GlancyCardStyle}" Padding="16,8">
+        <ItemsControl x:Name="CreditsList" IsTabStop="False" />
+      </Border>
+    </StackPanel>
+    </Grid>
+  </ScrollViewer>
+</Page>

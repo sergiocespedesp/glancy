@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Glancy.Core</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Glancy.Core.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Format catalog shared with the engine (src/Glancy.Thumbnails embeds the same file). -->
+    <EmbeddedResource Include="Settings\formats.json" LogicalName="Glancy.Core.Settings.formats.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- UI strings of the core (catalog, results): English base + translations. docs/localization.md -->
+    <EmbeddedResource Update="Resources\CoreStrings.resx">
+      <StronglyTypedFileName>$(IntermediateOutputPath)CoreStrings.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+      <StronglyTypedNamespace>Glancy.Core.Resources</StronglyTypedNamespace>
+      <StronglyTypedClassName>CoreStrings</StronglyTypedClassName>
+      <PublicClass>true</PublicClass>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

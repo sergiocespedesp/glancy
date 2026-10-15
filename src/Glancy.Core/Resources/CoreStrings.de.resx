@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Cache_AlreadyEmpty" xml:space="preserve"><value>Der Miniaturansichtencache war bereits leer.</value></data>
+  <data name="Cache_Cleared" xml:space="preserve"><value>Miniaturansichtencache geleert. Die Miniaturansichten werden beim Öffnen der Ordner neu erzeugt.</value></data>
+  <data name="Cache_Denied" xml:space="preserve"><value>Windows hat das Leeren des Caches nicht zugelassen ({0}). Die Datenträgerbereinigung versuchen.</value></data>
+  <data name="Cache_IconDone" xml:space="preserve"><value>Symbolcache aktualisiert.</value></data>
+  <data name="Cache_IconTimeout" xml:space="preserve"><value>Windows hat zu lange gebraucht, um den Symbolcache zu aktualisieren.</value></data>
+  <data name="Cache_IconToolMissing" xml:space="preserve"><value>Das Windows-Tool zum Aktualisieren der Symbole (ie4uinit.exe) wurde nicht gefunden.</value></data>
+  <data name="Category_3d" xml:space="preserve"><value>3D und CAD</value></data>
+  <data name="Category_design" xml:space="preserve"><value>Design und Bearbeitung</value></data>
+  <data name="Category_document" xml:space="preserve"><value>Dokumente und Bücher</value></data>
+  <data name="Category_hdr" xml:space="preserve"><value>HDR, Film, Forschung</value></data>
+  <data name="Category_image" xml:space="preserve"><value>Bilder</value></data>
+  <data name="Category_other" xml:space="preserve"><value>Sonstige</value></data>
+  <data name="Category_photo" xml:space="preserve"><value>Fotografie</value></data>
+  <data name="Category_retro" xml:space="preserve"><value>Klassische Formate</value></data>
+  <data name="Category_text" xml:space="preserve"><value>Text und Web</value></data>
+  <data name="Category_texture" xml:space="preserve"><value>Texturen und Spiele</value></data>
+  <data name="Category_vector" xml:space="preserve"><value>Vektor und PDF</value></data>
+  <data name="Change_Summary" xml:space="preserve"><value>{0}: {1} → {2}</value></data>
+  <data name="File_Invalid" xml:space="preserve"><value>Die Datei ist kein gültiges Einstellungsdokument.</value></data>
+  <data name="File_NotGlancy" xml:space="preserve"><value>Die Datei enthält keine Glancy-Einstellungen.</value></data>
+  <data name="File_TypeName" xml:space="preserve"><value>Glancy-Einstellungen</value></data>
+  <data name="Format_3dsmax_Description" xml:space="preserve"><value>3ds Max-Szenen (eingebettete Vorschau).</value></data>
+  <data name="Format_3mf_Description" xml:space="preserve"><value>3MF-Modelle: die eingebettete Miniaturansicht oder das gerenderte Modell.</value></data>
+  <data name="Format_3mf_Name" xml:space="preserve"><value>3D-Druck (3MF)</value></data>
+  <data name="Format_aai_Description" xml:space="preserve"><value>AAI-Bilder aus dem Spiel Dune.</value></data>
+  <data name="Format_abr_Description" xml:space="preserve"><value>.abr-Pinselsets: zeigt die Pinselspitzen.</value></data>
+  <data name="Format_abr_Name" xml:space="preserve"><value>Photoshop-Pinsel</value></data>
+  <data name="Format_affinity_Description" xml:space="preserve"><value>Designer, Photo und Publisher (eingebettete Vorschau).</value></data>
+  <data name="Format_ai_Description" xml:space="preserve"><value>Vektorillustrationen, gespeichert mit PDF-Kompatibilität.</value></data>
+  <data name="Format_amiga_Description" xml:space="preserve"><value>Amiga- und Deluxe Paint-Bilder ILBM/PBM (einschließlich HAM und EHB).</value></data>
+  <data name="Format_archive_Description" xml:space="preserve"><value>ZIP und RAR: das erste enthaltene Bild.</value></data>
+  <data name="Format_archive_Name" xml:space="preserve"><value>Komprimiertes Archiv</value></data>
+  <data name="Format_avs_Description" xml:space="preserve"><value>AVS X-Bilder.</value></data>
+  <data name="Format_blender_Description" xml:space="preserve"><value>Blender-Szenen, auch Sicherungen (.blend1 …).</value></data>
+  <data name="Format_bmp_Description" xml:space="preserve"><value>BMP-Bilder.</value></data>
+  <data name="Format_bmp_Name" xml:space="preserve"><value>Windows-Bitmap</value></data>
+  <data name="Format_c4d_Description" xml:space="preserve"><value>Cinema 4D-Szenen (eingebettete Vorschau).</value></data>
+  <data name="Format_c64_Description" xml:space="preserve"><value>Koala, FLI und andere Commodore 64-Bilder.</value></data>
+  <data name="Format_cals_Description" xml:space="preserve"><value>Technische CALS-Zeichnungen (CCITT Gruppe 4).</value></data>
+  <data name="Format_cineon_Description" xml:space="preserve"><value>Cineon-Einzelbilder.</value></data>
+  <data name="Format_comic_Description" xml:space="preserve"><value>CBZ- und CBR-Comics (erste Seite).</value></data>
+  <data name="Format_comic_Name" xml:space="preserve"><value>Comic</value></data>
+  <data name="Format_coreldraw_Description" xml:space="preserve"><value>CorelDRAW-Zeichnungen (eingebettete Vorschau).</value></data>
+  <data name="Format_cursor_Description" xml:space="preserve"><value>Windows-Mauszeiger.</value></data>
+  <data name="Format_cursor_Name" xml:space="preserve"><value>Mauszeiger</value></data>
+  <data name="Format_dds_Description" xml:space="preserve"><value>DirectX-Texturen (BC1–BC7).</value></data>
+  <data name="Format_dib_Description" xml:space="preserve"><value>Geräteunabhängige Bitmaps.</value></data>
+  <data name="Format_dib_Name" xml:space="preserve"><value>Windows-DIB</value></data>
+  <data name="Format_dicom_Description" xml:space="preserve"><value>Medizinische DICOM-Bilder.</value></data>
+  <data name="Format_dpx_Description" xml:space="preserve"><value>DPX-Einzelbilder von Filmscannern.</value></data>
+  <data name="Format_email_Description" xml:space="preserve"><value>.eml-Nachrichten (Betreff, Absender und Text).</value></data>
+  <data name="Format_email_Name" xml:space="preserve"><value>E-Mail</value></data>
+  <data name="Format_eps_Description" xml:space="preserve"><value>EPS- und PostScript-Grafiken für den Druck, mit oder ohne TIFF/WMF-Vorschau.</value></data>
+  <data name="Format_eps_Name" xml:space="preserve"><value>Encapsulated PostScript</value></data>
+  <data name="Format_epub_Description" xml:space="preserve"><value>Cover von EPUB-E-Books.</value></data>
+  <data name="Format_epub_Name" xml:space="preserve"><value>EPUB-Buch</value></data>
+  <data name="Format_exr_Description" xml:space="preserve"><value>HDR-Bilder für Film und visuelle Effekte.</value></data>
+  <data name="Format_firstpublisher_Description" xml:space="preserve"><value>First Publisher-Clipart.</value></data>
+  <data name="Format_fits_Description" xml:space="preserve"><value>Astronomische FITS-Bilder.</value></data>
+  <data name="Format_g3_Description" xml:space="preserve"><value>Rohe Faxe der Gruppe 3.</value></data>
+  <data name="Format_g3_Name" xml:space="preserve"><value>Fax Gruppe 3</value></data>
+  <data name="Format_gif_Description" xml:space="preserve"><value>GIF-Bilder und -Animationen (erstes Einzelbild).</value></data>
+  <data name="Format_gimp_Description" xml:space="preserve"><value>GIMP-Bilder mit Ebenen.</value></data>
+  <data name="Format_hdr_Description" xml:space="preserve"><value>Radiance-Bilder mit hohem Dynamikumfang (RGBE).</value></data>
+  <data name="Format_heif_Description" xml:space="preserve"><value>iPhone- und Android-Fotos (HEIC) und AVIF. Erfordert die HEIF/AV1-Bilderweiterungen von Windows.</value></data>
+  <data name="Format_heif_Name" xml:space="preserve"><value>HEIF und AVIF</value></data>
+  <data name="Format_ico_Description" xml:space="preserve"><value>Windows-Symbole (die größte Größe).</value></data>
+  <data name="Format_ico_Name" xml:space="preserve"><value>Symbol</value></data>
+  <data name="Format_indesign_Description" xml:space="preserve"><value>InDesign-Dokumente und -Vorlagen (eingebettete Vorschau).</value></data>
+  <data name="Format_ipl_Description" xml:space="preserve"><value>IPL-Bildsequenzen (erstes Einzelbild).</value></data>
+  <data name="Format_ipl_Name" xml:space="preserve"><value>IPL-Sequenz</value></data>
+  <data name="Format_iwork_Description" xml:space="preserve"><value>Keynote, Numbers und Pages.</value></data>
+  <data name="Format_jbig_Description" xml:space="preserve"><value>JBIG-Schwarzweißbilder (Scanner und Fax).</value></data>
+  <data name="Format_jpeg2000_Description" xml:space="preserve"><value>JPEG 2000- und PGX-Bilder.</value></data>
+  <data name="Format_jpeg_Description" xml:space="preserve"><value>JPEG-Fotos.</value></data>
+  <data name="Format_jxl_Description" xml:space="preserve"><value>JPEG XL-Bilder.</value></data>
+  <data name="Format_jxr_Description" xml:space="preserve"><value>JPEG XR-Bilder (HD Photo, Windows Media Photo).</value></data>
+  <data name="Format_krita_Description" xml:space="preserve"><value>Krita- und OpenRaster-Bilder (eingebettetes zusammengeführtes Bild).</value></data>
+  <data name="Format_krita_Name" xml:space="preserve"><value>Krita und OpenRaster</value></data>
+  <data name="Format_ktx_Description" xml:space="preserve"><value>KTX- und KTX2-Texturen.</value></data>
+  <data name="Format_kubotek_Description" xml:space="preserve"><value>Kubotek KeyCreator-Modelle (eingebettete Vorschau).</value></data>
+  <data name="Format_macpaint_Description" xml:space="preserve"><value>MacPaint-Schwarzweißzeichnungen.</value></data>
+  <data name="Format_maya_Description" xml:space="preserve"><value>Maya-Szenen (eingebettete Vorschau).</value></data>
+  <data name="Format_metafile_Description" xml:space="preserve"><value>WMF- und EMF-Zeichnungen, auch komprimierte (.wmz, .emz).</value></data>
+  <data name="Format_metafile_Name" xml:space="preserve"><value>Windows-Metadatei</value></data>
+  <data name="Format_mhtml_Description" xml:space="preserve"><value>Als einzelne Datei gespeicherte Webseiten.</value></data>
+  <data name="Format_mhtml_Name" xml:space="preserve"><value>Webarchiv (MHT)</value></data>
+  <data name="Format_mobi_Description" xml:space="preserve"><value>Cover von Mobi-E-Books.</value></data>
+  <data name="Format_mobi_Name" xml:space="preserve"><value>Mobipocket-Buch</value></data>
+  <data name="Format_office_Description" xml:space="preserve"><value>Ältere Word-, Excel-, PowerPoint- und Visio-Dokumente, die mit Miniaturansicht gespeichert wurden.</value></data>
+  <data name="Format_officexml_Description" xml:space="preserve"><value>Word-, Excel-, PowerPoint- und Visio-Dokumente, die mit Miniaturansicht gespeichert wurden.</value></data>
+  <data name="Format_pcx_Description" xml:space="preserve"><value>PCX- und DCX-Bilder (mehrseitiges Fax).</value></data>
+  <data name="Format_pdf_Description" xml:space="preserve"><value>Erste Seite von PDF-Dokumenten.</value></data>
+  <data name="Format_pdf_Name" xml:space="preserve"><value>PDF-Dokument</value></data>
+  <data name="Format_pes_Description" xml:space="preserve"><value>PES-Stickmuster: Stiche in ihren Garnfarben.</value></data>
+  <data name="Format_pes_Name" xml:space="preserve"><value>Brother PES-Stickerei</value></data>
+  <data name="Format_pgf_Description" xml:space="preserve"><value>PGF-Bilder (libPGF).</value></data>
+  <data name="Format_photocd_Description" xml:space="preserve"><value>Photo CD-Bilder.</value></data>
+  <data name="Format_pict_Description" xml:space="preserve"><value>Klassische Mac-PICT-Bilder.</value></data>
+  <data name="Format_png_Description" xml:space="preserve"><value>PNG-Bilder mit Transparenz.</value></data>
+  <data name="Format_pnm_Description" xml:space="preserve"><value>Portable Maps PBM, PGM, PPM, PAM und PFM.</value></data>
+  <data name="Format_psd_Description" xml:space="preserve"><value>Photoshop-Dokumente und große Dokumente, mit Ebenen und Transparenz.</value></data>
+  <data name="Format_psp_Description" xml:space="preserve"><value>Paint Shop Pro-Bilder, -Tubes, -Rahmen und -Masken.</value></data>
+  <data name="Format_publisher_Description" xml:space="preserve"><value>Microsoft Publisher-Publikationen.</value></data>
+  <data name="Format_pulse_Description" xml:space="preserve"><value>Pulse/Tajima DG/ML-Stickmuster (eingebettete Vorschau).</value></data>
+  <data name="Format_pulse_Name" xml:space="preserve"><value>Pulse-Stickerei</value></data>
+  <data name="Format_pvr_Description" xml:space="preserve"><value>PowerVR-Texturen (PVRTC, ETC).</value></data>
+  <data name="Format_raw_Description" xml:space="preserve"><value>Digitale Negative von Kameras (Canon, Nikon, Sony, Fujifilm, DNG …).</value></data>
+  <data name="Format_raw_Name" xml:space="preserve"><value>Kamera-RAW</value></data>
+  <data name="Format_rtf_Description" xml:space="preserve"><value>RTF-Dokumente (Text der ersten Seite).</value></data>
+  <data name="Format_rtf_Name" xml:space="preserve"><value>Rich Text</value></data>
+  <data name="Format_sgi_Description" xml:space="preserve"><value>SGI-RGB-Bilder.</value></data>
+  <data name="Format_sketchup_Description" xml:space="preserve"><value>SketchUp-Modelle (eingebettete Vorschau).</value></data>
+  <data name="Format_sketchupextra_Description" xml:space="preserve"><value>SketchUp LayOut-Dokumente und -Materialien.</value></data>
+  <data name="Format_sketchupextra_Name" xml:space="preserve"><value>SketchUp LayOut und Materialien</value></data>
+  <data name="Format_smartcam_Description" xml:space="preserve"><value>SmartCAM-Dateien (eingebettete Vorschau).</value></data>
+  <data name="Format_softimage_Description" xml:space="preserve"><value>SoftImage-Szenen (eingebettete Vorschau).</value></data>
+  <data name="Format_sstv_Description" xml:space="preserve"><value>SSTV-Bilder aus dem Amateurfunk (.hrz).</value></data>
+  <data name="Format_svg_Description" xml:space="preserve"><value>Skalierbare Vektorgrafiken, auch komprimierte (.svgz).</value></data>
+  <data name="Format_svg_Name" xml:space="preserve"><value>SVG-Grafik</value></data>
+  <data name="Format_text_Description" xml:space="preserve"><value>Text, Protokolle, Markdown, JSON und NFO (erste Zeilen).</value></data>
+  <data name="Format_text_Name" xml:space="preserve"><value>Textdatei</value></data>
+  <data name="Format_tga_Description" xml:space="preserve"><value>TGA-Bilder, üblich für Texturen und Video.</value></data>
+  <data name="Format_thm_Description" xml:space="preserve"><value>JPEG-Miniaturansichten, die manche Kameras neben ihren Videos speichern.</value></data>
+  <data name="Format_thm_Name" xml:space="preserve"><value>Kamera-Miniaturansicht</value></data>
+  <data name="Format_tiff_Description" xml:space="preserve"><value>TIFF-Bilder (erste Seite).</value></data>
+  <data name="Format_tim_Description" xml:space="preserve"><value>Texturen für PlayStation 1 und 2.</value></data>
+  <data name="Format_vinylmaster_Description" xml:space="preserve"><value>VinylMaster-Designs (eingebettete Vorschau).</value></data>
+  <data name="Format_wav_Description" xml:space="preserve"><value>Wellenform von WAV-Audiodateien.</value></data>
+  <data name="Format_wav_Name" xml:space="preserve"><value>WAV-Audio</value></data>
+  <data name="Format_wbmp_Description" xml:space="preserve"><value>Schwarzweißbilder für WAP-Handys.</value></data>
+  <data name="Format_web_Description" xml:space="preserve"><value>HTML-Seiten (Text der Seite).</value></data>
+  <data name="Format_web_Name" xml:space="preserve"><value>Webseite</value></data>
+  <data name="Format_webp_Description" xml:space="preserve"><value>WebP-Bilder.</value></data>
+  <data name="Format_xara_Description" xml:space="preserve"><value>Xara-Dokumente (eingebettete Vorschau).</value></data>
+  <data name="Format_xd_Description" xml:space="preserve"><value>Adobe XD-Designs (eingebettete Vorschau).</value></data>
+  <data name="Format_xml_Description" xml:space="preserve"><value>XML-Dokumente (erste Zeilen).</value></data>
+  <data name="Group_advanced" xml:space="preserve"><value>Erweitert</value></data>
+  <data name="Group_appearance" xml:space="preserve"><value>Darstellung</value></data>
+  <data name="Group_checkerboard" xml:space="preserve"><value>Transparenz-Schachbrettmuster</value></data>
+  <data name="Group_contextMenu" xml:space="preserve"><value>Kontextmenü</value></data>
+  <data name="Group_diagnostics" xml:space="preserve"><value>Diagnose</value></data>
+  <data name="Group_explorer" xml:space="preserve"><value>Datei-Explorer</value></data>
+  <data name="Group_generation" xml:space="preserve"><value>Erzeugung</value></data>
+  <data name="Group_icon" xml:space="preserve"><value>Überlagerungssymbol</value></data>
+  <data name="Group_performance" xml:space="preserve"><value>Leistung</value></data>
+  <data name="Group_privacy" xml:space="preserve"><value>Datenschutz</value></data>
+  <data name="Handler_None" xml:space="preserve"><value>Keiner (Dateityp-Symbol)</value></data>
+  <data name="Handler_Other" xml:space="preserve"><value>Anderer Anbieter ({0})</value></data>
+  <data name="Product_Tagline" xml:space="preserve"><value>Miniaturansichten für Designdateien</value></data>
+  <data name="Scope_AllFormats" xml:space="preserve"><value>Alle Formate</value></data>
+  <data name="Scope_General" xml:space="preserve"><value>Allgemein</value></data>
+  <data name="Setting_adornment_Description" xml:space="preserve"><value>Schatten, den der Datei-Explorer um die Miniaturansicht zeichnet.</value></data>
+  <data name="Setting_adornment_Option_0" xml:space="preserve"><value>Keiner</value></data>
+  <data name="Setting_adornment_Option_0_Description" xml:space="preserve"><value>Die Miniaturansicht nutzt den gesamten Platz.</value></data>
+  <data name="Setting_adornment_Option_1" xml:space="preserve"><value>Schatten (Windows-Stil)</value></data>
+  <data name="Setting_adornment_Title" xml:space="preserve"><value>Rahmen</value></data>
+  <data name="Setting_alpha_Description" xml:space="preserve"><value>Wenn um halbtransparente Bereiche ein Lichthof erscheint, „Vormultipliziert“ ausprobieren.</value></data>
+  <data name="Setting_alpha_Option_0" xml:space="preserve"><value>Direkt</value></data>
+  <data name="Setting_alpha_Option_1" xml:space="preserve"><value>Vormultipliziert</value></data>
+  <data name="Setting_alpha_Option_1_Description" xml:space="preserve"><value>Üblich in Spiele-Engines.</value></data>
+  <data name="Setting_alpha_Title" xml:space="preserve"><value>Alphakanal</value></data>
+  <data name="Setting_blockedFolders_Description" xml:space="preserve"><value>Glancy erzeugt in diesen Ordnern und ihren Unterordnern keine Miniaturansichten. Nützlich für vertrauliche Inhalte.</value></data>
+  <data name="Setting_blockedFolders_Title" xml:space="preserve"><value>Ausgeschlossene Ordner</value></data>
+  <data name="Setting_canvasColor_Description" xml:space="preserve"><value>Wird vom Hintergrund „Leinwandfarbe“ und von der farbigen quadratischen Leinwand verwendet.</value></data>
+  <data name="Setting_canvasColor_Title" xml:space="preserve"><value>Leinwandfarbe</value></data>
+  <data name="Setting_checkerAnchor_Description" xml:space="preserve"><value>Der Punkt, von dem aus das Schachbrettmuster gezeichnet wird.</value></data>
+  <data name="Setting_checkerAnchor_Option_0" xml:space="preserve"><value>Oben links</value></data>
+  <data name="Setting_checkerAnchor_Option_1" xml:space="preserve"><value>Oben</value></data>
+  <data name="Setting_checkerAnchor_Option_2" xml:space="preserve"><value>Oben rechts</value></data>
+  <data name="Setting_checkerAnchor_Option_3" xml:space="preserve"><value>Links</value></data>
+  <data name="Setting_checkerAnchor_Option_4" xml:space="preserve"><value>Mitte</value></data>
+  <data name="Setting_checkerAnchor_Option_5" xml:space="preserve"><value>Rechts</value></data>
+  <data name="Setting_checkerAnchor_Option_6" xml:space="preserve"><value>Unten links</value></data>
+  <data name="Setting_checkerAnchor_Option_7" xml:space="preserve"><value>Unten</value></data>
+  <data name="Setting_checkerAnchor_Option_8" xml:space="preserve"><value>Unten rechts</value></data>
+  <data name="Setting_checkerAnchor_Title" xml:space="preserve"><value>Ursprung des Schachbrettmusters</value></data>
+  <data name="Setting_checkerColors_Description" xml:space="preserve"><value>Die beiden abwechselnden Farben.</value></data>
+  <data name="Setting_checkerColors_Title" xml:space="preserve"><value>Farben des Schachbrettmusters</value></data>
+  <data name="Setting_checkerLibrary_Description" xml:space="preserve"><value>Gespeicherte Farbkombinationen zur schnellen Auswahl.</value></data>
+  <data name="Setting_checkerLibrary_Title" xml:space="preserve"><value>Schachbrett-Bibliothek</value></data>
+  <data name="Setting_checkerScale_Description" xml:space="preserve"><value>Größe jedes Felds des Schachbrettmusters.</value></data>
+  <data name="Setting_checkerScale_Option_0" xml:space="preserve"><value>Klein (4 px)</value></data>
+  <data name="Setting_checkerScale_Option_1" xml:space="preserve"><value>Mittel (8 px)</value></data>
+  <data name="Setting_checkerScale_Option_2" xml:space="preserve"><value>Groß (16 px)</value></data>
+  <data name="Setting_checkerScale_Title" xml:space="preserve"><value>Feldgröße</value></data>
+  <data name="Setting_contextMenu_Description" xml:space="preserve"><value>Glancy-Aktionen beim Rechtsklick auf Dateien und Ordner (Miniaturansicht aktualisieren, Hintergrund ändern …).</value></data>
+  <data name="Setting_contextMenu_Option_0" xml:space="preserve"><value>Aus</value></data>
+  <data name="Setting_contextMenu_Option_1" xml:space="preserve"><value>Alle Optionen sichtbar</value></data>
+  <data name="Setting_contextMenu_Option_1_Description" xml:space="preserve"><value>Schneller zu bedienen, braucht mehr Platz.</value></data>
+  <data name="Setting_contextMenu_Option_2" xml:space="preserve"><value>In einem Untermenü gruppiert</value></data>
+  <data name="Setting_contextMenu_Option_2_Description" xml:space="preserve"><value>Ein einziger Eintrag „Glancy“ mit Untermenüs.</value></data>
+  <data name="Setting_contextMenu_Title" xml:space="preserve"><value>Glancy-Kontextmenü</value></data>
+  <data name="Setting_contextMenuShift_Description" xml:space="preserve"><value>Das Glancy-Menü erscheint nur, wenn beim Rechtsklick die Umschalttaste gedrückt wird.</value></data>
+  <data name="Setting_contextMenuShift_Title" xml:space="preserve"><value>Nur mit Umschalttaste anzeigen</value></data>
+  <data name="Setting_customIcon_Description" xml:space="preserve"><value>Ein eigenes Symbol verwenden; nützlich, wenn Dateierweiterungen ausgeblendet sind.</value></data>
+  <data name="Setting_customIcon_Title" xml:space="preserve"><value>Benutzerdefiniertes Symbol</value></data>
+  <data name="Setting_customIconPath_Description" xml:space="preserve"><value>Ein Symbol aus einer .ico-, .exe- oder .dll-Datei auswählen.</value></data>
+  <data name="Setting_customIconPath_Title" xml:space="preserve"><value>Symboldatei</value></data>
+  <data name="Setting_debugLog_Description" xml:space="preserve"><value>Die Engine protokolliert jede erzeugte Miniaturansicht und jeden Fehler. Nur einschalten, wenn ein Problem untersucht wird.</value></data>
+  <data name="Setting_debugLog_Title" xml:space="preserve"><value>Diagnoseprotokoll</value></data>
+  <data name="Setting_embedded_Description" xml:space="preserve"><value>Viele Dateien enthalten eine kleine Vorschau: Sie ist schneller, aber weniger scharf.</value></data>
+  <data name="Setting_embedded_Option_0" xml:space="preserve"><value>Datei immer rendern</value></data>
+  <data name="Setting_embedded_Option_0_Description" xml:space="preserve"><value>Beste Qualität; die Vorschau nur als Ersatz.</value></data>
+  <data name="Setting_embedded_Option_1" xml:space="preserve"><value>Immer die Vorschau verwenden</value></data>
+  <data name="Setting_embedded_Option_1_Description" xml:space="preserve"><value>Am schnellsten; kann klein wirken.</value></data>
+  <data name="Setting_embedded_Option_2" xml:space="preserve"><value>Vorschau verwenden, wenn groß genug</value></data>
+  <data name="Setting_embedded_Option_2_Description" xml:space="preserve"><value>Ein Gleichgewicht aus Geschwindigkeit und Qualität.</value></data>
+  <data name="Setting_embedded_Title" xml:space="preserve"><value>Eingebettete Vorschau</value></data>
+  <data name="Setting_enabled_Description" xml:space="preserve"><value>Vorübergehend ausschalten, um Probleme im Datei-Explorer zu beheben.</value></data>
+  <data name="Setting_enabled_Title" xml:space="preserve"><value>Miniaturansichten mit Glancy erzeugen</value></data>
+  <data name="Setting_folderRecursion_Description" xml:space="preserve"><value>Aktionen für einen Ordner gelten auch für alle darin enthaltenen Ordner.</value></data>
+  <data name="Setting_folderRecursion_Title" xml:space="preserve"><value>Unterordner einbeziehen</value></data>
+  <data name="Setting_forceDesktopTransparency_Description" xml:space="preserve"><value>Dateien auf dem Desktop verwenden immer einen transparenten Hintergrund, unabhängig von der Formateinstellung.</value></data>
+  <data name="Setting_forceDesktopTransparency_Title" xml:space="preserve"><value>Transparenz auf dem Desktop</value></data>
+  <data name="Setting_fullFill_Description" xml:space="preserve"><value>Eine quadratische Leinwand in der Größe der Miniaturansicht, damit Dateien zum Vergleichen bündig sind.</value></data>
+  <data name="Setting_fullFill_Option_0" xml:space="preserve"><value>Keine Leinwand</value></data>
+  <data name="Setting_fullFill_Option_1" xml:space="preserve"><value>Transparente Leinwand</value></data>
+  <data name="Setting_fullFill_Option_2" xml:space="preserve"><value>Schachbrett-Leinwand</value></data>
+  <data name="Setting_fullFill_Option_3" xml:space="preserve"><value>Farbige Leinwand</value></data>
+  <data name="Setting_fullFill_Title" xml:space="preserve"><value>Quadratische Miniaturansicht</value></data>
+  <data name="Setting_gamma_Description" xml:space="preserve"><value>Für Dateien ohne Farbprofil; 2,2 ist in der Fotografie üblich.</value></data>
+  <data name="Setting_gamma_Option_100" xml:space="preserve"><value>Keine Korrektur (1,0)</value></data>
+  <data name="Setting_gamma_Option_180" xml:space="preserve"><value>1,8</value></data>
+  <data name="Setting_gamma_Option_220" xml:space="preserve"><value>2,2</value></data>
+  <data name="Setting_gamma_Option_240" xml:space="preserve"><value>2,4</value></data>
+  <data name="Setting_gamma_Title" xml:space="preserve"><value>Gammakorrektur</value></data>
+  <data name="Setting_maxFileSizeMB_Description" xml:space="preserve"><value>Oberhalb dieser Größe wird die eingebettete Vorschau verwendet, falls vorhanden.</value></data>
+  <data name="Setting_maxFileSizeMB_Option_0" xml:space="preserve"><value>Keine Begrenzung</value></data>
+  <data name="Setting_maxFileSizeMB_Option_100" xml:space="preserve"><value>100 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_1024" xml:space="preserve"><value>1 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_2048" xml:space="preserve"><value>2 GB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_250" xml:space="preserve"><value>250 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_50" xml:space="preserve"><value>50 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Option_500" xml:space="preserve"><value>500 MB</value></data>
+  <data name="Setting_maxFileSizeMB_Title" xml:space="preserve"><value>Maximale Dateigröße</value></data>
+  <data name="Setting_maxPixels_Description" xml:space="preserve"><value>Maximale Breite oder Höhe; darüber wird die eingebettete Vorschau verwendet.</value></data>
+  <data name="Setting_maxPixels_Option_0" xml:space="preserve"><value>Keine Begrenzung</value></data>
+  <data name="Setting_maxPixels_Option_16384" xml:space="preserve"><value>16.384 px</value></data>
+  <data name="Setting_maxPixels_Option_32768" xml:space="preserve"><value>32.768 px</value></data>
+  <data name="Setting_maxPixels_Option_4096" xml:space="preserve"><value>4.096 px</value></data>
+  <data name="Setting_maxPixels_Option_8192" xml:space="preserve"><value>8.192 px</value></data>
+  <data name="Setting_maxPixels_Title" xml:space="preserve"><value>Maximale Abmessung</value></data>
+  <data name="Setting_mode_Description" xml:space="preserve"><value>Wer die Miniaturansichten zeichnet.</value></data>
+  <data name="Setting_mode_Option_0" xml:space="preserve"><value>Aus</value></data>
+  <data name="Setting_mode_Option_0_Description" xml:space="preserve"><value>Zeigt das Dateityp-Symbol an.</value></data>
+  <data name="Setting_mode_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_mode_Option_1_Description" xml:space="preserve"><value>Verwendet die Einstellungen auf dieser Seite.</value></data>
+  <data name="Setting_mode_Option_2" xml:space="preserve"><value>Systemanbieter</value></data>
+  <data name="Setting_mode_Option_2_Description" xml:space="preserve"><value>Windows oder die zugeordnete App; Glancy, wenn keiner vorhanden ist.</value></data>
+  <data name="Setting_mode_Title" xml:space="preserve"><value>Miniaturansichten</value></data>
+  <data name="Setting_refreshOnApply_Description" xml:space="preserve"><value>Erzeugt die Miniaturansichten der im Datei-Explorer geöffneten Ordner neu, damit Änderungen sofort sichtbar sind.</value></data>
+  <data name="Setting_refreshOnApply_Title" xml:space="preserve"><value>Geöffnete Fenster beim Übernehmen aktualisieren</value></data>
+  <data name="Setting_sampling_Description" xml:space="preserve"><value>Algorithmus zum Verkleinern oder Vergrößern des Bilds.</value></data>
+  <data name="Setting_sampling_Option_0" xml:space="preserve"><value>Nächster Nachbar</value></data>
+  <data name="Setting_sampling_Option_0_Description" xml:space="preserve"><value>Scharfe Pixel, für Pixel-Art.</value></data>
+  <data name="Setting_sampling_Option_1" xml:space="preserve"><value>Bilinear</value></data>
+  <data name="Setting_sampling_Option_1_Description" xml:space="preserve"><value>Weicher und schneller.</value></data>
+  <data name="Setting_sampling_Option_2" xml:space="preserve"><value>Bikubisch</value></data>
+  <data name="Setting_sampling_Option_2_Description" xml:space="preserve"><value>Insgesamt beste Qualität.</value></data>
+  <data name="Setting_sampling_Title" xml:space="preserve"><value>Neuberechnung</value></data>
+  <data name="Setting_scale_Description" xml:space="preserve"><value>Wenn das Bild kleiner als die Miniaturansicht ist.</value></data>
+  <data name="Setting_scale_Option_0" xml:space="preserve"><value>Originalgröße</value></data>
+  <data name="Setting_scale_Option_0_Description" xml:space="preserve"><value>Nicht vergrößert; kann klein wirken.</value></data>
+  <data name="Setting_scale_Option_1" xml:space="preserve"><value>Einpassen</value></data>
+  <data name="Setting_scale_Option_1_Description" xml:space="preserve"><value>Füllt die Miniaturansicht ohne Verzerrung.</value></data>
+  <data name="Setting_scale_Title" xml:space="preserve"><value>Kleine Bilder</value></data>
+  <data name="Setting_showAssocIcon_Description" xml:space="preserve"><value>Das Symbol der App, die die Datei öffnet, in der unteren rechten Ecke.</value></data>
+  <data name="Setting_showAssocIcon_Title" xml:space="preserve"><value>App-Symbol anzeigen</value></data>
+  <data name="Setting_smallIcons_Description" xml:space="preserve"><value>Miniaturansichten in den Ansichten Liste, Details und Kleine Symbole.</value></data>
+  <data name="Setting_smallIcons_Option_0" xml:space="preserve"><value>Aus</value></data>
+  <data name="Setting_smallIcons_Option_0_Description" xml:space="preserve"><value>Das normale Dateityp-Symbol.</value></data>
+  <data name="Setting_smallIcons_Option_1" xml:space="preserve"><value>Glancy</value></data>
+  <data name="Setting_smallIcons_Option_1_Description" xml:space="preserve"><value>Zeigt das Bild statt des Symbols; etwas langsamer.</value></data>
+  <data name="Setting_smallIcons_Option_2" xml:space="preserve"><value>Systemanbieter</value></data>
+  <data name="Setting_smallIcons_Option_2_Description" xml:space="preserve"><value>Der von Windows; das normale Symbol, wenn keiner vorhanden ist.</value></data>
+  <data name="Setting_smallIcons_Title" xml:space="preserve"><value>Kleine Symbole</value></data>
+  <data name="Setting_transparency_Description" xml:space="preserve"><value>Was hinter transparenten Bereichen angezeigt wird.</value></data>
+  <data name="Setting_transparency_Option_0" xml:space="preserve"><value>Deckend</value></data>
+  <data name="Setting_transparency_Option_0_Description" xml:space="preserve"><value>Ignoriert den Alphakanal.</value></data>
+  <data name="Setting_transparency_Option_1" xml:space="preserve"><value>Leinwandfarbe</value></data>
+  <data name="Setting_transparency_Option_1_Description" xml:space="preserve"><value>Eine feste Farbe, wie das Papier eines PDF.</value></data>
+  <data name="Setting_transparency_Option_2" xml:space="preserve"><value>Transparent</value></data>
+  <data name="Setting_transparency_Option_2_Description" xml:space="preserve"><value>Der Hintergrund des Datei-Explorers scheint durch.</value></data>
+  <data name="Setting_transparency_Option_3" xml:space="preserve"><value>Schachbrettmuster</value></data>
+  <data name="Setting_transparency_Option_3_Description" xml:space="preserve"><value>Macht den Alphakanal sichtbar.</value></data>
+  <data name="Setting_transparency_Title" xml:space="preserve"><value>Hintergrund transparenter Bereiche</value></data>
+  <data name="Store_ReadFailed" xml:space="preserve"><value>Die Einstellungen konnten nicht aus der Registrierung gelesen werden.</value></data>
+  <data name="Store_SaveFailed" xml:space="preserve"><value>Die Änderungen konnten nicht in der Windows-Registrierung gespeichert werden.</value></data>
+  <data name="Value_EmptyList" xml:space="preserve"><value>(leer)</value></data>
+  <data name="Value_Inherited" xml:space="preserve"><value>Vom Format geerbt</value></data>
+  <data name="Value_ItemCount" xml:space="preserve"><value>{0} Element(e)</value></data>
+  <data name="Value_NoText" xml:space="preserve"><value>(keiner)</value></data>
+  <data name="Value_Off" xml:space="preserve"><value>Aus</value></data>
+  <data name="Value_On" xml:space="preserve"><value>Ein</value></data>
+</root>
