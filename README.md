@@ -32,7 +32,9 @@ thumbnail providers it replaces, and adds Glancy to Start (and, optionally, the 
 upgrades in place, even while File Explorer has the engine loaded, and keeps your settings. Home shows whether the
 engine is registered and active for each format.
 
-The setup is not code-signed yet, so Windows SmartScreen may warn before running it.
+Download it from the [releases page](https://github.com/sergiocespedesp/glancy/releases). The setup is not
+code-signed yet, so Windows SmartScreen may warn before running it; see the
+[code signing policy](docs/code-signing-policy.md).
 
 Uninstall from Settings › Apps: it restores the previous thumbnail providers, removes the Jump List and the
 notification identity, and asks whether to delete your settings and history too (silent uninstalls keep them). Engine
@@ -164,6 +166,16 @@ All formats, File Explorer options and Maintenance. The app rewrites the list wh
 * Optional, not bundled: [Ghostscript](https://ghostscript.com) (AGPL) for PostScript without a preview.
 
 The About page in the app lists every component with its copyright and license.
+
+## Code signing policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io/), certificate by
+[SignPath Foundation](https://signpath.org/) (application pending; releases are unsigned until it is approved). Who
+builds, reviews and approves releases, what is signed and how to verify it:
+[docs/code-signing-policy.md](docs/code-signing-policy.md).
+
+Privacy: Glancy will not transfer any information to other networked systems unless specifically requested by the user
+or the person installing or operating it. It has no telemetry or update checks.
 
 ## License
 

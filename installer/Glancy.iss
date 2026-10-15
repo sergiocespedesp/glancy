@@ -109,7 +109,41 @@ zhhans.EngineUnregisterFailed=无法完全取消注册缩略图引擎（错误 %
 zhhans.DeleteSettings=是否同时删除 Glancy 设置和已处理文件的历史记录？%n%n如果你可能会再次安装 Glancy，请选择“否”。
 zhhans.RenameFailed=安装程序无法替换 %1，因为另一个程序正在使用它。请关闭文件资源管理器窗口，然后重试。
 
+en.ThumbnailHeading=File Explorer thumbnails:
+en.ThumbnailNote=Glancy will become File Explorer's thumbnail provider for the file types it supports, for your user account only. Uninstalling Glancy restores the previous providers.
+es.ThumbnailHeading=Miniaturas del Explorador de archivos:
+es.ThumbnailNote=Glancy pasará a ser el proveedor de miniaturas del Explorador de archivos para los tipos de archivo que admite, solo para tu cuenta de usuario. Al desinstalar Glancy se restauran los proveedores anteriores.
+de.ThumbnailHeading=Miniaturansichten im Datei-Explorer:
+de.ThumbnailNote=Glancy wird für die unterstützten Dateitypen zum Miniaturansicht-Anbieter des Datei-Explorers, nur für Ihr Benutzerkonto. Beim Deinstallieren von Glancy werden die vorherigen Anbieter wiederhergestellt.
+fr.ThumbnailHeading=Miniatures de l’Explorateur de fichiers :
+fr.ThumbnailNote=Glancy deviendra le fournisseur de miniatures de l’Explorateur de fichiers pour les types de fichiers qu’il prend en charge, uniquement pour votre compte d’utilisateur. La désinstallation de Glancy rétablit les fournisseurs précédents.
+ptbr.ThumbnailHeading=Miniaturas do Explorador de Arquivos:
+ptbr.ThumbnailNote=O Glancy passará a ser o provedor de miniaturas do Explorador de Arquivos para os tipos de arquivo que ele suporta, apenas para a sua conta de usuário. Ao desinstalar o Glancy, os provedores anteriores são restaurados.
+ja.ThumbnailHeading=エクスプローラーの縮小版:
+ja.ThumbnailNote=Glancy は、対応する種類のファイルについて、エクスプローラーの縮小版プロバイダーになります (現在のユーザー アカウントのみ)。Glancy をアンインストールすると、以前のプロバイダーに戻ります。
+zhhans.ThumbnailHeading=文件资源管理器缩略图：
+zhhans.ThumbnailNote=Glancy 将成为文件资源管理器中其支持的文件类型的缩略图提供程序（仅限你的用户帐户）。卸载 Glancy 会恢复之前的提供程序。
+
 [Code]
+{ The Ready page says, before anything changes, that Glancy takes over File Explorer's thumbnails for this user. }
+function UpdateReadyMemo(Space, NewLine, MemoUserInfoInfo, MemoDirInfo, MemoTypeInfo, MemoComponentsInfo,
+  MemoGroupInfo, MemoTasksInfo: String): String;
+begin
+  Result := '';
+  if MemoDirInfo <> '' then
+    Result := MemoDirInfo + NewLine + NewLine;
+  if MemoTasksInfo <> '' then
+    Result := Result + MemoTasksInfo + NewLine + NewLine;
+  Result := Result + CustomMessage('ThumbnailHeading') + NewLine + Space + CustomMessage('ThumbnailNote');
+end;
+
+procedure InitializeWizard;
+begin
+  { The thumbnail note is a sentence, not a list entry: wrap it instead of scrolling sideways. }
+  WizardForm.ReadyMemo.WordWrap := True;
+  WizardForm.ReadyMemo.ScrollBars := ssVertical;
+end;
+
 function EngineDir: String;
 begin
   Result := ExpandConstant('{app}\Engine');
