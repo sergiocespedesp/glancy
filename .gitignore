@@ -3,9 +3,11 @@ CLAUDE.md
 CLAUDE.local.md
 private/
 
-# Build outputs
+# Build outputs (.NET writes bin/obj under %LOCALAPPDATA%\Temp\lmb; these only catch stray local builds)
 bin/
 obj/
+# …but the engine's command-line tool lives in src/bin.
+!src/Glancy.Thumbnails/src/bin/
 target/
 dist/
 TestResults/
