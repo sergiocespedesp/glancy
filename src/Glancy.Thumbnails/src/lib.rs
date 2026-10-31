@@ -18,6 +18,7 @@ pub mod resize;
 pub mod settings;
 pub mod source;
 pub mod wic;
+pub mod worker;
 
 use std::ffi::c_void;
 use std::sync::atomic::Ordering;
@@ -36,9 +37,10 @@ pub unsafe extern "system" fn DllGetClassObject(rclsid: *const GUID, riid: *cons
 
 #[unsafe(no_mangle)]
 pub extern "system" fn DllCanUnloadNow() -> HRESULT {
-    // PDFium cannot be reinitialized in the same process: once it is loaded, the engine stays loaded.
+    // PDFium cannot be reinitialized in the same process, and an abandoned render thread may still be running the
+    // engine's code: once either has happened, the engine stays loaded.
     let busy = com::OBJECTS.load(Ordering::SeqCst) > 0 || com::LOCKS.load(Ordering::SeqCst) > 0;
-    if busy || formats::pdf::is_loaded() { S_FALSE } else { S_OK }
+    if busy || formats::pdf::is_loaded() || worker::started() { S_FALSE } else { S_OK }
 }
 
 fn hresult(r: error::Result<()>) -> HRESULT {

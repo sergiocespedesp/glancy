@@ -1109,7 +1109,10 @@ mod tests {
                 png.set_pixel(x, y, [(x * 60) as u8, (y * 100) as u8, 77, 255]);
             }
         }
-        let path = std::env::temp_dir().join(format!("glancy-pict-{}.png", std::process::id()));
+        // One file per call: two tests build this sample at the same time.
+        static CALLS: std::sync::atomic::AtomicU32 = std::sync::atomic::AtomicU32::new(0);
+        let n = CALLS.fetch_add(1, std::sync::atomic::Ordering::SeqCst);
+        let path = std::env::temp_dir().join(format!("glancy-pict-{}-{n}.png", std::process::id()));
         crate::wic::save_png(&png, &path).unwrap();
         let bytes = std::fs::read(&path).unwrap();
         let _ = std::fs::remove_file(&path);

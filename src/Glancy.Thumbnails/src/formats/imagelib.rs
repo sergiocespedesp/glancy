@@ -23,14 +23,20 @@ fn limits() -> Limits {
     l
 }
 
-fn decode_with(data: &[u8], format: ImageFormat, ctx: &Ctx) -> Result<DynamicImage> {
+/// Pixel cap for 8-bit images.
+const MAX_PIXELS: u64 = 64 * 1024 * 1024;
+/// Pixel cap for HDR images: they decode to 32-bit floats per channel. 32 MP is an 8K environment map (8192×4096),
+/// 400–540 MB while it is decoded.
+const MAX_HDR_PIXELS: u64 = 32 * 1024 * 1024;
+
+fn decode_with(data: &[u8], format: ImageFormat, ctx: &Ctx, max_pixels: u64) -> Result<DynamicImage> {
     let mut reader = ImageReader::with_format(Cursor::new(data), format);
     reader.limits(limits());
     let (w, h) = reader
         .into_dimensions()
         .map_err(|e| Error(format!("Image damaged ({e})")))?;
     ctx.check_pixels(w, h)?;
-    if (w as u64) * (h as u64) > 64 * 1024 * 1024 {
+    if (w as u64) * (h as u64) > max_pixels {
         bail!("Image too large ({w}×{h})");
     }
     let mut reader = ImageReader::with_format(Cursor::new(data), format);
@@ -121,8 +127,11 @@ fn decode_pfm(data: &[u8], ctx: &Ctx) -> Result<Image> {
     let w: u32 = fields.get(1).and_then(|v| v.parse().ok()).ok_or_else(|| Error::new("PFM damaged (width)"))?;
     let h: u32 = fields.get(2).and_then(|v| v.parse().ok()).ok_or_else(|| Error::new("PFM damaged (height)"))?;
     let scale: f32 = fields.get(3).and_then(|v| v.parse().ok()).ok_or_else(|| Error::new("PFM damaged (scale)"))?;
-    if w == 0 || h == 0 || w > 65_535 || h > 65_535 || (w as u64) * (h as u64) > 64 * 1024 * 1024 {
+    if w == 0 || h == 0 || w > 65_535 || h > 65_535 {
         bail!("Invalid PFM size");
+    }
+    if (w as u64) * (h as u64) > MAX_HDR_PIXELS {
+        bail!("Image too large ({w}×{h})");
     }
     ctx.check_pixels(w, h)?;
     let need = (w as usize) * (h as usize) * channels * 4;
@@ -154,7 +163,16 @@ pub fn render(ctx: &Ctx) -> Result<Content> {
         ".pbm" | ".pgm" | ".ppm" | ".pnm" | ".pam" => (ImageFormat::Pnm, false),
         _ => (ImageFormat::Tga, false),
     };
-    let mut img = decode_with(&data, format, ctx)?;
+    let mut img = decode_with(&data, format, ctx, if hdr { MAX_HDR_PIXELS } else { MAX_PIXELS })?;
+    drop(data);
+    if hdr {
+        // Tone mapping copies the image twice more: do it on a reduced copy (the thumbnail is shrunk anyway, and
+        // averaging linear light before mapping it is correct).
+        let side = ctx.size.saturating_mul(2).max(1);
+        if img.width() > side || img.height() > side {
+            img = img.thumbnail(side, side);
+        }
+    }
     if ctx.extension == ".xyze" {
         img = xyz_to_rgb(img);
     }
@@ -165,7 +183,7 @@ pub fn render(ctx: &Ctx) -> Result<Content> {
 pub fn render_webp(ctx: &Ctx) -> Result<Content> {
     super::wicimg::render(ctx).or_else(|e| {
         let data = ctx.src.read_all(MAX_BYTES)?;
-        decode_with(&data, ImageFormat::WebP, ctx)
+        decode_with(&data, ImageFormat::WebP, ctx, MAX_PIXELS)
             .map(|img| Content::raster(to_image(img, false)))
             .map_err(|_| e)
     })
@@ -261,6 +279,32 @@ mod tests {
         assert!(c.image.pixel(0, 0)[0] > 230);
         let half = c.image.pixel(1, 0)[0];
         assert!((170..200).contains(&half), "{half}");
+    }
+
+    #[test]
+    fn huge_hdr_is_rejected_before_decoding() {
+        // A 4 MB Radiance file that declared 8000×8000 took 2 GB inside Explorer (32-bit floats, copied twice).
+        let v = b"#?RADIANCE\nFORMAT=32-bit_rle_rgbe\n\n-Y 4100 +X 8192\n".to_vec();
+        let err = run("hdr", ".hdr", v).err().expect("rejected");
+        assert!(err.0.contains("too large"), "{err}");
+        // 8K environment maps (8192×4096) are common and stay within the limit.
+        let v = b"#?RADIANCE\nFORMAT=32-bit_rle_rgbe\n\n-Y 4096 +X 8192\n".to_vec();
+        let err = run("hdr", ".hdr", v).err().expect("no pixel data");
+        assert!(!err.0.contains("too large"), "{err}");
+        let err = run("pnm", ".pfm", b"PF\n8192 4100\n-1.0\n".to_vec()).err().expect("rejected");
+        assert!(err.0.contains("too large") || err.0.contains("Invalid PFM size"), "{err}");
+    }
+
+    #[test]
+    fn hdr_is_reduced_before_tone_mapping() {
+        let (w, h) = (600usize, 400usize);
+        let mut v = format!("#?RADIANCE\nFORMAT=32-bit_rle_rgbe\n\n-Y {h} +X {w}\n").into_bytes();
+        for _ in 0..w * h {
+            v.extend_from_slice(&[128, 64, 32, 129]);
+        }
+        let c = run("hdr", ".hdr", v).unwrap();
+        assert!(c.image.width <= 128 && c.image.height <= 128, "{}×{}", c.image.width, c.image.height);
+        assert!((c.image.width as i64 * 2 - c.image.height as i64 * 3).abs() <= 3, "keeps the aspect ratio");
     }
 
     #[test]

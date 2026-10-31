@@ -7,7 +7,7 @@ use crate::image::Image;
 use crate::source::Source;
 use std::ffi::c_void;
 use std::os::raw::{c_char, c_int, c_uchar, c_ulong};
-use std::sync::{Mutex, OnceLock};
+use std::sync::{Mutex, MutexGuard, OnceLock};
 use std::time::{Duration, Instant};
 use windows::Win32::Foundation::HMODULE;
 use windows::Win32::System::LibraryLoader::{GetProcAddress, LOAD_WITH_ALTERED_SEARCH_PATH, LoadLibraryExW};
@@ -68,6 +68,24 @@ unsafe impl Sync for Api {}
 static API: OnceLock<std::result::Result<Api, String>> = OnceLock::new();
 static LOCK: Mutex<()> = Mutex::new(());
 
+/// How long a PDF waits for another one to finish with PDFium. A PDF that never finishes keeps the lock in its
+/// abandoned thread (see `worker`), so the others must not wait for it forever.
+pub const LOCK_WAIT: Duration = Duration::from_secs(10);
+
+fn lock_pdfium(wait: Duration) -> Result<MutexGuard<'static, ()>> {
+    let until = Instant::now() + wait;
+    loop {
+        match LOCK.try_lock() {
+            Ok(g) => return Ok(g),
+            Err(std::sync::TryLockError::Poisoned(e)) => return Ok(e.into_inner()),
+            Err(std::sync::TryLockError::WouldBlock) if Instant::now() < until => {
+                std::thread::sleep(Duration::from_millis(20))
+            }
+            Err(std::sync::TryLockError::WouldBlock) => bail!("PDFium busy with another PDF"),
+        }
+    }
+}
+
 /// Folder of the module that contains this code (the engine DLL, or the executable in tests).
 pub fn module_dir() -> Option<std::path::PathBuf> {
     use windows::Win32::System::LibraryLoader::{
@@ -91,11 +109,15 @@ pub fn module_dir() -> Option<std::path::PathBuf> {
     }
 }
 
-/// Path of `pdfium.dll`: next to the engine; during development `GLANCY_PDFIUM` (an absolute path) is accepted.
+/// Path of `pdfium.dll`: next to the engine. Tests and debug builds also accept `GLANCY_PDFIUM` (an absolute path);
+/// release builds ignore it, so an environment variable cannot choose a DLL for Explorer to load.
 fn pdfium_path() -> Option<std::path::PathBuf> {
     let beside = module_dir()?.join("pdfium.dll");
     if beside.is_file() {
         return Some(beside);
+    }
+    if !cfg!(any(test, debug_assertions)) {
+        return None;
     }
     let env = std::env::var_os("GLANCY_PDFIUM").map(std::path::PathBuf::from)?;
     (env.is_absolute() && env.is_file()).then_some(env)
@@ -176,7 +198,7 @@ pub fn render_first_page(src: &dyn Source, size: u32) -> Result<Image> {
         bail!("PDF larger than 4 GB (unsupported)");
     }
     let api = api()?;
-    let _guard = LOCK.lock().unwrap_or_else(|e| e.into_inner());
+    let _guard = lock_pdfium(LOCK_WAIT)?;
     let mut src_ref: &dyn Source = src;
     let mut access = FileAccess {
         file_len: src.len() as c_ulong,
@@ -314,6 +336,27 @@ pub mod tests {
         }
         let img = render_first_page(&MemorySource(minimal_pdf(200, 100, 90)), 100).unwrap();
         assert_eq!((img.width, img.height), (50, 100));
+    }
+
+    #[test]
+    fn a_stuck_pdf_does_not_block_the_others_forever() {
+        let held = std::sync::Arc::new(std::sync::Barrier::new(2));
+        let release = std::sync::Arc::new(std::sync::Barrier::new(2));
+        let (h, r) = (held.clone(), release.clone());
+        let t = std::thread::spawn(move || {
+            let _g = lock_pdfium(Duration::from_secs(5)).unwrap();
+            h.wait();
+            r.wait();
+        });
+        held.wait();
+        let start = Instant::now();
+        let err = lock_pdfium(Duration::from_millis(100)).map(|_| ()).unwrap_err();
+        assert!(err.0.contains("busy"), "{err}");
+        // Generous for shared CI machines; without the limit it would wait for as long as the lock is held.
+        assert!(start.elapsed() < Duration::from_secs(10));
+        release.wait();
+        t.join().unwrap();
+        assert!(lock_pdfium(Duration::from_millis(100)).is_ok());
     }
 
     #[test]

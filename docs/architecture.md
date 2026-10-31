@@ -91,8 +91,9 @@ Engine rules that the rest of the design relies on:
 * **The isolated thumbnail process does not see CLSIDs registered only in HKCU.** With the default isolation the cache
   returned `REGDB_E_CLASSNOTREG`. Registered per user, the engine is marked `DisableProcessIsolation = 1` and loads
   inside Explorer. As a consequence a serious engine failure would affect Explorer, which is why every panic is caught
-  at the COM boundary, PDFium and Ghostscript have time limits, Ghostscript runs in its own process and reads are capped
-  (see [Safety](#safety)). A **per-machine** installer (HKLM, with administrator rights) could isolate it again.
+  at the COM boundary, files render on a separate thread that Explorer stops waiting for after 30 s, Ghostscript runs in
+  its own process and reads are capped (see [Safety](#safety)). A **per-machine** installer (HKLM, with administrator
+  rights) could isolate it again.
 * **`IInitializeWithStream` is not offered.** The thumbnail cache prefers it, and the stream only carries the file name
   (`Stat` → "icon2.psd"). Without the path, excluded folders, desktop transparency and the OneDrive protection would not
   work, and the history would not have the full path. With `IInitializeWithItem` the history gets `C:\…\icon2.psd`.
@@ -112,9 +113,25 @@ Engine rules that the rest of the design relies on:
 
 ## Safety
 
-The engine runs inside Explorer. An independent code review looked for inputs that could hang or crash it; everything
-it found is fixed and covered by tests:
+The engine runs inside Explorer. Independent code reviews looked for inputs that could hang or crash it; what they
+found is fixed and covered by tests, except where noted:
 
+* Render thread (`worker.rs`): a file with a path is rendered on a thread of its own with a 16 MB stack (Explorer's
+  threads have 512 KB). If it takes more than 30 s, Explorer gets an error and the thread is abandoned; it keeps
+  running until it ends on its own, since PDFium, resvg and the system codecs cannot be interrupted. While four
+  abandoned renders are still running, new ones are refused. Once a render thread has started, the engine DLL is pinned
+  and never unloaded, since an abandoned thread may still be running its code. Items read as a stream stay on Explorer's thread, because
+  an `IStream` belongs to its apartment. Limitation: an abandoned render keeps its memory until it ends (a crafted PDF
+  can hold about 2 GB); only rendering in another process would remove that.
+* SVG: nesting deeper than 64 levels (counting what `<use>` expands) and more than 200,000 expanded elements are
+  rejected before usvg parses the file; more than 256 elements with a filter (attribute or CSS) are rejected before
+  resvg draws it. Only PNG, JPEG, GIF and WebP images embedded as `data:` are loaded: usvg would parse an embedded SVG
+  without these checks.
+* PDF: PDFium is not reentrant; a PDF waits up to 10 s for the one being drawn, so a PDF that never finishes does not
+  block the others.
+* HDR, EXR and PFM: at most 32 Mpx, an 8K environment map (they decode to 32-bit floats), and the image is reduced
+  before tone mapping.
+* `pdfium.dll` is only loaded from the engine's folder; the `GLANCY_PDFIUM` variable works in tests and debug builds.
 * PSD/PSB: offsets read from the file are added with checks (a block with a crafted 64-bit length caused an endless
   loop); RLE rows larger than the PackBits maximum are rejected (they used to reserve up to 4 GB); reading stops at the
   end of the file (a 200-byte PSB declaring 300,000 × 300,000 walked every row) and has a 20 s limit.

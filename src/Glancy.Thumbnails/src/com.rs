@@ -11,10 +11,12 @@
 use crate::delegate;
 use crate::error::Error;
 use crate::formats;
+use crate::image::Image;
 use crate::log;
 use crate::pipeline::{self, Decision, Request};
 use crate::settings;
 use crate::source::{FileSource, Source, StreamSource};
+use crate::worker;
 use std::ffi::c_void;
 use std::path::{Path, PathBuf};
 use std::sync::Mutex;
@@ -184,6 +186,21 @@ fn is_cloud_placeholder(path: &Path) -> bool {
     attrs != u32::MAX && attrs & (RECALL_ON_DATA_ACCESS | OFFLINE) != 0
 }
 
+/// Renders a file on a thread of its own (see `worker`): deep recursion gets a large stack, and Explorer's thread gets
+/// an answer within the deadline even if a decoder never returns. Streams stay on the caller's thread: an `IStream`
+/// belongs to its apartment.
+fn render_file(path: &Path, eff: &settings::Effective, size: u32, on_desktop: bool) -> crate::error::Result<Image> {
+    let (path, eff) = (path.to_path_buf(), eff.clone());
+    worker::run(&worker::ABANDONED, worker::MAX_ABANDONED, worker::DEADLINE, move || {
+        // Joins the process's multithreaded apartment and never leaves it: if this thread were the last one in it,
+        // CoUninitialize would tear the apartment down under threads still using WIC (seen as intermittent
+        // WINCODEC_ERR_COMPONENTNOTFOUND in the tests).
+        crate::wic::ensure_com();
+        let src = FileSource::open(&path)?;
+        pipeline::render(&Request { src: &src, path: Some(&path), size, on_desktop }, &eff)
+    })
+}
+
 /// All the work for one thumbnail: decision, delegation, rendering and history.
 fn thumbnail(input: &Input, cx: u32) -> windows::core::Result<(HBITMAP, WTS_ALPHATYPE)> {
     let start = Instant::now();
@@ -265,13 +282,15 @@ fn thumbnail(input: &Input, cx: u32) -> windows::core::Result<(HBITMAP, WTS_ALPH
         return Err(E_FAIL.into());
     }
 
-    let req = Request {
-        src: &*src,
-        path: path.as_deref().filter(|_| matches!(input, Input::Path(_))),
-        size: cx,
-        on_desktop: path.as_deref().is_some_and(on_desktop),
+    let desktop = path.as_deref().is_some_and(on_desktop);
+    let image = match input {
+        Input::Path(p) => {
+            drop(src);
+            render_file(p, &eff, cx, desktop)
+        }
+        Input::Stream { .. } => pipeline::render(&Request { src: &*src, path: None, size: cx, on_desktop: desktop }, &eff),
     };
-    let rendered = pipeline::render(&req, &eff).and_then(|img| crate::bitmap::to_hbitmap(&img));
+    let rendered = image.and_then(|img| crate::bitmap::to_hbitmap(&img));
     let ms = start.elapsed().as_millis();
     match rendered {
         Ok(hbmp) => {
@@ -341,6 +360,26 @@ mod tests {
         assert_eq!(as_full_path("b.psd"), None);
         assert_eq!(extension_of("Foto.PSB"), Some(".psb".into()));
         assert_eq!(extension_of("sin"), None);
+    }
+
+    #[test]
+    fn files_render_on_a_worker_thread() {
+        let dir = std::env::temp_dir().join(format!("glancy-com-{}", std::process::id()));
+        std::fs::create_dir_all(&dir).unwrap();
+        let file = dir.join("a.svg");
+        std::fs::write(&file, br#"<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10"><rect width="20" height="10" fill="blue"/></svg>"#).unwrap();
+        let format = settings::FormatId::get("svg").unwrap();
+        let eff = settings::Effective {
+            format,
+            extension: ".svg".into(),
+            format_settings: settings::FormatSettings::defaults(format),
+            global: settings::GlobalSettings::default(),
+        };
+        let img = render_file(&file, &eff, 40, false);
+        let _ = std::fs::remove_dir_all(&dir);
+        let img = img.unwrap();
+        assert_eq!((img.width, img.height), (40, 20));
+        assert_eq!(img.pixel(5, 5), [0, 0, 255, 255]);
     }
 
     #[test]
