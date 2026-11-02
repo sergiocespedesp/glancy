@@ -10,10 +10,16 @@ internal static partial class NativeMethods
     public const uint SHCNF_PATHW = 0x0005;
     public const uint SHCNF_FLUSHNOWAIT = 0x3000;
 
+    public const int ASSOCSTR_EXECUTABLE = 2;
     public const int ASSOCSTR_SHELLEXTENSION = 16;
+    public const int ASSOCSTR_PROGID = 20;
+    public const int ASSOCSTR_APPICONREFERENCE = 23;
 
     [LibraryImport("shlwapi.dll", StringMarshalling = StringMarshalling.Utf16)]
     public static partial int AssocQueryStringW(int flags, int str, string assoc, string? extra, [Out] char[] output, ref uint length);
+
+    [LibraryImport("shlwapi.dll", StringMarshalling = StringMarshalling.Utf16)]
+    public static partial int SHLoadIndirectString(string source, [Out] char[] output, uint size, IntPtr reserved);
 
     [LibraryImport("shell32.dll")]
     public static partial void SHChangeNotify(int wEventId, uint uFlags, IntPtr dwItem1, IntPtr dwItem2);

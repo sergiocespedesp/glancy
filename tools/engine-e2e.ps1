@@ -33,6 +33,53 @@ function Thumb([string]$file, [int]$size = 256) {
     @{ ok = $true; w = [int]$Matches[1]; h = [int]$Matches[2]; alpha = [int]$Matches[3]; transparent = [int]$Matches[4] }
 }
 
+Add-Type @'
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
+public static class Assoc {
+    [DllImport("shlwapi.dll", CharSet = CharSet.Unicode)]
+    static extern int AssocQueryStringW(int flags, int str, string assoc, string extra, StringBuilder outBuf, ref uint len);
+    [ComImport, Guid("c46ca590-3c3f-11d2-bee6-0000f805ca57"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    interface IQueryAssociations {
+        [PreserveSig] int Init(int flags, [MarshalAs(UnmanagedType.LPWStr)] string assoc, IntPtr hkProgid, IntPtr hwnd);
+        [PreserveSig] int GetString(int flags, int str, [MarshalAs(UnmanagedType.LPWStr)] string extra, StringBuilder outBuf, ref uint len);
+        [PreserveSig] int GetKey(int flags, int key, [MarshalAs(UnmanagedType.LPWStr)] string extra, out IntPtr hkey);
+        [PreserveSig] int GetData(int flags, int data, [MarshalAs(UnmanagedType.LPWStr)] string extra, IntPtr outBuf, ref uint len);
+    }
+    [ComImport, Guid("43826d1e-e718-42ee-bc55-a1e261c37bfe"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    interface IShellItem {
+        [PreserveSig] int BindToHandler(IntPtr pbc, ref Guid bhid, ref Guid riid, [MarshalAs(UnmanagedType.IUnknown)] out object ppv);
+    }
+    [DllImport("shell32.dll", CharSet = CharSet.Unicode)]
+    static extern int SHCreateItemFromParsingName(string path, IntPtr pbc, ref Guid riid, [MarshalAs(UnmanagedType.Interface)] out IShellItem item);
+
+    public static string ProgId(string ext) {
+        var sb = new StringBuilder(512); uint len = 512;
+        return AssocQueryStringW(0, 20 /* ASSOCSTR_PROGID */, ext, null, sb, ref len) == 0 ? sb.ToString() : null;
+    }
+    // A value as Explorer resolves it for the file, through its whole association (null = absent everywhere).
+    public static string Resolved(string path, string name) {
+        Guid iidItem = typeof(IShellItem).GUID, bhid = new Guid("3981E225-F559-11D3-8E3A-00C04F6837D5") /* BHID_SFUIObject */;
+        Guid iidQa = typeof(IQueryAssociations).GUID;
+        IShellItem item; object o;
+        if (SHCreateItemFromParsingName(path, IntPtr.Zero, ref iidItem, out item) != 0) return null;
+        if (item.BindToHandler(IntPtr.Zero, ref bhid, ref iidQa, out o) != 0) return null;
+        uint len = 4096; IntPtr buf = Marshal.AllocCoTaskMem((int)len);
+        try {
+            if (((IQueryAssociations)o).GetData(0, 6 /* ASSOCDATA_VALUE */, name, buf, ref len) != 0) return null;
+            return len == 4 ? Marshal.ReadInt32(buf).ToString() : Marshal.PtrToStringUni(buf).TrimEnd('\0');
+        } finally { Marshal.FreeCoTaskMem(buf); }
+    }
+}
+'@
+
+function Sync {
+    # Like the app after an Apply: the engine writes Treatment/TypeOverlay at once.
+    $p = Start-Process (Join-Path $env:windir 'System32\regsvr32.exe') "/s /n /i:sync `"$dll`"" -Wait -PassThru
+    if ($p.ExitCode -ne 0) { throw "regsvr32 /n /i:sync failed ($($p.ExitCode))" }
+}
+
 function Apply([hashtable]$values, [string]$sub = 'Formats\svg') {
     $path = Join-Path $psKey $sub
     New-Item -Force $path | Out-Null
@@ -111,10 +158,56 @@ try {
     Check 'history.log: ISO 8601 UTC time' ($okLine -match '^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\dZ\t')
     $blockedLogged = $tail | Where-Object { $_ -like "*$fixtures*" -and $_ -notlike "*half.svg" -and $_ -notlike '*broken.svg*' }
     Check 'Excluded folders leave no trace in the history' ($null -eq $blockedLogged)
+
+    # Frame and overlay icon, as Explorer resolves them (not just what the engine writes): Windows sets
+    # TypeOverlay="" in SystemFileAssociations\image and in Unknown, which an absent value inherits.
+    $assoc = (Get-ItemProperty 'HKCU:\Software\Glancy\Engine' -ErrorAction SilentlyContinue).DllPath
+    if (-not $assoc) {
+        "SKIP  Overlay icon: the engine is not registered"
+    } else {
+        $shell32 = Join-Path $env:windir 'System32\shell32.dll'
+        Apply @{ adornment = 0 }
+        Sync
+        Check 'Frame off: Treatment 0' ([Assoc]::Resolved($svg, 'Treatment') -eq '0') ([Assoc]::Resolved($svg, 'Treatment'))
+        Apply @{ adornment = 1; showAssocIcon = 0 }
+        Sync
+        Check 'Frame on: Treatment 1' ([Assoc]::Resolved($svg, 'Treatment') -eq '1')
+        Check 'App icon off: no overlay' ([Assoc]::Resolved($svg, 'TypeOverlay') -eq '')
+        Apply @{ showAssocIcon = 1 }
+        Sync
+        $overlay = [Assoc]::Resolved($svg, 'TypeOverlay')
+        $progId = [Assoc]::ProgId('.svg')
+        if (-not $progId -or $progId -eq 'Unknown') {
+            Check 'App icon on, no app for .svg: no overlay' (-not $overlay) $overlay
+        } else {
+            Check "App icon on: the icon of the app that opens .svg ($progId)" ($overlay -match '^@\{|,-?\d+$') $overlay
+        }
+        Apply @{ customIcon = 1 }
+        New-ItemProperty (Join-Path $psKey 'Formats\svg') customIconPath -PropertyType String -Value "$shell32,3" -Force | Out-Null
+        Sync
+        Check 'Custom icon' ([Assoc]::Resolved($svg, 'TypeOverlay') -eq "$shell32,3") ([Assoc]::Resolved($svg, 'TypeOverlay'))
+
+        # A type no app opens resolves Unknown, which sets "": the custom icon goes in the extension's key.
+        $loose = '.tga', '.dds', '.psb', '.kra' | Where-Object { [Assoc]::ProgId($_) -in $null, 'Unknown' } | Select-Object -First 1
+        if (-not $loose) {
+            "SKIP  Custom icon on a type no app opens: every candidate has an app"
+        } else {
+            $format = @{ '.tga' = 'tga'; '.dds' = 'dds'; '.psb' = 'psd'; '.kra' = 'krita' }[$loose]
+            $file = Join-Path $fixtures "loose$loose"
+            Set-Content $file ''
+            Apply @{ customIcon = 1; adornment = 0 } "Formats\$format"
+            New-ItemProperty (Join-Path $psKey "Formats\$format") customIconPath -PropertyType String -Value "$shell32,4" -Force | Out-Null
+            Sync
+            Check "Custom icon on a type no app opens ($loose)" ([Assoc]::Resolved($file, 'TypeOverlay') -eq "$shell32,4") ([Assoc]::Resolved($file, 'TypeOverlay'))
+            Check "Frame on a type no app opens ($loose): Treatment 0" ([Assoc]::Resolved($file, 'Treatment') -eq '0') ([Assoc]::Resolved($file, 'Treatment'))
+        }
+    }
 }
 finally {
     Remove-Item $psKey -Recurse -Force -ErrorAction SilentlyContinue
     if ($hadKey) { cmd /c "reg import `"$backup`" >nul 2>&1" }
+    # Puts the frame and overlay icon back as the restored settings ask.
+    if ((Get-ItemProperty 'HKCU:\Software\Glancy\Engine' -ErrorAction SilentlyContinue).DllPath) { try { Sync } catch { "WARN  $_" } }
     Remove-Item $work -Recurse -Force -ErrorAction SilentlyContinue
 }
 ""

@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>With “System provider”, Windows or the associated app draws the thumbnail and these settings aren’t used (unless there’s no other provider).</value></data>
   <data name="Format_More" xml:space="preserve"><value>More</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>More actions</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>{0} files have their own overlay icon from the app that registered them, and Windows shows it instead of this one.</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>No app is set to open {0} files, so Windows has no app icon to show. A custom icon still works.</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} settings from {1} copied to {2}. Review them and select Apply.</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>Settings pasted</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>Paste settings from {0}</value></data>

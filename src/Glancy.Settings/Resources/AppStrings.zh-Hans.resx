@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>选择“系统提供程序”时，由 Windows 或关联的应用绘制缩略图，不会使用这些设置（除非没有其他提供程序）。</value></data>
   <data name="Format_More" xml:space="preserve"><value>更多</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>更多操作</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>{0} 文件有注册它们的应用设置的叠加图标，Windows 会显示该图标而不是此处的图标。</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>没有设置用于打开 {0} 文件的应用，因此 Windows 没有可显示的应用图标。自定义图标仍然有效。</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>已将 {1} 的 {0} 项设置复制到 {2}。请查看这些设置，然后选择“应用”。</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>已粘贴设置</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>从 {0} 粘贴设置</value></data>

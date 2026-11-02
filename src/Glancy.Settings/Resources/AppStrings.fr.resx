@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>Avec « Fournisseur du système », Windows ou l’application associée dessine la miniature et ces paramètres ne sont pas utilisés (sauf s’il n’y a pas d’autre fournisseur).</value></data>
   <data name="Format_More" xml:space="preserve"><value>Plus</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>Plus d’actions</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>Les fichiers {0} ont leur propre icône superposée, définie par l’application qui les a enregistrés, et Windows l’affiche à la place de celle-ci.</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>Aucune application n’est définie pour ouvrir les fichiers {0} : Windows n’a donc aucune icône d’application à afficher. Une icône personnalisée fonctionne quand même.</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} paramètres de {1} copiés vers {2}. Vérifiez-les et sélectionnez Appliquer.</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>Paramètres collés</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>Coller les paramètres de {0}</value></data>

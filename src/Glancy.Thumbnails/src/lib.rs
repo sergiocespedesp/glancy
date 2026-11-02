@@ -80,8 +80,7 @@ pub unsafe extern "system" fn DllInstall(install: BOOL, cmdline: PCWSTR) -> HRES
     let cmd = if cmdline.is_null() { String::new() } else { unsafe { cmdline.to_string() }.unwrap_or_default() };
     std::panic::catch_unwind(|| {
         if cmd.trim().eq_ignore_ascii_case("sync") {
-            let snap = settings::Snapshot::capture(&settings::RegistrySource::new(settings::SETTINGS_KEY));
-            if registration::sync_shell_values(&snap) {
+            if registration::sync_now() {
                 registration::notify_association_change();
             }
             S_OK

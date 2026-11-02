@@ -358,6 +358,7 @@ public sealed partial class MainWindow : Window
             var count = session.GetChanges().Count;
             session.Apply();
             Log.Info($"Applied {count} changes (settings revision updated).");
+            await SyncEngineAsync();
 
             var refresh = session.ReadGlobal(Catalog.RefreshOnApply).AsBool();
             if (!AppServices.Engine.IsInstalled)
@@ -388,6 +389,25 @@ public sealed partial class MainWindow : Window
             _applying = false;
             SetApplying(false);
             UpdatePendingBar();
+        }
+    }
+
+    /// <summary>
+    /// Has the engine write the frame and overlay icon to the registry now, so they change even if no thumbnail is
+    /// redrawn (otherwise the engine does it on the next thumbnail it draws). Best effort: it never fails the apply.
+    /// </summary>
+    private static async Task SyncEngineAsync()
+    {
+        if (!AppServices.Engine.IsInstalled || AppServices.Engine.DllPath is not { } dll) return;
+        try
+        {
+            using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(30));
+            if (!await OverlayIcon.SyncEngineAsync(dll, timeout.Token))
+                Log.Error("The engine could not sync the frame and overlay icon (regsvr32 /n /i:sync failed).", null);
+        }
+        catch (Exception ex)
+        {
+            Log.Error("Engine sync failed", ex);
         }
     }
 

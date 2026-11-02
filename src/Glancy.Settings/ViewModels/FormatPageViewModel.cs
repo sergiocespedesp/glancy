@@ -1,4 +1,5 @@
 using Glancy.Core.Settings;
+using Glancy.Core.Shell;
 using Glancy.Settings.Controls;
 using Glancy.Settings.Services;
 using Glancy.Settings.Resources;
@@ -129,6 +130,25 @@ public sealed class FormatPageViewModel : ObservableObject, IDisposable
         _ => AppStrings.Sample_File,
     };
 
+    /// <summary>Extension of the preview's sample file, whose association decides the overlay icon.</summary>
+    private string SampleExtension => Scope.Extension ?? Format?.Extensions[0] ?? ".psd";
+
+    /// <summary>What Explorer will draw in the corner, from the pending settings and the sample's association.</summary>
+    private OverlayPreview Overlay => OverlayIcon.ForExtension(
+        SampleExtension,
+        ShowAssociationIcon.IsOn || ShowAssociationIcon.IsMixed,
+        CustomIcon.IsOn ? CustomIconPath.TextValue : null);
+
+    /// <summary>Not on the all-formats page: the note depends on one type's association.</summary>
+    public bool HasOverlayNote => !IsAllFormats && Overlay.Note != OverlayNote.None;
+
+    public string OverlayNoteMessage => Overlay.Note switch
+    {
+        OverlayNote.NoApp => string.Format(AppStrings.Format_Overlay_NoApp, SampleExtension),
+        OverlayNote.FileTypeOverrides => string.Format(AppStrings.Format_Overlay_FileTypeOverrides, SampleExtension),
+        _ => string.Empty,
+    };
+
     public PreviewState Preview
     {
         get
@@ -145,10 +165,7 @@ public sealed class FormatPageViewModel : ObservableObject, IDisposable
                 Scale: Choice(Scale, Catalog.ScaleMode),
                 FullFill: Choice(FullFill, Catalog.FullFill),
                 Adornment: Choice(Adornment, Catalog.Adornment),
-                ShowBadge: ShowAssociationIcon.IsOn || ShowAssociationIcon.IsMixed,
-                CustomIcon: CustomIcon.IsOn && !string.IsNullOrEmpty(CustomIconPath.TextValue),
-                Monogram: Format?.Monogram ?? "Ps",
-                BadgeColor: previewFormat.BadgeColor);
+                OverlayIcon: Overlay.IconLocation);
         }
     }
 
@@ -183,5 +200,6 @@ public sealed class FormatPageViewModel : ObservableObject, IDisposable
     private void RaiseComputed() => OnPropertiesChanged(
         nameof(Scope), nameof(ScopeLabel), nameof(IsExtensionScope), nameof(ExtensionScopeMessage), nameof(HasExtensionOverrides),
         nameof(ShowCanvasColor), nameof(ShowChecker), nameof(ShowCustomIconPath), nameof(AppearanceInactive),
-        nameof(AppearanceInactiveMessage), nameof(SampleFileName), nameof(Preview));
+        nameof(AppearanceInactiveMessage), nameof(SampleFileName), nameof(HasOverlayNote), nameof(OverlayNoteMessage),
+        nameof(Preview));
 }

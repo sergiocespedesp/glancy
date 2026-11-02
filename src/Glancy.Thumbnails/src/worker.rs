@@ -75,7 +75,7 @@ pub fn started() -> bool {
 
 /// An abandoned thread keeps running this module's code, so the module must never be unloaded after the first one
 /// starts: it is pinned (FreeLibrary no longer unloads it) and `DllCanUnloadNow` says no.
-fn keep_module_loaded() {
+pub(crate) fn keep_module_loaded() {
     use windows::Win32::Foundation::HMODULE;
     use windows::Win32::System::LibraryLoader::{
         GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS, GET_MODULE_HANDLE_EX_FLAG_PIN, GetModuleHandleExW,

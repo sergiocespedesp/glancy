@@ -246,7 +246,7 @@ fn thumbnail(input: &Input, cx: u32) -> windows::core::Result<(HBITMAP, WTS_ALPH
         return Err(E_FAIL.into());
     };
     log::set_debug(eff.global.debug_log);
-    crate::registration::sync_if_revision_changed(&snapshot);
+    crate::registration::sync_if_revision_changed();
     log::debug(&format!("GetThumbnail {cx}px {shown} ({})", eff.extension));
 
     match pipeline::decide(&eff, path.as_deref(), cx) {

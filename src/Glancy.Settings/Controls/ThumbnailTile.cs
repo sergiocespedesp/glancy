@@ -1,4 +1,5 @@
 using Glancy.Core.Settings;
+using Glancy.Core.Shell;
 using Glancy.Settings.Helpers;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -17,10 +18,7 @@ public sealed record PreviewState(
     int Scale,
     int FullFill,
     int Adornment,
-    bool ShowBadge,
-    bool CustomIcon,
-    string Monogram,
-    uint BadgeColor);
+    string? OverlayIcon);
 
 /// <summary>
 /// Draws a sample image with transparent and semi-transparent areas the way Explorer would show its thumbnail
@@ -92,7 +90,7 @@ public sealed partial class ThumbnailTile : UserControl
             holder.Children.Add(thumb);
         }
 
-        if (s.ShowBadge) holder.Children.Add(BuildBadge(s, thumb));
+        if (BuildOverlay(s.OverlayIcon) is { } overlay) holder.Children.Add(overlay);
         _box.Children.Add(holder);
     }
 
@@ -133,32 +131,33 @@ public sealed partial class ThumbnailTile : UserControl
         _ => new Rectangle { Width = w, Height = h },
     };
 
-    private Border BuildBadge(PreviewState s, FrameworkElement thumb)
+    /// <summary>The icon Explorer draws in the bottom-right corner (the same one the engine writes), or null.</summary>
+    private Image? BuildOverlay(string? location)
     {
-        var size = Math.Clamp(Math.Round(TileSize * 0.22), 16, 48);
-        var color = s.CustomIcon ? 0xFF5B5FC7 : ColorHelper.Darken(s.BadgeColor, 0.78);
-        return new Border
+        if (string.IsNullOrWhiteSpace(location)) return null;
+        var size = Math.Clamp(Math.Round(TileSize * 0.19), 16, 48);
+        ImageSource? source = null;
+        if (location.StartsWith('@'))
         {
+            // A Store app's logo (@{package?ms-resource://…}).
+            if (IconExtractor.ResolveIndirect(location) is { } file && File.Exists(file))
+                source = new Microsoft.UI.Xaml.Media.Imaging.BitmapImage(new Uri(file));
+        }
+        else
+        {
+            var (path, index) = IconExtractor.ParseLocation(location);
+            if (IconExtractor.Extract(Environment.ExpandEnvironmentVariables(path), index, (int)size) is { } icon)
+                source = CheckerBitmap.FromPixels(icon.Width, icon.Height, icon.PremultipliedBgra);
+        }
+        if (source is null) return null;
+        return new Image
+        {
+            Source = source,
             Width = size,
             Height = size,
-            CornerRadius = new CornerRadius(size * 0.22),
-            Background = ColorHelper.Brush(color),
-            BorderBrush = new SolidColorBrush(ColorHelper.FromArgb(0x66FFFFFF)),
-            BorderThickness = new Thickness(1),
             HorizontalAlignment = HorizontalAlignment.Right,
             VerticalAlignment = VerticalAlignment.Bottom,
-            Margin = new Thickness(0, 0, -size * 0.18, -size * 0.18),
-            Child = s.CustomIcon
-                ? new FontIcon { Glyph = "", FontSize = size * 0.5, Foreground = new SolidColorBrush(Microsoft.UI.Colors.White) }
-                : new TextBlock
-                {
-                    Text = s.Monogram,
-                    FontSize = size * FormatBadge.MonogramScale(s.Monogram, 0.42),
-                    FontWeight = Microsoft.UI.Text.FontWeights.Bold,
-                    Foreground = new SolidColorBrush(ColorHelper.ContrastingText(color)),
-                    HorizontalAlignment = HorizontalAlignment.Center,
-                    VerticalAlignment = VerticalAlignment.Center,
-                },
+            Margin = new Thickness(0, 0, -size * 0.1, -size * 0.1),
         };
     }
 

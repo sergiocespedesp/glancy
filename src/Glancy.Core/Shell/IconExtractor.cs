@@ -49,6 +49,15 @@ public static class IconExtractor
 
     public static string FormatLocation(string path, int index) => $"{path},{index}";
 
+    /// <summary>The file an indirect resource string (<c>@{package?ms-resource://…}</c>, a Store app's logo) points to.</summary>
+    public static string? ResolveIndirect(string source)
+    {
+        var buffer = new char[1024];
+        return NativeMethods.SHLoadIndirectString(source, buffer, (uint)buffer.Length, IntPtr.Zero) == 0
+            ? new string(buffer, 0, Array.IndexOf(buffer, '\0') is var n and >= 0 ? n : buffer.Length)
+            : null;
+    }
+
     private static IconImage? ToImage(IntPtr hIcon, int index)
     {
         if (!NativeMethods.GetIconInfo(hIcon, out var info)) return null;

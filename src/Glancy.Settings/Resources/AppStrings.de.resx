@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>Mit „Systemanbieter“ zeichnet Windows oder die zugeordnete App die Miniaturansicht, und diese Einstellungen werden nicht verwendet (außer es gibt keinen anderen Anbieter).</value></data>
   <data name="Format_More" xml:space="preserve"><value>Mehr</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>Weitere Aktionen</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>{0}-Dateien haben ein eigenes Überlagerungssymbol von der App, die sie registriert hat, und Windows zeigt dieses statt des hier gewählten.</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>Keine App ist zum Öffnen von {0}-Dateien festgelegt, daher hat Windows kein App-Symbol zum Anzeigen. Ein benutzerdefiniertes Symbol funktioniert trotzdem.</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} Einstellungen von {1} nach {2} kopiert. Überprüfen und „Übernehmen“ auswählen.</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>Einstellungen eingefügt</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>Einstellungen von {0} einfügen</value></data>

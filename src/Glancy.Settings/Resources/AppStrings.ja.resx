@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>「システムのプロバイダー」では Windows または関連付けられたアプリが縮小版を描画するため、これらの設定は使われません (他にプロバイダーがない場合を除く)。</value></data>
   <data name="Format_More" xml:space="preserve"><value>その他</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>その他の操作</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>{0} ファイルには登録したアプリが設定した独自のオーバーレイ アイコンがあり、Windows はこちらの代わりにそれを表示します。</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>{0} ファイルを開くアプリが設定されていないため、Windows に表示できるアプリのアイコンがありません。カスタム アイコンは使えます。</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>{1} の {0} 個の設定を {2} にコピーしました。確認して「適用」を選んでください。</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>設定を貼り付けました</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>{0} から設定を貼り付け</value></data>

@@ -136,6 +136,8 @@
   <data name="Format_Inactive_Fallback" xml:space="preserve"><value>Com “Provedor do sistema”, o Windows ou o aplicativo associado desenha a miniatura e estas configurações não são usadas (a menos que não haja outro provedor).</value></data>
   <data name="Format_More" xml:space="preserve"><value>Mais</value></data>
   <data name="Format_MoreActions_Name" xml:space="preserve"><value>Mais ações</value></data>
+  <data name="Format_Overlay_FileTypeOverrides" xml:space="preserve"><value>Os arquivos {0} têm seu próprio ícone sobreposto, definido pelo aplicativo que os registrou, e o Windows mostra esse no lugar deste.</value></data>
+  <data name="Format_Overlay_NoApp" xml:space="preserve"><value>Nenhum aplicativo está definido para abrir arquivos {0}, então o Windows não tem um ícone de aplicativo para mostrar. Um ícone personalizado ainda funciona.</value></data>
   <data name="Format_Pasted_Message" xml:space="preserve"><value>{0} configurações de {1} copiadas para {2}. Revise-as e selecione Aplicar.</value></data>
   <data name="Format_Pasted_Title" xml:space="preserve"><value>Configurações coladas</value></data>
   <data name="Format_PasteFrom" xml:space="preserve"><value>Colar configurações de {0}</value></data>

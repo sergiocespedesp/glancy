@@ -159,6 +159,14 @@
 
         <!-- Overlay icon -->
         <TextBlock Text="{l:Str Key=Group_OverlayIcon}" Style="{StaticResource GlancySectionHeaderStyle}" AutomationProperties.HeadingLevel="Level2" />
+        <Grid ColumnSpacing="10" Visibility="{x:Bind ViewModel.HasOverlayNote, Mode=OneWay}" Margin="2,0,0,10">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <FontIcon Glyph="&#xE946;" FontSize="14" Style="{StaticResource GlancyIconSecondaryStyle}" VerticalAlignment="Top" Margin="0,2,0,0" />
+          <TextBlock Grid.Column="1" Text="{x:Bind ViewModel.OverlayNoteMessage, Mode=OneWay}" Style="{StaticResource GlancyCaptionStyle}" />
+        </Grid>
         <StackPanel Spacing="{StaticResource GlancyCardSpacing}">
           <c:SettingsCard Item="{x:Bind ViewModel.ShowAssociationIcon}">
             <ToggleSwitch IsOn="{x:Bind ViewModel.ShowAssociationIcon.IsOn, Mode=TwoWay}" OnContent="{l:Str Key=Common_On}" OffContent="{l:Str Key=Common_Off}" MinWidth="0" />

@@ -96,10 +96,16 @@ svg and the 3D formats = none.
 * The engine keeps what it replaces in `HKCU\Software\Glancy\Engine` (the engine's key; the app does not write it):
   `DllPath`; `NotResolved` (extensions that still resolve to another provider after registering); per extension,
   `Extensions\<ext>\PreviousHandler` (the provider Explorer used, for `mode = 2`), `PreviousTreatment`,
-  `PreviousTypeOverlay` and `Locations\<n>\{Key, PreviousUserValue}` (each class's value, restored by `regsvr32 /u`).
-* Shadow and overlay icon: the engine writes `Treatment` (= `adornment`) and `TypeOverlay` (`""` if
-  `showAssocIcon = 0`; `customIconPath` if `customIcon = 1`) to `HKCU\Software\Classes\SystemFileAssociations\<ext>`
-  when it registers and whenever `Revision` changes. `regsvr32 /n /i:sync Glancy.Thumbnails.dll` does it at once.
+  `PreviousTypeOverlay`, `ExtOverlaySaved` and `PreviousExtTypeOverlay` (the extension key's `TypeOverlay`, kept the
+  first time the engine writes there) and `Locations\<n>\{Key, PreviousUserValue}` (each class's value, restored by
+  `regsvr32 /u`).
+* Shadow and overlay icon: the engine writes `Treatment` (= `adornment`) and `TypeOverlay` to
+  `HKCU\Software\Classes\SystemFileAssociations\<ext>`: `""` if `showAssocIcon = 0`; `customIconPath` if
+  `customIcon = 1` (also in `HKCU\Software\Classes\<ext>` when no app opens the type); otherwise the icon of the
+  app that opens the type where the perceived type would hide it, or else the previous value. Explorer's lookup
+  order, and why the value must sometimes be explicit, are in [architecture.md](architecture.md), Decision order. The
+  engine does it when it registers, and in the background on the first thumbnail of each Explorer process and after
+  `Revision` changes; the app runs `regsvr32 /n /i:sync Glancy.Thumbnails.dll` on every Apply to do it at once.
 
 ## History of processed files (engine → app)
 

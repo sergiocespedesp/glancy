@@ -10,8 +10,10 @@
 //!   the user value replaced in each class (`Locations\<n>`, to restore it on unregister) and the provider Explorer
 //!   was using (`PreviousHandler`, for the "System provider" mode).
 //! * The shadow (`adornment`) and the overlay icon (`showAssocIcon`, `customIcon`) are drawn by Explorer according
-//!   to `Treatment` and `TypeOverlay` in `HKCU\Software\Classes\SystemFileAssociations\<ext>`. The engine syncs
-//!   them when it registers and every time the app increments `Revision`.
+//!   to `Treatment` and `TypeOverlay` in `HKCU\Software\Classes\SystemFileAssociations\<ext>` (and, for a custom
+//!   icon on a type no app opens, `TypeOverlay` in the extension's own key: see `overlay_values`). The engine syncs
+//!   them when it registers, when the app applies changes (`DllInstall` `sync`) and on the first thumbnail after
+//!   `Revision` changes.
 
 use crate::error::{Error, Result};
 use crate::reg::{self, Root};
@@ -217,15 +219,22 @@ pub fn register(dll: &std::path::Path) -> Result<()> {
     // Check with the same function Explorer uses: extensions where another provider still wins.
     let others: Vec<&str> = settings::all_extensions().filter(|e| resolved_handler(e) != Some(CLSID_GLANCY)).collect();
     reg::write_string(Root::CurrentUser, ENGINE_KEY, "NotResolved", &others.join(" "))?;
-    sync_shell_values(&settings::Snapshot::capture(&settings::RegistrySource::new(settings::SETTINGS_KEY)));
+    sync_now();
     notify_association_change();
     Ok(())
 }
 
 pub fn unregister() -> Result<()> {
+    // Not while Explorer or the app syncs: they would write the values back. Waited for, but never skipped.
+    with_named_lock(SYNC_LOCK, SYNC_WAIT, unregister_unlocked).unwrap_or_else(unregister_unlocked)
+}
+
+fn unregister_unlocked() -> Result<()> {
     let mut errors = Vec::new();
     for ext in settings::all_extensions() {
         let backup = backup_key(ext);
+        // Before the class keys below are deleted if empty.
+        set_extension_overlay(&extension_key(ext), &backup, None);
         let mut classes = location_records(ext);
         if classes.is_empty() {
             classes.push((String::new(), ext.to_string()));
@@ -271,52 +280,204 @@ pub fn unregister() -> Result<()> {
     Ok(())
 }
 
-/// Desired shell values for an extension: (`Treatment`, `TypeOverlay`; `None` = restore the previous one).
-pub fn desired_shell_values(src: &dyn SettingsSource, ext: &str) -> Option<(u32, Option<String>)> {
+/// The overlay icon the settings ask for.
+#[derive(Debug, Clone, PartialEq)]
+pub enum OverlayChoice {
+    Hidden,
+    /// The icon of the app that opens the type.
+    AppIcon,
+    Custom(String),
+}
+
+/// Desired shell values for an extension: `Treatment` and the overlay icon.
+pub fn desired_shell_values(src: &dyn SettingsSource, ext: &str) -> Option<(u32, OverlayChoice)> {
     let f = settings::resolve(src, ext)?.format_settings;
     let overlay = if !f.show_assoc_icon {
-        Some(String::new()) // empty = no overlay icon
+        OverlayChoice::Hidden
     } else if f.custom_icon && !f.custom_icon_path.trim().is_empty() {
-        Some(f.custom_icon_path.trim().to_string())
+        OverlayChoice::Custom(f.custom_icon_path.trim().to_string())
     } else {
-        None
+        OverlayChoice::AppIcon
     };
     Some((f.drop_shadow as u32, overlay))
 }
 
-/// Writes `Treatment`/`TypeOverlay` only if they change. Returns `true` if it wrote anything.
-pub fn sync_shell_values(src: &dyn SettingsSource) -> bool {
+/// `TypeOverlay` to write in `SystemFileAssociations\<ext>` and in the extension's own key (`None` = put back what
+/// was there before Glancy).
+#[derive(Debug, PartialEq)]
+pub struct OverlayValues {
+    pub sfa: Option<String>,
+    pub ext: Option<String>,
+}
+
+/// Explorer takes `TypeOverlay` from the first class of the file's association that has it: the ProgID, then
+/// `SystemFileAssociations\<ext>`, then `SystemFileAssociations\<PerceivedType>`; without a ProgID, the extension's
+/// key and then `Unknown`. With the value absent everywhere, Explorer shows the icon of the app that opens the type,
+/// looked up each time. But Windows sets `""` (no icon) in `SystemFileAssociations\image` and in `Unknown`: types that
+/// would inherit it (`inherits_blank`) get the app's icon written explicitly, and only those, since a written icon
+/// does not follow a change of app until the next sync. `unassociated` = no app opens the extension (Windows reports
+/// the `Unknown` ProgID).
+pub fn overlay_values(
+    choice: &OverlayChoice,
+    unassociated: bool,
+    inherits_blank: bool,
+    app_icon: Option<&str>,
+) -> OverlayValues {
+    match choice {
+        OverlayChoice::Hidden => OverlayValues { sfa: Some(String::new()), ext: None },
+        OverlayChoice::AppIcon => {
+            OverlayValues { sfa: app_icon.filter(|_| inherits_blank).map(String::from), ext: None }
+        }
+        OverlayChoice::Custom(path) => {
+            OverlayValues { sfa: Some(path.clone()), ext: unassociated.then(|| path.clone()) }
+        }
+    }
+}
+
+/// Icon of an app as `TypeOverlay` accepts it: its icon reference (`"path,index"`, or `@{…}` for Store apps), or
+/// else the first icon of its executable. Both forms were checked in Explorer. Windows may give the reference as
+/// a bare path, which gets the index 0.
+pub fn app_icon_from(icon_reference: Option<String>, executable: Option<String>) -> Option<String> {
+    let reference = icon_reference.map(|r| r.trim().to_string()).filter(|r| !r.is_empty());
+    let location = reference.or_else(|| executable.map(|e| e.trim().to_string()).filter(|e| !e.is_empty()))?;
+    let indexed = location.rsplit_once(',').is_some_and(|(_, i)| i.trim().parse::<i32>().is_ok());
+    Some(if location.starts_with('@') || indexed { location } else { format!("{location},0") })
+}
+
+/// Icon of the app that opens the extension, if any.
+pub fn app_icon(ext: &str) -> Option<String> {
+    use windows::Win32::UI::Shell::{ASSOCSTR_APPICONREFERENCE, ASSOCSTR_EXECUTABLE};
+    app_icon_from(assoc_query(ext, ASSOCSTR_APPICONREFERENCE, None), assoc_query(ext, ASSOCSTR_EXECUTABLE, Some("open")))
+}
+
+/// `true` when no app opens the extension.
+pub fn is_unassociated(ext: &str) -> bool {
+    effective_progid(ext).is_none_or(|p| is_generic_class(&p))
+}
+
+/// `true` when the extension's perceived type sets `TypeOverlay` (Windows sets `""` for `image`), which the
+/// extension inherits if nothing before it in the association has the value.
+fn inherits_blank_overlay(ext: &str) -> bool {
+    reg::read_string(Root::ClassesRoot, ext, "PerceivedType")
+        .map(|p| p.trim().to_string())
+        .filter(|p| !p.is_empty())
+        .is_some_and(|p| reg::read(Root::ClassesRoot, &format!(r"SystemFileAssociations\{p}"), "TypeOverlay").is_some())
+}
+
+/// Writes `TypeOverlay` in `key` (`None` = put back what was there before Glancy wrote it). The first write keeps
+/// the previous value under `backup`. Returns `true` if it changed anything.
+fn set_extension_overlay(key: &str, backup: &str, wanted: Option<&str>) -> bool {
+    let current = reg::read_string(Root::CurrentUser, key, "TypeOverlay");
+    let saved = reg::read_dword(Root::CurrentUser, backup, "ExtOverlaySaved").is_some();
+    match wanted {
+        Some(v) => {
+            if !saved {
+                let kept = match &current {
+                    Some(c) => reg::write_string(Root::CurrentUser, backup, "PreviousExtTypeOverlay", c),
+                    None => reg::delete_value(Root::CurrentUser, backup, "PreviousExtTypeOverlay"),
+                };
+                if kept.and_then(|_| reg::write_dword(Root::CurrentUser, backup, "ExtOverlaySaved", 1)).is_err() {
+                    return false;
+                }
+            }
+            current.as_deref() != Some(v) && reg::write_string(Root::CurrentUser, key, "TypeOverlay", v).is_ok()
+        }
+        None if !saved => false,
+        None => {
+            let previous = reg::read_string(Root::CurrentUser, backup, "PreviousExtTypeOverlay");
+            let changed = current != previous
+                && match &previous {
+                    Some(p) => reg::write_string(Root::CurrentUser, key, "TypeOverlay", p).is_ok(),
+                    None => reg::delete_value(Root::CurrentUser, key, "TypeOverlay").is_ok(),
+                };
+            let _ = reg::delete_value(Root::CurrentUser, backup, "PreviousExtTypeOverlay");
+            let _ = reg::delete_value(Root::CurrentUser, backup, "ExtOverlaySaved");
+            changed
+        }
+    }
+}
+
+/// Writes `Treatment`/`TypeOverlay` only if they change. Returns `true` if it wrote anything. The app's icon is
+/// looked up again on every call, since the app that opens a type can change. Callers hold `SYNC_LOCK`.
+fn sync_shell_values(src: &dyn SettingsSource) -> bool {
     // Only if the engine is registered (there is a backup to restore later).
     if reg::read_string(Root::CurrentUser, ENGINE_KEY, "DllPath").is_none() {
         return false;
     }
     let mut changed = false;
     for ext in settings::all_extensions() {
-        let Some((treatment, overlay)) = desired_shell_values(src, ext) else { continue };
+        let Some((treatment, choice)) = desired_shell_values(src, ext) else { continue };
         let sfa = sfa_key(ext);
         if reg::read_dword(Root::CurrentUser, &sfa, "Treatment") != Some(treatment) {
             changed |= reg::write_dword(Root::CurrentUser, &sfa, "Treatment", treatment).is_ok();
         }
+        let unassociated = is_unassociated(ext);
+        let inherits_blank = inherits_blank_overlay(ext);
+        let icon = if choice == OverlayChoice::AppIcon && !unassociated && inherits_blank { app_icon(ext) } else { None };
+        let values = overlay_values(&choice, unassociated, inherits_blank, icon.as_deref());
         let current = reg::read_string(Root::CurrentUser, &sfa, "TypeOverlay");
-        let wanted = overlay.or_else(|| reg::read_string(Root::CurrentUser, &backup_key(ext), "PreviousTypeOverlay"));
+        let wanted = values.sfa.or_else(|| reg::read_string(Root::CurrentUser, &backup_key(ext), "PreviousTypeOverlay"));
         if current != wanted {
             changed |= match &wanted {
                 Some(v) => reg::write_string(Root::CurrentUser, &sfa, "TypeOverlay", v).is_ok(),
                 None => reg::delete_value(Root::CurrentUser, &sfa, "TypeOverlay").is_ok(),
             };
         }
+        changed |= set_extension_overlay(&extension_key(ext), &backup_key(ext), values.ext.as_deref());
     }
     changed
 }
 
+fn extension_key(ext: &str) -> String {
+    format!(r"Software\Classes\{ext}")
+}
+
 static LAST_REVISION: Mutex<Option<Option<u32>>> = Mutex::new(None);
 
-/// Called on every thumbnail: if the app applied changes (new `Revision`), syncs the shell values.
-pub fn sync_if_revision_changed(snapshot: &settings::Snapshot) {
-    let revision = match reg::read_hkcu(settings::SETTINGS_KEY, "Revision") {
+fn settings_revision() -> Option<u32> {
+    match reg::read_hkcu(settings::SETTINGS_KEY, "Revision") {
         Some(RegValue::Dword(r)) => Some(r),
         _ => None,
+    }
+}
+
+/// Serializes the processes that write the shell values: the app's `regsvr32 /n /i:sync`, Explorer and
+/// unregistering. Without it, a slower sync of older settings could overwrite a newer one, and two restores of the
+/// extension key's backup could lose the user's value.
+const SYNC_LOCK: &str = r"Local\Glancy.ShellSync";
+const SYNC_WAIT: std::time::Duration = std::time::Duration::from_secs(60);
+
+/// Runs `f` while holding the named mutex `name`; `None` if it is not free within `wait`.
+fn with_named_lock<T>(name: &str, wait: std::time::Duration, f: impl FnOnce() -> T) -> Option<T> {
+    use windows::Win32::Foundation::{CloseHandle, WAIT_ABANDONED, WAIT_OBJECT_0};
+    use windows::Win32::System::Threading::{CreateMutexW, ReleaseMutex, WaitForSingleObject};
+    let mutex = unsafe { CreateMutexW(None, false, &windows::core::HSTRING::from(name)) }.ok()?;
+    let r = unsafe { WaitForSingleObject(mutex, wait.as_millis().min(u32::MAX as u128) as u32) };
+    let result = if r == WAIT_OBJECT_0 || r == WAIT_ABANDONED {
+        let value = f();
+        let _ = unsafe { ReleaseMutex(mutex) };
+        Some(value)
+    } else {
+        None
     };
+    let _ = unsafe { CloseHandle(mutex) };
+    result
+}
+
+/// Syncs the shell values from the settings as they are now. Returns `true` if it wrote anything.
+pub fn sync_now() -> bool {
+    with_named_lock(SYNC_LOCK, SYNC_WAIT, || {
+        // Read inside the lock: settings applied while waiting are the ones written.
+        sync_shell_values(&settings::Snapshot::capture(&settings::RegistrySource::new(settings::SETTINGS_KEY)))
+    })
+    .unwrap_or(false)
+}
+
+/// Called on every thumbnail: the first one in each Explorer process, and the first after the app applies changes
+/// (new `Revision`), sync the shell values. That also picks up a change of the app that opens a type, or a Store
+/// app's update. It runs in the background: a sync looks up every type's app and takes a moment.
+pub fn sync_if_revision_changed() {
+    let revision = settings_revision();
     {
         let mut last = LAST_REVISION.lock().unwrap_or_else(|e| e.into_inner());
         if *last == Some(revision) {
@@ -324,10 +485,14 @@ pub fn sync_if_revision_changed(snapshot: &settings::Snapshot) {
         }
         *last = Some(revision);
     }
-    if sync_shell_values(snapshot) {
-        crate::log::debug("Shell values (Treatment/TypeOverlay) updated");
-        notify_association_change();
-    }
+    crate::worker::keep_module_loaded();
+    let _ = std::thread::Builder::new().name("glancy-shell-sync".into()).spawn(|| {
+        crate::wic::ensure_com();
+        if sync_now() {
+            crate::log::debug("Shell values (Treatment/TypeOverlay) updated");
+            notify_association_change();
+        }
+    });
 }
 
 #[cfg(test)]
@@ -337,15 +502,96 @@ mod tests {
     #[test]
     fn shell_values_from_settings() {
         let mut s = settings::Snapshot::default();
-        assert_eq!(desired_shell_values(&s, ".psd"), Some((1, None)));
+        assert_eq!(desired_shell_values(&s, ".psd"), Some((1, OverlayChoice::AppIcon)));
         s.insert(r"Formats\psd", "adornment", RegValue::Dword(0));
         s.insert(r"Formats\psd\Extensions\.psb", "showAssocIcon", RegValue::Dword(0));
         s.insert(r"Formats\pdf", "customIcon", RegValue::Dword(1));
         s.insert(r"Formats\pdf", "customIconPath", RegValue::Sz(r"C:\iconos\pdf.ico,0".into()));
-        assert_eq!(desired_shell_values(&s, ".psd"), Some((0, None)));
-        assert_eq!(desired_shell_values(&s, ".psb"), Some((0, Some(String::new()))));
-        assert_eq!(desired_shell_values(&s, ".pdf"), Some((1, Some(r"C:\iconos\pdf.ico,0".into()))));
+        assert_eq!(desired_shell_values(&s, ".psd"), Some((0, OverlayChoice::AppIcon)));
+        assert_eq!(desired_shell_values(&s, ".psb"), Some((0, OverlayChoice::Hidden)));
+        assert_eq!(desired_shell_values(&s, ".pdf"), Some((1, OverlayChoice::Custom(r"C:\iconos\pdf.ico,0".into()))));
         assert_eq!(desired_shell_values(&s, ".exe"), None);
+    }
+
+    #[test]
+    fn overlay_values_per_case() {
+        let custom = OverlayChoice::Custom(r"C:\i.ico,0".into());
+        let ps = Some(r"C:\ps.exe,0");
+        let v = |sfa: Option<&str>, ext: Option<&str>| OverlayValues { sfa: sfa.map(String::from), ext: ext.map(String::from) };
+        // Absent, the value would be inherited: "" from SystemFileAssociations\image (no icon).
+        assert_eq!(overlay_values(&OverlayChoice::AppIcon, false, true, ps), v(ps, None));
+        assert_eq!(overlay_values(&OverlayChoice::AppIcon, false, true, None), v(None, None));
+        // Nothing to inherit: absent, Explorer looks up the current app's icon itself (it stays right if the app
+        // that opens the type changes).
+        assert_eq!(overlay_values(&OverlayChoice::AppIcon, false, false, ps), v(None, None));
+        // No app opens it: there is no app icon to show.
+        assert_eq!(overlay_values(&OverlayChoice::AppIcon, true, true, None), v(None, None));
+        assert_eq!(overlay_values(&OverlayChoice::Hidden, false, false, ps), v(Some(""), None));
+        assert_eq!(overlay_values(&custom, false, false, None), v(Some(r"C:\i.ico,0"), None));
+        // Without a ProgID, Explorer reads the extension's key before Unknown, which sets "".
+        assert_eq!(overlay_values(&custom, true, true, None), v(Some(r"C:\i.ico,0"), Some(r"C:\i.ico,0")));
+    }
+
+    #[test]
+    fn the_sync_lock_is_exclusive() {
+        let name = format!(r"Local\Glancy.Tests.{}", std::process::id());
+        let (held, release) = (std::sync::mpsc::channel(), std::sync::mpsc::channel::<()>());
+        let (tx_held, rx_release, owner_name) = (held.0, release.1, name.clone());
+        let owner = std::thread::spawn(move || {
+            with_named_lock(&owner_name, std::time::Duration::from_secs(5), || {
+                tx_held.send(()).unwrap();
+                let _ = rx_release.recv();
+            })
+        });
+        held.1.recv().unwrap();
+        assert_eq!(with_named_lock(&name, std::time::Duration::from_millis(50), || 1), None, "held elsewhere: gives up");
+        release.0.send(()).unwrap();
+        assert_eq!(owner.join().unwrap(), Some(()));
+        assert_eq!(with_named_lock(&name, std::time::Duration::from_secs(5), || 2), Some(2));
+    }
+
+    #[test]
+    fn app_icon_prefers_the_app_icon_reference() {
+        let s = |x: &str| Some(x.to_string());
+        let store = "@{Microsoft.Windows.Photos_8wekyb3d8bbwe?ms-resource://Microsoft.Windows.Photos/Files/Assets/Logo.png}";
+        assert_eq!(app_icon_from(s(store), s(r"C:\x.exe")), s(store));
+        assert_eq!(app_icon_from(None, s(r"C:\Adobe\Photoshop.exe")), s(r"C:\Adobe\Photoshop.exe,0"));
+        assert_eq!(app_icon_from(s("  "), s(r"C:\Adobe\Photoshop.exe")), s(r"C:\Adobe\Photoshop.exe,0"));
+        assert_eq!(app_icon_from(None, None), None);
+        // Windows may give the reference as a bare path: Explorer was checked with "path,index".
+        assert_eq!(app_icon_from(s(r"C:\Adobe\Photoshop.exe"), None), s(r"C:\Adobe\Photoshop.exe,0"));
+        assert_eq!(app_icon_from(s(r"C:\a,b\x.exe"), None), s(r"C:\a,b\x.exe,0"));
+        assert_eq!(app_icon_from(s(r"C:\x.dll,-101"), None), s(r"C:\x.dll,-101"));
+    }
+
+    #[test]
+    fn extension_overlay_is_backed_up_and_restored() {
+        // Outside Software\Glancy, which unregistering deletes when empty; removed even if an assertion fails.
+        struct Cleanup(String);
+        impl Drop for Cleanup {
+            fn drop(&mut self) {
+                let _ = reg::delete_tree(Root::CurrentUser, &self.0);
+                reg::delete_if_empty(Root::CurrentUser, r"Software\GlancyTests");
+            }
+        }
+        let base = format!(r"Software\GlancyTests\overlay-{}", std::process::id());
+        let _cleanup = Cleanup(base.clone());
+        let (key, backup) = (format!(r"{base}\class"), format!(r"{base}\backup"));
+        let overlay = || reg::read_string(Root::CurrentUser, &key, "TypeOverlay");
+        // Nothing there before: written, then removed again.
+        assert!(set_extension_overlay(&key, &backup, Some("a.ico,0")));
+        assert_eq!(overlay().as_deref(), Some("a.ico,0"));
+        assert!(!set_extension_overlay(&key, &backup, Some("a.ico,0")), "unchanged: nothing written");
+        assert!(set_extension_overlay(&key, &backup, None));
+        assert_eq!(overlay(), None);
+        assert!(!set_extension_overlay(&key, &backup, None), "nothing of Glancy's left to restore");
+        // A value the user had: kept aside and put back.
+        reg::write_string(Root::CurrentUser, &key, "TypeOverlay", "mine.ico,0").unwrap();
+        assert!(!set_extension_overlay(&key, &backup, None), "not Glancy's: left alone");
+        assert!(set_extension_overlay(&key, &backup, Some("b.ico,0")));
+        assert!(set_extension_overlay(&key, &backup, Some("c.ico,0")));
+        assert!(set_extension_overlay(&key, &backup, None));
+        assert_eq!(overlay().as_deref(), Some("mine.ico,0"));
     }
 
     #[test]

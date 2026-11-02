@@ -67,8 +67,21 @@ For every thumbnail: master switch → excluded folders → format mode (`mode`,
 ≤ 32 px) → size limits (`maxFileSizeMB`, `maxPixels`) → embedded preview or rendering (`embedded`) → size (`scale`,
 `sampling`) → appearance (`gamma`, `transparency`, `canvasColor`, `checkerColors`, `fullFill`, `checkerAnchor`,
 `checkerScale`, `forceDesktopTransparency`). `adornment`, `showAssocIcon` and `customIcon` are drawn by Explorer: the
-engine writes `Treatment` and `TypeOverlay` to `HKCU\Software\Classes\SystemFileAssociations\<ext>` when it registers
-and whenever `Revision` changes.
+engine writes `Treatment` and `TypeOverlay` to `HKCU\Software\Classes\SystemFileAssociations\<ext>` when it registers,
+when the app applies changes (`regsvr32 /n /i:sync`), and in the background on the first thumbnail of each Explorer
+process and the first after `Revision` changes (which also picks up a change of the app that opens a type). A named
+mutex (`Local\Glancy.ShellSync`) keeps those writers, and unregistering, from running at once.
+
+Explorer takes `TypeOverlay` from the first class of the file's association that has it: the ProgID, then
+`SystemFileAssociations\<ext>`, then `SystemFileAssociations\<PerceivedType>`; a type no app opens has the extension's
+key and then `Unknown` instead of a ProgID. Windows sets `TypeOverlay = ""` (no icon) in
+`SystemFileAssociations\image` and in `Unknown`, so an absent value hides the icon for most types (absent
+everywhere, Explorer shows the current app's icon). With `showAssocIcon = 1` the engine therefore writes the app's icon
+explicitly, but only for types whose perceived type sets `TypeOverlay`, since a written icon does not follow a change
+of app until the next sync: `AssocQueryString(ASSOCSTR_APPICONREFERENCE)`, or else the `open` verb's executable, as
+`"path,index"` (Explorer was checked with both `"exe,0"` and a Store app's `@{…}` reference). A custom icon on a type no app opens also goes in `HKCU\Software\Classes\<ext>`. Nothing can be
+shown for a type whose ProgID sets its own `TypeOverlay` (such as `pfmfile`); the app says so on the format's page,
+and its preview draws the icon Explorer will draw (`OverlayIcon` in Glancy.Core).
 
 Engine rules that the rest of the design relies on:
 
@@ -170,8 +183,8 @@ the setup keeps the engine's backups (`HKCU\Software\Glancy\Engine`) even when a
 `tools/installer-e2e.ps1` tests all of this on the real system.
 
 * `regsvr32 /u` restores each key to its previous value (or deletes it if it did not exist) and `Treatment`/`TypeOverlay`.
-* `regsvr32 /n /i:sync Glancy.Thumbnails.dll` applies `Treatment`/`TypeOverlay` from the settings at once (otherwise
-  the engine does it on the next thumbnail after `Revision` changes).
+* `regsvr32 /n /i:sync Glancy.Thumbnails.dll` applies `Treatment`/`TypeOverlay` from the settings at once; the app runs
+  it on every Apply (otherwise the engine does it on the next thumbnail after `Revision` changes).
 * Toolchain: Rust `x86_64-pc-windows-gnu` per user, no Visual Studio. The `windows` crate stays at 0.58 because 0.59+
   needs `dlltool` with an assembler, which that toolchain does not include. The DLL imports only system DLLs.
 
